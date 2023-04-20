@@ -1,0 +1,22 @@
+{
+  "recommended_action": "1. Go to SQL servers\n2. For this server instance\n3. Click on Auditing\n4. Set Auditing to On",
+  "rationale": "The Azure platform allows a SQL server to be created as a service. Enabling auditing at the server level ensures that all existing and newly created databases on the SQL server instance are audited. Auditing policy applied on the SQL database does not override auditing policy and settings applied on the particular SQL server where the database is hosted. Auditing tracks database events and writes them to an audit log in the Azure storage account. It also helps to maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "auditingSettings": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "state": {
+              "errorMessage": "SQL server does not have auditing enabled.",
+              "not": {
+                "constIgnoreCase": "disabled"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "30af4b25-cd92-a38c-2739-1f93fa765893"
+}

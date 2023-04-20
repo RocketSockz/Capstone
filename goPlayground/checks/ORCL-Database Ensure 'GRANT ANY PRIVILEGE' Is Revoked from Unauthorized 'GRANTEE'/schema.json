@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "UnauthorizedGrantee": {
+                "items": {
+                  "properties": {
+                    "Privilege": {
+                      "not": {
+                        "constIgnoreCase": "GRANT ANY PRIVILEGE"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

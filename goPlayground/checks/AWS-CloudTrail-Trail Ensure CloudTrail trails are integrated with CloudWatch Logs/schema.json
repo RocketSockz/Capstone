@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "CloudWatchLogsLogGroupArn": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "errorMessage": "CloudTrail is not integrated with CloudWatch logs.",
+      "required": [
+        "CloudWatchLogsLogGroupArn"
+      ]
+    },
+    "trailStatus": {
+      "properties": {
+        "LatestCloudWatchLogsDeliveryTime": {
+          "withinDays": 1
+        }
+      },
+      "errorMessage": "CloudTrail has not logged within the past 24 hours.",
+      "required": [
+        "LatestCloudWatchLogsDeliveryTime"
+      ]
+    }
+  },
+  "schemaId": "a85e36a3-2769-d31d-8437-84ae950f5c0e"
+}

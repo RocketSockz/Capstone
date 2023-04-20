@@ -1,0 +1,31 @@
+{
+  "accountId": "600565142442",
+  "arn": "arn:aws:ec2:ap-northeast-2:600565142442:security-group/sg-dee337bc",
+  "cloudId": "arn:aws:ec2:ap-northeast-2:600565142442:security-group/sg-dee337bc",
+  "id": "sg-dee337bc",
+  "location": "ap-northeast-2",
+  "name": "sg-dee337bc",
+  "type": "AWS::EC2::SecurityGroup",
+  "document": {
+    "Description": "default VPC security group",
+    "GroupName": "default",
+    "IpPermissions": [],
+    "OwnerId": "600565142442",
+    "GroupId": "sg-dee337bc",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "Tags": [],
+    "VpcId": "vpc-b39e40d8"
+  }
+}

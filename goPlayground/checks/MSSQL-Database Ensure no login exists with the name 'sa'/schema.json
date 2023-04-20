@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "serverPrincipals": {
+          "items": {
+            "properties": {
+              "sa_name": {
+                "not": {
+                  "constIgnoreCase": "sa"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

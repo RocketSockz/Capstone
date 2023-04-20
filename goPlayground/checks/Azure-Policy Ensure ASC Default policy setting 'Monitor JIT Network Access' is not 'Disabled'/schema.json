@@ -1,0 +1,44 @@
+{
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n(Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor JIT Network Access to AuditIfNotExists or\nany other available value than Disabled\n5. Click Save",
+  "rationale": "When this setting is enabled, Security Center locks down inbound traffic to the Azure VMs by creating an NSG rule. The user can select the ports on the VM where inbound traffic should be locked down. Just in time virtual machine (VM) access can be used to lock down inbound traffic to the Azure VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "if": {
+        "properties": {
+          "name": {
+            "constIgnoreCase": "securitycenterbuiltin"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "properties": {
+            "errorMessage": "JIT network access monitoring is disabled.",
+            "properties": {
+              "parameters": {
+                "properties": {
+                  "jitNetworkAccessMonitoringEffect": {
+                    "properties": {
+                      "value": {
+                        "minLength": 1,
+                        "not": {
+                          "errorMessage": "JIT network access monitoring is disabled.",
+                          "constIgnoreCase": "disabled"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": ["jitNetworkAccessMonitoringEffect"]
+              }
+            },
+            "required": ["parameters"]
+          }
+        }
+      },
+      "errorMessage": "JIT network access monitoring is disabled."
+    }
+  },
+  "schemaId": "d00b676e-eea5-8cc9-9cb7-f82ad0fdd5c3"
+}

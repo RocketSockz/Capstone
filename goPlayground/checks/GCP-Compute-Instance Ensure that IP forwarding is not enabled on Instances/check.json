@@ -1,0 +1,15 @@
+{
+  "id": "7e6a5c2c-4c3e-bcf9-fb85-80b2ce71ae78",
+  "displayName": "Ensure that IP forwarding is not enabled on Instances",
+  "resourceType": "compute#instance",
+  "severity": "low",
+  "rationale": "Compute Engine instance cannot forward a packet unless the source IP address of the packet matches the IP address of the instance. Similarly, GCP won't deliver a packet whose destination IP address is different than the IP address of the instance receiving the packet. However, both capabilities are required if you want to useinstances to help route packets. To enable this source and destination IP check, disable the canIpForwardfield, which allows an instance to send and receive packets with non-matching destination or source IPs.",
+  "source": "cis gcp 1.0.0 | benchmark 4.5",
+  "recommended_action": "1. Go to the Compute Engine\n2. Go to VM Instances\n3. Select the VM Instance.\n4. Click Delete button.",
+  "error_message": "Instance's IP forwarding is enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that IP forwarding is not enabled on instances"
+  ]
+}

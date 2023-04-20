@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "databases": {
+          "items": {
+            "properties": {
+              "servicePrincipals": {
+                "items": {
+                  "properties": {
+                    "authentication_type": {
+                      "not": {
+                        "const": 2
+                      }
+                    }
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

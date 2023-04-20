@@ -1,0 +1,16 @@
+{
+  "recommended_action": "To enable modern authentication, use the Exchange Online PowerShell Module:\n1. Run the Microsoft Exchange Online PowerShell Module.\n2. Connect to Exchange Online using Connect-EXOPSSession.\n3. Run the following PowerShell command:\nSet-OrganizationConfig -OAuth2ClientProfileEnabled $True",
+  "rationale": "Strong authentication controls, such as the use of multifactor authentication, may be circumvented if basic authentication is used by Exchange Online email clients such as Outlook 2016 and Outlook 2013. Enabling modern authentication for Exchange Online ensures strong authentication mechanisms are used when establishing sessions between email clients and Exchange Online.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "OAuth2ClientProfileEnabled": {
+          "errorMessage": "Modern authentication is not enabled.",
+          "const": true
+        }
+      }
+    }
+  },
+  "schemaId": "524d75b0-6aba-e2b6-9b5a-874078d52d3e"
+}

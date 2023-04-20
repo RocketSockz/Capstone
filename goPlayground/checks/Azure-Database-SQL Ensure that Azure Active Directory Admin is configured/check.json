@@ -1,0 +1,15 @@
+{
+  "id": "20c8ed55-5465-2c7d-b69f-5fc2b7640ce7",
+  "displayName": "Ensure that Azure Active Directory Admin is configured",
+  "resourceType": "Microsoft.Sql/servers",
+  "severity": "high",
+  "rationale": "Azure Active Directory authentication is a mechanism to connect to Microsoft Azure SQL Database and SQL Data Warehouse by using identities in Azure Active Directory (Azure AD). With Azure AD authentication, identities of database users and other Microsoft services can be managedin one central location. Central ID management provides a single place to manage database users and simplifies permission management.",
+  "source": "cis azure 1.1.0 | benchmark 4.8",
+  "recommended_action": "1. Go to SQL servers\n2. For this SQL server, click on Active Directory admin\n3. Click on Set admin\n4. Select an admin\n5.  Click Save",
+  "error_message": "SQL server does not have Azure active directory admin correctly configured",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that Azure AD admin are configured"
+  ]
+}

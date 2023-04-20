@@ -1,0 +1,15 @@
+{
+    "properties": {
+        "document": {
+            "required": [
+                "StorageEncrypted"
+            ],
+            "properties": {
+                "StorageEncrypted": {
+                    "const": true
+                }
+            }
+        }
+    },
+    "schemaId": "d8989708-75f9-481e-bbd6-61d925c5a192"
+}

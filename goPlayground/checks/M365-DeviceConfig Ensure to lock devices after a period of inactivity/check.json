@@ -1,0 +1,15 @@
+{
+  "id": "40ffd1d1-220e-fef1-5b5f-4ec39267a369",
+  "displayName": "Ensure that settings are enable to lock devices after a period of inactivity to prevent unauthorized access",
+  "resourceType": "microsoft.graph.deviceConfiguration",
+  "severity": "low",
+  "rationale": "Attackers can steal unlocked devices and access data and account information.",
+  "source": "cis o365 1.1.0 | benchmark 7.7",
+  "recommended_action": "To set mobile device management policies, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile\n\t4. Set a Name for the policy, choose the appropriate Platform and select Device restrictions\n\t5. In the Password section, ensure that Maximum minutes of inactivity until screen lock is set to 5 and Maximum minutes after screen lock before password is required is set to Immediately.",
+  "error_message": "Device configurations should have immediate lock on inactivity",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that setting is enabled to lock devices after a period of inactivity to prevent unauthorized access"
+  ]
+}

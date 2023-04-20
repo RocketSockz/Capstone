@@ -1,0 +1,15 @@
+{
+  "id": "5c806be4-b112-4ca4-a920-9ca55da612b6",
+  "displayName": "Ensure CONTROL_MANAGEMENT_PACK_ACCESS is not concerning and not diagnostic",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "A value of 'DIAGNOSTIC' for this parameter enables the usage of features related to the Oracle Diagnostic Pack and Oracle Tuning Pack.",
+  "source": "opscompass-defined",
+  "recommended_action": "Alter system set control_management_pack_access=NONE scope=both",
+  "error_message": "CONTROL_MANAGEMENT_PACK_ACCESS is concerning and has a value of DIAGNOSTIC",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure CONTROL_MANAGEMENT_PACK_ACCESS is not concerning and not diagnostic"
+  ]
+}

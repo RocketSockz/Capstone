@@ -1,0 +1,15 @@
+{
+  "id": "25edbbda-4758-b8e7-a51e-4246866df805",
+  "displayName": "SecureFile Deduplication (user)",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "SecureFile Deduplication (user) requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the \"STORE AS SECUREFILE\" with the \"DEDUPLICATE\" option when creating a table with a LOB column.  Disable it after the fact with the \"KEEP_DUPLICATES\" option to \"ALTER TABLE ... STORE AS SECUREFILE\"",
+  "error_message": "SecureFile Deduplication (user) is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "SecureFile Deduplication (user)"
+  ]
+}

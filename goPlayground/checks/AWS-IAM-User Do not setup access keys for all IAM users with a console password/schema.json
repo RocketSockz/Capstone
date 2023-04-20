@@ -1,0 +1,23 @@
+{
+  "recommended_action": "Perform the following to delete access keys that do not pass the audit:\n1. Login to the AWS Management Console\n2. Click Services\n3. Click IAM\n4. Click on Users\n5. Click on Security Credentials\n6. As an Administrator\nClick on Delete for keys that were created at the same time as the user profile but have not been used.\n7. As an IAM User\nClick on 'Delete' for keys that were created at the same time as the user profile but have not been used.",
+  "rationale": "Requiring that additional steps be taken by the user after their profile has been created will give a stronger indication of intent that access keys are [a] necessary for their work and [b] once the access key is established on an account that the keys may be in use somewhere in the organization.",
+  "source": "cis aws 1.2.0",
+  "properties": {
+    "accessKeys": {
+      "items": {
+        "properties": {
+          "CreateDate": {
+            "not": {
+              "errorMessage": "An access key was created during the initial user setup.",
+              "withinFiveSeconds": {
+                "$data": "/document/CreateDate"
+              }
+            },
+            "errorMessage": "An access key was created during the initial user setup."
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "41ccbf54-944c-8c99-e698-8c316e60a8f5"
+}

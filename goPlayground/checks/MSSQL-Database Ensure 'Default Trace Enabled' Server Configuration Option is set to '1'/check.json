@@ -1,0 +1,15 @@
+{
+  "id": "bb254ad5-9155-4bdc-aa05-aede5556a176",
+  "displayName": "Ensure 'Default Trace Enabled' Server Configuration Option is set to '1'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "Default trace provides valuable audit information regarding security-related activities on the server.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Run the following T-SQL command:\r\n```\r\nEXECUTE sp_configure 'show advanced options', 1;\r\nRECONFIGURE;\r\nEXECUTE sp_configure 'default trace enabled', 1;\r\nRECONFIGURE;\r\nGO\r\nEXECUTE sp_configure 'show advanced options', 0;\r\nRECONFIGURE;\r\n```",
+  "error_message": "Server has 'Default Trace Enabled' configuration option set to '0'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Default Trace Enabled' Server Configuration Option is set to '1'"
+  ]
+}

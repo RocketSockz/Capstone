@@ -1,0 +1,38 @@
+{
+  "recommended_action": "1. In right column, Click service Storage Accounts to access Storage account blade\n2. Click on the storage account name\n3. In Section Blob Service click Containers. It will list all the containers in next blade\n4. Look for a record with container named as insight-operational-logs. Click ...\nfrom right most column to open Context menu\n5. Click Access Policy from Context Menu and set Public Access Level to Private\n(no anonymous access)",
+  "rationale": "Allowing public access to activity log content may aid an adversary in identifying weaknesses in the affected account's use or configuration.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "containers": {
+      "allOf": [
+        {
+          "items": {
+            "errorMessage": "Storage account storing activity logs allows public access.",
+            "if": {
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "constIgnoreCase": "insights-operational-logs"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "properties": {
+                  "properties": {
+                    "publicAccess": {
+                      "type": "string",
+                      "constIgnoreCase": "none",
+                      "errorMessage": "Storage account storing activity logs allows public access."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "schemaId": "41c0c673-3365-eaca-f74c-0fbf2fe06767"
+}

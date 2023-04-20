@@ -1,0 +1,80 @@
+{
+    "accountId": "213916962078",
+    "arn": "arn:aws:iam::213916962078:user/gray.knowlton",
+    "cloudId": "arn:aws:iam::213916962078:user/gray.knowlton",
+    "id": "gray.knowlton",
+    "location": "global",
+    "name": "gray.knowlton",
+    "type": "AWS::IAM::User",
+    "document": {
+        "Path": "/",
+        "UserName": "gray.knowlton",
+        "UserId": "AIDATDTTRZUPCIENL6RXJ",
+        "Arn": "arn:aws:iam::213916962078:user/gray.knowlton",
+        "CreateDate": "2020-09-03T21:58:30.000Z",
+        "PasswordLastUsed": "2021-10-25T13:41:05.000Z",
+        "Tags": [
+            {
+                "Key": "othertag",
+                "Value": "new tag"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "Path": "/",
+            "GroupName": "Opscompass-Admins",
+            "GroupId": "AGPAJWGXBZBOMJ6SWHF74",
+            "Arn": "arn:aws:iam::213916962078:group/Opscompass-Admins",
+            "CreateDate": "2019-03-13T15:21:23.000Z"
+        },
+        {
+            "Path": "/",
+            "GroupName": "Product_Administrators",
+            "GroupId": "AGPATDTTRZUPLYKGB4QYD",
+            "Arn": "arn:aws:iam::213916962078:group/Product_Administrators",
+            "CreateDate": "2021-10-12T17:50:03.000Z"
+        },
+        {
+            "Path": "/",
+            "GroupName": "Product_Developers",
+            "GroupId": "AGPATDTTRZUPOPYUX2KYR",
+            "Arn": "arn:aws:iam::213916962078:group/Product_Developers",
+            "CreateDate": "2021-10-12T17:50:55.000Z"
+        },
+        {
+            "Path": "/",
+            "GroupName": "Product_Owners",
+            "GroupId": "AGPATDTTRZUPE3C57YVCW",
+            "Arn": "arn:aws:iam::213916962078:group/Product_Owners",
+            "CreateDate": "2021-10-12T17:51:34.000Z"
+        }
+    ],
+    "mfaDevices": [
+        {
+            "UserName": "gray.knowlton",
+            "SerialNumber": "arn:aws:iam::213916962078:mfa/gray.knowlton",
+            "EnableDate": "2020-09-03T22:06:08.000Z"
+        }
+    ],
+    "attachedPolicies": [],
+    "accessKeys": [
+        {
+            "UserName": "gray.knowlton",
+            "AccessKeyId": "AKIATDTTRZUPHN6RF743",
+            "Status": "Active",
+            "CreateDate": "2020-09-03T22:08:05.000Z"
+        },
+        {
+            "UserName": "gray.knowlton",
+            "AccessKeyId": "AKIATDTTRZUPJQ25NVXT",
+            "Status": "Active",
+            "CreateDate": "2021-10-18T20:06:21.000Z"
+        }
+    ],
+    "loginProfile": {
+        "UserName": "gray.knowlton",
+        "CreateDate": "2020-09-03T21:58:32.000Z",
+        "PasswordResetRequired": false
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "03c0d146-20d6-4cd3-8f6b-0cd7db874a6b",
+  "displayName": "Ensure 'Database Mail XPs' Server Configuration Option is set to '0'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "low",
+  "rationale": "Disabling the `Database Mail XPs` option reduces the SQL Server surface, eliminates a DOS attack vector and channel to exfiltrate data from the database server to a remote host.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Run the following T-SQL command:\r\n```\r\nEXECUTE sp_configure 'show advanced options', 1;\r\nRECONFIGURE;\r\nEXECUTE sp_configure 'Database Mail XPs', 0;\r\nRECONFIGURE;\r\nGO\r\nEXECUTE sp_configure 'show advanced options', 0;\r\nRECONFIGURE;\r\n```",
+  "error_message": "Server has 'Database Mail XPs' set to '1'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Database Mail XPs' Server Configuration Option is set to '0'"
+  ]
+}

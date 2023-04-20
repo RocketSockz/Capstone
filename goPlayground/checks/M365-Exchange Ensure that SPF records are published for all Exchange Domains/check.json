@@ -1,0 +1,15 @@
+{
+  "id": "219a16d7-e19e-37f3-8685-3f2619ea2ce7",
+  "displayName": "Ensure that SPF records are published for all Exchange Domains",
+  "resourceType": "microsoft.graph.domain",
+  "severity": "low",
+  "rationale": "SPF records allow Exchange Online Protection and other mail systems know where messages from your domains are allowed to originate. This information can be used to by that system to determine how to treat the message based on if it is being spoofed or is valid.",
+  "source": "cis o365 1.1.0 | benchmark 4.11",
+  "recommended_action": "To setup SPF records for Exchange Online accepted domains, perform the following steps:\n1. If all email in your domain is sent from and received by Exchange Online, add the following TXT record for each Accepted Domain:\n`v=spf1 include:spf.protection.outlook.com -all`\n2. If there are other systems that send email in the environment, refer to this article for\nthe proper SPF configuration: https://docs.microsoft.com/enus/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-preventspoofing",
+  "error_message": "Domain's record of SPF is not found",
+  "category": "SI",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that SPF records are published for all Exchange domains"
+  ]
+}

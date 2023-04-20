@@ -1,0 +1,15 @@
+{
+    "id": "5f0422f9-32f3-4db3-a6fd-36f26015724f",
+    "displayName": "Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled",
+    "resourceType": "AWS::EKS::Cluster",
+    "severity": "medium",
+    "rationale": "In a private cluster, the master node has two endpoints, a private and public endpoint. The private endpoint is the internal IP address of the master, behind an internal load balancer in the master's VPC network. Nodes communicate with the master using the private endpoint. The public endpoint enables the Kubernetes API to be accessed from outside the master's VPC network. \nAlthough Kubernetes API requires an authorized token to perform sensitive actions, a vulnerability could potentially expose the Kubernetes publicly with unrestricted access. Additionally, an attacker may be able to identify the current cluster and Kubernetes API version and determine whether it is vulnerable to an attack. Unless required, disabling public endpoint will help prevent such threats, and require the attacker to be on the master's VPC network to perform any attack on the Kubernetes API.",
+    "source": "CIS AWS EKS Benchmark v1.0.1",
+    "recommended_action": "Take the following steps to correct IP ranges for EKS Clusters:\n1.Open the Amazon EKS console at https://console.aws.amazon.com/eks/home#/clusters.\n2.Choose the name of the cluster to display your cluster information.\n3. Choose the Configuration tab. On the Networking tab, choose Update. For Private access, choose whether to enable or disable private access for your cluster's Kubernetes API server endpoint.\n4. For Public access, choose whether to enable or disable public access for your cluster's Kubernetes API server endpoint.\n5. If you've enabled Public access, select Advanced Settings. Enter a CIDR block, such as <203.0.113.5/32>. The block cannot include reserved addresses. You can enter additional blocks by selecting Add Source. There is a maximum number of CIDR blocks that you can specify.\n6. Choose Update to finish.",
+    "error_message": "Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled",
+    "category": "SC",
+    "subcategory": "configuration",
+    "ruleNames": [
+        "Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled "
+    ]
+}

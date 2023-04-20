@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "auditOptionsUnified": {
+                "allOf": [{
+                    "contains": {
+                      "properties": {
+                        "AuditOption": {
+                          "constIgnoreCase": "LOGON"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "contains": {
+                      "properties": {
+                        "AuditOption": {
+                          "constIgnoreCase": "LOGOFF"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

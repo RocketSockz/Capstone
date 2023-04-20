@@ -1,0 +1,16 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "errorLogging": {
+          "properties": {
+            "errors": {
+              "type": "number",
+              "minimum": 12
+            }
+          }
+        }
+      }
+    }
+  }
+}

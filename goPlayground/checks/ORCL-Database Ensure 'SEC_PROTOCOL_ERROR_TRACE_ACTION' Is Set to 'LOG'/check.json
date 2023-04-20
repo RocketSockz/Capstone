@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "21f8c32f-c47b-4941-a0cd-63a8f3cc9b72",
+  "displayName": "Ensure parameter 'SEC_PROTOCOL_ERROR_TRACE_ACTION' Is Set to 'LOG'",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Bad packets received from the client can potentially indicate packet-based attacks on the system, which could result in a denial-of-service condition.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET SEC_PROTOCOL_ERROR_TRACE_ACTION=LOG SCOPE = SPFILE;\n```",
+  "error_message": "Server logging when recieving malformed packets is not 'LOG'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'SEC_PROTOCOL_ERROR_TRACE_ACTION' Is Set to 'LOG'"
+  ]
+}

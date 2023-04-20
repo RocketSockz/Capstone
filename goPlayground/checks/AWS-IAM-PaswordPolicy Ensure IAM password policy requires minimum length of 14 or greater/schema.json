@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "MinimumPasswordLength": {
+          "minimum": 14
+        }
+      },
+      "required": [
+        "MinimumPasswordLength"
+      ]
+    }
+  },
+  "schemaId": "34c191fd-bafc-db72-3832-601c9c468f94"
+}

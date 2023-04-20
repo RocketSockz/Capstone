@@ -1,0 +1,110 @@
+{
+  "document": {
+    "XsAnyElements": "",
+    "XsAnyAttributes": "",
+    "PSComputerName": "admin4a.online.lync.com",
+    "RunspaceId": "796da043-df2b-4dcb-b3b3-5c4e4f53dee9",
+    "PSShowComputerName": false,
+    "PartnerApplications": [{
+        "XsAnyElements": "",
+        "XsAnyAttributes": "",
+        "AuthToken": "Microsoft.Rtc.Management.WritableConfig.Settings.SSAuth.UseOAuthServer",
+        "Name": "microsoft.exchange",
+        "ApplicationIdentifier": "00000002-0000-0ff1-ce00-000000000000",
+        "Realm": null,
+        "ApplicationTrustLevel": "Full",
+        "AcceptSecurityIdentifierInformation": false,
+        "Enabled": true,
+        "Element": "\u003cPartnerApplication Name=\"microsoft.exchange\" ApplicationIdentifier=\"00000002-0000-0ff1-ce00-000000000000\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\" xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\"\u003e\r\n  \u003cAuthToken\u003e\r\n    \u003cUseOAuthServer /\u003e\r\n  \u003c/AuthToken\u003e\r\n\u003c/PartnerApplication\u003e"
+      },
+      {
+        "XsAnyElements": "",
+        "XsAnyAttributes": "",
+        "AuthToken": "Microsoft.Rtc.Management.WritableConfig.Settings.SSAuth.UseOAuthServer",
+        "Name": "microsoft.sharepoint",
+        "ApplicationIdentifier": "00000003-0000-0ff1-ce00-000000000000",
+        "Realm": null,
+        "ApplicationTrustLevel": "Full",
+        "AcceptSecurityIdentifierInformation": false,
+        "Enabled": true,
+        "Element": "\u003cPartnerApplication Name=\"microsoft.sharepoint\" ApplicationIdentifier=\"00000003-0000-0ff1-ce00-000000000000\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\" xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\"\u003e\r\n  \u003cAuthToken\u003e\r\n    \u003cUseOAuthServer /\u003e\r\n  \u003c/AuthToken\u003e\r\n\u003c/PartnerApplication\u003e"
+      },
+      {
+        "XsAnyElements": "",
+        "XsAnyAttributes": "",
+        "AuthToken": "Microsoft.Rtc.Management.WritableConfig.Settings.SSAuth.UseOAuthServer",
+        "Name": "microsoft.skype.platformmonitoringservice",
+        "ApplicationIdentifier": "44ff763b-5d1f-40ab-95bf-f31a18757998",
+        "Realm": null,
+        "ApplicationTrustLevel": "Full",
+        "AcceptSecurityIdentifierInformation": false,
+        "Enabled": true,
+        "Element": "\u003cPartnerApplication Name=\"microsoft.skype.platformmonitoringservice\" ApplicationIdentifier=\"44ff763b-5d1f-40ab-95bf-f31a18757998\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\" xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\"\u003e\r\n  \u003cAuthToken\u003e\r\n    \u003cUseOAuthServer /\u003e\r\n  \u003c/AuthToken\u003e\r\n\u003c/PartnerApplication\u003e"
+      },
+      {
+        "XsAnyElements": "",
+        "XsAnyAttributes": "",
+        "AuthToken": "Microsoft.Rtc.Management.WritableConfig.Settings.SSAuth.UseOAuthServer",
+        "Name": "microsoft.skype",
+        "ApplicationIdentifier": "00000004-0000-0ff1-ce00-000000000000",
+        "Realm": null,
+        "ApplicationTrustLevel": "Full",
+        "AcceptSecurityIdentifierInformation": false,
+        "Enabled": true,
+        "Element": "\u003cPartnerApplication Name=\"microsoft.skype\" ApplicationIdentifier=\"00000004-0000-0ff1-ce00-000000000000\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\" xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\"\u003e\r\n  \u003cAuthToken\u003e\r\n    \u003cUseOAuthServer /\u003e\r\n  \u003c/AuthToken\u003e\r\n\u003c/PartnerApplication\u003e"
+      },
+      {
+        "XsAnyElements": "",
+        "XsAnyAttributes": "",
+        "AuthToken": "Microsoft.Rtc.Management.WritableConfig.Settings.SSAuth.UseOAuthServer",
+        "Name": "microsoft.skypeteams.presence",
+        "ApplicationIdentifier": "1e70cd27-4707-4589-8ec5-9bd20c472a46",
+        "Realm": null,
+        "ApplicationTrustLevel": "Full",
+        "AcceptSecurityIdentifierInformation": false,
+        "Enabled": true,
+        "Element": "\u003cPartnerApplication Name=\"microsoft.skypeteams.presence\" ApplicationIdentifier=\"1e70cd27-4707-4589-8ec5-9bd20c472a46\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\" xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\"\u003e\r\n  \u003cAuthToken\u003e\r\n    \u003cUseOAuthServer /\u003e\r\n  \u003c/AuthToken\u003e\r\n\u003c/PartnerApplication\u003e"
+      }
+    ],
+    "OAuthServers": [{
+        "XsAnyElements": "",
+        "XsAnyAttributes": "",
+        "Name": "microsoft.sts",
+        "IssuerIdentifier": "00000001-0000-0000-c000-000000000000",
+        "Realm": null,
+        "MetadataUrl": "https://accounts.accesscontrol.windows.net/metadata/json/1",
+        "AuthorizationUriOverride": null,
+        "Type": "Acs",
+        "AcceptSecurityIdentifierInformation": false,
+        "Element": "\u003cOAuthServer Name=\"microsoft.sts\" IssuerIdentifier=\"00000001-0000-0000-c000-000000000000\" MetadataUrl=\"https://accounts.accesscontrol.windows.net/metadata/json/1\" AcceptSecurityIdentifierInformation=\"false\" Type=\"Acs\" xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\" /\u003e"
+      },
+      {
+        "XsAnyElements": "",
+        "XsAnyAttributes": "",
+        "Name": "evosts",
+        "IssuerIdentifier": "sts.windows.net",
+        "Realm": null,
+        "MetadataUrl": "https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml",
+        "AuthorizationUriOverride": null,
+        "Type": "AzureAd",
+        "AcceptSecurityIdentifierInformation": false,
+        "Element": "\u003cOAuthServer Name=\"evosts\" IssuerIdentifier=\"sts.windows.net\" MetadataUrl=\"https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml\" AcceptSecurityIdentifierInformation=\"false\" Type=\"AzureAd\" xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\" /\u003e"
+      }
+    ],
+    "Realm": null,
+    "ServiceName": "00000004-0000-0ff1-ce00-000000000000",
+    "ClientAuthorizationOAuthServerIdentity": "evosts",
+    "ExchangeAutodiscoverUrl": "https://pilot.outlook.com/autodiscover/autodiscover.svc",
+    "ExchangeAutodiscoverAllowedDomains": "*.outlook.com;*.microsoft.com",
+    "ClientAdalAuthOverride": "Disabled",
+    "AlternateAudienceUrl": null,
+    "AdditionalAudienceUrls": null,
+    "Element": "\u003cOAuthSettings xmlns=\"urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011\" ServiceName=\"00000004-0000-0ff1-ce00-000000000000\" ClientAdalAuthOverride=\"Allowed\" ClientAuthorizationOAuthServerIdentity=\"evosts\" ExchangeAutodiscoverAllowedDomains=\"*.outlook.com;*.microsoft.com\" ExchangeAutodiscoverUrl=\"https://pilot.outlook.com/autodiscover/autodiscover.svc\"\u003e\r\n  \u003cPartnerApplications\u003e\r\n    \u003cPartnerApplication Name=\"microsoft.exchange\" ApplicationIdentifier=\"00000002-0000-0ff1-ce00-000000000000\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\"\u003e\r\n      \u003cAuthToken\u003e\r\n        \u003cUseOAuthServer /\u003e\r\n      \u003c/AuthToken\u003e\r\n    \u003c/PartnerApplication\u003e\r\n    \u003cPartnerApplication Name=\"microsoft.sharepoint\" ApplicationIdentifier=\"00000003-0000-0ff1-ce00-000000000000\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\"\u003e\r\n      \u003cAuthToken\u003e\r\n        \u003cUseOAuthServer /\u003e\r\n      \u003c/AuthToken\u003e\r\n    \u003c/PartnerApplication\u003e\r\n    \u003cPartnerApplication Name=\"microsoft.skype.platformmonitoringservice\" ApplicationIdentifier=\"44ff763b-5d1f-40ab-95bf-f31a18757998\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\"\u003e\r\n      \u003cAuthToken\u003e\r\n        \u003cUseOAuthServer /\u003e\r\n      \u003c/AuthToken\u003e\r\n    \u003c/PartnerApplication\u003e\r\n    \u003cPartnerApplication Name=\"microsoft.skype\" ApplicationIdentifier=\"00000004-0000-0ff1-ce00-000000000000\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\"\u003e\r\n      \u003cAuthToken\u003e\r\n        \u003cUseOAuthServer /\u003e\r\n      \u003c/AuthToken\u003e\r\n    \u003c/PartnerApplication\u003e\r\n    \u003cPartnerApplication Name=\"microsoft.skypeteams.presence\" ApplicationIdentifier=\"1e70cd27-4707-4589-8ec5-9bd20c472a46\" ApplicationTrustLevel=\"Full\" AcceptSecurityIdentifierInformation=\"false\" Enabled=\"true\"\u003e\r\n      \u003cAuthToken\u003e\r\n        \u003cUseOAuthServer /\u003e\r\n      \u003c/AuthToken\u003e\r\n    \u003c/PartnerApplication\u003e\r\n  \u003c/PartnerApplications\u003e\r\n  \u003cOAuthServers\u003e\r\n    \u003cOAuthServer Name=\"microsoft.sts\" IssuerIdentifier=\"00000001-0000-0000-c000-000000000000\" MetadataUrl=\"https://accounts.accesscontrol.windows.net/metadata/json/1\" AcceptSecurityIdentifierInformation=\"false\" Type=\"Acs\" /\u003e\r\n    \u003cOAuthServer Name=\"evosts\" IssuerIdentifier=\"sts.windows.net\" MetadataUrl=\"https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml\" AcceptSecurityIdentifierInformation=\"false\" Type=\"AzureAd\" /\u003e\r\n  \u003c/OAuthServers\u003e\r\n\u003c/OAuthSettings\u003e",
+    "DataSource": "CMS",
+    "Key": "[{urn:schema:Microsoft.Rtc.Management.Settings.S2SAuth.2011}OAuthSettings,Tenant{a2e9d848-51aa-467b-a8ed-c8ad27fee718},Global]",
+    "ScopeClass": "Global",
+    "Anchor": "Microsoft.Rtc.Management.ScopeFramework.GlobalScopeAnchor",
+    "Identity": "Global",
+    "TypedIdentity": "Global"
+  }
+}

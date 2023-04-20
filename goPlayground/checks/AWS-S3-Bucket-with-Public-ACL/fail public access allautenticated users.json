@@ -1,0 +1,58 @@
+{
+    "accountId": "434855252750",
+    "arn": "arn:aws:s3:::graytestbucket",
+    "cloudId": "arn:aws:s3:::graytestbucket",
+    "id": "graytestbucket",
+    "location": "us-east-1",
+    "name": "graytestbucket",
+    "type": "AWS::S3::Bucket",
+    "document": {},
+    "AccessControlList": [
+        {
+            "Grantee": {
+                "DisplayName": "zachary.mckenzie+awscompliance",
+                "ID": "eafca9c379c82e604610d26c8e7df0f4b3ef8d959b50778fa2252189dca416ca",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "FULL_CONTROL"
+        },
+        {
+            "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/global/AuthenticatedUsers"
+            },
+            "Permission": "READ_ACP"
+        },
+        {
+            "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/s3/LogDelivery"
+            },
+            "Permission": "READ_ACP"
+        }
+    ],
+    "BucketPolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "PublicRead",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": [
+                    "s3:GetObject",
+                    "s3:GetObjectVersion"
+                ],
+                "Resource": "arn:aws:s3:::graytestbucket/*"
+            }
+        ]
+    },
+    "PublicAccessBlock": {
+        "BlockPublicAcls": false,
+        "IgnorePublicAcls": false,
+        "BlockPublicPolicy": false,
+        "RestrictPublicBuckets": false
+    },
+    "BucketPayer": "BucketOwner",
+    "ServerSideEncryptionConfiguration": null,
+    "BucketNotificationConfiguration": []
+}

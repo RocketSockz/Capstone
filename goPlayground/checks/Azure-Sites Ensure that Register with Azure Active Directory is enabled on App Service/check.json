@@ -1,0 +1,15 @@
+{
+  "id": "b115a61f-ff36-2b91-f05b-f8e987be4e5a",
+  "displayName": "Ensure that Register with Azure Active Directory is enabled on App Service",
+  "resourceType": "Microsoft.Web/sites",
+  "severity": "high",
+  "rationale": "App Service provides a highly scalable, self-patching web hosting service in Azure. It also provides a managed identity for apps, which is a turn-key solution for securing access to Azure SQL Database and other Azure services.",
+  "source": "cis azure 1.1.0 | benchmark 9.5",
+  "recommended_action": "1. Go to App Services\n2. Click on this App\n3. Under Setting section, Click on Identity\n4. Select Storage Details\n5.  Set Status to On",
+  "error_message": "This Application is not registered within Azure Active Directory",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that 'Register with Azure AD' is enabled on app service"
+  ]
+}

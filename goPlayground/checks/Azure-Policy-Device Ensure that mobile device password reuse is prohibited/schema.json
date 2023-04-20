@@ -1,0 +1,20 @@
+{
+  "recommended_action": "To set mobile device management profiles, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile\n\t4. Set a Name for the policy, choose the appropriate Platformand select Device restrictions\n\t5. In the Password section, ensure that Prevent reuse of previous passwords is set to 5.",
+  "rationale": "Devices without this protection are vulnerable to being accessed by attackers who can then steal account credentials, data, or install malware on the device. Choosing unique and unused passwords every time a password changes on mobile devices lessens the likelihood that the password can be guessed by an attacker.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "passwordPreviousPasswordBlockCount": {
+          "errorMessage": "General device configurations do not exist for all mobile platforms and don't restrict password reuse for the minimum of 5 passwords.",
+          "minimum": 5
+        },
+        "passcodePreviousPasscodeBlockCount": {
+          "errorMessage": "General device configurations do not exist for all mobile platforms and don't restrict password reuse for the minimum of 5 passwords.",
+          "minimum": 5
+        }
+      }
+    }
+  },
+  "schemaId": "e5198eae-dd69-99f6-9b36-dbc433c95c3f"
+}

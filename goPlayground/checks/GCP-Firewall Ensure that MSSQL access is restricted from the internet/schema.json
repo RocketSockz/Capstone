@@ -1,0 +1,59 @@
+{
+  "properties": {
+    "document": {
+      "not": {
+        "allOf": [
+          {
+            "properties": {
+              "allowed": {
+                "items": {
+                  "anyOf": [
+                    {
+                      "properties": {
+                        "ports": {
+                          "contains": {
+                            "includesPort": 1433
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "properties": {
+                        "IPProtocol": {
+                          "constIgnoreCase": "all"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "properties": {
+              "sourceRanges": {
+                "contains": {
+                  "enum": [
+                    "0.0.0.0/0",
+                    "0.0.0.0"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "properties": {
+              "direction": {
+                "constIgnoreCase": "ingress"
+              },
+              "disabled": {
+                "const": false
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "schemaId": "fc7e7d4b-cfce-4f57-805d-205d36e18e4d"
+}

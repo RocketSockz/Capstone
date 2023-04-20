@@ -1,0 +1,13 @@
+{
+    "properties": {
+        "document": {
+            "properties": {
+                "GroupName": {
+                    "not": {
+                        "constIgnoreCase": "default"
+                    }
+                }
+            }
+        }
+    }
+}

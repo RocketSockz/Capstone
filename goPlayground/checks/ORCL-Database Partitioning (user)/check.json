@@ -1,0 +1,15 @@
+{
+  "id": "3b7cb498-ac03-68c1-476c-144f3ecc2f5c",
+  "displayName": "Partitioning (user)",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Partitioning (user) requires a license for Oracle Partitioning to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not created tables or indexes with the \"PARTITION\" keyword.  In order to remove partitioning from a table, it will need to be backed up with Data Pump export, dropped, recreated without partitioning, and then restored with Data Pump Import.  Partitioned indexes will need to be dropped and recreated without the \"PARTITION\" keyword",
+  "error_message": "Partitioning (user) is listed as a feature usage concern under Oracle Partitioning",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Partitioning (user)"
+  ]
+}

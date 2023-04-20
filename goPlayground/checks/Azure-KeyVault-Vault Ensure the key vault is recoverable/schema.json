@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "enableSoftDelete": {
+              "const": true,
+              "errorMessage": "Vault's soft delete is not enabled."
+            }
+          },
+          "errorMessage": "Soft delete is not enabled for KeyVault.",
+          "required": [
+            "enableSoftDelete"
+          ]
+        }
+      }
+    }
+  },
+  "schemaId": "9667e484-ef82-bb8e-d90c-971fdfb8e655"
+}

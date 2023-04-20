@@ -1,0 +1,15 @@
+{
+  "id": "a8290375-2758-699e-e8d8-90cb985ae4d5",
+  "displayName": "Oracle Utility Metadata API - Advanced Security",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Oracle Utility Metadata API - Advanced Security requires a license for Oracle Advanced Security to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the encryption option with the Oracle Utility Metadata API",
+  "error_message": "Oracle Utility Metadata API - Advanced Security is listed as a feature usage concern under Oracle Advanced Security",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Oracle Utility Metadata API - Advanced Security"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "document": {
+    "type": "Microsoft.DBforPostgreSQL/servers",
+    "apiVersion": "2017-12-01-preview",
+    "name": "[parameters('servers_wh_demo_psql_name')]",
+    "location": "centralus",
+    "sku": {
+      "name": "GP_Gen5_2",
+      "tier": "GeneralPurpose",
+      "family": "Gen5",
+      "capacity": 2
+    },
+    "properties": {
+      "storageProfile": {
+        "storageMB": 122880,
+        "backupRetentionDays": 7,
+        "geoRedundantBackup": "Disabled"
+      },
+      "version": "9.6",
+      "sslEnforcement": "Enabled",
+      "createMode": "[parameters('servers_wh_demo_psql_createMode')]"
+    }
+  }
+}

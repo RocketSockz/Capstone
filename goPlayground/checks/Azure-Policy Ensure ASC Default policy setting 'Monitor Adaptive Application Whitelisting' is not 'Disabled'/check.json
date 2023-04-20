@@ -1,0 +1,15 @@
+{
+  "id": "7a902d0b-e3b9-9b69-ef4e-2d9d1bb709b4",
+  "displayName": "Ensure ASC Default policy setting \"Monitor Adaptive Application Whitelisting\" is not \"Disabled\"",
+  "resourceType": "Microsoft.Authorization/policyAssignments",
+  "severity": "high",
+  "rationale": "Adaptive application controls help control which applications can run on VMs located in Azure, which among other benefits helps harden those VMs against malware. The Security Center uses machine learning to analyze the processes running in the VM and helps to apply white-listing rules using this intelligence.",
+  "source": "cis azure 1.1.0 | benchmark 2.13",
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n(Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor Application Whitelisting to\nAuditIfNotExists or any other available value than Disabled\n5. Click Save",
+  "error_message": "Adaptive Application Whitelisting monitoring is disabled",
+  "category": "AU",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure ASC default policy setting 'Monitor Adaptive Application Whitelisting' is not disabled"
+  ]
+}

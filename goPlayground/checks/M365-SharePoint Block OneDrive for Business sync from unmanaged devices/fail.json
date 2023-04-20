@@ -1,0 +1,15 @@
+{
+  "document": {
+    "TenantRestrictionEnabled": false,
+    "AllowedDomainList": [
+
+    ],
+    "BlockMacSync": false,
+    "ExcludedFileExtensions": [
+      ""
+    ],
+    "OptOutOfGrooveBlock": false,
+    "OptOutOfGrooveSoftBlock": false,
+    "DisableReportProblemDialog": false
+  }
+}

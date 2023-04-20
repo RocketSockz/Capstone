@@ -1,0 +1,31 @@
+{
+  "recommended_action": "Follow Microsoft Azure's documentation for IaaS Disk Encryption.\nhttps://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-overview",
+  "rationale": "Failure to encrypt data disks may result in an unwanted attack on your database.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "encryption": {
+              "properties": {
+                "type": {
+                  "errorMessage": "Disk's encryption settings collection is not enabled.",
+                  "enum": [
+                    "EncryptionAtRestWithPlatformKey",
+                    "EncryptionAtRestWithPlatformAndCustomerKeys",
+                    "EncryptionAtRestWithCustomerKey"
+                  ]
+                }
+              },
+              "required": ["type"]
+            }
+          },
+          "errorMessage": "Disk's encryption settings collection is not enabled.",
+          "required": ["encryption"]
+        }
+      }
+    }
+  },
+  "schemaId": "d5248637-b73c-ed59-e56f-7cb3612466ba"
+}

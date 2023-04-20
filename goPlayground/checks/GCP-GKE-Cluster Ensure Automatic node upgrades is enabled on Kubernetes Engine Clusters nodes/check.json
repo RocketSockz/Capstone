@@ -1,0 +1,15 @@
+{
+  "id": "2e23394e-d10b-992b-9c91-17bdc9411e7d",
+  "displayName": "Ensure Automatic node upgrades is enabled on Kubernetes Engine Clusters nodes",
+  "resourceType": "gke#cluster",
+  "severity": "high",
+  "rationale": "Node pools with auto-upgrades enabled are automatically scheduled for upgrades when a new stable Kubernetes version becomes available. When the upgrade is performed, the node pool is upgraded to match the current cluster master version.",
+  "source": "cis gcp 1.0.0 | benchmark 7.8",
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Select reported Kubernetes clusters for which Automatic node upgrades is disabled\n3. Click on EDIT button and Set Automatic node upgrades to Enabled",
+  "error_message": "Kubernetes cluster does not have automatic node updgrade enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure automatic node upgrades are enabled on Kubernetes engine clusters' nodes"
+  ]
+}

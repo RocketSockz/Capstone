@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "4e783e54-aa50-4784-8a52-035a9184d135",
+  "displayName": "Ensure 'SESSIONS_PER_USER' Is Less than or Equal to '10' in user profile",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Limiting the number of the `SESSIONS_PER_USER` can help prevent memory resource exhaustion by poorly formed requests or intentional denial-of-service attacks.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement for each `PROFILE` returned by the audit procedure.\n```\nALTER PROFILE <profile_name> LIMIT SESSIONS_PER_USER 10;\n```",
+  "error_message": "The allowed session per user is more than 10",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'SESSIONS_PER_USER' Is Less than or Equal to '10' in user profile"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "49859368-f936-9af9-6613-8cd9a4849ccd",
+  "displayName": "Ensure that users cannot connect from devices that are jail broken or rooted",
+  "resourceType": "microsoft.graph.deviceCompliancePolicy",
+  "severity": "low",
+  "rationale": "These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.",
+  "source": "cis o365 1.1.0 | benchmark 7.4",
+  "recommended_action": "To set mobile device management policies, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device compliance and then select Policies\n\t3. Select Create Policy\n\t4. Set a Name for the policy, choose the appropriate Platform\n\t5. Under Settings and Device Health ensure that Jailbroken devices is set to Block.",
+  "error_message": "Compliance policy allows jailbroken devices",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that users cannot connect from devices that are jailbroken or rooted"
+  ]
+}

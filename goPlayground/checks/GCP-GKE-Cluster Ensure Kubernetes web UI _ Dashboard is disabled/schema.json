@@ -1,0 +1,24 @@
+{
+  "recommended_action": "1. Go to Kubernetes Engine.\n2. Go to Kubernetes clusters.\n3. For every Kubernetes cluster click on edit.\n4. Click on Add-ons.\n5. Select Disabled from dropdown of Kubernetes dashboard",
+  "rationale": "You should disable the Kubernetes Web UI (Dashboard) when running on Kubernetes Engine. The Kubernetes Web UI (Dashboard) is backed by a highly privileged Kubernetes Service Account.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "addonsConfig": {
+          "properties": {
+            "kubernetesDashboard": {
+              "properties": {
+                "disabled": {
+                  "errorMessage": "Kubernetes cluster has dashboard enabled.",
+                  "const": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "6cf3fcf4-d6b8-77a6-06c0-991e56ee4666"
+}

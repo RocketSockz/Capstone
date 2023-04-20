@@ -1,0 +1,15 @@
+{
+    "id": "d88799d7-8025-4469-9d37-5090c4793ec7",
+    "displayName": "EKS Clusters with public access should restrict allowable IP ranges",
+    "resourceType": "AWS::EKS::Cluster",
+    "severity": "medium",
+    "rationale": "Authorized networks are a way of specifying a restricted range of IP addresses that are permitted to access your cluster's control plane. Kubernetes Engine uses both Transport Layer Security (TLS) and authentication to provide secure access to your cluster's control plane from the public internet. This provides you the flexibility to administer your cluster from anywhere; however, you might want to further restrict access to a set of IP addresses that you control. You can set this restriction by specifying an authorized network.",
+    "source": "CIS AWS EKS Benchmark v1.0.1",
+    "recommended_action": "Take the following steps to correct IP ranges for EKS Clusters:\n1.Open the Amazon EKS console at https://console.aws.amazon.com/eks/home#/clusters.\n2.Choose the name of the cluster to display your cluster information.\n3. Choose the Configuration tab. On the Networking tab, choose Update. For Private access, choose whether to enable or disable private access for your cluster's Kubernetes API server endpoint.\n4. For Public access, choose whether to enable or disable public access for your cluster's Kubernetes API server endpoint.\n5. If you've enabled Public access, select Advanced Settings. Enter a CIDR block, such as <203.0.113.5/32>. The block cannot include reserved addresses. You can enter additional blocks by selecting Add Source. There is a maximum number of CIDR blocks that you can specify.\n6. Choose Update to finish.",
+    "error_message": "EKS Cluster allows unrestricted public internet access",
+    "category": "SC",
+    "subcategory": "configuration",
+    "ruleNames": [
+        "EKS Clusters with public access should restrict allowable IP ranges"
+    ]
+}

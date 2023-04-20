@@ -1,0 +1,15 @@
+{
+  "id": "06c59743-f832-f360-6eaa-3996f0cf2d5e",
+  "displayName": "Ensure \"Block Project-wide SSH keys\" enabled for VM instances",
+  "resourceType": "compute#instance",
+  "severity": "high",
+  "rationale": "Project-wide SSH keys are stored in Compute/Project-meta-data. Project wide SSH keys can be used to login into all the instances within project. Using project-wide SSH keys eases the SSH key management but if compromised, poses the security risk which can impact all the instances within project. It is recommended to use Instance specific SSH keys which can limit the attack surface if the SSH keys are compromised.",
+  "source": "cis gcp 1.0.0 | benchmark 4.2",
+  "recommended_action": "1. Go to the VM instances page using\nhttps://console.cloud.google.com/compute/instances?. It will list all the\ninstances from project\n2. Click on the name of the Impacted instance\n3. Click Edit in the toolbar\n4. Under SSH Keys, go to the Block project-wide SSH keys checkbox\n5. To block users with project-wide SSH keys from connecting to this instance, select\nBlock project-wide SSH keys\n6. click Save at the bottom of the page\n7. Repeat steps for every impacted Instance",
+  "error_message": "Block project-wide SSH keys setting are disabled",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'Block Project-wide SSH Keys' are enabled for VM instances"
+  ]
+}

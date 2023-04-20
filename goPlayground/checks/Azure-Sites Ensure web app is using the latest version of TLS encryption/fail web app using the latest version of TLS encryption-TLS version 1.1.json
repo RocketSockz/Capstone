@@ -1,0 +1,290 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/LI.CORP.WEB/providers/Microsoft.Web/sites/opsblog",
+  "name": "opsblog",
+  "resourceGroup": "LI.CORP.WEB",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "Microsoft.Web/sites",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/LI.CORP.WEB/providers/Microsoft.Web/sites/opsblog",
+    "name": "opsblog",
+    "type": "Microsoft.Web/sites",
+    "kind": "app",
+    "location": "Central US",
+    "tags": {
+      "hidden-related:/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourcegroups/OPSCOMPASS/providers/Microsoft.Web/serverfarms/newplan": "empty"
+    },
+    "properties": {
+      "name": "opsblog",
+      "state": "Running",
+      "hostNames": [
+        "waypoint.opscompass.com",
+        "blog.opscompass.com",
+        "opsblog.azurewebsites.net"
+      ],
+      "webSpace": "OPSCOMPASS-CentralUSwebspace",
+      "selfLink": "https://waws-prod-dm1-011.api.azurewebsites.windows.net:454/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/webspaces/OPSCOMPASS-CentralUSwebspace/sites/opsblog",
+      "repositorySiteName": "opsblog",
+      "owner": null,
+      "usageState": "Normal",
+      "enabled": true,
+      "adminEnabled": true,
+      "enabledHostNames": [
+        "blog.opscompass.com",
+        "waypoint.opscompass.com",
+        "opsblog.azurewebsites.net",
+        "opsblog.scm.azurewebsites.net"
+      ],
+      "siteProperties": {
+        "metadata": null,
+        "properties": [
+          {
+            "name": "LinuxFxVersion",
+            "value": ""
+          },
+          {
+            "name": "WindowsFxVersion",
+            "value": null
+          }
+        ],
+        "appSettings": null
+      },
+      "availabilityState": "Normal",
+      "sslCertificates": null,
+      "csrs": [],
+      "cers": null,
+      "siteMode": null,
+      "hostNameSslStates": [
+        {
+          "name": "blog.opscompass.com",
+          "sslState": "SniEnabled",
+          "ipBasedSslResult": null,
+          "virtualIP": null,
+          "thumbprint": "98729A6C533EF3090AD93012FBD7CB89BA8828B3",
+          "toUpdate": null,
+          "toUpdateIpBasedSsl": null,
+          "ipBasedSslState": "NotConfigured",
+          "hostType": "Standard"
+        },
+        {
+          "name": "opsblog.azurewebsites.net",
+          "sslState": "Disabled",
+          "ipBasedSslResult": null,
+          "virtualIP": null,
+          "thumbprint": null,
+          "toUpdate": null,
+          "toUpdateIpBasedSsl": null,
+          "ipBasedSslState": "NotConfigured",
+          "hostType": "Standard"
+        },
+        {
+          "name": "waypoint.opscompass.com",
+          "sslState": "SniEnabled",
+          "ipBasedSslResult": null,
+          "virtualIP": null,
+          "thumbprint": "98729A6C533EF3090AD93012FBD7CB89BA8828B3",
+          "toUpdate": null,
+          "toUpdateIpBasedSsl": null,
+          "ipBasedSslState": "NotConfigured",
+          "hostType": "Standard"
+        },
+        {
+          "name": "opsblog.scm.azurewebsites.net",
+          "sslState": "Disabled",
+          "ipBasedSslResult": null,
+          "virtualIP": null,
+          "thumbprint": null,
+          "toUpdate": null,
+          "toUpdateIpBasedSsl": null,
+          "ipBasedSslState": "NotConfigured",
+          "hostType": "Repository"
+        }
+      ],
+      "computeMode": null,
+      "serverFarm": null,
+      "serverFarmId": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/OPSCOMPASS/providers/Microsoft.Web/serverfarms/newplan",
+      "reserved": false,
+      "isXenon": false,
+      "hyperV": false,
+      "lastModifiedTimeUtc": "2019-07-21T07:36:41.77",
+      "storageRecoveryDefaultState": "Running",
+      "contentAvailabilityState": "Normal",
+      "runtimeAvailabilityState": "Normal",
+      "siteConfig": null,
+      "deploymentId": "opsblog",
+      "trafficManagerHostNames": null,
+      "sku": "Basic",
+      "scmSiteAlsoStopped": false,
+      "targetSwapSlot": null,
+      "hostingEnvironment": null,
+      "hostingEnvironmentProfile": null,
+      "clientAffinityEnabled": true,
+      "clientCertEnabled": false,
+      "clientCertExclusionPaths": null,
+      "hostNamesDisabled": false,
+      "domainVerificationIdentifiers": null,
+      "kind": "app",
+      "outboundIpAddresses": "40.77.62.8,40.77.60.234,40.77.61.61,40.77.63.70",
+      "possibleOutboundIpAddresses": "40.77.62.8,40.77.60.234,40.77.61.61,40.77.63.70",
+      "containerSize": 0,
+      "dailyMemoryTimeQuota": 0,
+      "suspendedTill": null,
+      "siteDisabledReason": 0,
+      "functionExecutionUnitsCache": null,
+      "maxNumberOfWorkers": null,
+      "homeStamp": "waws-prod-dm1-011",
+      "cloningInfo": null,
+      "hostingEnvironmentId": null,
+      "tags": {
+        "hidden-related:/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourcegroups/OPSCOMPASS/providers/Microsoft.Web/serverfarms/newplan": "empty"
+      },
+      "resourceGroup": "LI.CORP.WEB",
+      "defaultHostName": "opsblog.azurewebsites.net",
+      "slotSwapStatus": null,
+      "httpsOnly": false,
+      "redundancyMode": "None",
+      "inProgressOperationId": null,
+      "geoDistributions": null
+    }
+  },
+  "config": [
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/LI.CORP.WEB/providers/Microsoft.Web/sites/opsblog/config/web",
+      "name": "opsblog",
+      "type": "Microsoft.Web/sites/config",
+      "location": "Central US",
+      "tags": {
+        "hidden-related:/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourcegroups/OPSCOMPASS/providers/Microsoft.Web/serverfarms/newplan": "empty"
+      },
+      "properties": {
+        "numberOfWorkers": 1,
+        "defaultDocuments": [
+          "Default.htm",
+          "Default.html",
+          "Default.asp",
+          "index.htm",
+          "index.html",
+          "iisstart.htm",
+          "default.aspx",
+          "index.php",
+          "hostingstart.html"
+        ],
+        "netFrameworkVersion": "v4.0",
+        "phpVersion": "5.6",
+        "pythonVersion": "",
+        "nodeVersion": "",
+        "linuxFxVersion": "",
+        "windowsFxVersion": null,
+        "requestTracingEnabled": false,
+        "remoteDebuggingEnabled": false,
+        "remoteDebuggingVersion": null,
+        "httpLoggingEnabled": false,
+        "logsDirectorySizeLimit": 35,
+        "detailedErrorLoggingEnabled": false,
+        "publishingUsername": "$opsblog",
+        "publishingPassword": null,
+        "appSettings": null,
+        "metadata": null,
+        "connectionStrings": null,
+        "machineKey": null,
+        "handlerMappings": null,
+        "documentRoot": null,
+        "scmType": "ExternalGit",
+        "use32BitWorkerProcess": true,
+        "webSocketsEnabled": false,
+        "alwaysOn": true,
+        "javaVersion": null,
+        "javaContainer": null,
+        "javaContainerVersion": null,
+        "appCommandLine": "",
+        "managedPipelineMode": "Integrated",
+        "virtualApplications": [
+          {
+            "virtualPath": "/",
+            "physicalPath": "site\\wwwroot",
+            "preloadEnabled": true,
+            "virtualDirectories": null
+          }
+        ],
+        "winAuthAdminState": 0,
+        "winAuthTenantState": 0,
+        "customAppPoolIdentityAdminState": false,
+        "customAppPoolIdentityTenantState": false,
+        "runtimeADUser": null,
+        "runtimeADUserPassword": null,
+        "loadBalancing": "LeastRequests",
+        "routingRules": [],
+        "experiments": {
+          "rampUpRules": []
+        },
+        "limits": null,
+        "autoHealEnabled": false,
+        "autoHealRules": {
+          "triggers": null,
+          "actions": null
+        },
+        "tracingOptions": null,
+        "vnetName": "",
+        "siteAuthEnabled": false,
+        "siteAuthSettings": {
+          "enabled": null,
+          "unauthenticatedClientAction": null,
+          "tokenStoreEnabled": null,
+          "allowedExternalRedirectUrls": null,
+          "defaultProvider": null,
+          "clientId": null,
+          "clientSecret": null,
+          "clientSecretCertificateThumbprint": null,
+          "issuer": null,
+          "allowedAudiences": null,
+          "additionalLoginParams": null,
+          "isAadAutoProvisioned": false,
+          "googleClientId": null,
+          "googleClientSecret": null,
+          "googleOAuthScopes": null,
+          "facebookAppId": null,
+          "facebookAppSecret": null,
+          "facebookOAuthScopes": null,
+          "twitterConsumerKey": null,
+          "twitterConsumerSecret": null,
+          "microsoftAccountClientId": null,
+          "microsoftAccountClientSecret": null,
+          "microsoftAccountOAuthScopes": null
+        },
+        "cors": null,
+        "push": null,
+        "apiDefinition": null,
+        "apiManagementConfig": null,
+        "autoSwapSlotName": null,
+        "localMySqlEnabled": true,
+        "managedServiceIdentityId": null,
+        "xManagedServiceIdentityId": null,
+        "ipSecurityRestrictions": [
+          {
+            "ipAddress": "Any",
+            "action": "Allow",
+            "priority": 1,
+            "name": "Allow all",
+            "description": "Allow all access"
+          }
+        ],
+        "scmIpSecurityRestrictions": [
+          {
+            "ipAddress": "Any",
+            "action": "Allow",
+            "priority": 1,
+            "name": "Allow all",
+            "description": "Allow all access"
+          }
+        ],
+        "scmIpSecurityRestrictionsUseMain": false,
+        "http20Enabled": false,
+        "minTlsVersion": "1.1",
+        "ftpsState": "AllAllowed",
+        "reservedInstanceCount": 0,
+        "preWarmedInstanceCount": null,
+        "healthCheckPath": null
+      }
+    }
+  ]
+}

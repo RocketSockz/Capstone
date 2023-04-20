@@ -1,0 +1,20 @@
+{
+  "accountId": "434855252750",
+  "region": "",
+  "resourceArn": "",
+  "resourceId": "0d18d345-e893-4806-81e5-021f991ed0c3",
+  "resourceName": "",
+  "document": {
+    "AWSAccountId": "434855252750",
+    "KeyId": "0d18d345-e893-4806-81e5-021f991ed0c3",
+    "Arn": "arn:aws:kms:us-east-1:434855252750:key/0d18d345-e893-4806-81e5-021f991ed0c3",
+    "CreationDate": "2019-08-01T15:36:15.035Z",
+    "Enabled": true,
+    "Description": "Default master key that protects my RDS database volumes when no other key is defined",
+    "KeyUsage": "ENCRYPT_DECRYPT",
+    "KeyState": "Enabled",
+    "Origin": "AWS_KMS",
+    "KeyManager": "CUSTOMER"
+  },
+  "KeyRotationStatus": false
+}

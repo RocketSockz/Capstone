@@ -1,0 +1,20 @@
+{
+  "recommended_action": "To set mobile device management profiles, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile\n\t4. Set a Name for the policy, choose the appropriate Platform and select Device restrictions\n\t5. In the Password section, ensure that Number of sign-in failures before wiping device is set to 10.",
+  "rationale": "Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "passwordSignInFailureCountBeforeFactoryReset": {
+          "errorMessage": "Device configuration does not have factory reset settings set up correctly.",
+          "const": 10
+        },
+        "passcodeSignInFailureCountBeforeWipe": {
+          "errorMessage": "Device configuration does not have factory reset settings set up correctly.",
+          "const": 10
+        }
+      }
+    }
+  },
+  "schemaId": "0583b70e-4f18-1e9c-fba6-b46c7ad441a2"
+}

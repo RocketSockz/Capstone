@@ -1,0 +1,15 @@
+{
+  "id": "1add240e-7ce7-7c44-b4e0-bf708b272b4b",
+  "displayName": "Ensure that DNSSEC is enabled for Cloud DNS",
+  "resourceType": "dns#managedZone",
+  "severity": "low",
+  "rationale": "Domain Name System Security Extensions (DNSSEC) adds security to the Domain Name System (DNS) protocol by enabling DNS responses to be validated. Having a trustworthy Domain Name System (DNS) that translates a domain name like www.example.com into its associated IP address is an increasingly important building block of today’s web-based applications. Attackers can hijack this process of domain/IP lookup and redirect users to a malicious site through DNS hijacking and man-in-the-middle attacks. DNSSEC helps mitigate the risk of such attacks by cryptographically signing DNS records. As a result, it prevents attackers from issuing fake DNS responses that may misdirect browsers to nefarious websites.",
+  "source": "cis gcp 1.0.0 | benchmark 3.3",
+  "recommended_action": "Go to Network services\nFor each Zone name in Cloud DNS\nSet DNSSEC to On",
+  "error_message": "Cloud DNS does not have DNSSEC enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that DNSSEC is enabled for Cloud DNS"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "ProfileLimits": {
+                "items": {
+                  "if": {
+                    "properties": {
+                      "ResourceName": {
+                        "constIgnoreCase": "SESSIONS_PER_USER"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "Limit": {
+                        "not": {
+                          "constIgnoreCase": "UNLIMITED"
+                        },
+                        "pattern": "^([1-9]{1}|10)$"
+                      }
+                    }
+                  },
+                  "else": {
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

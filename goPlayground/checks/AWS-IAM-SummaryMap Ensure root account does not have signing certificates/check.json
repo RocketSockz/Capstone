@@ -1,0 +1,15 @@
+{
+    "id": "b35513ff-abb6-4416-9784-4cd06720741d",
+    "displayName": "Ensure AWS root account has no signing certificates",
+    "resourceType": "AWS::IAM::SummaryMap",
+    "severity": "high",
+    "rationale": "One of these best AWS IAM practices is to lock away your AWS account (root) access keys and password, and not use them for day-to-day interaction with AWS. AWS accounts should not have signing certificates.",
+    "source": "OpsCompass",
+    "recommended_action": "Remove signing certificates from the AWS root account.",
+    "error_message": "AWS root account has signing certificates",
+    "category": "AC",
+    "subcategory": "Account",
+    "ruleNames": [
+      "AWS root account should not have signing certificates"
+    ]
+  }

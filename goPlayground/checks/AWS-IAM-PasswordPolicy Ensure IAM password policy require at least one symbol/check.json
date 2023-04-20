@@ -1,0 +1,15 @@
+{
+  "id": "40646163-d64a-1502-6ec1-336c84b21c33",
+  "displayName": "Ensure IAM password policy requires at least one symbol",
+  "resourceType": "AWS::IAM::PasswordPolicy",
+  "severity": "high",
+  "rationale": "Setting a password complexity policy increases account resiliency against brute force login attempts.",
+  "source": "cis aws 1.2.0 | benchmark 1.7",
+  "recommended_action": "Perform the following to set the password policy as prescribed: Via AWS Console\n1. Login to AWS Console (with appropriate permissions to View Identity Access\nManagement Account Settings)\n2. Go to IAM Service on the AWS Console\n3. Click on Account Settings on the Left Pane\n4. Check 'Require at least one non-alphanumeric character'\n5. Click 'Apply password policy'",
+  "error_message": "IAM password policy does not require a symbol",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure IAM password policy requires symbol"
+  ]
+}

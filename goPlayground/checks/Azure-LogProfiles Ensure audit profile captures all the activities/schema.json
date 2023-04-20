@@ -1,0 +1,42 @@
+{
+  "recommended_action": "On Azure portal there is no provision to check or set categories.",
+  "rationale": "A log profile controls how the activity log is exported. Configuring the log profile to collect logs for the categories 'write', 'delete' and 'action' ensures that all the control/management plane activities performed on the subscription are exported.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "allOf": [
+        {
+          "properties": {
+            "properties": {
+              "errorMessage": "The log profile for this subscription does not capture all activities.",
+              "properties": {
+                "categories": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "errorMessage": "The log profile for this subscription does not capture all activities.",
+                  "items": [
+                    {
+                      "type": "string",
+                      "enumIgnoreCase": ["write", "delete", "action"]
+                    },
+                    {
+                      "type": "string",
+                      "enumIgnoreCase": ["write", "delete", "action"]
+                    },
+                    {
+                      "type": "string",
+                      "enumIgnoreCase": ["write", "delete", "action"]
+                    }
+                  ],
+                  "minItems": 3
+                }
+              },
+              "required": ["categories"]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "schemaId": "cc3c2d07-9060-b846-cbde-a16ebe190793"
+}

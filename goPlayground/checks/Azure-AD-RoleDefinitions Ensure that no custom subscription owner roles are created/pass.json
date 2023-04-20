@@ -1,0 +1,37 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/Microsoft.Authorization/roleDefinitions/915f0f86-462d-43b9-941a-23bd6f757366",
+  "name": "915f0f86-462d-43b9-941a-23bd6f757366",
+  "resourceGroup": "",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "version": 1,
+  "document": {
+    "properties": {
+      "roleName": "OpsCompassPolicy",
+      "type": "CustomRole",
+      "description": "",
+      "assignableScopes": [
+        "/not-susbscriptions/59b67237-ac48-45f7-ae6a-b0444e97facd",
+        "/notsusbscriptions/c65c08a7-5cea-4cfc-b326-91579369d912"
+      ],
+      "permissions": [
+        {
+          "actions": [
+            "microsoft.authorization/policydefinitions/write",
+            "microsoft.authorization/policyassignments/write"
+          ],
+          "notActions": [],
+          "dataActions": [],
+          "notDataActions": []
+        }
+      ],
+      "createdOn": "2018-04-12T20:39:33.9548374Z",
+      "updatedOn": "2018-05-21T18:02:29.9343091Z",
+      "createdBy": "b6c795c8-ac41-4946-bb3e-87a963d0a1c6",
+      "updatedBy": "af03e54a-7b56-4d7b-bb75-c2fb17da8b5b"
+    },
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers:/Microsoft.Authorization/roleDefinitions/915f0f86-462d-43b9-941a-23bd6f757366",
+    "type": "Microsoft.Authorization/roleDefinitions",
+    "name": "915f0f86-462d-43b9-941a-23bd6f757366"
+  }
+}

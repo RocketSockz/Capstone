@@ -1,0 +1,60 @@
+{
+    "accountId": "upbeat-nation-265322",
+    "id": "",
+    "region": "",
+    "name": "opscompass",
+    "zone": "",
+    "type": "",
+    "document": {
+        "kind": "storage#bucket",
+        "selfLink": "https://www.googleapis.com/storage/v1/b/opscompass",
+        "id": "opscompass",
+        "name": "opscompass",
+        "projectNumber": "655655084013",
+        "metageneration": "6",
+        "location": "US-EAST1",
+        "storageClass": "STANDARD",
+        "etag": "CAY=",
+        "defaultEventBasedHold": false,
+        "timeCreated": "2020-01-21T15:53:31.346Z",
+        "updated": "2020-02-12T21:28:50.430Z",
+        "iamConfiguration": {
+            "bucketPolicyOnly": {
+                "enabled": true,
+                "lockedTime": "2020-04-20T15:53:59.608Z"
+            },
+            "uniformBucketLevelAccess": {
+                "enabled": true,
+                "lockedTime": "2020-04-20T15:53:59.608Z"
+            }
+        },
+        "locationType": "region"
+    },
+    "iamPolicy": {
+        "kind": "storage#policy",
+        "resourceId": "projects/_/buckets/opscompass",
+        "version": 1,
+        "etag": "CAY=",
+        "bindings": [{
+                "role": "roles/iam.securityAdmin",
+                "members": [
+
+                ]
+            },
+            {
+                "role": "roles/storage.legacyBucketOwner",
+                "members": [
+                    "projectEditor:upbeat-nation-265322",
+                    "projectOwner:upbeat-nation-265322"
+                ]
+            },
+            {
+                "role": "roles/storage.legacyBucketReader",
+                "members": [
+                    "projectViewer:upbeat-nation-265322",
+                    "allAuthenticatedUsers"
+                ]
+            }
+        ]
+    }
+}

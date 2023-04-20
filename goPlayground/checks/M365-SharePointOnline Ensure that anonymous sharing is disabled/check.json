@@ -1,0 +1,15 @@
+{
+  "id": "e777d7ba-47c2-4e62-9d6c-5c0d1bd63e3c",
+  "displayName": "Ensure that anonymous sharing is disabled",
+  "resourceType": "microsoft.graph.admin.sharepoint.settings",
+  "severity": "medium",
+  "rationale": "Sharing and collaboration are key; however, file, folder, or site collection owners should have the authority over what external users get shared with to prevent unauthorized disclosures of information.",
+  "source": "cis o365 1.1.0 | benchmark 3.6",
+  "recommended_action": "To set SharePoint sharing settings, use the Microsoft 365 Admin Center:\n\t1. Select SharePoint under Admin centers.\n\t2. Select Sharing under Policies.\n\t3. Change \"Content can be shared with:\" for \"SharePoint\" and \"OneDrive\" to \"New and existing guests\", \"Existing guests\", or \"Only people in your organization\".\n\t4. If you selected \"New and existing guests\", expand \"More external sharing settings\".\n\t5. Select \"Guests must sign in using the same account to which sharing invitations are sent\".\n\t6. Click Save.",
+  "error_message": "SharePoint tenant allows sharing content with Anyone",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that external users cannot share files, folders, and sites they do not own"
+  ]
+}

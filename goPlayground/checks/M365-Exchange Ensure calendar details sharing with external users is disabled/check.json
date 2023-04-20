@@ -1,0 +1,15 @@
+{
+  "id": "487289cc-bd14-fc69-df8f-5e5aacfd39c5",
+  "displayName": "Ensure calendar details sharing with external users is disabled",
+  "resourceType": "exchange/sharingPolicy",
+  "severity": "medium",
+  "rationale": "Attackers often spend time learning about your organization before launching an attack. Publicly available calendars can help attackers understand organizational relationships and determine when specific users may be more vulnerable to an attack, such as when they are traveling.",
+  "source": "cis o365 1.1.0 | benchmark 2.2",
+  "recommended_action": "To disable calendar details sharing with external users, use the Microsoft 365 Admin Center:\n\t1. Select Admin Center and Click Settings.\n\t2. Click Services and add-ins.\n\t3. Click Calendar.\n\t4. Set Let your users share their calendars with external users who have O365 or Exchange to Off.\n\t5. Click Save.",
+  "error_message": "Sharing policy allows calandars to be shared to external users",
+  "category": "AP",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure calendar details sharing with external users is disabled"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ee9be648-d111-f39a-83bc-6376cbb0bf9d",
+  "displayName": "Advanced Security",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Advanced Security requires a license for Oracle Advanced Security to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use Advanced Security Features",
+  "error_message": "Advanced Security is listed as a feature usage concern under Oracle Advanced Security",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Advanced Security"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "3987be84-f1ae-47c8-a69b-3c0ecc03d1be",
+  "displayName": "Ensure parameter 'GLOBAL_NAMES' Is Set to 'TRUE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Not requiring database connections to match the domain that is being called remotely could allow unauthorized domain sources to potentially connect via brute-force tactics.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET GLOBAL_NAMES = TRUE SCOPE = SPFILE;\n```",
+  "error_message": "'Global Names' setting is not 'TRUE'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'GLOBAL_NAMES' Is Set to 'TRUE'"
+  ]
+}

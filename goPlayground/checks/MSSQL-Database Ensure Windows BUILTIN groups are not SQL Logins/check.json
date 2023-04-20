@@ -1,0 +1,15 @@
+{
+  "id": "a7557b0e-6e7f-4678-a262-b30d35c5e4bc",
+  "displayName": "Ensure Windows BUILTIN groups are not SQL Logins",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "The `BUILTIN` groups (Administrators, Everyone, Authenticated Users, Guests, etc.) generally contain very broad memberships which would not meet the best practice of ensuring only the necessary users have been granted access to a SQL Server instance. These groups should not be used for any level of access into a SQL Server Database Engine instance.",
+  "source": "sql-server benchmark",
+  "recommended_action": "1. For each `BUILTIN` login, if needed create a more restrictive AD group containing only the required user accounts. \r\n2. Add the AD group or individual Windows accounts as a SQL Server login and grant it the permissions required. \r\n3. Drop the `BUILTIN` login using the syntax below after replacing _`<name>`_ in `[BUILTIN\\`_`<name>`_`]`.\r\n ```\r\n USE [master]\r\n GO\r\n DROP LOGIN [BUILTIN\\<name>]\r\n GO\r\n ```",
+  "error_message": "One or more 'BUILTIN' logins have been detected on server",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure Windows BUILTIN groups are not SQL Logins"
+  ]
+}

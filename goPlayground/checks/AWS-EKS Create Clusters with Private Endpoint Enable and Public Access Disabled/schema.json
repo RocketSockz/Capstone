@@ -1,0 +1,19 @@
+{
+    "properties": {
+        "document": {
+            "properties": {
+                "resourcesVpcConfig": {
+                    "properties": {
+                        "endpointPublicAccess": {
+                            "const": false
+                        },
+                        "endpointPrivateAccess": {
+                            "const": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "schemaId": "5f0422f9-32f3-4db3-a6fd-36f26015724f"
+}

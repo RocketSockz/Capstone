@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "systemConfigs": {
+          "contains": {
+            "properties": {
+              "name": {
+                "constIgnoreCase": "scan for startup procs"
+              }, 
+              "value_configured": {
+                "const": 0
+              },
+              "value_in_use": {
+                "const": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

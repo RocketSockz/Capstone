@@ -1,0 +1,46 @@
+{
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/amy-practice/providers/Microsoft.Storage/storageAccounts/daveetest87dd",
+    "name": "not enabled",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "centralus",
+    "tags": {},
+    "properties": {
+      "networkAcls": {
+        "bypass": "AzureServices",
+        "virtualNetworkRules": [],
+        "ipRules": [],
+        "defaultAction": "Allow"
+      },
+      "supportsHttpsTrafficOnly": false,
+      "encryption": {
+        "services": {
+          "file": {
+            "enabled": true,
+            "lastEnabledTime": "2019-02-24T01:19:28.1043761Z"
+          },
+          "blob": {
+            "enabled": true,
+            "lastEnabledTime": "2019-02-24T01:19:28.1043761Z"
+          }
+        },
+        "keySource": "Microsoft.Storage"
+      },
+      "provisioningState": "Succeeded",
+      "creationTime": "2019-02-24T01:19:27.9637499Z",
+      "primaryEndpoints": {
+        "blob": "https://daveetest87dd.blob.core.windows.net/",
+        "queue": "https://daveetest87dd.queue.core.windows.net/",
+        "table": "https://daveetest87dd.table.core.windows.net/",
+        "file": "https://daveetest87dd.file.core.windows.net/"
+      },
+      "primaryLocation": "centralus",
+      "statusOfPrimary": "available"
+    },
+    "kind": "Storage",
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    }
+  }
+}

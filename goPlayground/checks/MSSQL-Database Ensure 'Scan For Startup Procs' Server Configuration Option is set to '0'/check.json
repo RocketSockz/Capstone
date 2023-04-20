@@ -1,0 +1,15 @@
+{
+  "id": "9528cb22-0df3-4c8b-93a9-089a7e2e4b42",
+  "displayName": "Ensure 'Scan For Startup Procs' Server Configuration Option is set to '0'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "low",
+  "rationale": "Enforcing this control reduces the threat of an entity leveraging these facilities for malicious purposes.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Run the following T-SQL command:\r\n```\r\nEXECUTE sp_configure 'show advanced options', 1;\r\nRECONFIGURE;\r\nEXECUTE sp_configure 'scan for startup procs', 0;\r\nRECONFIGURE;\r\nGO\r\nEXECUTE sp_configure 'show advanced options', 0;\r\nRECONFIGURE;\r\n```\r\nRestart the Database Engine.",
+  "error_message": "Server has 'Scan For Startup Procs' set to '1'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Scan For Startup Procs' Server Configuration Option is set to '0'"
+  ]
+}

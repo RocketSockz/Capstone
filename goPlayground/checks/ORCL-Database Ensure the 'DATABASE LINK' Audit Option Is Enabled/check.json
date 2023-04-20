@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "4a01f10a-c7ab-47ae-b08a-e3aef14578f6",
+  "displayName": "Ensure the 'DATABASE LINK' Audit Option Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "As the logging of user activities involving the creation or dropping of a `DATABASE LINK` can provide forensic evidence about a pattern of unauthorized activities, the audit capability should be enabled.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement in either the non multi-tenant or container database, it does NOT need run in the pluggable.\n```\nAUDIT DATABASE LINK;\n```",
+  "error_message": "'DATABASE LINK' audit option is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'DATABASE LINK' Audit Option Is Enabled"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "recommended_action": "1. Go to Storage Accounts\n2. For each storage account, Click on the settings menu called Firewalls and virtual networks.\n3. Ensure that you have elected to allow access from 'Selected networks'.\n4. Enable check box for Allow trusted Microsoft services to access this\nstorage account.\n5. Ensure the boxes `All read access to storage logging from any network` & `all read access to storage metrics from any network` are unchecked.\n6. Click Save to apply your changes.",
+  "rationale": "Turning on firewall rules for storage account will block access to incoming requests for data, including from other Azure services. This includes using the Portal, writing logs, etc. We can re-enable functionality. The customer can get access to services like Monitor, Networking, Hubs, and Event Grid by enabling 'Trusted Microsoft Services' through exceptions. Also, Backup and Restore of Virtual Machines using unmanaged disks in storage accounts with network rules applied is supported via creating an exception.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "networkAcls": {
+              "properties": {
+                "bypass": {
+                  "allOf": [
+                    {
+                      "errorMessage": "Trusted Microsoft services are not enabled for this storage account.",
+                      "enumIgnoreCase": ["azureservices"]
+                    }
+                  ]
+                }
+              },
+              "errorMessage": "Trusted Microsoft services are not enabled for this storage account.",
+              "required": ["bypass"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "56e4979e-60b6-17bb-da4c-f45fd624d32e"
+}

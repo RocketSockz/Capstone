@@ -1,0 +1,44 @@
+{
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n (Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor Storage Blob Encryption to Audit or any\nother available value than Disabled\n5. Click Save",
+  "rationale": "When this setting is enabled, any new data in Azure Blobs and Files will be encrypted.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "if": {
+        "properties": {
+          "name": {
+            "constIgnoreCase": "securitycenterbuiltin"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "properties": {
+            "errorMessage": "Storage encryption monitoring is disabled.",
+            "properties": {
+              "parameters": {
+                "properties": {
+                  "storageEncryptionMonitoringEffect": {
+                    "properties": {
+                      "value": {
+                        "minLength": 1,
+                        "not": {
+                          "errorMessage": "Storage encryption monitoring is disabled.",
+                          "constIgnoreCase": "disabled"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": ["storageEncryptionMonitoringEffect"]
+              }
+            },
+            "required": ["parameters"]
+          }
+        }
+      },
+      "errorMessage": "Storage encryption monitoring is disabled."
+    }
+  },
+  "schemaId": "1a3c925a-1101-7063-ac91-13aa8917965e"
+}

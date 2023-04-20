@@ -1,0 +1,15 @@
+{
+  "id": "95c3d2f9-59e3-2c0e-fcd2-e195bab597d0",
+  "displayName": "Ensure Stackdriver Monitoring is set to Enabled on Kubernetes Engine Clusters",
+  "resourceType": "gke#cluster",
+  "severity": "high",
+  "rationale": "By Enabling Stackdriver Monitoring you will have system metrics and custom metrics. System metrics are measurements of the cluster's infrastructure, such as CPU or memory usage. For system metrics, Stackdriver creates a Deployment that periodically connects to each node and collects metrics about its Pods and containers, then sends the metrics to Stackdriver. Metrics for usage of system resources are collected from the CPU, Memory, Evictable memory, Non-evictable memory, and Disk sources.",
+  "source": "cis gcp 1.0.0 | benchmark 7.2",
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Select reported Kubernetes clusters for which monitoring is disabled\n3. Click on EDIT button and Set 'Stackdriver Monitoring' to Enabled",
+  "error_message": "Kubernetes cluster does not have stackdriver monitoring enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure Stackdriver monitoring is set to enabled on Kubernetes engine clusters"
+  ]
+}

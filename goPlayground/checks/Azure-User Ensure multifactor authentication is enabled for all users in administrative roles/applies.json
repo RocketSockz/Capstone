@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "associations": {
+      "contains": {
+        "properties": {
+          "displayName": {
+            "enumIgnoreCase": [
+              "global administrator",
+              "billing administrator",
+              "exchange administrator",
+              "sharepoint administrator",
+              "password administrator",
+              "skype for business administrator",
+              "service administrator",
+              "user management administrator",
+              "dynamics 365 service administrator",
+              "power bi administrator",
+              "company administrator"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

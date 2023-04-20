@@ -1,0 +1,29 @@
+{
+  "recommended_action": "Alter system set control_management_pack_access=NONE scope=both",
+  "rationale": "A value of or 'DIAGNOSTIC+TUNING' for this parameter enables the usage of features related to the Oracle Diagnostic Pack and Oracle Tuning Pack.",
+  "source": "opscompass-defined",
+  "properties": {
+    "document": {
+      "properties": {
+        "parameters": {
+          "properties": {
+            "CONTROL_MANAGEMENT_PACK_ACCESS": {
+              "not": {
+                "properties": {
+                  "isConcerning": {
+                    "const": true
+                  },
+                  "value": {
+                    "const": "DIAGNOSTIC+TUNING"
+                  }
+                }
+              },
+              "errorMessage": "CONTROL_MANAGEMENT_PACK_ACCESS is concerning and has a value of DIAGNOSTIC+TUNING"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "2154fadb-1a40-f68a-5b12-0f6d416f5696"
+}

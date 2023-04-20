@@ -1,0 +1,15 @@
+{
+  "id": "63718e32-1c13-2fe8-f1f4-837636e2ee9e",
+  "displayName": "Ensure that no custom subscription owner roles are created",
+  "resourceType": "Microsoft.Authorization/roleDefinitions",
+  "severity": "medium",
+  "rationale": "Classic subscription admin roles offer basic access management and include Account Administrator, Service Administrator, and Co-Administrators. It is recommended the least necessary permissions be given initially. Permissions can be added as needed by the account holder. This ensures the account holder cannot perform actions which were not intended.",
+  "source": "cis azure 1.1.0 | benchmark 1.23",
+  "recommended_action": "Check for entries with assignableScope for a subscription, and an action of *Verify the usage and impact of removing the role identified.",
+  "error_message": "Scope of a security policy at the subscription level should not give full right('*') access",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that no custom subscription owner roles are created"
+  ]
+}

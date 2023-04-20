@@ -1,0 +1,33 @@
+{
+  "recommended_action": "1. Login to MySql database instance from authorized network\nmysql connect -u root [INSTANCE_ADRESS]\n2. Set host for root user\nUPDATE MySql.user SET Host=[Host_name/IP] WHERE User='root';",
+  "rationale": "When root access is allowed for any host, any host from authorized networks can attempt to authenticate to a MySql Database Instance using administrative privileges. To minimize attack surface root access can explicitly allowed from only trusted IPs (Hosts) to support database related administrative tasks.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "sqlUsers": {
+      "properties": {
+        "items": {
+          "items": {
+            "not": {
+              "allOf": [
+                {
+                  "properties": {
+                    "name": {
+                      "errorMessage": "SQL server allows root login from any host.",
+                      "constIgnoreCase": "root"
+                    },
+                    "host": {
+                      "errorMessage": "SQL server allows root login from any host.",
+                      "enum": ["%", "0.0.0.0", "/0"]
+                    }
+                  }
+                }
+              ]
+            },
+            "errorMessage": "SQL server allows root login from any host."
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "86088e70-048f-9ebd-167f-387764dd9327"
+}

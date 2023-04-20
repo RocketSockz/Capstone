@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "auditOptionsUnified": {
+                "contains": {
+                  "properties": {
+                    "AuditOption": {
+                      "constIgnoreCase": "CREATE PROCEDURE/FUNCTION/PACKAGE/PACKAGE BODY"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

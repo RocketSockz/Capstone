@@ -1,0 +1,95 @@
+{
+  "accountId": "01177861-2ff6-4b20-b546-49fd6cada0ec",
+  "id": "",
+  "location": "global",
+  "name": "",
+  "type": "",
+  "document": [{
+      "id": "f97a3c4a-62e0-404c-8e4d-9dd957d12a45",
+      "displayName": "conditionalAccess",
+      "createdDateTime": null,
+      "modifiedDateTime": null,
+      "state": "enabledForReportingButNotEnforced",
+      "sessionControls": null,
+      "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": [],
+        "locations": null,
+        "deviceStates": null,
+        "applications": {
+          "includeApplications": [
+            "None"
+          ],
+          "excludeApplications": [],
+          "includeUserActions": []
+        },
+        "users": {
+          "includeUsers": [
+            "None"
+          ],
+          "excludeUsers": [],
+          "includeGroups": [],
+          "excludeGroups": [],
+          "includeRoles": [],
+          "excludeRoles": []
+        },
+        "platforms": {
+          "includePlatforms": [
+            "all"
+          ],
+          "excludePlatforms": []
+        }
+      },
+      "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+          "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+      }
+    },
+    {
+      "id": "adb9c2b6-3c17-4162-85e9-46e465e73c6d",
+      "displayName": "betaCompliance",
+      "createdDateTime": null,
+      "modifiedDateTime": null,
+      "state": "enabledForReportingButNotEnforced",
+      "sessionControls": null,
+      "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+          "other"
+        ],
+        "platforms": null,
+        "locations": null,
+        "deviceStates": null,
+        "applications": {
+          "includeApplications": [
+            "None"
+          ],
+          "excludeApplications": [],
+          "includeUserActions": []
+        },
+        "users": {
+          "includeUsers": [
+            "GuestsOrExternalUsers"
+          ],
+          "excludeUsers": [],
+          "includeGroups": [],
+          "excludeGroups": [],
+          "includeRoles": [],
+          "excludeRoles": []
+        }
+      },
+      "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+          "block2"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+      }
+    }
+  ]
+}

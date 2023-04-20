@@ -1,0 +1,45 @@
+{
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n(Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor SQL Auditing to AuditIfNotExists or any\nother available value than Disabled\n5. Click Save",
+  "rationale": "When this setting is enabled, it recommends that access auditing for the Azure Database be enabled for compliance, advanced threat detection, and for investigation purposes.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "if": {
+        "errorMessage": "System configuration monitoring is disabled.",
+        "properties": {
+          "name": {
+            "constIgnoreCase": "securitycenterbuiltin"
+          }
+        }
+      },
+      "then": {
+        "errorMessage": "System configuration monitoring is disabled.",
+        "properties": {
+          "properties": {
+            "properties": {
+              "parameters": {
+                "properties": {
+                  "sqlAuditingMonitoringEffect": {
+                    "properties": {
+                      "value": {
+                        "minLength": 1,
+                        "not": {
+                          "errorMessage": "System configuration monitoring is disabled.",
+                          "constIgnoreCase": "disabled"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": ["sqlAuditingMonitoringEffect"]
+              }
+            },
+            "required": ["parameters"]
+          }
+        }
+      },
+      "errorMessage": "System configuration monitoring is disabled."
+    }
+  },
+  "schemaId": "0f82a508-2ea4-a78e-5538-3d93c2e0f7ff"
+}

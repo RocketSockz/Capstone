@@ -1,0 +1,15 @@
+{
+  "id": "f983eaf7-eb2a-2815-2205-636858dd60f2",
+  "displayName": "Change Activity Planner Dashboard",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Change Activity Planner Dashboard requires a license for Oracle Database Lifecycle Management Pack to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable unneeded Packs in Grid Control: https://docs.oracle.com/cd/E63000_01/OEMLI/introduction.htm#OEMLI108\nThis should be checked every time a new target is added to Grid Control since many Packs are defaulted to \"Enabled\"",
+  "error_message": "Change Activity Planner Dashboard is listed as a feature usage concern under Oracle Database Lifecycle Management Pack",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Change Activity Planner Dashboard"
+  ]
+}

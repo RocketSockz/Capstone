@@ -1,0 +1,32 @@
+{
+  "recommended_action": "1. Login to Azure Portal using https://portal.azure.com\n2. Go to Azure Database for PostgreSQL server\n3. For this database click on Server parameters\n4. Search for connection_throttling\n5. Click ON and save",
+  "rationale": "Enabling connection_throttling helps the PostgreSQL Database to Set the verbosity of logged messages which in turn generates query and error logs with respect to concurrent connections, that could lead to a successful Denial of Service (DoS) attack by exhausting connection resources. A system can also fail or be degraded by an overload of legitimate users. Query and error logs can be used to identify, troubleshoot, and repair configuration errors and sub-optimal performance.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "config": {
+      "items": {
+        "if": {
+          "properties": {
+            "name": {
+              "constIgnoreCase": "connection_throttling"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "properties": {
+              "properties": {
+                "value": {
+                  "errorMessage": "Connecting throttling is set to off.",
+                  "enumIgnoreCase": ["on"]
+                }
+              }
+            }
+          }
+        },
+        "errorMessage": "Connecting throttling is set to off."
+      }
+    }
+  },
+  "schemaId": "98aa31ee-1e7f-68b0-7e35-bcc208dbacda"
+}

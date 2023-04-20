@@ -1,0 +1,46 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/Microsoft.Security/pricings",
+  "name": "pricings",
+  "resourceGroup": "",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "Microsoft.Security/pricings",
+  "version": 1,
+  "document": [
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/Microsoft.Security/pricings/VirtualMachines",
+      "name": "VirtualMachines",
+      "type": "Microsoft.Security/pricings",
+      "properties": {
+        "pricingTier": "Free",
+        "freeTrialRemainingTime": "P30D"
+      }
+    },
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/Microsoft.Security/pricings/SqlServers",
+      "name": "SqlServers",
+      "type": "Microsoft.Security/pricings",
+      "properties": {
+        "pricingTier": "Free",
+        "freeTrialRemainingTime": "P30D"
+      }
+    },
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/Microsoft.Security/pricings/AppServices",
+      "name": "AppServices",
+      "type": "Microsoft.Security/pricings",
+      "properties": {
+        "pricingTier": "Free",
+        "freeTrialRemainingTime": "P30D"
+      }
+    },
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/Microsoft.Security/pricings/StorageAccounts",
+      "name": "StorageAccounts",
+      "type": "Microsoft.Security/pricings",
+      "properties": {
+        "pricingTier": "Free",
+        "freeTrialRemainingTime": "P30D"
+      }
+    }
+  ]
+}

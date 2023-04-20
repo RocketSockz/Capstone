@@ -1,0 +1,66 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/microsoft.insights/logprofiles/default",
+  "name": "default",
+  "resourceGroup": "",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "microsoft.insights/logProfiles",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/microsoft.insights/logprofiles/default",
+    "type": null,
+    "name": "default",
+    "location": null,
+    "kind": null,
+    "tags": null,
+    "properties": {
+      "storageAccountId": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/sam-test/providers/Microsoft.Storage/storageAccounts/samtestdiag851",
+      "serviceBusRuleId": null,
+      "locations": [
+        "australiacentral",
+        "australiacentral2",
+        "australiaeast",
+        "australiasoutheast",
+        "brazilsouth",
+        "canadacentral",
+        "canadaeast",
+        "centralindia",
+        "centralus",
+        "eastasia",
+        "eastus",
+        "eastus2",
+        "francecentral",
+        "francesouth",
+        "japaneast",
+        "japanwest",
+        "koreacentral",
+        "koreasouth",
+        "northcentralus",
+        "northeurope",
+        "southafricanorth",
+        "southafricawest",
+        "southcentralus",
+        "southindia",
+        "southeastasia",
+        "uaecentral",
+        "uaenorth",
+        "uksouth",
+        "ukwest",
+        "westcentralus",
+        "westeurope",
+        "westindia",
+        "westus",
+        "westus2",
+        "global"
+      ],
+      "categories": [
+        "Write",
+        "Delete"
+      ],
+      "retentionPolicy": {
+        "enabled": true,
+        "days": 108
+      }
+    },
+    "identity": null
+  }
+}

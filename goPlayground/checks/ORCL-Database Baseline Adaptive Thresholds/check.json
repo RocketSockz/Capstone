@@ -1,0 +1,15 @@
+{
+  "id": "9d06e241-f29a-80ca-38cd-863573b322d1",
+  "displayName": "Baseline Adaptive Thresholds",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Baseline Adaptive Thresholds requires a license for Oracle Diagnostics Pack to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable Diagnostic & Tuning Packs:\nalter system set control_management_pack_access = NONE scope=both",
+  "error_message": "Baseline Adaptive Thresholds is listed as a feature usage concern under Oracle Diagnostics Pack",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Baseline Adaptive Thresholds"
+  ]
+}

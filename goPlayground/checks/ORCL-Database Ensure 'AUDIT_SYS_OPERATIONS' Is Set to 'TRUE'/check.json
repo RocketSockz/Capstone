@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "22d7c6e9-88b7-4784-aa36-e4a3d05399ce",
+  "displayName": "Ensure parameter 'AUDIT_SYS_OPERATIONS' Is Set to 'TRUE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "If the parameter `AUDIT_SYS_OPERATIONS` is `FALSE`, all statements except for Startup/Shutdown and Logon by `SYSDBA`/`SYSOPER` users are not audited.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement and restart the instance.\n```\nALTER SYSTEM SET AUDIT_SYS_OPERATIONS = TRUE SCOPE=SPFILE;\n```",
+  "error_message": "System Operation Auditing is set to 'FALSE'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'AUDIT_SYS_OPERATIONS' Is Set to 'TRUE'"
+  ]
+}

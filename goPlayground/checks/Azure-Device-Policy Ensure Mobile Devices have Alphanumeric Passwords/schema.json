@@ -1,0 +1,20 @@
+{
+  "recommended_action": "To set mobile device management profiles, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile\n\t4. Set a Name for the policy, choose the appropriate Platform and select Device restrictions\n\t5. In the Password section, ensure that Required password type is set to Alphanumeric.",
+  "rationale": "Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "passwordRequiredType": {
+          "errorMessage": "Device configurations do not require an alphanumeric password.",
+          "constIgnoreCase": "alphanumeric"
+        },
+        "passcodeRequiredType": {
+          "errorMessage": "Device configurations do not require an alphanumeric password.",
+          "constIgnoreCase": "alphanumeric"
+        }
+      }
+    }
+  },
+  "schemaId": "aa3d35f0-8453-0145-b4cd-64bd32392507"
+}

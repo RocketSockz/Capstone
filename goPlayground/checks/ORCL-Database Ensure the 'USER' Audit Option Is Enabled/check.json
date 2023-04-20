@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "14bcf077-8bae-478f-bd49-6ecd5f9946d1",
+  "displayName": "Ensure the 'USER' Audit Option Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Any unauthorized attempts to create, drop or alter a user should cause concern, whether successful or not. Auditing can also be useful in forensics if an account is compromised, and auditing is mandated by many common security initiatives. An abnormally high number of these activities in a given period might be worth investigation. Any failed attempt to drop a user or create a user may be worth further review.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement in either the non multi-tenant or container database, it does NOT need run in the pluggable.\n```\nAUDIT USER;\n```",
+  "error_message": "'USER' audit option is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'USER' Audit Option Is Enabled"
+  ]
+}

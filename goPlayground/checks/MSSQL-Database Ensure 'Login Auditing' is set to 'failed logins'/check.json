@@ -1,0 +1,15 @@
+{
+  "id": "44cf0e69-34c5-41d7-8c97-f193d4ab2edd",
+  "displayName": "Ensure 'Login Auditing' is set to 'failed logins'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "high",
+  "rationale": "Capturing failed logins provides key information that can be used to detect\\confirm password guessing attacks. Capturing successful login attempts can be used to confirm server access during forensic investigations, but using this audit level setting to also capture successful logins creates excessive noise in the **SQL Server Errorlog** which can hamper a DBA trying to troubleshoot problems. Elsewhere in this benchmark, we recommend using the newer lightweight SQL Server Audit feature to capture both successful and failed logins.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Perform either the GUI or T-SQL method shown:\r\n#### GUI Method\r\n1. Open **SQL Server Management Studio**.\r\n2. Right click the target instance and select **Properties** and navigate to the **Security** tab.\r\n3. Select the option **Failed logins only** under the **Login Auditing** section and click **OK**.\r\n4. Restart the SQL Server instance.\r\n\r\n#### T-SQL Method\r\n1. Run: \r\n ```\r\n EXEC xp_instance_regwrite N'HKEY_LOCAL_MACHINE', N'Software\\Microsoft\\MSSQLServer\\MSSQLServer', N'AuditLevel', REG_DWORD, 2\r\n ```\r\n2. Restart the SQL Server instance.",
+  "error_message": "Failed login attempts are not logged",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Login Auditing' is set to 'failed logins'"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.KeyVault/vaults/harwinder-test-vaule3434",
+  "name": "harwinder-test-vaule3434",
+  "resourceGroup": "harwinder-test",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "Microsoft.KeyVault/vaults",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.KeyVault/vaults/harwinder-test-vaule3434",
+    "name": "harwinder-test-vaule3434",
+    "type": "Microsoft.KeyVault/vaults",
+    "location": "centralus",
+    "tags": {},
+    "properties": {
+      "sku": {
+        "family": "A",
+        "name": "standard"
+      },
+      "tenantId": "d6cfda6e-5f9b-4e1a-94db-7378f2e6eb4c",
+      "accessPolicies": [
+        {
+          "tenantId": "d6cfda6e-5f9b-4e1a-94db-7378f2e6eb4c",
+          "objectId": "8bb4f62c-eb8d-400d-96f1-085d93191cdd",
+          "permissions": {
+            "keys": [
+              "get",
+              "create",
+              "delete",
+              "list",
+              "update",
+              "import",
+              "backup",
+              "restore",
+              "recover"
+            ],
+            "secrets": [
+              "get",
+              "list",
+              "set",
+              "delete",
+              "backup",
+              "restore",
+              "recover"
+            ],
+            "certificates": [
+              "get",
+              "list",
+              "delete",
+              "create",
+              "import",
+              "update",
+              "managecontacts",
+              "getissuers",
+              "listissuers",
+              "setissuers",
+              "deleteissuers",
+              "manageissuers",
+              "recover"
+            ],
+            "storage": [
+              "get",
+              "list",
+              "delete",
+              "set",
+              "update",
+              "regeneratekey",
+              "setsas",
+              "listsas",
+              "getsas",
+              "deletesas"
+            ]
+          }
+        }
+      ],
+      "enabledForDeployment": false,
+      "enabledForDiskEncryption": true,
+      "vaultUri": "https://harwinder-test-vaule3434.vault.azure.net/",
+      "provisioningState": "Succeeded"
+    }
+  },
+  "secrets": [
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.KeyVault/vaults/harwinder-test-vaule3434/secrets/d3fb2e35-8a57-4b36-9195-1d93bc2db251",
+      "name": "d3fb2e35-8a57-4b36-9195-1d93bc2db251",
+      "type": "Microsoft.KeyVault/vaults/secrets",
+      "location": "centralus",
+      "tags": {
+        "MachineName": "harwindertestvm",
+        "DiskEncryptionKeyEncryptionKeyURL": "https://harwinder-test-vaule3434.vault.azure.net/keys/harwinder-test-key/a4ad9b731e464491bac77f775371fe65",
+        "DiskEncryptionKeyFileName": "LinuxPassPhraseFileName",
+        "DiskEncryptionKeyEncryptionAlgorithm": "RSA-OAEP"
+      },
+      "properties": {
+        "contentType": "Wrapped BEK",
+        "attributes": {
+          "enabled": true,
+          "exp": 1623531509,
+          "created": 1558545785,
+          "updated": 1560373297
+        },
+        "secretUri": "https://harwinder-test-vaule3434.vault.azure.net/secrets/d3fb2e35-8a57-4b36-9195-1d93bc2db251",
+        "secretUriWithVersion": "https://harwinder-test-vaule3434.vault.azure.net/secrets/d3fb2e35-8a57-4b36-9195-1d93bc2db251/9ff2220c4aff4fc9b15a1e6790abbbe5"
+      }
+    },
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.KeyVault/vaults/harwinder-test-vaule3434/secrets/f8112fdd-1554-4cde-b68f-6b61339aabbb",
+      "name": "f8112fdd-1554-4cde-b68f-6b61339aabbb",
+      "type": "Microsoft.KeyVault/vaults/secrets",
+      "location": "centralus",
+      "tags": {
+        "MachineName": "harwindertestvm",
+        "DiskEncryptionKeyEncryptionKeyURL": "https://harwinder-test-vaule3434.vault.azure.net/keys/harwinder-test-key/a4ad9b731e464491bac77f775371fe65",
+        "DiskEncryptionKeyFileName": "LinuxPassPhraseFileName",
+        "DiskEncryptionKeyEncryptionAlgorithm": "RSA-OAEP"
+      },
+      "properties": {
+        "contentType": "Wrapped BEK",
+        "attributes": {
+          "enabled": true,
+          "exp": 1623531509,
+          "created": 1558545780,
+          "updated": 1558545780
+        },
+        "secretUri": "https://harwinder-test-vaule3434.vault.azure.net/secrets/f8112fdd-1554-4cde-b68f-6b61339aabbb",
+        "secretUriWithVersion": "https://harwinder-test-vaule3434.vault.azure.net/secrets/f8112fdd-1554-4cde-b68f-6b61339aabbb/18e461efbee14ddb897728e346c362ef"
+      }
+    }
+  ]
+}

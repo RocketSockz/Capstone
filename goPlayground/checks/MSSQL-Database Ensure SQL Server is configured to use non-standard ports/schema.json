@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "SQL_Port": {
+          "not": {
+            "const": 1433
+          }
+        }
+      }
+    }
+  }
+}

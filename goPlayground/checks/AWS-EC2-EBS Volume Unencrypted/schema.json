@@ -1,0 +1,12 @@
+{
+    "properties": {
+        "document": {
+            "properties": {
+                "Encrypted": {
+                    "const": true
+                }
+            }
+        }
+    },
+    "schemaId": "083e7112-4fa5-409e-9d15-a35600da0368"
+}

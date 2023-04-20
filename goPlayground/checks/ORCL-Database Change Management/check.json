@@ -1,0 +1,15 @@
+{
+  "id": "44ea5414-780a-b9a9-1206-01ab8e442d14",
+  "displayName": "Change Management",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Change Management requires a license for Oracle Change Management Pack to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable unneeded Packs in Grid Control: https://docs.oracle.com/cd/E63000_01/OEMLI/introduction.htm#OEMLI108\nThis should be checked every time a new target is added to Grid Control since many Packs are defaulted to \"Enabled\"",
+  "error_message": "Change Management is listed as a feature usage concern under Oracle Change Management Pack",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Change Management"
+  ]
+}

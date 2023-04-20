@@ -1,0 +1,15 @@
+{
+    "id": "90c15b31-3204-4272-8cb3-7d8fa369f130",
+    "displayName": "Ensure CloudTrail S3 Buckets block all public access",
+    "resourceType": "AWS::S3::Bucket",
+    "severity": "high",
+    "rationale": "CloudTrail logs a record of every API call made in your AWS account. These logs file are stored in an S3 bucket. It is recommended that the bucket policy or access control list (ACL) applied to the S3 bucket that CloudTrail logs to prevent public access to the CloudTrail logs.",
+    "source": "cis aws 1.3.0 | benchmark 5.2",
+    "recommended_action": "Perform the following to remove any public access that has been granted to the bucket via an ACL or S3 bucket policy:\n1. Go to Amazon S3 console at https://console.aws.amazon.com/s3/home.\n2. Right-click on the bucket and click Properties.\n3. In the Properties pane, click the Permissions tab.\n4. The tab shows a list of grants, one row per grant, in the bucket ACL. Each row identifies the grantee and the permissions granted.\n5. Select the row that grants permission to Everyone or Any Authenticated User.\nUncheck all the permissions granted to Everyone or Any Authenticated User (click x to delete the row).\n6. Click Save to save the ACL.\n7. If the Edit bucket policy button is present, click it.\n8. Remove any Statement having an Effect set to Allow and a Principal set to '*', or {'AWS', '*'}.",
+    "error_message": "AWS CloudTrail S3 bucket allows public access",
+    "category": "SC",
+    "subcategory": "",
+    "ruleNames": [
+        "Ensure AWS S3 buckets block public access"
+    ]
+}

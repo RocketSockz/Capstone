@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "IsDefault": {
+          "const": false
+        },
+        "IsEnabled": {
+          "const": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "IpPermissions": {
+          "type": "array",
+          "if": {
+            "minItems": 1
+          },
+          "then": {
+            "not": {
+              "errorMessage": "Security group allows ingress from port 5432.",
+              "items": {
+                "allOf": [
+                  {
+                    "properties": {
+                      "FromPort": {
+                        "maximum": 5432
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "ToPort": {
+                        "minimum": 5432
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "IpRanges": {
+                        "items": {
+                          "properties": {
+                            "CidrIp": {
+                              "const": "0.0.0.0/0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "else": true
+        }
+      }
+    }
+  },
+  "schemaId": "1194ca0c-bec1-4f26-b441-3a51d813045c"
+}

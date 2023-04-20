@@ -1,0 +1,44 @@
+{
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n(Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor System Updates to\nAuditIfNotExists or any other available value than Disabled\n5. Click Save",
+  "rationale": "When this setting is enabled, it retrieves a daily list of available security and critical updates from Windows Update or Windows Server Update Services. The retrieved list depends on the service that's configured for that virtual machine and recommends that the missing updates be applied. For Linux systems, the policy uses the distro-provided package management system to determine packages that have available updates. It also checks for security and critical updates from Azure Cloud Services virtual machines.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "if": {
+        "properties": {
+          "name": {
+            "constIgnoreCase": "securitycenterbuiltin"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "properties": {
+            "errorMessage": "System updates monitoring is disabled.",
+            "properties": {
+              "parameters": {
+                "properties": {
+                  "systemUpdatesMonitoringEffect": {
+                    "properties": {
+                      "value": {
+                        "minLength": 1,
+                        "not": {
+                          "errorMessage": "System updates monitoring is disabled.",
+                          "constIgnoreCase": "disabled"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": ["systemUpdatesMonitoringEffect"]
+              }
+            },
+            "required": ["parameters"]
+          }
+        }
+      },
+      "errorMessage": "System updates monitoring is disabled."
+    }
+  },
+  "schemaId": "ad5f0d6a-30fd-5a8a-26de-71d881dd40e0"
+}

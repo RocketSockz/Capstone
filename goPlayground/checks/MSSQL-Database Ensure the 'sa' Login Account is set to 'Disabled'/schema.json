@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "serverPrincipals": {
+          "items": {
+            "if": {
+              "properties": {
+                "sid": {
+                  "constIgnoreCase": "AQ=="
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "is_disabled": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "9528b103-c9e1-4ac2-846d-1a56bb14415f",
+  "displayName": "Ensure 'AUTO_CLOSE' is set to 'OFF' on contained databases",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "Because authentication of users for contained databases occurs within the database not at the server\\instance level, the database must be opened every time to authenticate a user. The frequent opening/closing of the database consumes additional server resources and may contribute to a denial of service.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Execute the following T-SQL, replacing _`<database_name>`_ with each database name found by the Audit Procedure:\r\n```\r\nALTER DATABASE <database_name> SET AUTO_CLOSE OFF;\r\n```",
+  "error_message": "One or more databases has 'AUTO_CLOSE' set to 'ON'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'AUTO_CLOSE' is set to 'OFF' on contained databases"
+  ]
+}

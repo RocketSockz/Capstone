@@ -1,0 +1,15 @@
+{
+  "id": "85e5cb0e-db94-c257-83bb-fab149657427",
+  "displayName": "Pro*C",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Pro*C requires a license for Oracle Programmer to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Stop using the Pro*C precompiler",
+  "error_message": "Pro*C is listed as a feature usage concern under Oracle Programmer",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Pro*C"
+  ]
+}

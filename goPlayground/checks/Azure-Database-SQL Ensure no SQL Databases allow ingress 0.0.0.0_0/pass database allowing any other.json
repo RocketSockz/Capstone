@@ -1,0 +1,132 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1",
+  "name": "harwservertest1",
+  "resourceGroup": "harwinder-test",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "Microsoft.Sql/servers",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1",
+    "name": "harwservertest1",
+    "type": "Microsoft.Sql/servers",
+    "location": "Central US",
+    "kind": "v12.0",
+    "properties": {
+      "fullyQualifiedDomainName": "harwservertest1.database.windows.net",
+      "administratorLogin": "harwinder",
+      "administratorLoginPassword": null,
+      "externalAdministratorLogin": null,
+      "externalAdministratorSid": null,
+      "version": "12.0",
+      "state": "Ready"
+    },
+    "Databases": [
+      {
+        "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1/databases/master",
+        "name": "master",
+        "type": "Microsoft.Sql/servers/databases",
+        "location": "Central US",
+        "kind": "v12.0,system",
+        "managedBy": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1",
+        "properties": {
+          "databaseId": "7cd6e698-a23d-4637-8d35-4fefcc14e15b",
+          "edition": "System",
+          "status": "Online",
+          "serviceLevelObjective": "System0",
+          "collation": "SQL_Latin1_General_CP1_CI_AS",
+          "maxSizeBytes": "32212254720",
+          "creationDate": "2019-06-20T20:55:19.697Z",
+          "currentServiceObjectiveId": "29dd7459-4a7c-4e56-be22-f0adda49440d",
+          "requestedServiceObjectiveId": "29dd7459-4a7c-4e56-be22-f0adda49440d",
+          "requestedServiceObjectiveName": "System0",
+          "sampleName": null,
+          "defaultSecondaryLocation": "East US 2",
+          "earliestRestoreDate": null,
+          "elasticPoolName": null,
+          "containmentState": 2,
+          "readScale": "Disabled",
+          "failoverGroupId": null,
+          "zoneRedundant": false,
+          "isUpgradeRequested": false
+        },
+        "auditingPolicies": {
+          "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1/databases/master/auditingPolicies/default",
+          "name": "default",
+          "type": "Microsoft.Sql/servers/databases/auditingPolicies",
+          "location": "Central US",
+          "kind": null,
+          "properties": {
+            "auditingState": "Disabled",
+            "eventTypesToAudit": null,
+            "storageAccountName": null,
+            "storageAccountKey": null,
+            "storageAccountSecondaryKey": null,
+            "storageTableEndpoint": null,
+            "storageAccountResourceGroupName": null,
+            "storageAccountSubscriptionId": null,
+            "useServerDefault": null,
+            "fullAuditLogsTableName": null,
+            "auditLogsTableName": null,
+            "retentionDays": null
+          }
+        },
+        "transparentDataEncryption": {
+          "value": [
+            {
+              "name": "current",
+              "location": "Central US",
+              "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1/databases/master/transparentDataEncryption/current",
+              "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
+              "properties": {
+                "status": "Disabled"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "elasticPools": [
+      {
+        "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1/administrators/ActiveDirectory",
+        "name": "ActiveDirectory",
+        "type": "Microsoft.Sql/servers/administrators",
+        "location": "Central US",
+        "kind": null,
+        "properties": {
+          "administratorType": "ActiveDirectory",
+          "login": "harwinder.kaur@opscompass.com",
+          "sid": "dab750de-7eef-4b52-a35a-cce661631838",
+          "tenantId": "d6cfda6e-5f9b-4e1a-94db-7378f2e6eb4c"
+        }
+      }
+    ],
+    "administrators": [
+      {
+        "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1/administrators/ActiveDirectory",
+        "name": "ActiveDirectory",
+        "type": "Microsoft.Sql/servers/administrators",
+        "location": "Central US",
+        "kind": null,
+        "properties": {
+          "administratorType": "ActiveDirectory",
+          "login": "harwinder.kaur@opscompass.com",
+          "sid": "dab750de-7eef-4b52-a35a-cce661631838",
+          "tenantId": "d6cfda6e-5f9b-4e1a-94db-7378f2e6eb4c"
+        }
+      }
+    ],
+    "firewallRules": [
+      {
+        "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Sql/servers/harwservertest1/firewallRules/AllowAllWindowsAzureIps",
+        "name": "AllowAllWindowsAzureIps",
+        "type": "Microsoft.Sql/servers/firewallRules",
+        "location": "Central US",
+        "kind": "v12.0",
+        "properties": {
+          "startIpAddress": "20.0.0.0",
+          "endIpAddress": "21.0.0.0"
+        }
+      }
+    ]
+  }
+}

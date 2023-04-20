@@ -1,0 +1,15 @@
+{
+  "id": "db6886d3-8a51-a4c8-bd67-1f2a85fbaae1",
+  "displayName": "Ensure Legacy Authorization is set to Disabled on Kubernetes Engine Clusters",
+  "resourceType": "gke#cluster",
+  "severity": "high",
+  "rationale": "Enable Legacy Authorization for in-cluster permissions that support existing clusters or workflows. Disable legacy authorization for full RBAC support for in-cluster permissions. In Kubernetes, RBAC is used to grant permissions to resources at the cluster and namespace level. RBAC allows you to define roles with rules containing a set of permissions.",
+  "source": "cis gcp 1.0.0 | benchmark 7.3",
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Select reported Kubernetes clusters for which Legacy Authorization is enabled\n3. Click on EDIT button and Set 'Legacy Authorization' to Disabled",
+  "error_message": "Kubernetes cluster has legacy atuhorization enabled",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure legacy authorization is set to disabled on Kubernetes engine clusters"
+  ]
+}

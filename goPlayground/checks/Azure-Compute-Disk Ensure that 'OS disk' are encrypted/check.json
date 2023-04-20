@@ -1,0 +1,15 @@
+{
+  "id": "822278ea-65ca-4886-ed84-139de5beecf6",
+  "displayName": "Ensure that 'OS disk' are encrypted",
+  "resourceType": "Microsoft.Compute/disks",
+  "severity": "high",
+  "rationale": "Encrypting the IaaS VM's OS disk (boot volume) ensures that its entire content is fully unrecoverable without a key and thus protects the volume from unwarranted reads.",
+  "source": "cis azure 1.1.0 | benchmark 7.1",
+  "recommended_action": "Follow Microsoft Azure's documentation for IaaS Disk Encryption.\nhttps://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-overview",
+  "error_message": "Disk's encryption settings collection is not enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that OS disk is encrypted"
+  ]
+}

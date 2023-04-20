@@ -1,0 +1,36 @@
+{
+  "accountId": "213916962078",
+  "arn": "",
+  "cloudId": "",
+  "id": "sg-0031ab0304e6bfab3",
+  "location": "",
+  "name": "",
+  "document": {
+    "Description": "launch-wizard-4 created 2019-12-09T14:22:28.362-06:00",
+    "GroupName": "launch-wizard-4",
+    "IpPermissions": [{
+      "FromPort": 22,
+      "IpProtocol": "tcp",
+      "IpRanges": [{
+        "CidrIp": "0.0.0.0/0"
+      }],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "ToPort": 22,
+      "UserIdGroupPairs": []
+    }],
+    "OwnerId": "213916962078",
+    "GroupId": "sg-0031ab0304e6bfab3",
+    "IpPermissionsEgress": [{
+      "IpProtocol": "-1",
+      "IpRanges": [{
+        "CidrIp": "0.0.0.0/0"
+      }],
+      "Ipv6Ranges": [],
+      "PrefixListIds": [],
+      "UserIdGroupPairs": []
+    }],
+    "Tags": [],
+    "VpcId": "vpc-0a0e8a70"
+  }
+}

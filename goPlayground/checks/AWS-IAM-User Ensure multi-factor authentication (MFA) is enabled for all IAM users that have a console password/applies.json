@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "PasswordLastUsed": {
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

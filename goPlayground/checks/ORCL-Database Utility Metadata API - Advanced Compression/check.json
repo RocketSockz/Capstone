@@ -1,0 +1,15 @@
+{
+  "id": "839dee33-2202-cd17-afee-5c2bc80fecad",
+  "displayName": "Oracle Utility Metadata API - Advanced Compression",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Oracle Utility Metadata API - Advanced Compression requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the compression option with the Oracle Utility Metadata API",
+  "error_message": "Oracle Utility Metadata API - Advanced Compression is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Oracle Utility Metadata API - Advanced Compression"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "recommended_action": "Perform the following to implement the prescribed state:\n1. Login to the AWS Management Console at\nhttps://console.aws.amazon.com/vpc/home\n2. In the left pane, click Security Groups\n3. For this security group, perform the following:\n4. Select the security group\n5. Click the Inbound Rules tab\n6. Identify the rules to be removed\n7. Click the x in the Remove column\n8. Click Save",
+  "rationale": "Removing unfettered connectivity to remote console services, such as SSH, reduces a server's exposure to risk.",
+  "source": "cis aws 1.2.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "IpPermissions": {
+          "type": "array",
+          "if": {
+            "minItems": 1
+          },
+          "then": {
+            "not": {
+              "errorMessage": "Security group allows ingress from port 22.",
+              "items": {
+                "allOf": [
+                  {
+                    "properties": {
+                      "FromPort": {
+                        "maximum": 22
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "ToPort": {
+                        "minimum": 22
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "IpRanges": {
+                        "items": {
+                          "properties": {
+                            "CidrIp": {
+                              "const": "0.0.0.0/0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "errorMessage": "Security group allows ingress from port 22."
+          }
+        },
+        "else": true
+      }
+    }
+  },
+  "schemaId": "4cccda14-86a4-0f0b-2fc8-a33ae68fda76"
+}

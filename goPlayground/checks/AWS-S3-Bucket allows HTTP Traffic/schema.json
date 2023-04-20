@@ -1,0 +1,41 @@
+{
+    "properties": {
+        "BucketPolicy": {
+            "type": "object",
+            "properties": {
+                "Statement": {
+                    "contains": {
+                        "allOf": [{
+                            "properties": {
+                                "Effect": {
+                                    "constIgnoreCase": "Deny"
+                                },
+                                "Principal": {
+                                    "const": "*"
+                                },
+                                "Action": {
+                                    "constIgnoreCase": "s3:*"
+                                },
+                                "Condition": {
+                                    "properties": {
+                                        "Bool": {
+                                            "properties": {
+                                                "aws:SecureTransport": {
+                                                    "const": "false"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }]
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "BucketPolicy"
+    ],
+    "schemaId": "44bee0d0-5d38-4cfa-a970-d325d4a5979d"
+}

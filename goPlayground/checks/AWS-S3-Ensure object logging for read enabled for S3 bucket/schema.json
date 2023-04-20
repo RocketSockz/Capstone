@@ -1,0 +1,32 @@
+{
+    "properties": {
+        "trailStatus": {
+            "properties": {
+                "IsLogging": {
+                    "const": true
+                }
+            }
+        },
+        "eventSelectors": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "properties": {
+                    "ReadWriteType": {
+                        "enumIgnoreCase": [
+                            "WriteOnly",
+                            "All"
+                        ]
+                    },
+                    "IncludeManagementEvents": {
+                        "const": true
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "eventSelectors"
+    ],
+    "schemaId": "853d0871-38b6-4fdd-ac51-0bf988062fd1"
+}

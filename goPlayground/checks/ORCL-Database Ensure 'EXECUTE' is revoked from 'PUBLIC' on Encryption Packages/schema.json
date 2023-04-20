@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "publicExecPackages": {
+                "items": {
+                  "properties": {
+                    "Package": {
+                      "not": {
+                        "enumIgnoreCase": ["DBMS_CRYPTO", "DBMS_OBFUSCATION_TOOLKIT", "DBMS_RANDOM"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

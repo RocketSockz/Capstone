@@ -1,0 +1,15 @@
+{
+  "id": "a4538386-3ccc-f1f7-a544-5f24f2072aad",
+  "displayName": "Ensure the Client Rules Forwarding Block is enabled",
+  "resourceType": "exchange/transportRuleList",
+  "severity": "medium",
+  "rationale": "The use of client-side forwarding rules to exfiltrate data to external recipients is an increasingly used vector for data exfiltration by bad actors.",
+  "source": "cis o365 1.1.0 | benchmark 4.5",
+  "recommended_action": "To enable the Client Rules Forwarding Block, use the Microsoft 365 Admin Center\n\t1. Go to Security and Compliance.\n\t2. Go to Secure Score.\n\t3. Select Client Rules Forwarding Block.\n\t4. Select Learn More.\n\t5. Select Apply",
+  "error_message": "Transport rule that blocks forward rules to outside domains does not exist",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the client rules forwarding block is enabled"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cd64207c-dcd1-40c0-a04d-0c2e261243da",
+  "displayName": "Ensure SQL Authentication is not used in contained databases",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "The absence of an enforced password policy may increase the likelihood of a weak credential being established in a contained database.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Leverage Windows Authenticated users in contained databases.",
+  "error_message": "SQL Authentication has been detected on one or more databases",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure SQL Authentication is not used in contained databases"
+  ]
+}

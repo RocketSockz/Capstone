@@ -1,0 +1,15 @@
+{
+    "id": "a864f4df-9182-4cbd-a025-6762a3dfb83c",
+    "displayName": "Ensure there is only one active access key available for any single IAM user",
+    "resourceType": "AWS::IAM::User",
+    "severity": "medium",
+    "rationale": "Access keys are long-term credentials for an IAM user or the AWS account 'root' user. You can use access keys to sign programmatic requests to the AWS CLI or AWS API. One of the best ways to protect your account is to not allow users to have multiple access keys.",
+    "source": "cis aws 1.4.0 | benchmark 1.13",
+    "recommended_action": "From the AWS Console,\n1. Sign in to the AWS Management Console and navigate to IAM dashboard at `https://console.aws.amazon.com/iam/`.\n2. In the left navigation panel, choose `Users`.\n3. Click on the IAM user name that you want to examine.\n4. On the IAM user configuration page, select `Security Credentials` tab.\n5. In `Access Keys` section, choose one access key that is less than 90 days old. This should be the only active key used by this IAM user to access AWS resources programmatically. Test your application(s) to make sure that the chosen access key is working.\n6. In the same `Access Keys` section, identify your non-operational access keys (other than the chosen one) and deactivate it by clicking the `Make Inactive` link.\n7. If you receive the `Change Key Status` confirmation box, click `Deactivate` to switch off the selected key.\n8. Repeat steps no. 3 – 7 for each IAM user in your AWS account.",
+    "error_message": "AWS IAM user has more than one active access key",
+    "category": "SC",
+    "subcategory": "",
+    "ruleNames": [
+        "Ensure there is only one active access key available for any single IAM user"
+    ]
+}

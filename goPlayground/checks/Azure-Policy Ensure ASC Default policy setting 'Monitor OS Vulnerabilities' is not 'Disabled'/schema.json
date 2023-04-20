@@ -1,0 +1,44 @@
+{
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n(Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor os Vulnerabilities to AuditIfNotExists or any\nother available value than Disabled\n5. Click Save",
+  "rationale": "When this setting is enabled, it analyzes operating system configurations daily to determine issues that could make the virtual machine vulnerable to attack. The policy also recommends configuration changes to address these vulnerabilities.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "if": {
+        "properties": {
+          "name": {
+            "constIgnoreCase": "securitycenterbuiltin"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "parameters": {
+                "properties": {
+                  "systemConfigurationsMonitoringEffect": {
+                    "properties": {
+                      "value": {
+                        "minLength": 1,
+                        "not": {
+                          "errorMessage": "System configuration monitoring is disabled.",
+                          "constIgnoreCase": "disabled"
+                        }
+                      }
+                    }
+                  }
+                },
+                "errorMessage": "System configuration monitoring is disabled.",
+                "required": ["systemConfigurationsMonitoringEffect"]
+              }
+            },
+            "required": ["parameters"]
+          }
+        }
+      },
+      "errorMessage": "System configuration monitoring is disabled."
+    }
+  },
+  "schemaId": "ee1e5fcf-c2cc-2a52-7ead-fa882bbb81ba"
+}

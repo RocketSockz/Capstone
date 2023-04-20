@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "Engine": {
+          "pattern": "oracle-se2"
+        },
+        "LicenseModel": {
+          "const": "bring-your-own-license"
+        }
+      }
+    }
+  }
+}

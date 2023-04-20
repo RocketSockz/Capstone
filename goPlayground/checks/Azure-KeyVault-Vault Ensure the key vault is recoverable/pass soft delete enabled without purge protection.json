@@ -1,0 +1,53 @@
+{
+  "accountId": "36a58d45-6e18-40c3-b517-18c9a5f823ed",
+  "id": "/subscriptions/36a58d45-6e18-40c3-b517-18c9a5f823ed/resourceGroups/test-compute-rg/providers/Microsoft.KeyVault/vaults/basickv",
+  "name": "basickv",
+  "resourceGroup": "test-compute-rg",
+  "type": "Microsoft.KeyVault/vaults",
+  "document": {
+    "id": "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/test-compute-rg/providers/Microsoft.KeyVault/vaults/basickv",
+    "name": "basickv",
+    "type": "Microsoft.KeyVault/vaults",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+      "sku": {
+        "family": "A",
+        "name": "Standard"
+      },
+      "tenantId": "12345678-1234-1234-1234-123456789012",
+      "accessPolicies": [
+      ],
+      "enabledForDeployment": true,
+      "enabledForDiskEncryption": false,
+      "enabledForTemplateDeployment": false,
+      "enableSoftDelete": true,
+      "softDeleteRetentionInDays": 90,
+      "enableRbacAuthorization": false,
+      "vaultUri": "https://basickv.vault.azure.net/",
+      "provisioningState": "Succeeded"
+    }
+  },
+  "secrets": [
+    {
+      "id": "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/test-compute-rg/providers/Microsoft.KeyVault/vaults/basickv/secrets/certificate",
+      "name": "certificate",
+      "type": "Microsoft.KeyVault/vaults/secrets",
+      "location": "eastus",
+      "properties": {
+        "contentType": "application/x-pkcs12",
+        "attributes": {
+          "enabled": true,
+          "nbf": 1613916660,
+          "exp": 1645453260,
+          "created": 1613917260,
+          "updated": 1613917260
+        },
+        "secretUri": "https://basickv.vault.azure.net/secrets/certificate",
+        "secretUriWithVersion": "https://basickv.vault.azure.net/secrets/certificate/12345678123412341234123456789012"
+      }
+    }
+  ],
+  "iam": [],
+  "location": "eastus"
+}

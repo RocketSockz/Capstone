@@ -1,0 +1,15 @@
+{
+  "id": "6cafb26b-ec66-4f1a-ec61-fa9bd75e5667",
+  "displayName": "Backup HIGH Compression",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Backup HIGH Compression requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Within RMAN utility issue \"show compression algorithm;\" and make sure algorithm in use is \"BASIC\".  Issue \"configure compression algorithm basic;\" to set it to \"BASIC\".  Also make sure that in any RMAN script you are not changing the algorithm from \"BASIC\" to another value.  \"BASIC\" compression does not require an additional license",
+  "error_message": "Backup HIGH Compression is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Backup HIGH Compression"
+  ]
+}

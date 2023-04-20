@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "3f6fa4c4-73d8-4a39-94db-26635954ffbc",
+  "displayName": "Ensure 'SELECT ANY DICTIONARY' Is Revoked from Unauthorized 'GRANTEE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "`SELECT ANY DICTIONARY` is a powerful system privilege which would allow an unauthorized user to gather information about the database through data dictionary objects. Information collected could potentially be used to exploit the database.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n```\nREVOKE SELECT ANY DICTIONARY FROM <grantee>;\n```",
+  "error_message": "'SELECT ANY DICTIONARY' was found on one or more unauthorized 'GRANTEE'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'SELECT ANY DICTIONARY' Is Revoked from Unauthorized 'GRANTEE'"
+  ]
+}

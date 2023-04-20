@@ -1,0 +1,20 @@
+{
+  "recommended_action": "To block the sync client on unmanaged devices, use the Microsoft 365 Admin Center:\n\t1. Navigate to Microsoft 365 administration portal (https://admin.microsoft.com),\n\tClick on Admin Centers and then OneDrive.\n\t2. Click Sync.\n\t3. Ensure that Allow syncing only on PCs joined to specific domains is checked.\n\t4. Use the Get-ADDomain PowerShell command to obtain the GUID from each domain in your environment and add them to the box below.\n\t5. Click Save",
+  "rationale": "Unmanaged devices pose a risk, since their security cannot be verified. Allowing users to sync data to these devices, takes that data out of the control of the organization. This increases the risk of the data either being intentionally or accidentally leaked.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "TenantRestrictionEnabled": {
+          "errorMessage": "OneDrive does not block sync from unmanaged devices.",
+          "const": true
+        },
+        "AllowedDomainList": {
+          "errorMessage": "The number of allowed domains for OneDrive is less than one.",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "schemaId": "7d371b36-e391-8c60-4e98-4b00371c7efc"
+}

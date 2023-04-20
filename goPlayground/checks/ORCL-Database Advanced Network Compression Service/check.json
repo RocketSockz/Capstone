@@ -1,0 +1,15 @@
+{
+  "id": "50eb008d-20ce-31b5-66f4-c59d3facdaa9",
+  "displayName": "Oracle Advanced Network Compression Service",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Oracle Advanced Network Compression Service requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "To disable: in the tnsnames.ora file add \"COMPRESSION=OFF\", and in sqlnet.ora add \"SQLNET.COMPRESSION=OFF\"",
+  "error_message": "Oracle Advanced Network Compression Service is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Oracle Advanced Network Compression Service"
+  ]
+}

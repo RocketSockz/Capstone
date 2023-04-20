@@ -1,0 +1,15 @@
+{
+  "id": "c343edc9-3d4e-44b9-b448-429c4b5b15b3",
+  "displayName": "Ensure 'Hide Instance' option is set to 'Yes' for Production SQL Server instances",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "Designating production SQL Server instances as hidden leads to a more secure installation because they cannot be enumerated. However, clustered instances may break if this option is selected.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Perform either the GUI or T-SQL method shown:\r\n#### GUI Method\r\n1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for _\\<InstanceName\\>_**, and then select **Properties**.\r\n2. On the **Flags** tab, in the **Hide Instance** box, select `Yes`, and then click **OK** to close the dialog box. The change takes effect immediately for new connections.\r\n\r\n#### T-SQL Method\r\nExecute the following T-SQL to remediate:\r\n```\r\nEXEC master.sys.xp_instance_regwrite\r\n @rootkey = N'HKEY_LOCAL_MACHINE',\r\n @key = N'SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQLServer\\SuperSocketNetLib',\r\n @value_name = N'HideInstance',\r\n @type = N'REG_DWORD',\r\n @value = 1;\r\n```",
+  "error_message": "Server does not have 'Hide Instance' enabled",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Hide Instance' option is set to 'Yes' for Production SQL Server instances"
+  ]
+}

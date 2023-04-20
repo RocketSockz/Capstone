@@ -1,0 +1,29 @@
+{
+  "recommended_action": "Alter system set db_index_compression_inheritance=NONE scope=both",
+  "rationale": "The value of this parameter indicates if an index will inherit compression settings from its base table or tablespace.  If enabled and the underlying table or tablespace uses advanced compression, the index will be created with ADVANCED LOW compression settings, which requires Oracle Advanced Compression.",
+  "source": "opscompass-defined",
+  "properties": {
+    "document": {
+      "properties": {
+        "parameters": {
+          "properties": {
+            "DB_INDEX_COMPRESSION_INHERITANCE": {
+              "not": {
+                "properties": {
+                  "isConcerning": {
+                    "const": true
+                  },
+                  "value": {
+                    "const": "NONE"
+                  }
+                }
+              },
+              "errorMessage": "DB_INDEX_COMPRESSION_INHERITANCE is concerning and has a value of NONE"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "bc9c32d2-2684-0c70-c7dd-26e2681f86be"
+}

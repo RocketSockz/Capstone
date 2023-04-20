@@ -1,0 +1,15 @@
+{
+  "id": "5d651eac-b2d5-4b29-9a71-c740f51d8d77",
+  "displayName": "Redis Cache publicNetworkAccess flag should be disabled.",
+  "resourceType": "Microsoft.Cache/Redis",
+  "severity": "high",
+  "rationale": "The potential security problem with using Redis over the Internet is that attackers can use various brute force techniques to gain access to Azure Virtual Machines. Once the attackers gain access, they can use a virtual machine as a launch point for compromising other machines on the Azure Virtual Network or even attack networked devices outside of Azure.",
+  "source": "cis azure 1.1.0 | benchmark 6.2",
+  "recommended_action": "Visit https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Cache%2FRedis.\nThe publicNetworkAccess flag is Disabled by default. This flag is meant to allow you to optionally allow both public and private endpoint access to the cache if it is set to Enabled. If set to Disabled, it will only allow private endpoint access. You can set the value to Disabled or Enabled in the Azure portal or with a Restful API PATCH request.\nTo change the value in the Azure portal, follow these steps.\n1. In the Azure portal, search for Azure Cache for Redis and press enter or select it from the search suggestions.\n2. Select the cache instance you want to change the public network access value.\n3. On the left side of the screen, select Private Endpoint.\nChange the public network access button to Disabled.\nFor more information, visit https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-private-link#how-can-i-change-my-private-endpoint-to-be-disabled-or-enabled-from-public-network-access",
+  "error_message": "Redis Cache has open internet access",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Redis Cache firewall should restrict public internet access."
+  ]
+}

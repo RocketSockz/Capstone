@@ -1,0 +1,28 @@
+{
+    "resource": {
+        "accountId": "434855252750",
+        "arn": "arn:aws:kms:us-east-1:434855252750:key/82a264aa-67bf-4ba1-9e1e-08d713a4cba5",
+        "cloudId": "arn:aws:kms:us-east-1:434855252750:key/82a264aa-67bf-4ba1-9e1e-08d713a4cba5",
+        "id": "vol-02b56e6c6c3bf386c",
+        "location": "us-east-1",
+        "name": "vol-02b56e6c6c3bf386c",
+        "type": "AWS::EC2::Volume",
+        "document": {
+            "Attachments": [],
+            "AvailabilityZone": "us-east-1a",
+            "CreateTime": "2021-10-05T19:59:07.419Z",
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:434855252750:key/82a264aa-67bf-4ba1-9e1e-08d713a4cba5",
+            "Size": 100,
+            "SnapshotId": "",
+            "State": "available",
+            "VolumeId": "vol-02b56e6c6c3bf386c",
+            "Iops": 300,
+            "Tags": [],
+            "VolumeType": "gp2",
+            "MultiAttachEnabled": false
+        }
+    },
+    "hierarchyMetadata": {},
+    "dependentNames": []
+}

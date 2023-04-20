@@ -1,0 +1,15 @@
+{
+  "id": "22501216-597b-77ce-b752-807fb90cde40",
+  "displayName": "Ensure MailTips are enabled for end users",
+  "resourceType": "exchange/organizationConfig",
+  "severity": "medium",
+  "rationale": "Setting up MailTips gives a visual aid to users when they send emails to large groups of recipients or send emails to recipients not within the tenant.",
+  "source": "cis o365 1.1.0 | benchmark 4.14",
+  "recommended_action": "To enable MailTips, use the Exchange Online PowerShell Module:\n1. Run Microsoft Exchange Online PowerShell Module\n2. Connect using Connect-MSOnline\n3. Run the following PowerShell command: Set-OrganizationConfig -MailTipsAllTipsEnabled $true -MailTipsExternalRecipientsTipsEnabled $true -MailTipsGroupMetricsEnabled $true -MailTipsLargeAudienceThreshold '25'",
+  "error_message": "MailTips are not enabled",
+  "category": "AP",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure MailTips are enabled for end users"
+  ]
+}

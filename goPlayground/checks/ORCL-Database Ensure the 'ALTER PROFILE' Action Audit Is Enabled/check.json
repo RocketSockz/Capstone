@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "9f1fd286-6732-48c2-858a-f34d9d6a480f",
+  "displayName": "Ensure the 'ALTER PROFILE' Action Audit Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Logging and monitoring of all attempts to alter profiles, whether successful or unsuccessful, may provide forensic evidence about potential suspicious/unauthorized activities. Any such activities may be a cause for further investigation. In addition, organization security policies and industry/government regulations may require logging of all user activities involving alteration of database profiles.",
+  "recommended_action": "Execute the following SQL statement to remediate this setting.\n```\nALTER AUDIT POLICY CIS_UNIFIED_AUDIT_POLICY\nADD\nACTIONS\nALTER PROFILE;\n```\n**Note:** If you do not have `CIS_UNIFIED_AUDIT_POLICY`, please create one using the `CREATE AUDIT POLICY` statement.",
+  "error_message": "'ALTER PROFILE' audit option is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'ALTER PROFILE' Action Audit Is Enabled"
+  ]
+}

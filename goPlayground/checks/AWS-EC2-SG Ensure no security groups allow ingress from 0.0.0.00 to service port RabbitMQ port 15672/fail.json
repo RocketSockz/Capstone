@@ -1,0 +1,36 @@
+{
+  "accountId": "434855252750",
+  "arn": "",
+  "cloudId": "",
+  "id": "sg-4232781a",
+  "location": "",
+  "name": "",
+  "document": {
+    "Description": "default VPC security group",
+    "GroupName": "default",
+    "IpPermissions": [
+      {
+        "FromPort": 15672,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [
+          {
+            "CidrIpv6": "::/0"
+          }
+        ],
+        "PrefixListIds": [],
+        "ToPort": 15672,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "434855252750",
+    "GroupId": "sg-4232781a",
+    "IpPermissionsEgress": [],
+    "Tags": [],
+    "VpcId": "vpc-6874ef12"
+  }
+}

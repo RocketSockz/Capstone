@@ -1,0 +1,31 @@
+{
+  "accountId": "213916962078",
+  "arn": "",
+  "cloudId": "",
+  "id": "cloudwatch_Andy",
+  "location": "",
+  "name": "",
+  "document": {
+    "Path": "/",
+    "UserName": "cloudwatch_Andy",
+    "UserId": "AIDATDTTRZUPFK5CGSJIP",
+    "Arn": "arn:aws:iam::213916962078:user/cloudwatch_Andy",
+    "CreateDate": "2019-12-31T19:59:27.000Z",
+    "Tags": []
+  },
+  "groups": [{
+    "Path": "/",
+    "GroupName": "sam_testing_dev",
+    "GroupId": "AGPATDTTRZUPGJLIC73DK",
+    "Arn": "arn:aws:iam::213916962078:group/sam_testing_dev",
+    "CreateDate": "2019-09-19T19:42:54.000Z"
+  }],
+  "mfaDevices": [],
+  "attachedPolicies": [],
+  "accessKeys": [{
+    "UserName": "cloudwatch_Andy",
+    "AccessKeyId": "AKIATDTTRZUPFDYW6U6J",
+    "Status": "Active",
+    "CreateDate": "2019-12-31T19:59:28.000Z"
+  }]
+}

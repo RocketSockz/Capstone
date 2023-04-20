@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "serverPrincipals": {
+          "items": {
+            "if": {
+              "properties": {
+                "sid": {
+                  "constIgnoreCase": "AQ=="
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "name": {
+                  "not": {
+                    "constIgnoreCase": "sa"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "01882d14-5839-4570-ae0e-b609645659c1",
+  "displayName": "Ensure 'Server Authentication' Property is set to 'Windows Authentication Mode'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "Windows provides a more robust authentication mechanism than SQL Server authentication.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Perform either the GUI or T-SQL method shown:\r\n#### GUI Method\r\n1. Open **SQL Server Management Studio**.\r\n2. Open the **Object Explorer** tab and connect to the target database instance.\r\n3. Right click the instance name and select **Properties**.\r\n4. Select the **Security** page from the left menu.\r\n5. Set the **Server authentication** setting to **Windows Authentication Mode**.\r\n\r\n#### T-SQL Method\r\nRun the following T-SQL in a Query Window: \r\n```\r\nUSE [master]\r\nGO\r\nEXEC xp_instance_regwrite N'HKEY_LOCAL_MACHINE', N'Software\\Microsoft\\MSSQLServer\\MSSQLServer', N'LoginMode', REG_DWORD, 1\r\nGO\r\n```\r\nRestart the SQL Server service for the change to take effect.",
+  "error_message": "Server does not enforce 'Windows Authentication Mode'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Server Authentication' Property is set to 'Windows Authentication Mode'"
+  ]
+}

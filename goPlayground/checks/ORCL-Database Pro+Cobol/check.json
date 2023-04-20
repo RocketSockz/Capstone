@@ -1,0 +1,15 @@
+{
+  "id": "bda96bd0-6eac-f549-5c8e-e6d45240bd1c",
+  "displayName": "Pro*Cobol",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Pro*Cobol requires a license for Oracle Programmer to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Stop using the Pro*Cobol precompiler",
+  "error_message": "Pro*Cobol is listed as a feature usage concern under Oracle Programmer",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Pro*Cobol"
+  ]
+}

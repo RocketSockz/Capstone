@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "436a2119-cf50-49ce-b970-da2ee7925be4",
+  "displayName": "Ensure 'AUDIT SYSTEM' Is Revoked from Unauthorized 'GRANTEE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "The `AUDIT SYSTEM` privilege can allow the unauthorized alteration of system audit activities, such as disabling the creation of audit trails.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n```\nREVOKE AUDIT SYSTEM FROM <grantee>;\n```",
+  "error_message": "'AUDIT SYSTEM' was found on one or more unauthorized 'GRANTEE'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'AUDIT SYSTEM' Is Revoked from Unauthorized 'GRANTEE'"
+  ]
+}

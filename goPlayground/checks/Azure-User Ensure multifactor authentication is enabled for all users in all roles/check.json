@@ -1,0 +1,15 @@
+{
+  "id": "7073c31f-9b07-c4f2-6331-7f1d3bb37d76",
+  "displayName": "Ensure multifactor authentication is enabled for all users in all roles",
+  "resourceType": "microsoft.graph.user",
+  "severity": "medium",
+  "rationale": "Multifactor authentication requires an individual to present a minimum of two separate forms of authentication before access is granted. Multifactor authentication provides additional assurance that the individual attempting to gain access is who they claim to be. With multifactor authentication, an attacker would need to compromise at least two different authentication mechanisms, increasing the difficulty of compromise and thus reducing the risk.",
+  "source": "cis o365 1.1.0 | benchmark 1.1.2",
+  "recommended_action": "To enable multifactor authentication for all users, use the Microsoft 365 Admin Center:\n\t1. Log in to https://admin.microsoft.com as a Global Administrator.\n\t2. Go to Admin centers and click on Azure Active Directory.\n\t3. Select Conditional Access on the left side navigation.\n\t4. Click New policy\n\t5. Select Cloud apps or actions > All cloud apps (and don't exclude any apps)\n\t6. Access Controls > Grant > Require multi-factor authentication (and nothing else) \n\t7. Conditions > Client Apps > Configure (Yes) > Explicitly select Browser, Mobile apps and desktop clients, Modern authentication clients, Exchange ActiveSync clients, and Other clients\n\t8. Leave all other conditions blank\n\t9. Make sure the policy is enabled\n\t10. Create",
+  "error_message": "User does not have MFA enabled",
+  "category": "IA",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure MFA is enabled for all users"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "f8573eb6-e1d8-4278-85b8-9dc5968f6c5a",
+  "displayName": "Ensure the public role in the msdb database is not granted access to SQL Agent proxies",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "Granting access to SQL Agent proxies for the `public` role would allow all users to utilize the proxy which may have high privileges. This would likely break the principle of least privileges.",
+  "source": "sql-server benchmark",
+  "recommended_action": "1. Ensure the required security principals are explicitly granted access to the proxy (use `sp_grant_login_to_proxy`).\r\n2. Revoke access to the _`<proxyname>`_ from the `public` role.\r\n ```\r\n USE [msdb]\r\n GO\r\n EXEC dbo.sp_revoke_login_from_proxy @name = N'public', @proxy_name = N'<proxyname>';\r\n GO\r\n ```",
+  "error_message": "Public role within MSDB database is granted access to 'sp_grant_login_to_proxy'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure the public role in the msdb database is not granted access to SQL Agent proxies"
+  ]
+}

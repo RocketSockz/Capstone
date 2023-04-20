@@ -1,0 +1,15 @@
+{
+  "id": "eb2a6188-f095-49f5-9de1-fd288e9648a3",
+  "displayName": "Ensure 'Remote Admin Connections' Server Configuration Option is set to '0'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "The Dedicated Administrator Connection (DAC) lets an administrator access a running server to execute diagnostic functions or Transact-SQL statements, or to troubleshoot problems on the server, even when the server is locked or running in an abnormal state and not responding to a SQL Server Database Engine connection. In a cluster scenario, the administrator may not actually be logged on to the same node that is currently hosting the SQL Server instance and thus is considered \"remote\". Therefore, this setting should usually be enabled (`1`) for SQL Server failover clusters; otherwise, it should be disabled (`0`) which is the default.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Run the following T-SQL command on non-clustered installations:\r\n```\r\nEXECUTE sp_configure 'remote admin connections', 0;\r\nRECONFIGURE;\r\nGO\r\n```",
+  "error_message": "Server has 'Remote Admin Connections' set to '1'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Remote Admin Connections' Server Configuration Option is set to '0'"
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Web/sites/TESTHAR1",
+  "name": "TESTHAR1",
+  "resourceGroup": "harwinder-test",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "Microsoft.Web/sites",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Web/sites/TESTHAR1",
+    "name": "TESTHAR1",
+    "type": "Microsoft.Web/sites",
+    "kind": "app,linux",
+    "location": "Central US",
+    "tags": {},
+    "properties": {
+      "name": "TESTHAR1",
+      "state": "Running",
+      "hostNames": [
+        "testhar1.azurewebsites.net"
+      ],
+      "webSpace": "harwinder-test-CentralUSwebspace",
+      "selfLink": "https://waws-prod-dm1-135.api.azurewebsites.windows.net:454/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/webspaces/harwinder-test-CentralUSwebspace/sites/TESTHAR1",
+      "repositorySiteName": "TESTHAR1",
+      "owner": null,
+      "usageState": "Normal",
+      "enabled": true,
+      "adminEnabled": true,
+      "enabledHostNames": [
+        "testhar1.azurewebsites.net",
+        "testhar1.scm.azurewebsites.net"
+      ],
+      "siteProperties": {
+        "metadata": null,
+        "properties": [
+          {
+            "name": "LinuxFxVersion",
+            "value": "PHP|7.3"
+          },
+          {
+            "name": "WindowsFxVersion",
+            "value": null
+          }
+        ],
+        "appSettings": null
+      },
+      "availabilityState": "Normal",
+      "sslCertificates": null,
+      "csrs": [],
+      "cers": null,
+      "siteMode": null,
+      "hostNameSslStates": [
+        {
+          "name": "testhar1.azurewebsites.net",
+          "sslState": "Disabled",
+          "ipBasedSslResult": null,
+          "virtualIP": null,
+          "thumbprint": null,
+          "toUpdate": null,
+          "toUpdateIpBasedSsl": null,
+          "ipBasedSslState": "NotConfigured",
+          "hostType": "Standard"
+        },
+        {
+          "name": "testhar1.scm.azurewebsites.net",
+          "sslState": "Disabled",
+          "ipBasedSslResult": null,
+          "virtualIP": null,
+          "thumbprint": null,
+          "toUpdate": null,
+          "toUpdateIpBasedSsl": null,
+          "ipBasedSslState": "NotConfigured",
+          "hostType": "Repository"
+        }
+      ],
+      "computeMode": null,
+      "serverFarm": null,
+      "serverFarmId": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Web/serverfarms/HARWINDERTESTAPPSERVICEPLAN",
+      "reserved": true,
+      "isXenon": false,
+      "hyperV": false,
+      "lastModifiedTimeUtc": "2019-07-22T21:27:57.5466667",
+      "storageRecoveryDefaultState": "Running",
+      "contentAvailabilityState": "Normal",
+      "runtimeAvailabilityState": "Normal",
+      "siteConfig": null,
+      "deploymentId": "TESTHAR1",
+      "trafficManagerHostNames": null,
+      "sku": "Free",
+      "scmSiteAlsoStopped": false,
+      "targetSwapSlot": null,
+      "hostingEnvironment": null,
+      "hostingEnvironmentProfile": null,
+      "clientAffinityEnabled": false,
+      "clientCertEnabled": false,
+      "clientCertExclusionPaths": null,
+      "hostNamesDisabled": false,
+      "domainVerificationIdentifiers": null,
+      "kind": "app,linux",
+      "outboundIpAddresses": "40.122.36.65,104.43.242.206,40.113.219.125,40.113.227.212,40.113.225.31",
+      "possibleOutboundIpAddresses": "40.122.36.65,104.43.242.206,40.113.219.125,40.113.227.212,40.113.225.31,40.113.229.114,40.113.220.255,40.113.225.253,40.113.231.60,104.43.253.242",
+      "containerSize": 0,
+      "dailyMemoryTimeQuota": 0,
+      "suspendedTill": null,
+      "siteDisabledReason": 0,
+      "functionExecutionUnitsCache": null,
+      "maxNumberOfWorkers": null,
+      "homeStamp": "waws-prod-dm1-135",
+      "cloningInfo": null,
+      "hostingEnvironmentId": null,
+      "tags": {},
+      "resourceGroup": "harwinder-test",
+      "defaultHostName": "testhar1.azurewebsites.net",
+      "slotSwapStatus": null,
+      "httpsOnly": true,
+      "redundancyMode": "None",
+      "inProgressOperationId": null,
+      "geoDistributions": null
+    },
+    "identity": {
+      "type": "SystemAssigned",
+      "tenantId": "d6cfda6e-5f9b-4e1a-94db-7378f2e6eb4c",
+      "principalId": "1fa712ba-1a80-4aaa-ac18-b9dd9caf7025"
+    }
+  },
+  "config": [
+    {
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.Web/sites/TESTHAR1/config/web",
+      "name": "TESTHAR1",
+      "type": "Microsoft.Web/sites/config",
+      "location": "Central US",
+      "tags": {},
+      "properties": {
+        "numberOfWorkers": 1,
+        "defaultDocuments": [
+          "Default.htm",
+          "Default.html",
+          "Default.asp",
+          "index.htm",
+          "index.html",
+          "iisstart.htm",
+          "default.aspx",
+          "index.php",
+          "hostingstart.html"
+        ],
+        "netFrameworkVersion": "v3.9",
+        "phpVersion": "",
+        "pythonVersion": "",
+        "nodeVersion": "",
+        "linuxFxVersion": "PHP|7.3",
+        "windowsFxVersion": null,
+        "requestTracingEnabled": false,
+        "remoteDebuggingEnabled": false,
+        "remoteDebuggingVersion": "VS2017",
+        "httpLoggingEnabled": false,
+        "logsDirectorySizeLimit": 35,
+        "detailedErrorLoggingEnabled": false,
+        "publishingUsername": "$TESTHAR1",
+        "publishingPassword": null,
+        "appSettings": null,
+        "metadata": null,
+        "connectionStrings": null,
+        "machineKey": null,
+        "handlerMappings": null,
+        "documentRoot": null,
+        "scmType": "None",
+        "use32BitWorkerProcess": true,
+        "webSocketsEnabled": false,
+        "alwaysOn": false,
+        "javaVersion": null,
+        "javaContainer": null,
+        "javaContainerVersion": null,
+        "appCommandLine": "",
+        "managedPipelineMode": "Integrated",
+        "virtualApplications": [
+          {
+            "virtualPath": "/",
+            "physicalPath": "site\\wwwroot",
+            "preloadEnabled": false,
+            "virtualDirectories": null
+          }
+        ],
+        "winAuthAdminState": 0,
+        "winAuthTenantState": 0,
+        "customAppPoolIdentityAdminState": false,
+        "customAppPoolIdentityTenantState": false,
+        "runtimeADUser": null,
+        "runtimeADUserPassword": null,
+        "loadBalancing": "LeastRequests",
+        "routingRules": [],
+        "experiments": {
+          "rampUpRules": []
+        },
+        "limits": null,
+        "autoHealEnabled": false,
+        "autoHealRules": null,
+        "tracingOptions": null,
+        "vnetName": "",
+        "siteAuthEnabled": true,
+        "siteAuthSettings": {
+          "enabled": null,
+          "unauthenticatedClientAction": null,
+          "tokenStoreEnabled": null,
+          "allowedExternalRedirectUrls": null,
+          "defaultProvider": null,
+          "clientId": null,
+          "clientSecret": null,
+          "clientSecretCertificateThumbprint": null,
+          "issuer": null,
+          "allowedAudiences": null,
+          "additionalLoginParams": null,
+          "isAadAutoProvisioned": false,
+          "googleClientId": null,
+          "googleClientSecret": null,
+          "googleOAuthScopes": null,
+          "facebookAppId": null,
+          "facebookAppSecret": null,
+          "facebookOAuthScopes": null,
+          "twitterConsumerKey": null,
+          "twitterConsumerSecret": null,
+          "microsoftAccountClientId": null,
+          "microsoftAccountClientSecret": null,
+          "microsoftAccountOAuthScopes": null
+        },
+        "cors": null,
+        "push": null,
+        "apiDefinition": null,
+        "apiManagementConfig": null,
+        "autoSwapSlotName": null,
+        "localMySqlEnabled": false,
+        "managedServiceIdentityId": 464,
+        "xManagedServiceIdentityId": null,
+        "ipSecurityRestrictions": [
+          {
+            "ipAddress": "Any",
+            "action": "Allow",
+            "priority": 1,
+            "name": "Allow all",
+            "description": "Allow all access"
+          }
+        ],
+        "scmIpSecurityRestrictions": [
+          {
+            "ipAddress": "Any",
+            "action": "Allow",
+            "priority": 1,
+            "name": "Allow all",
+            "description": "Allow all access"
+          }
+        ],
+        "scmIpSecurityRestrictionsUseMain": false,
+        "http20Enabled": true,
+        "minTlsVersion": "1.2",
+        "ftpsState": "AllAllowed",
+        "reservedInstanceCount": 0,
+        "preWarmedInstanceCount": null,
+        "healthCheckPath": null
+      }
+    }
+  ]
+}

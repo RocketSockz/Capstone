@@ -1,0 +1,16 @@
+{
+    "properties": {
+        "accessKeys": {
+            "contains": {
+                "properties": {
+                    "Status": {
+                        "const": "Active"
+                    }
+                }
+            },
+            "minContains": 0,
+            "maxContains": 1
+        }
+    },
+    "schemaId": "a864f4df-9182-4cbd-a025-6762a3dfb83c"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "a086857e-bc9d-a2bd-7385-7bf10d452b85",
+  "displayName": "Ensure the Advanced Threat Protection Safe Attachments policy is enabled",
+  "resourceType": "exchange/safeAttachmentPolicy",
+  "severity": "medium",
+  "rationale": "This policy increases the likelihood of identifying and stopping previously unknown malware.",
+  "source": "cis o365 1.1.0 | benchmark 4.7",
+  "recommended_action": "To enable the ATP Safe Attachments policy, use the Microsoft 365 Admin Center:\n\t1. Click Security & Compliance to open the Security & Compliance portal.\n\t2. Navigate to Threat management > Policy > ATP Safe Attach.\n\t3. Click +.\n\t4. Enter Policy Name and Description.\n\t5. Select Block, Monitor or Dynamic Delivery.\n\t6. Select Save.",
+  "error_message": "Safe attachment policies are not enabled",
+  "category": "SI",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the advanced threat protection safe attachments policy is enabled"
+  ]
+}

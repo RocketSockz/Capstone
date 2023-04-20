@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "a872bb24-d7a7-4c02-bbfc-ca4f9fb11164",
+  "displayName": "Ensure the 'LOGON' AND 'LOGOFF' Actions Audit Is Enabled",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Logging and monitoring of all attempts to logon to the database, whether successful or unsuccessful, may provide forensic evidence about potential suspicious/unauthorized activities. Any such activities may be a cause for further investigation. In addition, organization security policies and industry/government regulations may require logging of all user activities involving `LOGON` and `LOGOFF`.",
+  "recommended_action": "Execute the following SQL statement to remediate this setting.\n```\nALTER AUDIT POLICY CIS_UNIFIED_AUDIT_POLICY\nADD\nACTIONS\nLOGON,\nLOGOFF;\n```\n**Note:** If you do not have `CIS_UNIFIED_AUDIT_POLICY`, please create one using the `CREATE AUDIT POLICY` statement.",
+  "error_message": "'LOGON' and/or 'LOGOFF' audit option(s) were not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'LOGON' AND 'LOGOFF' Actions Audit Is Enabled"
+  ]
+}

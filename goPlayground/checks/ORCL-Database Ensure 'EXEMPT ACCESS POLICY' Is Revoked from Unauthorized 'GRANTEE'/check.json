@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "1d9695b3-620a-45b1-8409-96d0c427fca4",
+  "displayName": "Ensure 'EXEMPT ACCESS POLICY' Is Revoked from Unauthorized 'GRANTEE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "The `EXEMPT ACCESS POLICY` privilege can allow an unauthorized user to potentially access and change data.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n```\nREVOKE EXEMPT ACCESS POLICY FROM <grantee>;\n```",
+  "error_message": "'EXEMPT ACCESS POLICY` was found on one or more unauthorized 'GRANTEE'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'EXEMPT ACCESS POLICY' Is Revoked from Unauthorized 'GRANTEE'"
+  ]
+}

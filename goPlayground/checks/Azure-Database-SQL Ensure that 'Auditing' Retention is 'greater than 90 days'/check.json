@@ -1,0 +1,15 @@
+{
+  "id": "015bde42-06eb-cc00-daa1-1c7fcd141eee",
+  "displayName": "Ensure that 'Auditing' Retention is 'greater than 90 days'",
+  "resourceType": "Microsoft.Sql/servers",
+  "severity": "high",
+  "rationale": "Audit Logs can be used to check for anomalies and give insight into suspected breaches or misuse of information and access.",
+  "source": "cis azure 1.1.0 | benchmark 4.3",
+  "recommended_action": "1. Go to SQL servers\n2. For this server instance\n3. Click on Auditing\n4. Select Storage Details\n5. Set Retention (days) setting greater than 90 days\n6. Select OK\n7. Select Save",
+  "error_message": "SQL server does not have auditing enabled",
+  "category": "AU",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that log rentention length satisfies requirements"
+  ]
+}

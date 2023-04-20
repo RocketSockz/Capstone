@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "0045c18f-6bec-41d5-b6da-162dd5639971",
+  "displayName": "Ensure 'PASSWORD_REUSE_TIME' Is Greater than or Equal to '365' in user profile",
+  "severity": "low",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Reusing the same password after only a short period of time has passed makes the success of brute-force login attacks more likely.",
+  "recommended_action": "Remediate this setting by executing the following SQL statement for each `PROFILE` returned by the audit procedure.\n```\nALTER PROFILE <profile_name> LIMIT PASSWORD_REUSE_TIME 365;\n```",
+  "error_message": "Passwords can be reused less than 365 days, after initial use",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'PASSWORD_REUSE_TIME' Is Greater than or Equal to '365' in user profile"
+  ]
+}

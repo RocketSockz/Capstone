@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "auditOptionsTraditional": {
+                "contains": {
+                  "properties": {
+                    "AuditOption": {
+                      "constIgnoreCase": "USER"
+                    },
+                    "Success": {
+                      "constIgnoreCase": "BY ACCESS"
+                    },
+                    "Failure": {
+                      "constIgnoreCase": "BY ACCESS"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

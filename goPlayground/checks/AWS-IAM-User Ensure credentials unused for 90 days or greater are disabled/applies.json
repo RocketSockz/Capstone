@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "loginProfile": {
+      "not" : {
+        "const": null
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "LicenseModel": {
+          "not": {
+            "const": "bring-your-own-license"
+          }
+        }
+      }
+    }
+  }
+}

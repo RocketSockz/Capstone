@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "87536a95-c0e6-403e-9721-e6d8319be056",
+  "displayName": "Ensure All Default Passwords Are Changed",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Default passwords should be considered \"well known\" to attackers. Consequently, if default passwords remain in place, any attacker with access to the database can authenticate as the user with that default password.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n- Manually issue the following SQL statement for each USERNAME returned in the Audit Procedure:\n- Execute the following SQL script to assign a randomly generated password to each account using a default password:\n ```\n begin\n for r_user in (select username \n from dba_users_with_defpwd \n where username not like '%XS$NULL%')\n loop\n DBMS_OUTPUT.PUT_LINE('Password for user '||r_user.username||' will be changed.');\n execute immediate 'alter user \"'||r_user.username||'\" identified by \"'||\n DBMS_RANDOM.string('a',16)||'\"account lock password expire';\n end loop;\n end;\n ```",
+  "error_message": "Default passwords were detected on one or more database users",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure All Default Passwords Are Changed"
+  ]
+}

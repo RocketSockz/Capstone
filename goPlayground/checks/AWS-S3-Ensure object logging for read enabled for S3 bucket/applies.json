@@ -1,0 +1,11 @@
+{
+    "properties": {
+        "document": {
+            "type": "object",
+            "required": [
+                "S3BucketName"
+            ]
+        }
+    },
+    "schemaId": "853d0871-38b6-4fdd-ac51-0bf988062fd1"
+}

@@ -1,0 +1,35 @@
+{
+  "recommended_action": "Follow Microsoft Azure's documentation for IaaS Disk Encryption.\nhttps://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-overview",
+  "rationale": "Encrypting the IaaS VM's OS disk (boot volume) ensures that its entire content is fully unrecoverable without a key and thus protects the volume from unwarranted reads.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "encryption": {
+              "properties": {
+                "type": {
+                  "errorMessage": "Disk's encryption settings collection is not enabled.",
+                  "enum": [
+                    "EncryptionAtRestWithPlatformKey",
+                    "EncryptionAtRestWithPlatformAndCustomerKeys",
+                    "EncryptionAtRestWithCustomerKey"
+                  ]
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          },
+          "errorMessage": "Disk's encryption settings collection is not enabled.",
+          "required": [
+            "encryption"
+          ]
+        }
+      }
+    }
+  },
+  "schemaId": "822278ea-65ca-4886-ed84-139de5beecf6"
+}

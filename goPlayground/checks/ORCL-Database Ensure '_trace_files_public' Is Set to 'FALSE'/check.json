@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "11afbbe4-8ebd-4d11-b08f-dcd1e6bb4e90",
+  "displayName": "Ensure parameter '_trace_files_public' Is Set to 'FALSE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Making the file world readable means anyone can read the instance's trace file, which could contain sensitive information about instance operations.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET \"_trace_files_public\" = FALSE SCOPE = SPFILE;\n```",
+  "error_message": "Trace files are publically accessible",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter '_trace_files_public' Is Set to 'FALSE'"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gg086c1f-e89b-5b1b-ba91-9208174a109d",
+  "displayName": "Ensure that an anti-phishing policy has been created",
+  "resourceType": "exchange/antiPhishingPolicy",
+  "severity": "medium",
+  "rationale": "By default, Office 365 includes built-in features that help protect your users from phishing attacks. Set up anti-phishing polices to increase this protection, for example by refining settings to better detect and prevent impersonation and spoofing attacks. The default policy applies to all users within the organization, and is a single view where you can fine-tune anti-phishing protection. Custom policies can be created and configured for specific users, groups or domains within the organization and will take precedence over the default policy for the scoped users.",
+  "source": "cis o365 1.5.0 | benchmark 4.6",
+  "recommended_action": "**To set the anti-phishing policy, use the Microsoft 365 Admin Center:**\r\n\r\n1. Click `Security` to open the Security portal.\r\n2. Under `Email & collaboration` navigate to `Policies & rules` > `Threat policies`.\r\n3. Select `Anti-phishing`.\r\n4. Click `Create` to create an anti-phishing policy.\r\n\r\n**To create an anti-phishing policy, use the Exchange Online PowerShell Module:**\r\n\r\n1. Connect to Exchange Online service using `Connect-ExchangeOnline`.\r\n2. Run the following Exchange Online PowerShell command:\r\n\r\n```\r\nNew-AntiPhishPolicy -Name \"Office365 AntiPhish Policy\"\r\n```",
+  "error_message": "Custom Anti-Phishing Policies are not in use",
+  "category": "SI",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that an anti-phishing policy has been created"
+  ]
+}

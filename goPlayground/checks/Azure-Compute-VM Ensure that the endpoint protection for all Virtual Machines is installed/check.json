@@ -1,0 +1,15 @@
+{
+  "id": "10b63e20-91fb-ccd7-b9ad-5b065b838c39",
+  "displayName": "Ensure that the endpoint protection for all Virtual Machines is installed",
+  "resourceType": "Microsoft.Compute/virtualMachines",
+  "severity": "low",
+  "rationale": "Installing endpoint protection systems (like Antimalware for Azure) provides for real-time protection capability that helps identify and remove viruses, spyware, and other malicious software, with configurable alerts when known malicious or unwanted software attempts to install itself or run on Azure systems.",
+  "source": "cis azure 1.1.0 | benchmark 7.6",
+  "recommended_action": "Follow Microsoft Azure documentation to install endpoint protection from the security center. Alternatively, you can employ your own endpoint protection tool for your OS.\nMore information is available in the Microsoft Azure documentation.\nhttps://docs.microsoft.com/en-us/azure/security-center/security-center-install-endpoint-protection",
+  "error_message": "Virtual machine does not have endpoint extensions installed",
+  "category": "SI",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that the endpoint protection for all VMs is installed"
+  ]
+}

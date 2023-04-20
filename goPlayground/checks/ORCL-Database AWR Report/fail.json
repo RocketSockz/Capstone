@@ -1,0 +1,755 @@
+{
+  "accountId": "acme testing & welding company",
+  "id": "779",
+  "location": "global",
+  "name": "TEST",
+  "type": "databases/oracle",
+  "document": {
+    "id": "779",
+    "client": "acme testing & welding company",
+    "hostname": "ORADBVM4",
+    "name": "TEST",
+    "dbid": "1262292711",
+    "version": "12.2.0.1.0",
+    "platform": "Oracle",
+    "type": "databases/oracle",
+    "edition": "Enterprise Edition",
+    "created": "2020-02-18T00:00:00Z",
+    "mostRecentCollection": "2020-02-24T00:00:00Z",
+    "lastSampleDate": "2020-02-18T00:00:00Z",
+    "productUsageConcerns": {
+      "Oracle Real Application Clusters": {
+        "featureUsageConcerns": {
+          "Quality of Service Management": {
+            "firstUsed": "2019-12-24T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1071
+          },
+          "Real Application Clusters (RAC)": {
+            "firstUsed": "2019-11-25T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1072
+          }
+        }
+      },
+      "Oracle Advanced Compression": {
+        "featureUsageConcerns": {
+          "Heat Map": {
+            "firstUsed": "2019-07-29T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1019
+          },
+          "Data Guard": {
+            "firstUsed": "2019-09-16T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1017
+          },
+          "HeapCompression": {
+            "firstUsed": "2019-10-07T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1101
+          },
+          "Backup LOW Compression": {
+            "firstUsed": "2019-07-27T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1014
+          },
+          "Flashback Data Archive": {
+            "firstUsed": "2019-10-09T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1018
+          },
+          "Backup HIGH Compression": {
+            "firstUsed": "2019-10-05T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1013
+          },
+          "Backup ZLIB Compression": {
+            "firstUsed": "2019-08-13T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1016
+          },
+          "Backup MEDIUM Compression": {
+            "firstUsed": "2019-07-23T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1015
+          },
+          "ADVANCED Index Compression": {
+            "firstUsed": "2020-01-11T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.1.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1012
+          },
+          "Advanced Index Compression": {
+            "firstUsed": "2020-03-05T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1011
+          },
+          "SecureFile Compression (user)": {
+            "firstUsed": "2019-12-15T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1104
+          },
+          "SecureFile Deduplication (user)": {
+            "firstUsed": "2020-04-18T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1105
+          },
+          "Oracle Advanced Network Compression Service": {
+            "firstUsed": "2020-04-28T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1020
+          }
+        }
+      },
+      "Oracle Provisioning and Patch Automation Pack": {
+        "featureUsageConcerns": {
+          "EM Database Provisioning and Patch Automation Pack": {
+            "firstUsed": "2020-06-09T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1070
+          },
+          "EM Standalone Provisioning and Patch Automation Pack": {
+            "firstUsed": "2019-08-02T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1005
+          }
+        }
+      },
+      "Oracle Advanced Security": {
+        "featureUsageConcerns": {
+          "Data Redaction": {
+            "firstUsed": "2019-09-21T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1024
+          },
+          "Advanced Security": {
+            "firstUsed": "2019-12-10T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "10.1.0.3.1",
+            "totalUses": 10,
+            "ruleId": 1022
+          },
+          "Backup Encryption": {
+            "firstUsed": "2019-10-06T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1023
+          },
+          "Encrypted Tablespaces": {
+            "firstUsed": "2019-12-29T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1025
+          },
+          "Transparent Data Encryption": {
+            "firstUsed": "2019-08-10T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1029
+          },
+          "SecureFile Encryption (user)": {
+            "firstUsed": "2019-10-25T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1106
+          }
+        }
+      },
+      "Oracle Multitenant": {
+        "featureUsageConcerns": {
+          "Container Usage": {
+            "firstUsed": "2019-11-18T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1062
+          },
+          "Oracle Multitenant": {
+            "firstUsed": "2020-01-16T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1063
+          },
+          "Oracle Pluggable Databases": {
+            "firstUsed": "2019-07-08T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.1.0.2.0",
+            "totalUses": 10,
+            "ruleId": 1064
+          }
+        }
+      },
+      "Oracle Data Masking and Subsetting Pack": {
+        "featureUsageConcerns": {
+          "Data Masking Pack": {
+            "firstUsed": "2019-10-21T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1037
+          }
+        }
+      },
+      "Oracle Database Vault": {
+        "featureUsageConcerns": {
+          "Privilege Capture": {
+            "firstUsed": "2020-03-31T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1047
+          },
+          "Oracle Database Vault": {
+            "firstUsed": "2019-11-04T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1046
+          }
+        }
+      },
+      "Oracle Active Data Guard": {
+        "featureUsageConcerns": {
+          "Global Data Services": {
+            "firstUsed": "2020-04-30T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1008
+          },
+          "Physical Standby with Real-Time Query": {
+            "firstUsed": "2019-12-08T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "11.1.0.6.0",
+            "totalUses": 10,
+            "ruleId": 1009
+          },
+          "Active Data Guard - Real-Time Query on Physical Standby": {
+            "firstUsed": "2020-04-25T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1007
+          }
+        }
+      },
+      "Oracle OLAP": {
+        "featureUsageConcerns": {
+          "OLAP - Cubes": {
+            "firstUsed": "2019-07-12T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1066
+          },
+          "OLAP - Analytic Workspaces": {
+            "firstUsed": "2019-10-19T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1065
+          }
+        }
+      },
+      "Oracle Real Application Testing": {
+        "featureUsageConcerns": {
+          "SQL Performance Analyzer": {
+            "firstUsed": "2019-12-01T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1078
+          },
+          "Database Replay Workload Replay": {
+            "firstUsed": "2019-09-22T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "11.2.0.4.0",
+            "totalUses": 10,
+            "ruleId": 1075
+          },
+          "Database Replay Workload Capture": {
+            "firstUsed": "2019-10-29T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.1.0.2.0",
+            "totalUses": 10,
+            "ruleId": 1074
+          },
+          "Database Replay: Workload Replay": {
+            "firstUsed": "2020-02-15T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1077
+          },
+          "Database Replay: Workload Capture": {
+            "firstUsed": "2020-01-18T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1076
+          }
+        }
+      },
+      "Oracle Cloud Management Pack for Oracle DB": {
+        "featureUsageConcerns": {
+          "Chargeback Application": {
+            "firstUsed": "2020-02-18T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.1.0.2.0",
+            "totalUses": 10,
+            "ruleId": 1032
+          },
+          "Consolidation Planner Application": {
+            "firstUsed": "2020-05-17T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.1.0.2.0",
+            "totalUses": 10,
+            "ruleId": 1033
+          }
+        }
+      },
+      "Oracle Programmer": {
+        "featureUsageConcerns": {
+          "Pro*C": {
+            "firstUsed": "2020-03-03T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1068
+          },
+          "Pro*Cobol": {
+            "firstUsed": "2020-04-21T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1068
+          }
+        }
+      },
+      "Oracle Configuration Management Pack for Oracle DB": {
+        "featureUsageConcerns": {
+          "EM Configuration": {
+            "firstUsed": "2019-11-30T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "10.2.0.3.0",
+            "totalUses": 10,
+            "ruleId": 1036
+          },
+          "EM Config Management Pack": {
+            "firstUsed": "2020-05-15T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "10.2.0.3.0",
+            "totalUses": 10,
+            "ruleId": 1035
+          }
+        }
+      },
+      "Oracle Database In-Memory": {
+        "featureUsageConcerns": {
+          "In-Memory Aggregation": {
+            "firstUsed": "2020-03-19T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1038
+          },
+          "In-Memory Column Store": {
+            "firstUsed": "2020-04-12T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1039
+          }
+        }
+      },
+      "Oracle Tuning Pack": {
+        "featureUsageConcerns": {
+          "SQL Profile": {
+            "firstUsed": "2019-07-18T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1083
+          },
+          "Tuning Pack": {
+            "firstUsed": "2020-03-29T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "11.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1087
+          },
+          "SQL Tuning Set": {
+            "firstUsed": "2020-06-12T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "10.1.0.3.1",
+            "totalUses": 10,
+            "ruleId": 1086
+          },
+          "SPM Evolve Advisor": {
+            "firstUsed": "2019-08-18T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1080
+          },
+          "SQL Access Advisor": {
+            "firstUsed": "2019-11-15T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1081
+          },
+          "SQL Tuning Advisor": {
+            "firstUsed": "2020-05-25T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1084
+          },
+          "SQL Tuning Set (user)": {
+            "firstUsed": "2019-10-31T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1086
+          },
+          "SQL Monitoring and Tuning pages": {
+            "firstUsed": "2019-08-19T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1082
+          }
+        }
+      },
+      "Oracle Change Management Pack": {
+        "featureUsageConcerns": {
+          "Change Management": {
+            "firstUsed": "2020-02-06T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1031
+          },
+          "Change Management Pack": {
+            "firstUsed": "2020-02-23T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "10.2.0.3.0",
+            "totalUses": 10,
+            "ruleId": 1031
+          }
+        }
+      },
+      "Oracle Real Application Clusters One Node": {
+        "featureUsageConcerns": {
+          "Real Application Cluster One Node": {
+            "firstUsed": "2020-06-06T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1073
+          }
+        }
+      },
+      "Oracle Diagnostics Pack": {
+        "featureUsageConcerns": {
+          "ADDM": {
+            "firstUsed": "2020-01-25T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1048
+          },
+          "AWR Report": {
+            "firstUsed": "2020-01-20T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1053
+          },
+          "AWR Baseline": {
+            "firstUsed": "2020-06-04T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1052
+          },
+          "Diagnostic Pack": {
+            "firstUsed": "2019-11-05T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "10.2.0.5.0",
+            "totalUses": 10,
+            "ruleId": 1056
+          },
+          "EM Notification": {
+            "firstUsed": "2019-08-29T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1057
+          },
+          "EM Performance Page": {
+            "firstUsed": "2019-12-13T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1058
+          },
+          "Monitoring Templates": {
+            "firstUsed": "2020-01-25T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1059
+          },
+          "Template Collections": {
+            "firstUsed": "2020-02-18T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1060
+          },
+          "AWR Baseline Template": {
+            "firstUsed": "2019-11-06T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1052
+          },
+          "Baseline Adaptive Thresholds": {
+            "firstUsed": "2020-01-09T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1054
+          },
+          "Baseline Static Computations": {
+            "firstUsed": "2020-05-21T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1055
+          },
+          "Automatic Workload Repository": {
+            "firstUsed": "2019-12-09T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1050
+          },
+          "Automatic Database Diagnostic Monitor": {
+            "firstUsed": "2019-12-07T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "10.1.0.3.1",
+            "totalUses": 10,
+            "ruleId": 1049
+          }
+        }
+      },
+      "Oracle WebLogic Server Management Pack Enterprise Edition": {
+        "featureUsageConcerns": {
+          "EM AS Provisioning and Patch Automation Pack": {
+            "firstUsed": "2020-04-21T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1006
+          }
+        }
+      },
+      "Oracle Advanced Analytics": {
+        "featureUsageConcerns": {
+          "Data Mining": {
+            "firstUsed": "2019-10-06T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1010
+          }
+        }
+      },
+      "Oracle Label Security": {
+        "featureUsageConcerns": {
+          "Label Security": {
+            "firstUsed": "2019-09-22T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1061
+          }
+        }
+      },
+      "Oracle Partitioning": {
+        "featureUsageConcerns": {
+          "Partitioning (user)": {
+            "firstUsed": "2019-11-09T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1069
+          }
+        }
+      },
+      "Oracle Database Lifecycle Management Pack": {
+        "featureUsageConcerns": {
+          "EM Patching Plan Feature Usage": {
+            "firstUsed": "2020-01-30T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "11.2.0.2.0",
+            "totalUses": 10,
+            "ruleId": 1045
+          },
+          "Change Activity Planner My Tasks": {
+            "firstUsed": "2019-09-12T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1044
+          },
+          "Change Activity Planner Dashboard": {
+            "firstUsed": "2019-08-31T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1041
+          },
+          "Change Activity Planner Edit Task": {
+            "firstUsed": "2020-04-03T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1042
+          },
+          "Change Activity Planner Manage Plan": {
+            "firstUsed": "2020-05-03T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1043
+          },
+          "Change Activity Planner Create Plans": {
+            "firstUsed": "2019-08-17T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1040
+          }
+        }
+      },
+      ".Database Gateway": {
+        "featureUsageConcerns": {
+          "Gateways": {
+            "firstUsed": "2019-10-05T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1107
+          },
+          "Transparent Gateway": {
+            "firstUsed": "2020-04-16T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1001
+          }
+        }
+      },
+      "Cloud Management Pack for Oracle Fusion Middleware": {
+        "featureUsageConcerns": {
+          "EM: Fusion Middleware Provisioning": {
+            "firstUsed": "2020-06-17T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "12.2.0.1.0",
+            "totalUses": 10,
+            "ruleId": 1034
+          }
+        }
+      },
+      "Oracle GoldenGate": {
+        "featureUsageConcerns": {
+          "GoldenGate": {
+            "firstUsed": "2020-02-28T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1002
+          },
+          "XStream Streams": {
+            "firstUsed": "2020-04-11T00:00:00Z",
+            "lastUsed": "2020-06-24T00:00:00Z",
+            "version": "19.0.0.0.0",
+            "totalUses": 10,
+            "ruleId": 1108
+          }
+        }
+      }
+    },
+    "parameters": {
+      "CLUSTER_DATABASE": {
+        "value": "FALSE",
+        "isConcerning": false
+      },
+      "CONTROL_MANAGEMENT_PACK_ACCESS": {
+        "value": "DIAGNOSTIC+TUNING",
+        "isConcerning": true
+      },
+      "DB_INDEX_COMPRESSION_INHERITANCE": {
+        "value": "NONE",
+        "isConcerning": false
+      },
+      "ENABLE_DDL_LOGGING": {
+        "value": "FALSE",
+        "isConcerning": false
+      },
+      "HEAT_MAP": {
+        "value": "OFF",
+        "isConcerning": false
+      },
+      "INMEMORY_SIZE": {
+        "value": "0",
+        "isConcerning": false
+      }
+    }
+  }
+}

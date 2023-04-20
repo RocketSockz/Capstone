@@ -1,0 +1,15 @@
+{
+  "id": "b221b670-047c-5d9c-fd1f-adb553d95e05",
+  "displayName": "SQL Monitoring and Tuning pages",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "SQL Monitoring and Tuning pages requires a license for Oracle Tuning Pack to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable Diagnostic & Tuning Packs:\nalter system set control_management_pack_access = NONE scope=both",
+  "error_message": "SQL Monitoring and Tuning pages is listed as a feature usage concern under Oracle Tuning Pack",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "SQL Monitoring and Tuning pages"
+  ]
+}

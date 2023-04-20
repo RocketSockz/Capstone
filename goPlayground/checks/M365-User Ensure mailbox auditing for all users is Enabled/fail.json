@@ -1,0 +1,378 @@
+{
+  "mailBox": {
+    "PSComputerName": "outlook.office365.com",
+    "RunspaceId": "542b2465-ba48-4b43-94ae-5a1cbc65ab11",
+    "PSShowComputerName": false,
+    "Database": "NAMPR17DG093-db058",
+    "DatabaseGuid": "40c081c0-b31c-4800-866d-ea4ef3394531",
+    "MailboxProvisioningConstraint": null,
+    "IsMonitoringMailbox": false,
+    "MailboxRegion": null,
+    "MailboxRegionLastUpdateTime": null,
+    "MessageRecallProcessingEnabled": true,
+    "MessageCopyForSentAsEnabled": false,
+    "MessageCopyForSendOnBehalfEnabled": false,
+    "MailboxProvisioningPreferences": [
+
+    ],
+    "UseDatabaseRetentionDefaults": false,
+    "RetainDeletedItemsUntilBackup": false,
+    "DeliverToMailboxAndForward": false,
+    "IsExcludedFromServingHierarchy": false,
+    "IsHierarchyReady": true,
+    "IsHierarchySyncEnabled": true,
+    "HasSnackyAppData": false,
+    "LitigationHoldEnabled": false,
+    "SingleItemRecoveryEnabled": true,
+    "RetentionHoldEnabled": false,
+    "EndDateForRetentionHold": null,
+    "StartDateForRetentionHold": null,
+    "RetentionComment": "",
+    "RetentionUrl": "",
+    "LitigationHoldDate": null,
+    "LitigationHoldOwner": "",
+    "ElcProcessingDisabled": false,
+    "ComplianceTagHoldApplied": false,
+    "WasInactiveMailbox": false,
+    "DelayHoldApplied": false,
+    "DelayReleaseHoldApplied": false,
+    "InactiveMailboxRetireTime": null,
+    "OrphanSoftDeleteTrackingTime": null,
+    "LitigationHoldDuration": "Unlimited",
+    "ManagedFolderMailboxPolicy": null,
+    "RetentionPolicy": "Default MRM Policy",
+    "AddressBookPolicy": null,
+    "CalendarRepairDisabled": false,
+    "ExchangeGuid": "b0efca20-66fc-4dfb-947b-b7d40ae10dc5",
+    "MailboxContainerGuid": null,
+    "UnifiedMailbox": null,
+    "MailboxLocations": [
+      "1;b0efca20-66fc-4dfb-947b-b7d40ae10dc5;Primary;namprd17.prod.outlook.com;40c081c0-b31c-4800-866d-ea4ef3394531"
+    ],
+    "AggregatedMailboxGuids": [
+
+    ],
+    "ExchangeSecurityDescriptor": "System.Security.AccessControl.RawSecurityDescriptor",
+    "ExchangeUserAccountControl": "None",
+    "AdminDisplayVersion": "Version 15.20 (Build 2686.32)",
+    "MessageTrackingReadStatusEnabled": true,
+    "ExternalOofOptions": "External",
+    "ForwardingAddress": null,
+    "ForwardingSmtpAddress": null,
+    "RetainDeletedItemsFor": "14.00:00:00",
+    "IsMailboxEnabled": true,
+    "Languages": [
+
+    ],
+    "OfflineAddressBook": null,
+    "ProhibitSendQuota": "99 GB (106,300,440,576 bytes)",
+    "ProhibitSendReceiveQuota": "100 GB (107,374,182,400 bytes)",
+    "RecoverableItemsQuota": "30 GB (32,212,254,720 bytes)",
+    "RecoverableItemsWarningQuota": "20 GB (21,474,836,480 bytes)",
+    "CalendarLoggingQuota": "6 GB (6,442,450,944 bytes)",
+    "DowngradeHighPriorityMessagesEnabled": false,
+    "ProtocolSettings": [
+      "RemotePowerShell§1",
+      "MAPI§1§0§§§0§§§§§0",
+      "PublicFolderClientAccess§0",
+      "IMAP4§1§§§§§§§§§§§§",
+      "POP3§1§§§§§§§§§§§§1",
+      "ECP§1",
+      "HTTP§1§1§§§§§§",
+      "OWA§1"
+    ],
+    "RecipientLimits": "500",
+    "ImListMigrationCompleted": false,
+    "SiloName": null,
+    "IsResource": false,
+    "IsLinked": false,
+    "IsShared": false,
+    "IsRootPublicFolderMailbox": false,
+    "LinkedMasterAccount": "",
+    "ResetPasswordOnNextLogon": false,
+    "ResourceCapacity": null,
+    "ResourceCustom": [
+
+    ],
+    "ResourceType": null,
+    "RoomMailboxAccountEnabled": null,
+    "SamAccountName": "sbest50720-292220492",
+    "SCLDeleteThreshold": null,
+    "SCLDeleteEnabled": null,
+    "SCLRejectThreshold": null,
+    "SCLRejectEnabled": null,
+    "SCLQuarantineThreshold": null,
+    "SCLQuarantineEnabled": null,
+    "SCLJunkThreshold": null,
+    "SCLJunkEnabled": null,
+    "AntispamBypassEnabled": false,
+    "ServerLegacyDN": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Configuration/cn=Servers/cn=CY4PR17MB1478",
+    "ServerName": "cy4pr17mb1478",
+    "UseDatabaseQuotaDefaults": false,
+    "IssueWarningQuota": "98 GB (105,226,698,752 bytes)",
+    "RulesQuota": "256 KB (262,144 bytes)",
+    "Office": "",
+    "UserPrincipalName": "sbeste@opscompasscompliance.onmicrosoft.com",
+    "UMEnabled": false,
+    "MaxSafeSenders": null,
+    "MaxBlockedSenders": null,
+    "NetID": "1003200098B8ABBB",
+    "ReconciliationId": null,
+    "WindowsLiveID": "sbeste@opscompasscompliance.onmicrosoft.com",
+    "MicrosoftOnlineServicesID": "sbeste@opscompasscompliance.onmicrosoft.com",
+    "ThrottlingPolicy": null,
+    "RoleAssignmentPolicy": "Default Role Assignment Policy",
+    "DefaultPublicFolderMailbox": null,
+    "EffectivePublicFolderMailbox": null,
+    "SharingPolicy": "Default Sharing Policy",
+    "RemoteAccountPolicy": null,
+    "MailboxPlan": "ExchangeOnlineEnterprise-eeb6a55a-ab71-4a0c-8294-25c3ca5248e0",
+    "ArchiveDatabase": null,
+    "ArchiveDatabaseGuid": "00000000-0000-0000-0000-000000000000",
+    "ArchiveGuid": "00000000-0000-0000-0000-000000000000",
+    "ArchiveName": [
+
+    ],
+    "JournalArchiveAddress": "",
+    "ArchiveQuota": "100 GB (107,374,182,400 bytes)",
+    "ArchiveWarningQuota": "90 GB (96,636,764,160 bytes)",
+    "ArchiveDomain": null,
+    "ArchiveStatus": "None",
+    "ArchiveState": "None",
+    "AutoExpandingArchiveEnabled": false,
+    "DisabledMailboxLocations": false,
+    "RemoteRecipientType": "None",
+    "DisabledArchiveDatabase": null,
+    "DisabledArchiveGuid": "00000000-0000-0000-0000-000000000000",
+    "QueryBaseDN": null,
+    "QueryBaseDNRestrictionEnabled": false,
+    "MailboxMoveTargetMDB": null,
+    "MailboxMoveSourceMDB": null,
+    "MailboxMoveFlags": "None",
+    "MailboxMoveRemoteHostName": "",
+    "MailboxMoveBatchName": "",
+    "MailboxMoveStatus": "None",
+    "MailboxRelease": "",
+    "ArchiveRelease": "",
+    "IsPersonToPersonTextMessagingEnabled": false,
+    "IsMachineToPersonTextMessagingEnabled": true,
+    "UserSMimeCertificate": [
+
+    ],
+    "UserCertificate": [
+
+    ],
+    "CalendarVersionStoreDisabled": false,
+    "ImmutableId": "",
+    "PersistedCapabilities": [
+      "BPOS_S_CustomerLockbox",
+      "MIP_S_CLP2",
+      "BPOS_S_EquivioAnalytics",
+      "BPOS_S_O365PAM",
+      "BPOS_S_ThreatIntelligenceAddOn",
+      "BPOS_S_Analytics",
+      "M365Auditing",
+      "BPOS_S_Enterprise"
+    ],
+    "SKUAssigned": true,
+    "AuditEnabled": false,
+    "AuditLogAgeLimit": "90.00:00:00",
+    "AuditAdmin": [
+      "Update",
+      "MoveToDeletedItems",
+      "SoftDelete",
+      "HardDelete",
+      "SendAs",
+      "SendOnBehalf",
+      "Create",
+      "UpdateFolderPermissions",
+      "UpdateInboxRules",
+      "UpdateCalendarDelegation",
+      "MailItemsAccessed"
+    ],
+    "AuditDelegate": [
+      "Update",
+      "MoveToDeletedItems",
+      "SoftDelete",
+      "HardDelete",
+      "SendAs",
+      "SendOnBehalf",
+      "Create",
+      "UpdateFolderPermissions",
+      "UpdateInboxRules",
+      "MailItemsAccessed"
+    ],
+    "AuditOwner": [
+      "Update",
+      "MoveToDeletedItems",
+      "SoftDelete",
+      "HardDelete",
+      "UpdateFolderPermissions",
+      "UpdateInboxRules",
+      "UpdateCalendarDelegation",
+      "MailItemsAccessed"
+    ],
+    "DefaultAuditSet": [
+      "Admin",
+      "Delegate",
+      "Owner"
+    ],
+    "WhenMailboxCreated": "\/Date(1580413031000)\/",
+    "SourceAnchor": "",
+    "UsageLocation": "United States",
+    "IsSoftDeletedByRemove": false,
+    "IsSoftDeletedByDisable": false,
+    "IsInactiveMailbox": false,
+    "IncludeInGarbageCollection": false,
+    "WhenSoftDeleted": null,
+    "InPlaceHolds": [
+
+    ],
+    "GeneratedOfflineAddressBooks": [
+
+    ],
+    "AccountDisabled": false,
+    "StsRefreshTokensValidFrom": "\/Date(1580410665000)\/",
+    "NonCompliantDevices": [
+
+    ],
+    "EnforcedTimestamps": "",
+    "DataEncryptionPolicy": null,
+    "Extensions": [
+
+    ],
+    "HasPicture": false,
+    "HasSpokenName": false,
+    "IsDirSynced": false,
+    "AcceptMessagesOnlyFrom": [
+
+    ],
+    "AcceptMessagesOnlyFromDLMembers": [
+
+    ],
+    "AcceptMessagesOnlyFromSendersOrMembers": [
+
+    ],
+    "AddressListMembership": [
+      "\\Offline Global Address List",
+      "\\All Users",
+      "\\Mailboxes(VLV)",
+      "\\All Mailboxes(VLV)",
+      "\\All Recipients(VLV)",
+      "\\Default Global Address List"
+    ],
+    "AdministrativeUnits": [
+
+    ],
+    "Alias": "sbeste",
+    "ArbitrationMailbox": null,
+    "BypassModerationFromSendersOrMembers": [
+
+    ],
+    "OrganizationalUnit": "nampr17a004.prod.outlook.com/Microsoft Exchange Hosted Organizations/opscompasscompliance.onmicrosoft.com",
+    "CustomAttribute1": "",
+    "CustomAttribute10": "",
+    "CustomAttribute11": "",
+    "CustomAttribute12": "",
+    "CustomAttribute13": "",
+    "CustomAttribute14": "",
+    "CustomAttribute15": "",
+    "CustomAttribute2": "",
+    "CustomAttribute3": "",
+    "CustomAttribute4": "",
+    "CustomAttribute5": "",
+    "CustomAttribute6": "",
+    "CustomAttribute7": "",
+    "CustomAttribute8": "",
+    "CustomAttribute9": "",
+    "ExtensionCustomAttribute1": [
+
+    ],
+    "ExtensionCustomAttribute2": [
+
+    ],
+    "ExtensionCustomAttribute3": [
+
+    ],
+    "ExtensionCustomAttribute4": [
+
+    ],
+    "ExtensionCustomAttribute5": [
+
+    ],
+    "DisplayName": "Sam Beste",
+    "EmailAddresses": [
+      "SPO:SPO_77cea529-32bc-4a40-beb9-b04177996ac1@SPO_a2e9d848-51aa-467b-a8ed-c8ad27fee718",
+      "SIP:sbeste@opscompasscompliance.onmicrosoft.com",
+      "SMTP:sbeste@opscompasscompliance.onmicrosoft.com"
+    ],
+    "GrantSendOnBehalfTo": [
+
+    ],
+    "ExternalDirectoryObjectId": "a568a128-6e38-4d46-8c3e-9c042078eafb",
+    "HiddenFromAddressListsEnabled": false,
+    "LastExchangeChangedTime": null,
+    "LegacyExchangeDN": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=90ea3af1b5a24ade9fd25db47ace17c3-sbeste",
+    "MaxSendSize": "35 MB (36,700,160 bytes)",
+    "MaxReceiveSize": "36 MB (37,748,736 bytes)",
+    "ModeratedBy": [
+
+    ],
+    "ModerationEnabled": false,
+    "PoliciesIncluded": [
+
+    ],
+    "PoliciesExcluded": [
+      "{26491cfc-9e50-4857-861b-0cb8df22b5d7}"
+    ],
+    "EmailAddressPolicyEnabled": false,
+    "PrimarySmtpAddress": "sbeste@opscompasscompliance.onmicrosoft.com",
+    "RecipientType": "UserMailbox",
+    "RecipientTypeDetails": "UserMailbox",
+    "RejectMessagesFrom": [
+
+    ],
+    "RejectMessagesFromDLMembers": [
+
+    ],
+    "RejectMessagesFromSendersOrMembers": [
+
+    ],
+    "RequireSenderAuthenticationEnabled": false,
+    "SimpleDisplayName": "",
+    "SendModerationNotifications": "Always",
+    "UMDtmfMap": [
+      "reversedPhone:0000000524",
+      "emailAddress:723783",
+      "lastNameFirstName:23783726",
+      "firstNameLastName:72623783"
+    ],
+    "WindowsEmailAddress": "sbeste@opscompasscompliance.onmicrosoft.com",
+    "MailTip": null,
+    "MailTipTranslations": [
+
+    ],
+    "Identity": "sbeste",
+    "Id": "sbeste",
+    "IsValid": true,
+    "ExchangeVersion": "0.20 (15.0.0.0)",
+    "Name": "sbeste",
+    "DistinguishedName": "CN=sbeste,OU=opscompasscompliance.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR17A004,DC=PROD,DC=OUTLOOK,DC=COM",
+    "ObjectCategory": "NAMPR17A004.PROD.OUTLOOK.COM/Configuration/Schema/Person",
+    "ObjectClass": [
+      "top",
+      "person",
+      "organizationalPerson",
+      "user"
+    ],
+    "WhenChanged": "\/Date(1580420998000)\/",
+    "WhenCreated": "\/Date(1580413032000)\/",
+    "WhenChangedUTC": "\/Date(1580420998000)\/",
+    "WhenCreatedUTC": "\/Date(1580413032000)\/",
+    "ExchangeObjectId": "ba073d9d-2131-4a56-9479-efa5a0f5e7be",
+    "OrganizationId": "NAMPR17A004.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/opscompasscompliance.onmicrosoft.com - NAMPR17A004.PROD.OUTLOOK.COM/ConfigurationUnits/opscompasscompliance.onmicrosoft.com/Configuration",
+    "Guid": "ba073d9d-2131-4a56-9479-efa5a0f5e7be",
+    "OriginatingServer": "BN6PR17A004DC05.NAMPR17A004.PROD.OUTLOOK.COM",
+    "ObjectState": "Unchanged"
+  }
+}

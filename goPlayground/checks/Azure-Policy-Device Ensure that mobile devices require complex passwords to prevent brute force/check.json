@@ -1,0 +1,15 @@
+{
+  "id": "90c4c0fb-6863-9259-9e77-67e9337642f6",
+  "displayName": "Ensure that mobile devices require complex passwords to prevent brute force attacks",
+  "resourceType": "microsoft.graph.deviceConfiguration",
+  "severity": "low",
+  "rationale": "Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.",
+  "source": "cis o365 1.1.0 | benchmark 7.10",
+  "recommended_action": "To set mobile device management profiles, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile\n\t4. Set a Name for the policy, choose the appropriate Platform and select Device restrictions\n\t5. In the Password section, ensure that Simple Passwords is set to Blocked.",
+  "error_message": "Device configurations do not block simple passwords",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that mobile devices require complex passwords to prevent brute force attacks"
+  ]
+}

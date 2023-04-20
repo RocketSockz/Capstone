@@ -1,0 +1,15 @@
+{
+  "id": "90accf09-c938-4b32-baca-e0c30976affb",
+  "displayName": "Ensure that 'Security contact emails' is set",
+  "resourceType": "Microsoft.Security/securityContacts",
+  "severity": "high",
+  "rationale": "Microsoft reaches out to the designated security contact in case its security team finds that the organization's resources are compromised. This ensures that the proper people are aware of any potential compromise in order to mitigate the risk in a timely fashion.",
+  "source": "cis azure 1.1.0 | benchmark 2.16",
+  "recommended_action": "1. Go to Security Center\n2. Click on Security Policy\n3. Click On Edit Settings for the security policy subscription\n4. Click on Email notifications\n5.  Set Send email also to subscription owners to On\n6. Click Save",
+  "error_message": "Security center contact information is not set",
+  "category": "IR",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that security contact emails are set"
+  ]
+}

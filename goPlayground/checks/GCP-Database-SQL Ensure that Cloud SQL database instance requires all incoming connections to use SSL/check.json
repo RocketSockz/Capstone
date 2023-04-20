@@ -1,0 +1,15 @@
+{
+  "id": "c7ee3873-9993-a518-c6c4-6c0019dc5c8d",
+  "displayName": "Ensure that Cloud SQL database instance requires all incoming connections to use SSL",
+  "resourceType": "sql#instance",
+  "severity": "high",
+  "rationale": "SQL database connections if successfully trapped (MITM); can reveal sensitive data like credentials, database queries, query outputs etc. For security, it is recommended to always use SSL encryption when connecting to your instance. This recommendation is applicable for Postgresql, MySql generation 1 and MySql generation 2 Instances.",
+  "source": "cis gcp 1.0.0 | benchmark 6.1",
+  "recommended_action": "To enforce SSL encryption for an Instance run command:\ngcloud sql instances patch [INSTANCE_NAME] --require-ssl",
+  "error_message": "Incoming connections on instance are not required to use SSL encryption",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure incoming database connections use SSL"
+  ]
+}

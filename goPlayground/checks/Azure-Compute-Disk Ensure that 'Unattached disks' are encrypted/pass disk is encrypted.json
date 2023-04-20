@@ -1,0 +1,41 @@
+{
+  "accountId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/LIFELOOP-RG/providers/Microsoft.Compute/disks/mongoarb-vm_OsDisk_1_a85616fba6a24676ba3c78f815f2030e",
+  "name": "mongoarb-vm_OsDisk_1_a85616fba6a24676ba3c78f815f2030e",
+  "resourceGroup": "LIFELOOP-RG",
+  "type": "Microsoft.Compute/disks",
+  "document": {
+    "name": "mongoarb-vm_OsDisk_1_a85616fba6a24676ba3c78f815f2030e",
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/LIFELOOP-RG/providers/Microsoft.Compute/disks/mongoarb-vm_OsDisk_1_a85616fba6a24676ba3c78f815f2030e",
+    "type": "Microsoft.Compute/disks",
+    "location": "northcentralus",
+    "managedBy": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/lifeloop-rg/providers/Microsoft.Compute/virtualMachines/mongoarb-vm",
+    "sku": {
+      "name": "Premium_LRS",
+      "tier": "Premium"
+    },
+    "properties": {
+      "osType": "Linux",
+      "creationData": {
+        "createOption": "FromImage",
+        "imageReference": {
+          "id": "/Subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/Providers/Microsoft.Compute/Locations/northcentralus/Publishers/Canonical/ArtifactTypes/VMImage/Offers/UbuntuServer/Skus/16.04-LTS/Versions/16.04.201801260"
+        }
+      },
+      "diskSizeGB": 30,
+      "diskIOPSReadWrite": 120,
+      "diskMBpsReadWrite": 25,
+      "encryption": {
+        "type": "EncryptionAtRestWithPlatformKey"
+      },
+      "timeCreated": "2018-02-08T16:53:31.6322629+00:00",
+      "provisioningState": "Succeeded",
+      "diskState": "Attached",
+      "diskSizeBytes": 32212254720,
+      "uniqueId": "a85616fb-a6a2-4676-ba3c-78f815f2030e",
+      "networkAccessPolicy": "AllowAll"
+    }
+  },
+  "iam": [],
+  "location": "northcentralus"
+}

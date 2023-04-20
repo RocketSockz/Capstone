@@ -1,0 +1,20 @@
+{
+  "properties": {
+    "document": {
+      "contains": {
+        "properties": {
+          "antivirusRequired": {
+            "const": true
+          },
+          "antiSpywareRequired": {
+            "const": true
+          },
+          "activeFirewallRequired": {
+            "const": true
+          }
+        },
+        "required": ["antivirusRequired", "antiSpywareRequired", "activeFirewallRequired"]
+      }
+    }
+  }
+}

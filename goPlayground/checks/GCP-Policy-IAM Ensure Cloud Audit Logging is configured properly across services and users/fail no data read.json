@@ -1,0 +1,112 @@
+{
+  "accountId": "upbeat-nation-265322",
+  "id": "",
+  "region": "",
+  "name": "",
+  "zone": "",
+  "type": "",
+  "document": {
+    "version": 1,
+    "etag": "BwWfF512Bbk=",
+    "bindings": [
+      {
+        "role": "roles/cloudfunctions.serviceAgent",
+        "members": [
+          "serviceAccount:service-655655084013@gcf-admin-robot.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/cloudkms.admin",
+        "members": [
+          "serviceAccount:upbeat-nation-265322@appspot.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/cloudkms.cryptoKeyDecrypter",
+        "members": [
+          "serviceAccount:upbeat-nation-265322@appspot.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/cloudkms.cryptoKeyEncrypter",
+        "members": [
+          "serviceAccount:upbeat-nation-265322@appspot.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/cloudkms.cryptoKeyEncrypterDecrypter",
+        "members": [
+          "serviceAccount:upbeat-nation-265322@appspot.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/cloudkms.importer",
+        "members": [
+          "serviceAccount:upbeat-nation-265322@appspot.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/compute.serviceAgent",
+        "members": [
+          "serviceAccount:service-655655084013@compute-system.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/container.serviceAgent",
+        "members": [
+          "serviceAccount:service-655655084013@container-engine-robot.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/editor",
+        "members": [
+          "serviceAccount:655655084013-compute@developer.gserviceaccount.com",
+          "serviceAccount:655655084013@cloudservices.gserviceaccount.com",
+          "serviceAccount:service-655655084013@containerregistry.iam.gserviceaccount.com",
+          "serviceAccount:testserviceaccount@upbeat-nation-265322.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/firebaserules.system",
+        "members": [
+          "serviceAccount:service-655655084013@firebase-rules.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/iam.serviceAccountUser",
+        "members": [
+          "serviceAccount:service-655655084013@compute-system.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/owner",
+        "members": [
+          "user:dkerber@opscompass.com",
+          "user:josh.siegel@opscompass.com",
+          "user:sam.beste@opscompass.com"
+        ]
+      }
+    ],
+    "auditConfigs": [
+      {
+        "service": "allServices",
+        "auditLogConfigs": [
+          {
+            "logType": "DATA_WRITE"
+          }
+        ]
+      }
+    ]
+  },
+  "projectId": {
+    "projectNumber": "655655084013",
+    "projectId": "upbeat-nation-265322",
+    "lifecycleState": "ACTIVE",
+    "name": "opscompass-compliance",
+    "createTime": "2020-01-16T22:47:02.458Z",
+    "parent": {
+      "type": "organization",
+      "id": "696028033344"
+    }
+  }
+}

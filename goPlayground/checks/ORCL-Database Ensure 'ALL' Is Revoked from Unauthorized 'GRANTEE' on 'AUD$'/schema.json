@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "SysAudRevokeALL": {
+                "anyOf": [{
+                  "type": "null"
+                },
+                {
+                  "not": {
+                    "minItems": 1
+                  }
+                }
+              ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "accountId": "1b877039-42c8-467f-a80b-950b770fa4ff",
+    "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/providers/Microsoft.Security/pricings/AppServices",
+    "name": "AppServices",
+    "type": "Microsoft.Security/pricings",
+    "document": {
+        "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/providers/Microsoft.Security/pricings/AppServices",
+        "name": "AppServices",
+        "type": "Microsoft.Security/pricings",
+        "properties": {
+            "pricingTier": "Standard",
+            "freeTrialRemainingTime": "PT0S"
+        }
+    },
+    "iam": [],
+    "location": null
+}

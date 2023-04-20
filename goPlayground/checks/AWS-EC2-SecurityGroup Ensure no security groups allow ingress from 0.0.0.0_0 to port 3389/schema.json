@@ -1,0 +1,55 @@
+{
+  "recommended_action": "Perform the following to implement the prescribed state:\n1. Login to the AWS Management Console at\nhttps://console.aws.amazon.com/vpc/home\n2. In the left pane, click Security Groups\n3. For this security group, perform the following:\n4. Select the security group\n5. Click the Inbound Rules tab\n6. Identify the rules to be removed\n7. Click the x in the Remove column\n8. Click Save",
+  "rationale": "Removing unfettered connectivity to remote console services, such as RDP, reduces a server's exposure to risk.",
+  "source": "cis aws 1.2.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "IpPermissions": {
+          "type": "array",
+          "if": {
+            "minItems": 1
+          },
+          "then": {
+            "not": {
+              "errorMessage": "Security group allows ingress from port 3389.",
+              "items": {
+                "allOf": [
+                  {
+                    "properties": {
+                      "FromPort": {
+                        "maximum": 3389
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "ToPort": {
+                        "minimum": 3389
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "IpRanges": {
+                        "items": {
+                          "properties": {
+                            "CidrIp": {
+                              "const": "0.0.0.0/0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "else": true
+        }
+      }
+    }
+  },
+  "schemaId": "1d015ca6-ad98-3a36-a7f9-f499083b36fd"
+}

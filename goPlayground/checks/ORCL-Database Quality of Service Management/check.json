@@ -1,0 +1,15 @@
+{
+  "id": "c239d14d-90f5-3fb8-459f-d98fb85eec3a",
+  "displayName": "Quality of Service Management",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Quality of Service Management requires a license for Oracle Real Application Clusters to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Set CLUSTER_DATABASE=FALSE",
+  "error_message": "Quality of Service Management is listed as a feature usage concern under Oracle Real Application Clusters",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Quality of Service Management"
+  ]
+}

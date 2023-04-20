@@ -1,0 +1,15 @@
+{
+  "id": "f3c742ae-baab-4bfe-80e0-f319dbf678c4",
+  "displayName": "Ensure the 'sa' Login Account is set to 'Disabled'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "high",
+  "rationale": "Enforcing this control reduces the probability of an attacker executing brute force attacks against a well-known principal.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Execute the following T-SQL query:\r\n```\r\nUSE [master]\r\nGO\r\nDECLARE @tsql nvarchar(max)\r\nSET @tsql = 'ALTER LOGIN ' + SUSER_NAME(0x01) + ' DISABLE'\r\nEXEC (@tsql)\r\nGO\r\n```",
+  "error_message": "Login Account 'sa'  is enabled",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure the 'sa' Login Account is set to 'Disabled'"
+  ]
+}

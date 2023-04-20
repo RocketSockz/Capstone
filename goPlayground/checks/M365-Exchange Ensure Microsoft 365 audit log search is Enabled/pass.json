@@ -1,0 +1,47 @@
+{
+  "document": {
+    "PSComputerName": "outlook.office365.com",
+    "RunspaceId": "1b559256-c89e-42c6-abcf-0772b75f9a20",
+    "PSShowComputerName": false,
+    "AdminAuditLogEnabled": true,
+    "LogLevel": "None",
+    "TestCmdletLoggingEnabled": false,
+    "AdminAuditLogCmdlets": [
+      "*"
+    ],
+    "AdminAuditLogParameters": [
+      "*"
+    ],
+    "AdminAuditLogExcludedCmdlets": [
+
+    ],
+    "AdminAuditLogAgeLimit": "90.00:00:00",
+    "LoadBalancerCount": 3,
+    "RefreshInterval": 10,
+    "PartitionInfo": [
+
+    ],
+    "UnifiedAuditLogIngestionEnabled": true,
+    "UnifiedAuditLogFirstOptInDate": null,
+    "AdminDisplayName": "",
+    "ExchangeVersion": "0.10 (14.0.100.0)",
+    "Name": "Admin Audit Log Settings",
+    "DistinguishedName": "CN=Admin Audit Log Settings,CN=Global Settings,CN=Configuration,CN=sct-15_20_2686_27-msonline-bpos_s_6bd58,CN=ConfigurationUnits,DC=NAMPR17A004,DC=PROD,DC=OUTLOOK,DC=COM",
+    "Identity": "Admin Audit Log Settings",
+    "ObjectCategory": "NAMPR17A004.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Admin-Audit-Log-Config",
+    "ObjectClass": [
+      "top",
+      "msExchAdminAuditLogConfig"
+    ],
+    "WhenChanged": "\/Date(1580323071000)\/",
+    "WhenCreated": "\/Date(1580323061000)\/",
+    "WhenChangedUTC": "\/Date(1580323071000)\/",
+    "WhenCreatedUTC": "\/Date(1580323061000)\/",
+    "ExchangeObjectId": "f2ef81bd-c46f-462c-9dc3-6621ec386d30",
+    "OrganizationId": "NAMPR17A004.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/sct-15_20_2686_27-msonline-bpos_s_6bd58 - NAMPR17A004.PROD.OUTLOOK.COM/ConfigurationUnits/sct-15_20_2686_27-msonline-bpos_s_6bd58/Configuration",
+    "Id": "Admin Audit Log Settings",
+    "Guid": "f2ef81bd-c46f-462c-9dc3-6621ec386d30",
+    "OriginatingServer": "BN6PR17A004DC05.NAMPR17A004.PROD.OUTLOOK.COM",
+    "IsValid": true
+  }
+}

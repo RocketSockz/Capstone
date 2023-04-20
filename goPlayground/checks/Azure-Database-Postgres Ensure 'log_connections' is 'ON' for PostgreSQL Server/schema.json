@@ -1,0 +1,32 @@
+{
+  "recommended_action": "1. Login to Azure Portal using https://portal.azure.com\n2. Go to Azure Database for PostgreSQL server\n3. For this database click on Server parameters\n4. Search for log_connections\n5. Click ON and save",
+  "rationale": "Enabling log_connections helps PostgreSQL Database to log attempted connection to the server, as well as successful completion of client authentication. Log data can be used to identify, troubleshoot, and repair configuration errors and suboptimal performance.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "config": {
+      "items": {
+        "if": {
+          "properties": {
+            "name": {
+              "constIgnoreCase": "log_connections"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "properties": {
+              "properties": {
+                "value": {
+                  "errorMessage": "SQL's logging of connections is set to off.",
+                  "enumIgnoreCase": ["on"]
+                }
+              }
+            }
+          }
+        },
+        "errorMessage": "SQL's logging of connections is set to off."
+      }
+    }
+  },
+  "schemaId": "1cfc5e1d-dd7b-7cc0-6426-9d24269ba722"
+}

@@ -1,0 +1,64 @@
+{
+  "document": {
+    "GroupPolicySizeQuota": 5120,
+    "InstanceProfilesQuota": 1000,
+    "Policies": 2,
+    "GroupsPerUserQuota": 10,
+    "InstanceProfiles": 1,
+    "AttachedPoliciesPerUserQuota": 10,
+    "Users": 8,
+    "PoliciesQuota": 1500,
+    "Providers": 0,
+    "AccountMFAEnabled": 0,
+    "AccessKeysPerUserQuota": 2,
+    "AssumeRolePolicySizeQuota": 2048,
+    "PolicyVersionsInUseQuota": 10000,
+    "GlobalEndpointTokenVersion": 1,
+    "VersionsPerPolicyQuota": 5,
+    "AttachedPoliciesPerGroupQuota": 10,
+    "PolicySizeQuota": 6144,
+    "Groups": 0,
+    "AccountSigningCertificatesPresent": 0,
+    "UsersQuota": 5000,
+    "ServerCertificatesQuota": 20,
+    "MFADevices": 3,
+    "UserPolicySizeQuota": 2048,
+    "PolicyVersionsInUse": 8,
+    "ServerCertificates": 0,
+    "Roles": 9,
+    "RolesQuota": 1000,
+    "SigningCertificatesPerUserQuota": 2,
+    "MFADevicesInUse": 2,
+    "RolePolicySizeQuota": 10240,
+    "AttachedPoliciesPerRoleQuota": 10,
+    "AccountAccessKeysPresent": 0,
+    "GroupsQuota": 300,
+    "AllMFADevices": [
+      {
+        "SerialNumber": "arn:aws:iam::434855252750:mfa/SamMFA"
+      },
+      {
+        "SerialNumber": "arn:aws:iam::434855252750:mfa/root-account-mfa-device",
+        "User": {
+          "UserId": "434855252750",
+          "Arn": "arn:aws:iam::434855252750:root",
+          "CreateDate": "2019-05-29T15:27:09.000Z",
+          "PasswordLastUsed": "2019-05-29T20:22:47.000Z"
+        },
+        "EnableDate": "2019-05-29T20:27:07.000Z"
+      },
+      {
+        "SerialNumber": "arn:aws:iam::434855252750:mfa/zach.mckenzie@opscompass.com",
+        "User": {
+          "Path": "/",
+          "UserName": "zach.mckenzie@opscompass.com",
+          "UserId": "AIDAWKP3ESMHGLLMTXIGD",
+          "Arn": "arn:aws:iam::434855252750:user/zach.mckenzie@opscompass.com",
+          "CreateDate": "2019-05-29T15:32:06.000Z",
+          "PasswordLastUsed": "2019-05-30T18:37:31.000Z"
+        },
+        "EnableDate": "2019-05-29T20:47:37.000Z"
+      }
+    ]
+  }
+}

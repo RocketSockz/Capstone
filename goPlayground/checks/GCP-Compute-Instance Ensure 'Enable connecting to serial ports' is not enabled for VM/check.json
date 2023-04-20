@@ -1,0 +1,15 @@
+{
+  "id": "4be42fab-3bb7-a337-7d80-0d1d17a0d05c",
+  "displayName": "Ensure 'Enable connecting to serial ports' is not enabled for VM Instance",
+  "resourceType": "compute#instance",
+  "severity": "high",
+  "rationale": "A virtual machine instance has four virtual serial ports. Interacting with a serial port is similar to using a terminal window, in that input and output is entirely in text mode and there is no graphical interface or mouse support. The instance's operating system, BIOS, and other system-level entities often write output to the serial ports, and can accept input such as commands or answers to prompts. Typically, these system-level entities use the first serial port (port 1) and serial port 1 is often referred to as the serial console. The interactive serial console does not support IP-based access restrictions such as IP whitelists. If you enable the interactive serial console on an instance, clients can attempt to connect to that instance from any IP address. This allows anybody to connect to that instance if they know the correct SSH key, username, project ID, zone, and instance name. Therefore interactive serial console support should be disabled.",
+  "source": "cis gcp 1.0.0 | benchmark 4.4",
+  "recommended_action": "1. Login to Google Cloud console\n2. Go to Computer Engine\n3. Go to VM instances\n4. Click on the Specific VM\n5. Ensure Enable connecting to serial ports below Remote access block is\nunselected.",
+  "error_message": "Instance allows serial ports to be connected to",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'Enable Connecting to Serial Ports' is not enabled for VM instance"
+  ]
+}

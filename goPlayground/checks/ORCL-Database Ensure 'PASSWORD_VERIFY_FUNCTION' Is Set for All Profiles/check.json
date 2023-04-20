@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "41994e90-bd61-4f76-ae96-3579ba29bcb0",
+  "displayName": "Ensure 'PASSWORD_VERIFY_FUNCTION' Is Set for All Profiles",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Through Oracle database profiles, password complexity rules (mixed cases with digits and special characters), blocking of simple combinations, and enforcing change/history settings can potentially thwart unauthorized logins by an unauthorized user.",
+  "recommended_action": "Create a custom password verification function which fulfills the password requirements of the organization.",
+  "error_message": "PASSWORD_VERIFY_FUNCTION is not enabled on all profiles",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'PASSWORD_VERIFY_FUNCTION' Is Set for All Profiles"
+  ]
+}

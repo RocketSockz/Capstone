@@ -1,0 +1,77 @@
+{
+  "accountId": "upbeat-nation-265322",
+  "id": "opscompass",
+  "region": "",
+  "name": "opscompass",
+  "zone": "",
+  "type": "",
+  "document": {
+    "kind": "storage#bucket",
+    "selfLink": "https://www.googleapis.com/storage/v1/b/opscompass",
+    "id": "opscompass",
+    "name": "opscompass",
+    "projectNumber": "655655084013",
+    "metageneration": "26",
+    "location": "US-EAST1",
+    "storageClass": "STANDARD",
+    "etag": "CBo=",
+    "defaultEventBasedHold": false,
+    "timeCreated": "2020-01-21T15:53:31.346Z",
+    "updated": "2020-03-16T15:14:55.494Z",
+    "versioning": {
+      "enabled": true
+    },
+    "iamConfiguration": {
+      "bucketPolicyOnly": {
+        "enabled": false
+      },
+      "uniformBucketLevelAccess": {
+        "enabled": false
+      }
+    },
+    "locationType": "region"
+  },
+  "iamPolicy": {
+    "kind": "storage#policy",
+    "resourceId": "projects/_/buckets/opscompass",
+    "version": 1,
+    "etag": "CBo=",
+    "bindings": [
+      {
+        "role": "roles/iam.securityAdmin",
+        "members": [
+          "serviceAccount:opscompass@ops-compass-demo.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/storage.admin",
+        "members": ["user:josh.siegel@opscompass.com"]
+      },
+      {
+        "role": "roles/storage.legacyBucketOwner",
+        "members": [
+          "projectEditor:upbeat-nation-265322",
+          "projectOwner:upbeat-nation-265322",
+          "serviceAccount:p655655084013-514564@gcp-sa-logging.iam.gserviceaccount.com",
+          "serviceAccount:p655655084013-727467@gcp-sa-logging.iam.gserviceaccount.com"
+        ]
+      },
+      {
+        "role": "roles/storage.legacyBucketReader",
+        "members": ["projectViewer:upbeat-nation-265322"]
+      },
+      {
+        "role": "roles/storage.objectAdmin",
+        "members": ["user:josh.siegel@opscompass.com"]
+      },
+      {
+        "role": "roles/storage.objectCreator",
+        "members": ["user:josh.siegel@opscompass.com"]
+      },
+      {
+        "role": "roles/storage.objectViewer",
+        "members": ["user:josh.siegel@opscompass.com"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "checkMe": true,
+  "recommended_action": "1. Go to Virtual machines\n2. For this virtual machine, go to Settings\n3. Click on Extensions\n4. If there are unapproved extensions, uninstall them.",
+  "rationale": "Azure virtual machine extensions are small applications that provide post-deployment configuration and automation tasks on Azure virtual machines. These extensions run with administrative privileges and could potentially access anything on a virtual machine. The Azure Portal and community provide several such extensions. Each organization should carefully evaluate these extensions and ensure that only those that are approved for use are actually implemented.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "extensions": {
+      "maxItems": 0,
+      "errorMessage": "Virtual machines have unapproved extensions installed."
+    }
+  },
+  "schemaId": "69f919db-ce95-20f7-a44d-22d12372766d"
+}

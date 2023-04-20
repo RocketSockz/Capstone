@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "2f73648d-8f99-4ce1-88f6-665a9c94e43d",
+  "displayName": "Ensure the 'GRANT ANY OBJECT PRIVILEGE' Audit Option Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Logging of privilege grants that can lead to the creation, alteration, or deletion of critical data, the modification of objects, object privilege propagation and other such activities can be critical to forensic investigations.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this needs to be done in both container and pluggable database, you must connect to both places to do the audit statement.\n```\nAUDIT GRANT ANY OBJECT PRIVILEGE;\n```",
+  "error_message": "'GRANT ANY OBJECT PRIVILEGE' audit option is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'GRANT ANY OBJECT PRIVILEGE' Audit Option Is Enabled"
+  ]
+}

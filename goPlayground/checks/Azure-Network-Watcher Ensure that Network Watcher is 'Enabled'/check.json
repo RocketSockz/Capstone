@@ -1,0 +1,15 @@
+{
+  "id": "0f0b58b9-8d69-ddd4-8405-4f94e7aa0684",
+  "displayName": "Ensure that Network Watcher is 'Enabled'",
+  "resourceType": "Microsoft.Network/networkWatchers",
+  "severity": "high",
+  "rationale": "Network diagnostic and visualization tools available with Network Watcher help users understand, diagnose, and gain insights to the network in Azure.",
+  "source": "cis azure 1.1.0 | benchmark 6.5",
+  "recommended_action": "1. Go to Network Watcher\n2. Right click on the subscription name and click on Enable network watcher in all regions",
+  "error_message": "Network watcher is not enabled in this region",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that network watcher is enabled"
+  ]
+}

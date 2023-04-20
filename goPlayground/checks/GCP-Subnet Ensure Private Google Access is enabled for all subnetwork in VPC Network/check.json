@@ -1,0 +1,15 @@
+{
+  "id": "fc66aa45-dea0-6dd2-78ad-081d7bf4308a",
+  "displayName": "Ensure Private Google Access is enabled for all subnetwork in VPC Network",
+  "resourceType": "compute#subnetwork",
+  "severity": "medium",
+  "rationale": "VPC networks and subnetworks provide logically isolated and secure network partitions where you can launch GCP resources. When Private Google Access is enabled, VM instances in a subnet can reach the Google Cloud and Developer APIs and services without needing an external IP address. Instead, VMs can use their internal IP addresses to access Google managed services. Instances with external IP addresses are not affected when you enable the ability to access Google services from internal IP addresses. These instances can still connect to Google APIs and managed services.",
+  "source": "cis gcp 1.0.0 | benchmark 3.8",
+  "recommended_action": "1. Go to VPC network GCP Console visiting\nhttps://console.cloud.google.com/networking/networks/list\n2. Click the name of a subnet, The Subnet details page is displayed\n3. Click on EDIT button\n4. Set Private Google access to On\n5. Click on Save",
+  "error_message": "Subnetwork does not have private Google access enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure private Google access is enabled for all subnetwork in VPC network"
+  ]
+}

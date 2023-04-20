@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "4749b75c-7a56-4e6e-aeba-c326a73c7e73",
+  "displayName": "Ensure parameter 'REMOTE_OS_ROLES' Is Set to 'FALSE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Allowing remote clients OS roles to have permissions for database management could cause privilege overlaps and generally weaken security.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET REMOTE_OS_ROLES = FALSE SCOPE = SPFILE;\n```",
+  "error_message": "Remote Operating System authentication is allowed",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'REMOTE_OS_ROLES' Is Set to 'FALSE'"
+  ]
+}

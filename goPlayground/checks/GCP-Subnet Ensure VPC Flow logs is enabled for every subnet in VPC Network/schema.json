@@ -1,0 +1,16 @@
+{
+  "recommended_action": "1. Go to VPC network GCP Console visiting\nhttps://console.cloud.google.com/networking/networks/list\n2. Click the name of a subnet, The Subnet details page is displayed\n3. Click on EDIT button\n4. Set Flow Logs to On\n5. Click on Save",
+  "rationale": "VPC networks and subnetworks provide logically isolated and secure network partitions where you can launch GCP resources. When Flow Logs is enabled for a subnet, VMs within subnet starts reporting on all TCP and UDP flows. Each VM samples the TCP and UDP flows it sees, inbound and outbound, whether the flow is to or from another VM, a host in your on-premises datacenter, a Google service, or a host on the Internet. If two GCP VMs are communicating, and both are in subnets that have VPC Flow Logs enabled, both VMs report the flows. Flow Logs supports following use cases:\nNetwork monitoring\nUnderstanding network usage and optimizing network traffic expenses\nNetwork forensicsReal-time security analysis\nFlow Logs provide visibility into network traffic for each VM inside the subnet and can be used to detect anomalous traffic or insight during security workflows.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "enableFlowLogs": {
+          "errorMessage": "Subnetwork has flow logs disabled.",
+          "const": true
+        }
+      }
+    }
+  },
+  "schemaId": "876b9ea5-b1a2-d683-b3c3-8e47147fc39c"
+}

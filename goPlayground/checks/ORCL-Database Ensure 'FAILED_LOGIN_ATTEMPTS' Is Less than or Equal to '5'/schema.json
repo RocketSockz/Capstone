@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "ProfileLimits": {
+                "items": {
+                  "if": {
+                    "properties": {
+                      "ResourceName": {
+                        "constIgnoreCase": "FAILED_LOGIN_ATTEMPTS"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "Limit": {
+                        "pattern": "^([0-5]{1})$"
+                      }
+                    }
+                  },
+                  "else": {
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

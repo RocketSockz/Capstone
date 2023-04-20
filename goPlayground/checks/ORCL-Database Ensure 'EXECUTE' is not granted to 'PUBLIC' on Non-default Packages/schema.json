@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "publicExecPackages": {
+                "items": {
+                  "properties": {
+                    "Package": {
+                      "not": {
+                        "enumIgnoreCase": ["DBMS_BACKUP_RESTORE",
+                          "DBMS_FILE_TRANSFER",
+                          "DBMS_SYS_SQL",
+                          "DBMS_REPCAT_SQL_UTL",
+                          "INITJVMAUX",
+                          "DBMS_AQADM_SYS",
+                          "DBMS_STREAMS_RPC",
+                          "DBMS_PRVTAQIM",
+                          "LTADM",
+                          "DBMS_IJOB"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

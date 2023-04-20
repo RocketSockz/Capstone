@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "email": {
+          "pattern": "iam.gserviceaccount.com$"
+        }
+      }
+    }
+  }
+}

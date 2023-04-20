@@ -1,0 +1,54 @@
+{
+  "accountId": "1df1f816-406e-4d88-8f5d-0479a535f091",
+  "id": "/subscriptions/1df1f816-406e-4d88-8f5d-0479a535f091/resourceGroups/data/providers/Microsoft.Cache/Redis/helm-prod-cache",
+  "name": "helm-prod-cache",
+  "resourceGroup": "data",
+  "type": "Microsoft.Cache/Redis",
+  "document": {
+    "id": "/subscriptions/1df1f816-406e-4d88-8f5d-0479a535f091/resourceGroups/data/providers/Microsoft.Cache/Redis/helm-prod-cache",
+    "location": "Central US",
+    "name": "helm-prod-cache",
+    "type": "Microsoft.Cache/Redis",
+    "tags": {},
+    "properties": {
+      "provisioningState": "Succeeded",
+      "redisVersion": "4.0.14",
+      "sku": {
+        "name": "Standard",
+        "family": "C",
+        "capacity": 1
+      },
+      "enableNonSslPort": true,
+      "instances": [
+        {
+          "sslPort": 15000,
+          "nonSslPort": 13000,
+          "isMaster": false,
+          "isPrimary": false
+        },
+        {
+          "sslPort": 15001,
+          "nonSslPort": 13001,
+          "isMaster": true,
+          "isPrimary": true
+        }
+      ],
+      "publicNetworkAccess": "Enabled",
+      "redisConfiguration": {
+        "maxclients": "1000",
+        "maxmemory-reserved": "50",
+        "maxfragmentationmemory-reserved": "50",
+        "maxmemory-policy": "volatile-ttl",
+        "maxmemory-delta": "50"
+      },
+      "accessKeys": null,
+      "hostName": "helm-prod-cache.redis.cache.windows.net",
+      "port": 6379,
+      "sslPort": 6380,
+      "linkedServers": []
+    }
+  },
+  "firewallRules": [],
+  "iam": [],
+  "location": "Central US"
+}

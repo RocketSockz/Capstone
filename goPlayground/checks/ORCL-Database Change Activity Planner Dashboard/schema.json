@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "productUsageConcerns": {
+          "additionalProperties": {
+            "properties": {
+              "featureUsageConcerns": {
+                "additionalProperties": {
+                  "properties": {
+                    "ruleId": {
+                      "not": {
+                        "const": 1041
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

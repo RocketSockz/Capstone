@@ -1,0 +1,20 @@
+{
+  "recommended_action": "To set the Exchange Online Spam Policies correctly, use the Microsoft 365 Admin Center:\n\t1. Select Exchange.\n\t2. Navigate to Protection > Outbound Spam.\n\t3. Edit the Default profile.\n\t4. Select Outbound spam preferences.\n\t5. Check Send a copy of all suspicious outbound email messages to the following email address or addresses and enter the email address(es).\n\t6. Check Send a notification to the following email address or addresses when a sender is blocked for sending outbound spam and enter the email address(es).\n\t7. Click Save.",
+  "rationale": "A blocked account is a good indication that the account in question has been breached and an attacker is using it to send spam emails to other people.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "BccSuspiciousOutboundMail": {
+          "errorMessage": "Suspicious BCC for outbound mail is not tracked.",
+          "const": true
+        },
+        "NotifyOutboundSpam": {
+          "errorMessage": "Notifications are not enabled for outbound spam.",
+          "const": true
+        }
+      }
+    }
+  },
+  "schemaId": "4e42c381-2c93-0733-d11c-54afad955614"
+}

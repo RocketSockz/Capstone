@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "af2eb281-0ae1-4fa7-927c-75e1919c0e92",
+  "displayName": "Ensure 'EXECUTE ANY PROCEDURE' Is Revoked from 'DBSNMP'",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Migrated `DBSNMP` users have more privileges than required.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n```\nREVOKE EXECUTE ANY PROCEDURE FROM DBSNMP;\n```",
+  "error_message": "'EXECUTE ANY PRODECURE' was found on one or more 'DBSNMP' users",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'EXECUTE ANY PROCEDURE' Is Revoked from 'DBSNMP'"
+  ]
+}

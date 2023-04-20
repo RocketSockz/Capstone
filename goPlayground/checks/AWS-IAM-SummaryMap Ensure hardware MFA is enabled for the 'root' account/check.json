@@ -1,0 +1,15 @@
+{
+  "id": "c8f61b1d-5ef4-31e4-9299-a96f4ebc5ca3",
+  "displayName": "Ensure hardware MFA is enabled for the \"root\" account",
+  "resourceType": "AWS::IAM::SummaryMap",
+  "severity": "medium",
+  "rationale": "A hardware MFA has a smaller attack surface than a virtual MFA. For example, a hardware MFA does not suffer the attack surface introduced by the mobile smartphone on which a virtual MFA resides. Note: Using hardware MFA for many, many AWS accounts may create a logistical device management issue. If this is the case, consider implementing this Level 2 recommendation selectively to the highest security AWS accounts and the Level 1 recommendation appliedto the remaining accounts. Link to order AWS compatible hardware MFA device: http://onlinenoram.gemalto.com/",
+  "source": "cis aws 1.3.0 | benchmark 1.6",
+  "recommended_action": "Perform the following to establish a hardware MFA for the root account:\n1. Sign in to the AWS Management Console and open the IAM console at\nhttps://console.aws.amazon.com/iam/.\nNote: to manage MFA devices for the root AWS account, you must use your root account\ncredentials to sign in to AWS. You cannot manage MFA devices for the root account using\nother credentials.\n2. Choose Dashboard , and under Security Status , expand Activate MFA on your root account.\n3. Choose Activate MFA\n4. In the wizard, choose A hardware MFA device and then choose Next Step .\n5. In the Serial Number box, enter the serial number that is found on the back of the MFA device.\n6. In the Authentication Code 1 box, enter the six-digit number displayed by the MFA\ndevice. You might need to press the button on the front of the device to display the number.\n7. Wait 30 seconds while the device refreshes the code, and then enter the next six-digit\nnumber into the Authentication Code 2 box. You might need to press the button on the\nfront of the device again to display the second number.\n8. Choose Next Step . The MFA device is now associated with the AWS account. The next\ntime you use your AWS account credentials to sign in, you must type a code from the\nhardware MFA device.",
+  "error_message": "Hardware Multi-Factor authentication is incorrectly configured on AWS root account",
+  "category": "IA",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure MFA is enabled for the root account"
+  ]
+}

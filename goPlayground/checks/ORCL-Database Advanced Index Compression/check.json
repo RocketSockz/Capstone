@@ -1,0 +1,15 @@
+{
+  "id": "c20a3f7b-23f0-cffc-b55e-475b50f79c35",
+  "displayName": "Advanced Index Compression",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Advanced Index Compression requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the \"ADVANCED HIGH\" or \"ADVANCED LOW\" compress options when creating an index.  To remove, rebuild the index with the \"NOCOMPRESS\" option.",
+  "error_message": "Advanced Index Compression is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Advanced Index Compression"
+  ]
+}

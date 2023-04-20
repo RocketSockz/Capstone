@@ -1,0 +1,15 @@
+{
+  "id": "0fb5708a-c835-4ae6-b846-640817b0dc40",
+  "displayName": "Ensure that Network Security Groups MYSQL port 3306 access is restricted from the internet",
+  "resourceType": "Microsoft.Network/networkSecurityGroups",
+  "severity": "high",
+  "rationale": "The potential security problem with using MYSQL port 3306 over the Internet is that attackers can use various brute force techniques to gain access to Azure Virtual Machines. Once the attackers gain access, they can use a virtual machine as a launch point for compromising other machines on the Azure Virtual Network or even attack networked devices outside of Azure.",
+  "source": "cis azure 1.1.0 | benchmark 6.2",
+  "recommended_action": "Disable direct MYSQL port 3306 access to your Azure Virtual Machines from the Internet. After direct\nMYSQL port 3306 access from the Internet is disabled, you have other options you can use to access these\nvirtual machines for remote management:\nPoint-to-site VPN\nSite-to-site VPN\nExpressRoute",
+  "error_message": "Security group allows ingress to MYSQL port 3306",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Security group allows ingress to service management port"
+  ]
+}

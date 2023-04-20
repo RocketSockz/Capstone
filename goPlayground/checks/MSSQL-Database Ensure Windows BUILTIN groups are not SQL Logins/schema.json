@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "servicePrincipals": {
+          "items": {
+            "properties": {
+              "user_name": {
+                "not": {
+                  "pattern": "^BUILTIN"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

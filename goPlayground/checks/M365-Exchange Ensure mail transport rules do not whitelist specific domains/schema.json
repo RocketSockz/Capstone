@@ -1,0 +1,33 @@
+{
+  "recommended_action": "To alter the mail transport rules so they do not whitelist any specific domains, use the Microsoft 365 Admin Center:\n\t1. Select Exchange.\n\t2. Select Mail Flow and Rules.\n\t3. For each rule that whitelists specific domains, select the rule and click the 'Delete' icon.",
+  "rationale": "Whitelisting domains in transport rules bypasses regular malware and phishing scanning, which can enable an attacker to launch attacks against your users from a safe haven domain.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "not": {
+        "errorMessage": "Mail transport rules whitelist domains.",
+        "allOf": [
+          {
+            "properties": {
+              "SetSCL": {
+                "const": 1
+              }
+            }
+          },
+          {
+            "properties": {
+              "SenderDomainIs": {
+                "not": {
+                  "const": null
+                },
+                "errorMessage": "Mail transport rules whitelist domains."
+              }
+            }
+          }
+        ]
+      },
+      "errorMessage": "Mail transport rules whitelist domains."
+    }
+  },
+  "schemaId": "a2f150bc-c7f9-4b35-30c1-90bbe2657e63"
+}

@@ -1,0 +1,19 @@
+{
+  "recommended_action": "1. Follow the documentation and create a new network suitable for your requirements.\n2. Follow the documentation and delete the default network",
+  "rationale": "The default network has automatically created firewall rules and has pre-fabricated network configuration. Based on your security and networking requirements, you should create your network and delete the default network.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "name": {
+          "not": {
+            "errorMessage": "Default GCP network should not be in use.",
+            "constIgnoreCase": "default"
+          },
+          "errorMessage": "Default GCP network should not be in use."
+        }
+      }
+    }
+  },
+  "schemaId": "215501e6-1890-05a7-86b0-02aa95dac313"
+}

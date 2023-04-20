@@ -1,0 +1,15 @@
+{
+  "id": "fbf6f13a-bae2-2721-4c26-cdf51920e2a7",
+  "displayName": "Ensure Kubernetes Cluster is created with Alias IP ranges enabled",
+  "resourceType": "gke#cluster",
+  "severity": "high",
+  "rationale": "With Alias IPs ranges enabled, Kubernetes Engine clusters can allocate IP addresses from a CIDR block known to Google Cloud Platform. This makes your cluster more scalable and allows your cluster to better interact with other GCP products and entities.",
+  "source": "cis gcp 1.0.0 | benchmark 7.13",
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Click on CREATE CLUSTER\n3. Choose required name/value for cluster fields\n4. Click on More\n5. Set VPC native (using alias IP) to Enabled\n6. Click on Create",
+  "error_message": "Cluster was created without Alias IP ranges enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure Kubernetes cluster is created with Alias IP ranges enabled"
+  ]
+}

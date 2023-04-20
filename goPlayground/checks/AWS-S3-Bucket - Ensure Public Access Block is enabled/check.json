@@ -1,0 +1,15 @@
+{
+  "id": "4960044c-6d73-4d3c-beed-ce5852ded50b",
+  "displayName": "Ensure S3 buckets are configured with PublicAccessBlock enabled",
+  "resourceType": "AWS::S3::Bucket",
+  "severity": "high",
+  "rationale": "Amazon S3 Block public access (bucket settings) prevents the accidental or malicious public exposure of data contained within the respective bucket(s).Amazon S3 Block public access (account settings)prevents the accidental or malicious public exposure of data contained within all buckets of the respective AWS account.Whether blocking public access to all or some buckets is an organizational decision that should be based on data sensitivity, least privilege, and use case. PublicAccessBlock overrides conflicting bucket policies, and removes all public ACLs.",
+  "source": "cis aws 1.3.0 | benchmark 5.2",
+  "recommended_action": "1. Login to AWS Management Console and open the Amazon S3 console using https://console.aws.amazon.com/s3/ \n2. Select the Check box next to the Bucket. \n3. Click on 'Edit public access settings'. \n4.Click 'Block all public access'.\n5. Note, turning on PublicAccessBlock will automatically remove any ACLs that grant access to 'allusers' or 'allauthenticated users.",
+  "error_message": "AWS S3 Bucket does not use PublicAccessBlock settings",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure AWS S3 buckets block public access"
+  ]
+}

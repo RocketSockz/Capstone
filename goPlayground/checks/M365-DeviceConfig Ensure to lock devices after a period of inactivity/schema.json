@@ -1,0 +1,27 @@
+{
+  "recommended_action": "To set mobile device management policies, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile\n\t4. Set a Name for the policy, choose the appropriate Platform and select Device restrictions\n\t5. In the Password section, ensure that Maximum minutes of inactivity until screen lock is set to 5 and Maximum minutes after screen lock before password is required is set to Immediately.",
+  "rationale": "Attackers can steal unlocked devices and access data and account information.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "passcodeMinutesOfInactivityBeforeLock": {
+          "errorMessage": "Device configurations should have immediate lock on inactivity.",
+          "type": "string",
+          "constIgnoreCase": "immediately"
+        },
+        "passcodeMinutesOfInactivityBeforeScreenTimeout": {
+          "errorMessage": "Device configurations should force screen timeout after 5 minutes.",
+          "type": "number",
+          "maximum": 5
+        },
+        "passwordMinutesOfInactivityBeforeScreenTimeout": {
+          "errorMessage": "Device configurations should force screen timeout after 5 minutes.",
+          "type": "number",
+          "maximum": 5
+        }
+      }
+    }
+  },
+  "schemaId": "40ffd1d1-220e-fef1-5b5f-4ec39267a369"
+}

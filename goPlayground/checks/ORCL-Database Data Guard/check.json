@@ -1,0 +1,15 @@
+{
+  "id": "67f7c51c-809b-a0b8-8428-cf4649627f0b",
+  "displayName": "Data Guard",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Data Guard requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Redo transport compression is bing used, which ia a feature of the Oracle Advanced Compression option.  Ensure that your \"LOG_ARCHIVE_DEST_n\" parameter does not use \"COMPRESSION=ENABLE\"",
+  "error_message": "Data Guard is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Data Guard"
+  ]
+}

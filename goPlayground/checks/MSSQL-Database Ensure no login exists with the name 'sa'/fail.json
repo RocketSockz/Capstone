@@ -1,0 +1,362 @@
+{
+  "document": {
+    "MachineName": "HOBMSTONVM01",
+    "ServerName": "HOBMSTONVM01",
+    "Processors": 2,
+    "Edition": "Developer Edition (64-bit)",
+    "EngineEdition": 3,
+    "VersionString": "15.0.2095.3",
+    "VersionMajor": "15",
+    "VersionMinor": "0",
+    "VersionBuild": "2095",
+    "ProductLevel": "RTM",
+    "IsLocalDB": 0,
+    "IsClustered": 0,
+    "IsFullTextInstalled": 0,
+    "IsHadrEnabled": 0,
+    "IsPolyBaseInstalled": 0,
+    "IsSingleUser": 0,
+    "IsXTPSupported": 1,
+    "LCID": 1033,
+    "FilestreamShareName": "MSSQLSERVER",
+    "SP_installed": "RTM",
+    "Version": "15.0.2095.3",
+    "login_mode": 0,
+    "SQL_Port": 1433,
+    "Hide_Instance": 0,
+    "databases": [{
+        "database_name": "master",
+        "database_id": 1,
+        "is_trustworthy_on": 0,
+        "containment": 0,
+        "containment_desc": "NONE",
+        "is_auto_close_on": false,
+        "userAssemblies": [{
+          "assembly_name": "Microsoft.SqlServer.Types",
+          "permission_set_desc": "UNSAFE_ACCESS",
+          "is_user_defined": false
+        }],
+        "guestAccess": [{
+          "user_name": "guest",
+          "hasdbaccess": 1
+        }],
+        "servicePrincipals": [{
+            "sid": "lH8ajlgXzkaJhQuMwhLe4Q==",
+            "type": "S",
+            "user_name": "##MS_PolicyEventProcessingLogin##",
+            "isorphan": 0,
+            "authentication_type": 1
+          },
+          {
+            "sid": "mcBnzEmPuE6wUIfsm/qE7Q==",
+            "type": "S",
+            "user_name": "ocmoncomp",
+            "isorphan": 0,
+            "authentication_type": 1
+          }
+        ],
+        "encryptionSettings": []
+      },
+      {
+        "database_name": "tempdb",
+        "database_id": 2,
+        "is_trustworthy_on": 0,
+        "containment": 0,
+        "containment_desc": "NONE",
+        "is_auto_close_on": false,
+        "userAssemblies": [{
+          "assembly_name": "Microsoft.SqlServer.Types",
+          "permission_set_desc": "UNSAFE_ACCESS",
+          "is_user_defined": false
+        }],
+        "guestAccess": [{
+          "user_name": "guest",
+          "hasdbaccess": 1
+        }],
+        "servicePrincipals": [],
+        "encryptionSettings": []
+      },
+      {
+        "database_name": "model",
+        "database_id": 3,
+        "is_trustworthy_on": 0,
+        "containment": 0,
+        "containment_desc": "NONE",
+        "is_auto_close_on": false,
+        "userAssemblies": [{
+          "assembly_name": "Microsoft.SqlServer.Types",
+          "permission_set_desc": "UNSAFE_ACCESS",
+          "is_user_defined": false
+        }],
+        "guestAccess": [{
+          "user_name": "guest",
+          "hasdbaccess": 0
+        }],
+        "servicePrincipals": [],
+        "encryptionSettings": []
+      },
+      {
+        "database_name": "msdb",
+        "database_id": 4,
+        "is_trustworthy_on": 1,
+        "containment": 0,
+        "containment_desc": "NONE",
+        "is_auto_close_on": false,
+        "userAssemblies": [{
+          "assembly_name": "Microsoft.SqlServer.Types",
+          "permission_set_desc": "UNSAFE_ACCESS",
+          "is_user_defined": false
+        }],
+        "guestAccess": [{
+          "user_name": "guest",
+          "hasdbaccess": 1
+        }],
+        "servicePrincipals": [{
+            "sid": "J1eNhRaEPkCU76LO7Qhcgg==",
+            "type": "S",
+            "user_name": "##MS_PolicyTsqlExecutionLogin##",
+            "isorphan": 0,
+            "authentication_type": 1
+          },
+          {
+            "sid": "lH8ajlgXzkaJhQuMwhLe4Q==",
+            "type": "S",
+            "user_name": "##MS_PolicyEventProcessingLogin##",
+            "isorphan": 0,
+            "authentication_type": 1
+          },
+          {
+            "sid": "EUukTFmnY0qz8q5gxu4YeA==",
+            "type": "S",
+            "user_name": "ocmoncomp",
+            "isorphan": 1,
+            "authentication_type": 1
+          }
+        ],
+        "encryptionSettings": []
+      },
+      {
+        "database_name": "OpsCompass",
+        "database_id": 5,
+        "is_trustworthy_on": 0,
+        "containment": 0,
+        "containment_desc": "NONE",
+        "is_auto_close_on": false,
+        "userAssemblies": [{
+          "assembly_name": "Microsoft.SqlServer.Types",
+          "permission_set_desc": "UNSAFE_ACCESS",
+          "is_user_defined": false
+        }],
+        "guestAccess": [{
+          "user_name": "guest",
+          "hasdbaccess": 0
+        }],
+        "servicePrincipals": [{
+            "sid": "1kfUNAbEw0OSJ8MlYD/mww==",
+            "type": "S",
+            "user_name": "Raikes",
+            "isorphan": 0,
+            "authentication_type": 1
+          },
+          {
+            "sid": "2d40EEQAOkaxk2NgWePApQ==",
+            "type": "S",
+            "user_name": "AzureResourceFunctions",
+            "isorphan": 0,
+            "authentication_type": 1
+          },
+          {
+            "sid": "2kSnjM8MlkKqUvDrWbZSxg==",
+            "type": "S",
+            "user_name": "ResourceRelationManager",
+            "isorphan": 0,
+            "authentication_type": 1
+          },
+          {
+            "sid": "GdclgLaRzEmcg2jj8Y2RBg==",
+            "type": "S",
+            "user_name": "db_user_orphan",
+            "isorphan": 1,
+            "authentication_type": 1
+          }
+        ],
+        "encryptionSettings": [{
+            "key_name": "test_key_aes",
+            "key_type": "symmetric",
+            "algorithm_desc": "AES_128",
+            "key_length": 128
+          },
+          {
+            "key_name": "##MS_DatabaseMasterKey##",
+            "key_type": "symmetric",
+            "algorithm_desc": "AES_256",
+            "key_length": 256
+          },
+          {
+            "key_name": "test_key",
+            "key_type": "asymmetric",
+            "algorithm_desc": "RSA_2048",
+            "key_length": 2048
+          }
+        ]
+      }
+    ],
+    "systemConfigs": [{
+        "name": "Ad Hoc Distributed Queries",
+        "value_configured": 0,
+        "value_in_use": 0
+      },
+      {
+        "name": "Database Mail XPs",
+        "value_configured": 0,
+        "value_in_use": 0
+      },
+      {
+        "name": "Ole Automation Procedures",
+        "value_configured": 0,
+        "value_in_use": 0
+      },
+      {
+        "name": "clr enabled",
+        "value_configured": 0,
+        "value_in_use": 0
+      },
+      {
+        "name": "clr strict security",
+        "value_configured": 1,
+        "value_in_use": 1
+      },
+      {
+        "name": "cross db ownership chaining",
+        "value_configured": 0,
+        "value_in_use": 0
+      },
+      {
+        "name": "default trace enabled",
+        "value_configured": 1,
+        "value_in_use": 1
+      },
+      {
+        "name": "remote access",
+        "value_configured": 1,
+        "value_in_use": 1
+      },
+      {
+        "name": "remote admin connections",
+        "value_configured": 0,
+        "value_in_use": 0
+      },
+      {
+        "name": "scan for startup procs",
+        "value_configured": 0,
+        "value_in_use": 0
+      }
+    ],
+    "serverPrincipals": [{
+      "principal_id": 1,
+      "sid": "AQ==",
+      "sa_name": "sa",
+      "is_disabled": 0
+    }],
+    "proxies": null,
+    "permissions": [{
+        "grantee_principal": "public",
+        "class": 100,
+        "class_desc": "SERVER",
+        "major_id": 0,
+        "minor_id": 0,
+        "grantee_principal_id": 2,
+        "grantor_principal_id": 1,
+        "type": "VWDB",
+        "permission_name": "VIEW ANY DATABASE",
+        "state": "G",
+        "state_desc": "GRANT"
+      },
+      {
+        "grantee_principal": "public",
+        "class": 105,
+        "class_desc": "ENDPOINT",
+        "major_id": 2,
+        "minor_id": 0,
+        "grantee_principal_id": 2,
+        "grantor_principal_id": 1,
+        "type": "CO ",
+        "permission_name": "CONNECT",
+        "state": "G",
+        "state_desc": "GRANT"
+      },
+      {
+        "grantee_principal": "public",
+        "class": 105,
+        "class_desc": "ENDPOINT",
+        "major_id": 3,
+        "minor_id": 0,
+        "grantee_principal_id": 2,
+        "grantor_principal_id": 1,
+        "type": "CO ",
+        "permission_name": "CONNECT",
+        "state": "G",
+        "state_desc": "GRANT"
+      },
+      {
+        "grantee_principal": "public",
+        "class": 105,
+        "class_desc": "ENDPOINT",
+        "major_id": 4,
+        "minor_id": 0,
+        "grantee_principal_id": 2,
+        "grantor_principal_id": 1,
+        "type": "CO ",
+        "permission_name": "CONNECT",
+        "state": "G",
+        "state_desc": "GRANT"
+      },
+      {
+        "grantee_principal": "public",
+        "class": 105,
+        "class_desc": "ENDPOINT",
+        "major_id": 5,
+        "minor_id": 0,
+        "grantee_principal_id": 2,
+        "grantor_principal_id": 1,
+        "type": "CO ",
+        "permission_name": "CONNECT",
+        "state": "G",
+        "state_desc": "GRANT"
+      }
+    ],
+    "logins": {
+      "policy": [{
+        "name": "RailsUser@localhost",
+        "is_disabled": false,
+        "is_policy_checked": false
+      }],
+      "expiration": [{
+          "name": "RailsUser@localhost",
+          "Access_Method": "sysadmin membership",
+          "is_expiration_checked": false
+        },
+        {
+          "name": "sa",
+          "Access_Method": "sysadmin membership",
+          "is_expiration_checked": false
+        }
+      ]
+    },
+    "errorLogging": {
+      "errors": null
+    },
+    "auditLogging": {
+      "settings": [{
+        "name": "audit level",
+        "config_value": "failure"
+      }],
+      "audits": null
+    }
+  },
+  "accountId": "BHS4d65VeSw7ZiyC",
+  "name": "HOBMSTONVM01:HOBMSTONVM01",
+  "type": "databases/mssqlserver",
+  "location": "global",
+  "id": "9b314b15a344c701abfa4dfc1a73b20917d9dd7d"
+}

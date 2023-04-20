@@ -1,0 +1,63 @@
+{
+  "recommended_action": "N/A",
+  "rationale": "Disabling basic authentication prevents use of legacy and unapproved email clients with weaker authentication mechanisms that would increase the risk of email account credential compromise.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "DefaultAuthenticationPolicy": {
+          "not": {
+            "const": null
+          }
+        }
+      }
+    },
+    "authenticationPolicy": {
+      "properties": {
+        "AllowBasicAuthActiveSync": {
+          "const": false
+        },
+        "AllowBasicAuthAutodiscover": {
+          "const": false
+        },
+        "AllowBasicAuthImap": {
+          "const": false
+        },
+        "AllowBasicAuthMapi": {
+          "const": false
+        },
+        "AllowBasicAuthOfflineAddressBook": {
+          "const": false
+        },
+        "AllowBasicAuthOutlookService": {
+          "const": false
+        },
+        "AllowBasicAuthPop": {
+          "const": false
+        },
+        "AllowBasicAuthReportingWebServices": {
+          "const": false
+        },
+        "AllowBasicAuthRest": {
+          "const": false
+        },
+        "AllowBasicAuthRpc": {
+          "const": false
+        },
+        "AllowBasicAuthSmtp": {
+          "const": false
+        },
+        "AllowBasicAuthWebServices": {
+          "const": false
+        },
+        "AllowBasicAuthPowershell": {
+          "const": false
+        }
+      }
+    },
+    "usersHaveAttachedPolicies": {
+      "const": true
+    }
+  },
+  "schemaId": "78a79e32-5809-8b75-b4bd-d2718a347e3e"
+}

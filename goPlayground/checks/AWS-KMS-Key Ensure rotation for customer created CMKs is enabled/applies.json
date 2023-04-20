@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "document": {
+      "not": {
+        "properties": {
+          "KeyManager": {
+            "constIgnoreCase": "aws"
+          }
+        }
+      }
+    }
+  }
+}

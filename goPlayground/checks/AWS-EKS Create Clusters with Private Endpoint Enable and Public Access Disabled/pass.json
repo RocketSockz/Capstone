@@ -1,0 +1,89 @@
+{
+    "accountId": "434855252750",
+    "arn": "arn:aws:eks:us-east-2:434855252750:cluster/ben-fargate",
+    "cloudId": "arn:aws:eks:us-east-2:434855252750:cluster/ben-fargate",
+    "location": "us-east-2",
+    "name": "ben-fargate",
+    "type": "AWS::EKS::Cluster",
+    "document": {
+        "name": "ben-fargate",
+        "arn": "arn:aws:eks:us-east-2:434855252750:cluster/ben-fargate",
+        "createdAt": "2021-04-29T21:01:04.349Z",
+        "version": "1.18",
+        "endpoint": "https://855830588C0357C9F091F21B4FB21C21.gr7.us-east-2.eks.amazonaws.com",
+        "roleArn": "arn:aws:iam::434855252750:role/AmazonEKSClusterRole",
+        "resourcesVpcConfig": {
+            "subnetIds": [
+                "subnet-0015d3a530087f1af",
+                "subnet-002301ab377af5b2e",
+                "subnet-02b701e5fb2e225f3"
+            ],
+            "securityGroupIds": [
+                "sg-0344cd1c64575a49c"
+            ],
+            "clusterSecurityGroupId": "sg-0e21caeca899db0e2",
+            "vpcId": "vpc-03560204a2ddc87ff",
+            "endpointPublicAccess": false,
+            "endpointPrivateAccess": true,
+            "publicAccessCidrs": [
+                "0.0.0.0/0"
+            ]
+        },
+        "kubernetesNetworkConfig": {
+            "serviceIpv4Cidr": "172.20.0.0/16"
+        },
+        "logging": {
+            "clusterLogging": [
+                {
+                    "types": [
+                        "api",
+                        "audit",
+                        "authenticator",
+                        "controllerManager",
+                        "scheduler"
+                    ],
+                    "enabled": true
+                }
+            ]
+        },
+        "identity": {
+            "oidc": {
+                "issuer": "https://oidc.eks.us-east-2.amazonaws.com/id/855830588C0357C9F091F21B4FB21C21"
+            }
+        },
+        "status": "ACTIVE",
+        "certificateAuthority": {
+            "data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeE1EUXlPVEl4TURZME0xb1hEVE14TURReU56SXhNRFkwTTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBSzZlCnV3bTJuVjhzY3RqMjBFMVprci83cnR3cFRPcjhneDN2VkZ5cGVwNWpWSDMrYkh0M3BhZENYRzFIeXFnREprRlMKOVo5NjMrT1g4bktYU0VCSjdZcjIrNDBXSlY3aENwSHZLQ0FUTkFjcEtKOUdBUDlNMXROdHZ2dHEyd3hsRVhKWQp2NnRqbWRWUmcya0RaL2FhMkI0cUkyQmVmZkhGdllqUVpXVzZQRU85SEc3MldOME8zSzJGL3hTYVRZbXFEMkd0CnhQVWJpY2R6OEh0NnBvZjh6WU9aZFFIWnErUnc0OTVwME5zZy9yb1cxSmw0ZFluY2VEaXNzckRHSVp3OGZodUwKZW5IbHJuWVlqbFkrU3BOTzhWZThScmczekozeW9HQnVrSWRLV2NPcFJMSXU2UVNsbzhrdGg1VmlTc1ZLZjd6eQp2S1B3bDBkc0JIczZRVXdKalAwQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFGbFRPQ0dqKzhYc01UbWZlMUJScjVSdEJaVW8KZXNlMDVtVVlXMTA2bkh0LzA4QVQ0Ny9sbGsyd2tXRENOZ2lvM3Y4K3RsZ01XUzZXZUo1cXlNRERiQXgxR0REOApYL0xFZVZxdGlBV3ZLckhqZUNKWWtyekVNWWxrdSs5WUd0MWZYc0U4eVI0V3dFM0dxTXRVb3dEQm1xV3VORytDClIwOVd1VGJPNkxhaXd1WFlUYUpBTDBMQ09QcGJjWHY4NXZ4bjlUK2hWVlZCbmk5VzcyU1dHTS9jMThQYVhOdFAKVzJpcmphallOUGtHS0o5bTE3L3J5bS9BUklzYmx0TUxTRFU1ZVRmcituY2pNY3Y0dTFEZmxhWUVuaVBhQ3h6bApydWF0YWhsUlhPNjhzWTNUUzBicDVydm5jbDdhMitzendjMlRkU2FORjJnNWR0UWY4dlduSmVRS2FxMD0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+        },
+        "clientRequestToken": null,
+        "platformVersion": "eks.6",
+        "tags": {}
+    },
+    "fargateProfiles": [
+        {
+            "fargateName": "bens-test-fargate",
+            "fargateProfile": {
+                "fargateProfile": {
+                    "fargateProfileName": "bens-test-fargate",
+                    "fargateProfileArn": "arn:aws:eks:us-east-2:434855252750:fargateprofile/ben-fargate/bens-test-fargate/7cbc8fbc-fe4f-26b9-6b17-a7146ce77c82",
+                    "clusterName": "ben-fargate",
+                    "createdAt": "2021-04-29T21:12:39.997Z",
+                    "podExecutionRoleArn": "arn:aws:iam::434855252750:role/AmazonEKSFargatePodExecution",
+                    "subnets": [
+                        "subnet-0015d3a530087f1af",
+                        "subnet-002301ab377af5b2e",
+                        "subnet-02b701e5fb2e225f3"
+                    ],
+                    "selectors": [
+                        {
+                            "namespace": "bens-pods",
+                            "labels": {}
+                        }
+                    ],
+                    "status": "ACTIVE",
+                    "tags": {}
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "document": {
+            "properties": {
+                "logging": {
+                    "properties": {
+                        "clusterLogging": {
+                            "items": {
+                                "properties": {
+                                    "enabled": {
+                                        "const": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "schemaId": "c30954d9-3593-4b44-8f67-e44085d59042"
+}

@@ -1,0 +1,22 @@
+{
+  "recommended_action": "1. To list all sinks destined to storage buckets:\ngcloud logging sinks list | grep storage.googleapis.com\n2. For every storage bucket listed above, verify that Object Versioning is Enabled:\ngsutil versioning set on gs://<Bucket>",
+  "rationale": "Logs can be exported by creating one or more sinks that include a logs filter and a destination. As Stackdriver Logging receives new log entries, they are compared against each sink. If a log entry matches a sink's filter, then a copy of the log entry is written to the destination. Sinks can be configured to export logs in Storage buckets. To support the retrieval of objects that are deleted or overwritten, Object Versioning feature should be enabled on all such storage buckets where sinks are configured.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "versioning": {
+          "properties": {
+            "enabled": {
+              "errorMessage": "Object versioning is not enabled on bucket.",
+              "const": true
+            }
+          }
+        }
+      },
+      "errorMessage": "Object versioning settings cannot be found on bucket",
+      "required": ["versioning"]
+    }
+  },
+  "schemaId": "97768c81-3bbc-1a73-48ab-6146b6b3238a"
+}

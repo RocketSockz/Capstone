@@ -1,0 +1,21 @@
+{
+    "resourceId": "/providers/Helm.Microsoft.AD/users/16823601-2e93-4d1d-b307-7eda75b996f9",
+    "resourceName": "16823601-2e93-4d1d-b307-7eda75b996f9",
+    "resourceType": "Helm.Microsoft.AD/users",
+    "subscription": null,
+    "document": {
+      "userType": "Member",
+      "businessPhones": [],
+      "displayName": "Josh Gryzen",
+      "givenName": "Josh",
+      "jobTitle": null,
+      "mail": "josh.gryzen@opscompass.com",
+      "mobilePhone": null,
+      "officeLocation": null,
+      "preferredLanguage": null,
+      "surname": "Gryzen",
+      "userPrincipalName": "josh.gryzen@opscompass.com",
+      "id": "16823601-2e93-4d1d-b307-7eda75b996f9"
+    },
+    "groups": []
+  }

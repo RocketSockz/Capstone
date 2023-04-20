@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "ProfileLimits": {
+                "items": {
+                  "if": {
+                    "properties": {
+                      "ResourceName": {
+                        "constIgnoreCase": "INACTIVE_ACCOUNT_TIME"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "Limit": {
+                        "not": {
+                          "constIgnoreCase": "UNLIMITED"
+                        },
+                        "pattern": "^([0-9]|[1-9][0-9]|120)$"
+                      }
+                    }
+                  },
+                  "else": {
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

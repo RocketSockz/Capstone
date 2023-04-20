@@ -1,0 +1,15 @@
+{
+  "id": "3fbe340e-abdd-41d7-43a4-15a0f1699d9c",
+  "displayName": "Ensure CLUSTER_DATABASE is not concerning",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "A value of 'TRUE' for this parameter indicates usage of Oracle Real Application Clusters.",
+  "source": "opscompass-defined",
+  "recommended_action": "Alter system set cluster_database=false scope=both",
+  "error_message": "CLUSTER_DATABASE is concerning and has a value of TRUE",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure CLUSTER_DATABASE is not concerning"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+      },"required": ["systemConfigs"]
+    }
+  }
+}

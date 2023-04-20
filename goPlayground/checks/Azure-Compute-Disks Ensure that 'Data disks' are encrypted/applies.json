@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "anyOf": [
+            {
+              "properties": {
+                "diskState": {
+                  "not": {
+                    "constIgnoreCase": "unattached"
+                  }
+                }
+              }
+            },
+            {
+              "properties": {
+                "not": {
+                  "required": ["osType"]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

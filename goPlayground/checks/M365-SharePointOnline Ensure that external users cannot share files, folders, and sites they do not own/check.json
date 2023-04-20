@@ -1,0 +1,15 @@
+{
+  "id": "b8286616-0031-4332-9f03-29bf4dc74868",
+  "displayName": "Ensure that external users cannot share files, folders, and sites they do not own",
+  "resourceType": "microsoft.graph.admin.sharepoint.settings",
+  "severity": "medium",
+  "rationale": "Sharing and collaboration are key; however, file, folder, or site collection owners should have the authority over what external users get shared with to prevent unauthorized disclosures of information.",
+  "source": "cis o365 1.1.0 | benchmark 3.6",
+  "recommended_action": "To set SharePoint sharing settings, use the Microsoft 365 Admin Center:\n\t1. Select SharePoint under Admin centers.\n\t2. Select Sharing under Policies.\n\t3. Set Allow guests to share items they don't own to Enabled.\n\t4. Click OK.",
+  "error_message": "SharePoint tenant allows external users to reshare files",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that external users cannot share files, folders, and sites they do not own"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "databases": {
+          "items": {
+            "properties": {
+              "userAssemblies": {
+                "items": {
+                  "if": {
+                    "properties": {
+                      "is_user_defined": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "permission_set_desc": {
+                        "constIgnoreCase": "SAFE_ACCESS"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

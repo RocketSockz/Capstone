@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "RequireNumbers": {
+          "const": true
+        }
+      },
+      "required": [
+        "RequireNumbers"
+      ]
+    }
+  },
+  "schemaId": "6a54eed8-2535-1770-005d-3cf92f0c015e"
+}

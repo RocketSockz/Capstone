@@ -1,0 +1,81 @@
+{
+  "recommended_action": "Disable direct RDP access to your Azure Virtual Machines from the Internet. After direct\nRDP access from the Internet is disabled, you have other options you can use to access\nthese virtual machines for remote management:\nPoint-to-site VPN\nSite-to-site VPN\nExpressRoute",
+  "rationale": "The potential security problem with using RDP over the Internet is that attackers can use various brute force techniques to gain access to Azure Virtual Machines. Once the attackers gain access, they can use a virtual machine as a launch point for compromising other machines on an Azure Virtual Network or even attack networked devices outside of Azure.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "required": ["securityRules", "defaultSecurityRules"],
+          "properties": {
+            "securityRules": {
+              "type": "array",
+              "items": {
+                "not": {
+                  "errorMessage": "RDP is open to the internet.",
+                  "properties": {
+                    "properties": {
+                      "properties": {
+                        "sourceAddressPrefix": {
+                          "enumIgnoreCase": [
+                            "0.0.0.0",
+                            "*",
+                            "<nw>/0",
+                            "/0",
+                            "any",
+                            "internet"
+                          ]
+                        },
+                        "sourceAddressPrefixes": {
+                          "if": {
+                            "minItems": 1
+                          },
+                          "then": {
+                            "contains": {
+                              "enumIgnoreCase": [
+                                "0.0.0.0",
+                                "*",
+                                "<nw>/0",
+                                "/0",
+                                "any",
+                                "internet"
+                              ]
+                            }
+                          }
+                        },
+                        "access": {
+                          "enumIgnoreCase": ["allow"]
+                        },
+                        "destinationPortRange": {
+                          "enum": ["3389", "*"]
+                        },
+                        "destinationPortRanges": {
+                          "if": {
+                            "minItems": 1
+                          },
+                          "then": {
+                            "contains": {
+                              "enum": ["3389", "*"]
+                            }
+                          }
+                        },
+                        "direction": {
+                          "enumIgnoreCase": ["inbound"]
+                        },
+                        "protocol": {
+                          "enumIgnoreCase": ["tcp", "*"]
+                        }
+                      }
+                    }
+                  }
+                },
+                "errorMessage": "RDP is open to the internet."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "4c033287-4b7d-ac9e-5415-370db6458a22"
+}

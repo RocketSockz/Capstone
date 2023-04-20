@@ -1,0 +1,15 @@
+{
+  "id": "855c99b5-c0d9-e392-7cd5-e37f4213ff98",
+  "displayName": "Enable role-based access control (RBAC) within Azure Kubernetes Services",
+  "resourceType": "Microsoft.ContainerService/ManagedClusters",
+  "severity": "high",
+  "rationale": "Azure Kubernetes Services has the capability to integrate Azure Active Directory users and groups into Kubernetes RBAC controls within the AKS Kubernetes API Server. This should be utilized to enable granular access to Kubernetes resources within the AKS clusters supporting RBAC controls not just of the overarching AKS instance but also the individual resources managed within Kubernetes.",
+  "source": "cis azure 1.1.0 | benchmark 8.5",
+  "recommended_action": "WARNING: This setting cannot be changed after AKS deployment, cluster will require recreation.",
+  "error_message": "Role-based access control is not enabled for this cluster",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Enable role based access control within Azure kubernetes services"
+  ]
+}

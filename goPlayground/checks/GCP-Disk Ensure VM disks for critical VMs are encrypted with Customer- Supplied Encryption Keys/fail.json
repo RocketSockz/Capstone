@@ -1,0 +1,24 @@
+{
+  "accountId": "upbeat-nation-265322",
+  "id": "4704460973496872367",
+  "region": "",
+  "name": "",
+  "zone": "us-central1-a",
+  "type": "",
+  "document": {
+    "id": "4704460973496872367",
+    "creationTimestamp": "2020-02-25T13:36:00.495-08:00",
+    "name": "disk-1",
+    "sizeGb": "10",
+    "zone": "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-central1-a",
+    "status": "READY",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-central1-a/disks/disk-1",
+    "type": "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-central1-a/diskTypes/pd-standard",
+    "diskEncryptionKey": {
+      "123": "esTuF7d4eatX4cnc4JsiEiaI+Rff78JgPhA/v1zxX9E="
+    },
+    "labelFingerprint": "42WmSpB8rSM=",
+    "physicalBlockSizeBytes": "4096",
+    "kind": "compute#disk"
+  }
+}

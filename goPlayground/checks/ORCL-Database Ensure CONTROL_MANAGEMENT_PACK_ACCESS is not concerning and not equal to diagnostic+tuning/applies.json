@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "document": {
+      "properties": {},
+      "required": [
+        "parameters"
+      ]
+    }
+  }
+}

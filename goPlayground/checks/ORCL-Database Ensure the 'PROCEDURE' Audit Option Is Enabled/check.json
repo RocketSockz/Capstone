@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "009ac6fb-af00-4459-8320-09fc24bf5fe3",
+  "displayName": "Ensure the 'PROCEDURE' Audit Option Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Any unauthorized attempts to create or drop a procedure in another's schema should cause concern, whether successful or not. Changes to critical stored code can dramatically change the behavior of the application and produce serious security consequences, including enabling privilege escalation and introducing SQL injection vulnerabilities. Audit records of such changes can be helpful in forensics.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement in either the non multi-tenant or container database, it does NOT need run in the pluggable.\n```\nAUDIT PROCEDURE;\n```",
+  "error_message": "'PROCEDURE' audit option is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'PROCEDURE' Audit Option Is Enabled"
+  ]
+}

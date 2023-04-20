@@ -1,0 +1,15 @@
+{
+  "id": "87a4b4b5-d203-495d-beb4-636f867fbe52",
+  "displayName": "Ensure 'Ad Hoc Distributed Queries' Server Configuration Option is set to '0'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "This feature can be used to remotely access and exploit vulnerabilities on remote SQL Server instances and to run unsafe Visual Basic for Application functions.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Run the following T-SQL command:\r\n```\r\nEXECUTE sp_configure 'show advanced options', 1;\r\nRECONFIGURE;\r\nEXECUTE sp_configure 'Ad Hoc Distributed Queries', 0;\r\nRECONFIGURE;\r\nGO\r\nEXECUTE sp_configure 'show advanced options', 0;\r\nRECONFIGURE; \r\n```",
+  "error_message": "Server Configuration allows for 'Ad Hoc Distributed Queries'",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'Ad Hoc Distributed Queries' Server Configuration Option is set to '0'"
+  ]
+}

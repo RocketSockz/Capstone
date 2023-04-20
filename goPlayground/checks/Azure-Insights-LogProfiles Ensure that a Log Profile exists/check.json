@@ -1,0 +1,15 @@
+{
+  "id": "757cc7c4-3634-1d23-fb8d-2fab1c52eb23",
+  "displayName": "Ensure that a Log Profile exists",
+  "resourceType": "microsoft.insights/logProfiles",
+  "severity": "high",
+  "rationale": "A log profile controls how an activity log is exported. By default, activity logs are retained only for 90 days. Log profiles should be defined so that logs can be exported and stored for a longer duration in order to analyze security activities within an Azure subscription.",
+  "source": "cis azure 1.1.0 | benchmark 5.1.1",
+  "recommended_action": "1. Go to Activity log\n2. Click on Export\n3. Configure the setting\n4. Click on Save",
+  "error_message": "A log profile does not exist for activity logs",
+  "category": "AU",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that a log profile exists"
+  ]
+}

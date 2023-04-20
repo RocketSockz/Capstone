@@ -1,0 +1,25 @@
+{
+  "document": {
+    "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
+    "id": "04fb8401-f0ea-4569-bc49-82c0f264624b",
+    "lastModifiedDateTime": "2020-02-05T17:42:38.7679401Z",
+    "createdDateTime": "2020-02-05T17:42:38.7679401Z",
+    "description": "",
+    "version": 1,
+    "compliantAppListType": "none",
+    "emailInDomainSuffixes": [],
+    "passwordBlockSimple": false,
+    "passwordExpirationDays": null,
+    "passwordMinimumCharacterSetCount": null,
+    "passwordMinimumLength": null,
+    "passwordMinutesOfInactivityBeforeLock": null,
+    "passwordMinutesOfInactivityBeforeScreenTimeout": null,
+    "passwordPreviousPasswordBlockCount": null,
+    "passwordRequiredType": "alphanumeric",
+    "passwordRequired": true,
+    "compliantAppsList": [],
+    "accountId": "a2e9d848-51aa-467b-a8ed-c8ad27fee718",
+    "type": "",
+    "name": "mac"
+  }
+}

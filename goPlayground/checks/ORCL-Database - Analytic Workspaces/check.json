@@ -1,0 +1,15 @@
+{
+  "id": "69471f8d-e69f-899c-9932-7f0226716433",
+  "displayName": "OLAP - Analytic Workspaces",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "OLAP - Analytic Workspaces requires a license for Oracle OLAP to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Don't create any Analytic Workspaces or disable OLAP in the Oracle binaries: https://docs.oracle.com/en/database/oracle/oracle-database/18/riwin/enabling-and-disabling-database-options-after-installation.html#GUID-C45D75FC-34B5-4C24-9DE8-1518044A3BB3",
+  "error_message": "OLAP - Analytic Workspaces is listed as a feature usage concern under Oracle OLAP",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "OLAP - Analytic Workspaces"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "databases": {
+          "items": {
+            "if": {
+              "properties": {
+                "containment": {
+                  "const": 1
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "is_auto_close_on": {
+                  "const": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

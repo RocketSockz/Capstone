@@ -1,0 +1,668 @@
+{
+  "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourcegroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev",
+  "name": "konnexmedev",
+  "resourceGroup": "KonnexMeDevelopmentDatabases",
+  "subscriptionId": "5a001cf3-8715-404c-8118-a7390f7d32c3",
+  "type": "Microsoft.Sql/servers",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev",
+    "name": "konnexmedev",
+    "type": "Microsoft.Sql/servers",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "fullyQualifiedDomainName": "konnexmedev.database.windows.net",
+      "administratorLogin": "konnexmeadmin",
+      "administratorLoginPassword": null,
+      "externalAdministratorLogin": null,
+      "externalAdministratorSid": null,
+      "version": "12.0",
+      "state": "Ready"
+    }
+  },
+  "auditingSettings": {
+    "properties": {
+      "state": "Enabled",
+      "storageEndpoint": "",
+      "retentionDays": 0,
+      "auditActionsAndGroups": [],
+      "storageAccountSubscriptionId": "00000000-0000-0000-0000-000000000000",
+      "isStorageSecondaryKeyInUse": false,
+      "isAzureMonitorTargetEnabled": false
+    },
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/auditingSettings/Default",
+    "name": "Default",
+    "type": "Microsoft.Sql/servers/auditingSettings"
+  },
+  "administrators": [],
+  "elasticPools": [],
+  "securityAlertPolicies": [{
+    "properties": {
+      "state": "Disabled",
+      "disabledAlerts": [""],
+      "emailAddresses": [""],
+      "emailAccountAdmins": false,
+      "storageEndpoint": "",
+      "storageAccountAccessKey": "",
+      "retentionDays": 0,
+      "creationTime": "0001-01-01T00:00:00Z"
+    },
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/securityAlertPolicies/Default",
+    "name": "Default",
+    "type": "Microsoft.Sql/servers/securityAlertPolicies"
+  }],
+  "firewallRules": [{
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/AllowAllWindowsAzureIps",
+    "name": "AllowAllWindowsAzureIps",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "0.0.0.0",
+      "endIpAddress": "0.0.0.0"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-06-26_05:10:25",
+    "name": "ClientIPAddress_2019-06-26_05:10:25",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "73.65.83.0",
+      "endIpAddress": "73.65.83.255"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-08-08_10:30:16",
+    "name": "ClientIPAddress_2019-08-08_10:30:16",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "173.165.250.253",
+      "endIpAddress": "173.165.250.253"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-08-16_01:47:59",
+    "name": "ClientIPAddress_2019-08-16_01:47:59",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.115.73",
+      "endIpAddress": "75.168.115.73"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-09-16_12:17:43",
+    "name": "ClientIPAddress_2019-09-16_12:17:43",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.106.112",
+      "endIpAddress": "75.168.106.112"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-10-27_01:35:10",
+    "name": "ClientIPAddress_2019-10-27_01:35:10",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.104.168",
+      "endIpAddress": "75.168.104.168"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-11-11_11:15:32",
+    "name": "ClientIPAddress_2019-11-11_11:15:32",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "73.94.202.241",
+      "endIpAddress": "73.94.202.241"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-11-15_03:46:39",
+    "name": "ClientIPAddress_2019-11-15_03:46:39",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "73.228.230.9",
+      "endIpAddress": "73.228.230.9"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-11-19_07:55:14",
+    "name": "ClientIPAddress_2019-11-19_07:55:14",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "76.113.242.222",
+      "endIpAddress": "76.113.242.222"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-11-22_08:26:34",
+    "name": "ClientIPAddress_2019-11-22_08:26:34",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "107.2.91.155",
+      "endIpAddress": "107.2.91.155"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-11-26_02:56:47",
+    "name": "ClientIPAddress_2019-11-26_02:56:47",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "24.118.77.21",
+      "endIpAddress": "24.118.77.21"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-12-04_03:01:32",
+    "name": "ClientIPAddress_2019-12-04_03:01:32",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "73.24.1.123",
+      "endIpAddress": "73.24.1.123"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-12-05_06:33:16",
+    "name": "ClientIPAddress_2019-12-05_06:33:16",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.155.163",
+      "endIpAddress": "75.168.155.163"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-12-10_12:31:39",
+    "name": "ClientIPAddress_2019-12-10_12:31:39",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "97.116.26.137",
+      "endIpAddress": "97.116.26.137"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-12-13_04:17:17",
+    "name": "ClientIPAddress_2019-12-13_04:17:17",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.140.91",
+      "endIpAddress": "75.168.140.91"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2019-12-30_04:04:39",
+    "name": "ClientIPAddress_2019-12-30_04:04:39",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.17.77",
+      "endIpAddress": "75.168.17.77"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-02_08:55:40",
+    "name": "ClientIPAddress_2020-01-02_08:55:40",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "174.219.17.166",
+      "endIpAddress": "174.219.17.166"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-03_01:15:39",
+    "name": "ClientIPAddress_2020-01-03_01:15:39",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "66.242.92.100",
+      "endIpAddress": "66.242.92.100"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-03_02:30:57",
+    "name": "ClientIPAddress_2020-01-03_02:30:57",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "174.20.186.72",
+      "endIpAddress": "174.20.186.72"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-17_02:52:44",
+    "name": "ClientIPAddress_2020-01-17_02:52:44",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "68.168.173.166",
+      "endIpAddress": "68.168.173.166"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-18_03:41:08",
+    "name": "ClientIPAddress_2020-01-18_03:41:08",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.10.201",
+      "endIpAddress": "75.168.10.201"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-22_10:31:30",
+    "name": "ClientIPAddress_2020-01-22_10:31:30",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.33.137",
+      "endIpAddress": "75.168.33.137"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-24_02:38:47",
+    "name": "ClientIPAddress_2020-01-24_02:38:47",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "174.20.107.56",
+      "endIpAddress": "174.20.107.56"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-28_01:05:28",
+    "name": "ClientIPAddress_2020-01-28_01:05:28",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.168.126.24",
+      "endIpAddress": "75.168.126.24"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-28_10:57:13",
+    "name": "ClientIPAddress_2020-01-28_10:57:13",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "97.116.11.7",
+      "endIpAddress": "97.116.11.7"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/ClientIPAddress_2020-01-29_11:19:17",
+    "name": "ClientIPAddress_2020-01-29_11:19:17",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.149.154.133",
+      "endIpAddress": "75.149.154.133"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/Deep1",
+    "name": "Deep1",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "174.20.124.22",
+      "endIpAddress": "174.20.124.22"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/DustinsPhone",
+    "name": "DustinsPhone",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "172.58.87.17",
+      "endIpAddress": "172.58.87.17"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/EvansComputer",
+    "name": "EvansComputer",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "73.164.76.232",
+      "endIpAddress": "73.164.76.232"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/Gradient-MN-IP-1",
+    "name": "Gradient-MN-IP-1",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "67.139.16.34",
+      "endIpAddress": "67.139.16.34"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/Gradient-MN-IP-2",
+    "name": "Gradient-MN-IP-2",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "208.47.231.162",
+      "endIpAddress": "208.47.231.162"
+    }
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/firewallRules/Nick-1",
+    "name": "Nick-1",
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "location": "North Central US",
+    "kind": "v12.0",
+    "properties": {
+      "startIpAddress": "75.73.230.152",
+      "endIpAddress": "75.73.230.152"
+    }
+  }],
+  "databases": [{
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/EmailDev",
+    "name": "EmailDev",
+    "type": "Microsoft.Sql/servers/databases",
+    "location": "North Central US",
+    "kind": "v12.0,user",
+    "managedBy": null,
+    "properties": {
+      "databaseId": "223c21e5-9b12-4bae-a8ba-e681be48518b",
+      "edition": "Standard",
+      "status": "Online",
+      "serviceLevelObjective": "S0",
+      "collation": "SQL_Latin1_General_CP1_CI_AS",
+      "maxSizeBytes": "268435456000",
+      "creationDate": "2018-02-22T21:03:09.277Z",
+      "currentServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+      "requestedServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+      "requestedServiceObjectiveName": "S0",
+      "sampleName": null,
+      "defaultSecondaryLocation": "South Central US",
+      "earliestRestoreDate": "2019-12-25T00:00:00Z",
+      "elasticPoolName": null,
+      "containmentState": 2,
+      "readScale": "Disabled",
+      "failoverGroupId": null,
+      "zoneRedundant": false,
+      "isUpgradeRequested": false
+    },
+    "auditingPolicies": {
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/EmailDev/auditingPolicies/default",
+      "name": "default",
+      "type": "Microsoft.Sql/servers/databases/auditingPolicies",
+      "location": "North Central US",
+      "kind": null,
+      "properties": {
+        "auditingState": "Disabled",
+        "eventTypesToAudit": null,
+        "storageAccountName": null,
+        "storageAccountKey": null,
+        "storageAccountSecondaryKey": null,
+        "storageTableEndpoint": null,
+        "storageAccountResourceGroupName": null,
+        "storageAccountSubscriptionId": null,
+        "useServerDefault": null,
+        "fullAuditLogsTableName": null,
+        "auditLogsTableName": null,
+        "retentionDays": null
+      }
+    },
+    "transparentDataEncryption": [{
+      "name": "current",
+      "location": "North Central US",
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/EmailDev/transparentDataEncryption/current",
+      "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
+      "properties": {
+        "status": "Enabled"
+      }
+    }]
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/IdentityDev",
+    "name": "IdentityDev",
+    "type": "Microsoft.Sql/servers/databases",
+    "location": "North Central US",
+    "kind": "v12.0,user",
+    "managedBy": null,
+    "properties": {
+      "databaseId": "cf9a979b-6cd4-45e0-b49a-5927b6760e9a",
+      "edition": "Standard",
+      "status": "Online",
+      "serviceLevelObjective": "S0",
+      "collation": "SQL_Latin1_General_CP1_CI_AS",
+      "maxSizeBytes": "268435456000",
+      "creationDate": "2017-10-24T19:03:49.03Z",
+      "currentServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+      "requestedServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+      "requestedServiceObjectiveName": "S0",
+      "sampleName": null,
+      "defaultSecondaryLocation": "South Central US",
+      "earliestRestoreDate": "2019-12-25T00:00:00Z",
+      "elasticPoolName": null,
+      "containmentState": 2,
+      "readScale": "Disabled",
+      "failoverGroupId": null,
+      "zoneRedundant": false,
+      "isUpgradeRequested": false
+    },
+    "auditingPolicies": {
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/IdentityDev/auditingPolicies/default",
+      "name": "default",
+      "type": "Microsoft.Sql/servers/databases/auditingPolicies",
+      "location": "North Central US",
+      "kind": null,
+      "properties": {
+        "auditingState": "Disabled",
+        "eventTypesToAudit": null,
+        "storageAccountName": null,
+        "storageAccountKey": null,
+        "storageAccountSecondaryKey": null,
+        "storageTableEndpoint": null,
+        "storageAccountResourceGroupName": null,
+        "storageAccountSubscriptionId": null,
+        "useServerDefault": null,
+        "fullAuditLogsTableName": null,
+        "auditLogsTableName": null,
+        "retentionDays": null
+      }
+    },
+    "transparentDataEncryption": [{
+      "name": "current",
+      "location": "North Central US",
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/IdentityDev/transparentDataEncryption/current",
+      "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
+      "properties": {
+        "status": "Disabled"
+      }
+    }]
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/KonnexMeDev",
+    "name": "KonnexMeDev",
+    "type": "Microsoft.Sql/servers/databases",
+    "location": "North Central US",
+    "kind": "v12.0,user",
+    "managedBy": null,
+    "properties": {
+      "databaseId": "beeaeab2-a167-4a92-a18a-4e138e98008f",
+      "edition": "Standard",
+      "status": "Online",
+      "serviceLevelObjective": "S2",
+      "collation": "SQL_Latin1_General_CP1_CI_AS",
+      "maxSizeBytes": "268435456000",
+      "creationDate": "2017-10-20T19:05:30.097Z",
+      "currentServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+      "requestedServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+      "requestedServiceObjectiveName": "S2",
+      "sampleName": null,
+      "defaultSecondaryLocation": "South Central US",
+      "earliestRestoreDate": "2019-12-25T00:00:00Z",
+      "elasticPoolName": null,
+      "containmentState": 2,
+      "readScale": "Disabled",
+      "failoverGroupId": null,
+      "zoneRedundant": false,
+      "isUpgradeRequested": false
+    },
+    "auditingPolicies": {
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/KonnexMeDev/auditingPolicies/default",
+      "name": "default",
+      "type": "Microsoft.Sql/servers/databases/auditingPolicies",
+      "location": "North Central US",
+      "kind": null,
+      "properties": {
+        "auditingState": "Disabled",
+        "eventTypesToAudit": null,
+        "storageAccountName": null,
+        "storageAccountKey": null,
+        "storageAccountSecondaryKey": null,
+        "storageTableEndpoint": null,
+        "storageAccountResourceGroupName": null,
+        "storageAccountSubscriptionId": null,
+        "useServerDefault": null,
+        "fullAuditLogsTableName": null,
+        "auditLogsTableName": null,
+        "retentionDays": null
+      }
+    },
+    "transparentDataEncryption": [{
+      "name": "current",
+      "location": "North Central US",
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/KonnexMeDev/transparentDataEncryption/current",
+      "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
+      "properties": {
+        "status": "Enabled"
+      }
+    }]
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/KonnexMeDevSelling",
+    "name": "KonnexMeDevSelling",
+    "type": "Microsoft.Sql/servers/databases",
+    "location": "North Central US",
+    "kind": "v12.0,user",
+    "managedBy": null,
+    "properties": {
+      "databaseId": "997837b2-4e31-4e78-90ea-a0c2e30999ad",
+      "edition": "Standard",
+      "status": "Online",
+      "serviceLevelObjective": "S0",
+      "collation": "SQL_Latin1_General_CP1_CI_AS",
+      "maxSizeBytes": "268435456000",
+      "creationDate": "2019-11-15T18:52:31.227Z",
+      "currentServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+      "requestedServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+      "requestedServiceObjectiveName": "S0",
+      "sampleName": null,
+      "defaultSecondaryLocation": "South Central US",
+      "earliestRestoreDate": "2020-01-22T00:00:00Z",
+      "elasticPoolName": null,
+      "containmentState": 2,
+      "readScale": "Disabled",
+      "failoverGroupId": null,
+      "zoneRedundant": false,
+      "isUpgradeRequested": false
+    },
+    "auditingPolicies": {
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/KonnexMeDevSelling/auditingPolicies/default",
+      "name": "default",
+      "type": "Microsoft.Sql/servers/databases/auditingPolicies",
+      "location": "North Central US",
+      "kind": null,
+      "properties": {
+        "auditingState": "Disabled",
+        "eventTypesToAudit": null,
+        "storageAccountName": null,
+        "storageAccountKey": null,
+        "storageAccountSecondaryKey": null,
+        "storageTableEndpoint": null,
+        "storageAccountResourceGroupName": null,
+        "storageAccountSubscriptionId": null,
+        "useServerDefault": null,
+        "fullAuditLogsTableName": null,
+        "auditLogsTableName": null,
+        "retentionDays": null
+      }
+    },
+    "transparentDataEncryption": [{
+      "name": "current",
+      "location": "North Central US",
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/KonnexMeDevSelling/transparentDataEncryption/current",
+      "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
+      "properties": {
+        "status": "Enabled"
+      }
+    }]
+  }, {
+    "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/master",
+    "name": "master",
+    "type": "Microsoft.Sql/servers/databases",
+    "location": "North Central US",
+    "kind": "v12.0,system",
+    "managedBy": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev",
+    "properties": {
+      "databaseId": "f81f9f22-c2b0-410d-8d4f-3a330411bc44",
+      "edition": "System",
+      "status": "Online",
+      "serviceLevelObjective": "System1",
+      "collation": "SQL_Latin1_General_CP1_CI_AS",
+      "maxSizeBytes": "32212254720",
+      "creationDate": "2017-10-02T17:50:47.97Z",
+      "currentServiceObjectiveId": "c99ac918-dbea-463f-a475-16ec020fdc12",
+      "requestedServiceObjectiveId": "c99ac918-dbea-463f-a475-16ec020fdc12",
+      "requestedServiceObjectiveName": "System1",
+      "sampleName": null,
+      "defaultSecondaryLocation": "South Central US",
+      "earliestRestoreDate": null,
+      "elasticPoolName": null,
+      "containmentState": 2,
+      "readScale": "Disabled",
+      "failoverGroupId": null,
+      "zoneRedundant": false,
+      "isUpgradeRequested": false
+    },
+    "auditingPolicies": {
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/master/auditingPolicies/default",
+      "name": "default",
+      "type": "Microsoft.Sql/servers/databases/auditingPolicies",
+      "location": "North Central US",
+      "kind": null,
+      "properties": {
+        "auditingState": "Disabled",
+        "eventTypesToAudit": null,
+        "storageAccountName": null,
+        "storageAccountKey": null,
+        "storageAccountSecondaryKey": null,
+        "storageTableEndpoint": null,
+        "storageAccountResourceGroupName": null,
+        "storageAccountSubscriptionId": null,
+        "useServerDefault": null,
+        "fullAuditLogsTableName": null,
+        "auditLogsTableName": null,
+        "retentionDays": null
+      }
+    },
+    "transparentDataEncryption": [{
+      "name": "current",
+      "location": "North Central US",
+      "id": "/subscriptions/5a001cf3-8715-404c-8118-a7390f7d32c3/resourceGroups/KonnexMeDevelopmentDatabases/providers/Microsoft.Sql/servers/konnexmedev/databases/master/transparentDataEncryption/current",
+      "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
+      "properties": {
+        "status": "Disabled"
+      }
+    }]
+  }],
+  "location": "North Central US"
+}

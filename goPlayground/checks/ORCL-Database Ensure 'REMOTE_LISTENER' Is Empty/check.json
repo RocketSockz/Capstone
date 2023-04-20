@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "f8e4df74-aadd-4f43-876a-c9fa590d8349",
+  "displayName": "Ensure parameter 'REMOTE_LISTENER' Is Empty",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Permitting a remote listener for connections to the database instance can allow for the potential spoofing of connections and that could compromise data confidentiality and integrity.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET REMOTE_LISTENER = '' SCOPE = SPFILE;\n```",
+  "error_message": "Remote Listening is non-empty",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'REMOTE_LISTENER' Is Empty"
+  ]
+}

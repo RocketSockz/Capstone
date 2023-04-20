@@ -1,0 +1,15 @@
+{
+  "id": "3df67af4-6603-5f2c-2c2a-f11e0882f8f6",
+  "displayName": "Ensure Kubernetes Clusters are configured with Labels",
+  "resourceType": "gke#cluster",
+  "severity": "low",
+  "rationale": "Configured Labels can be used to organize and to select subsets of objects. Labels can be attached to objects at creation time and subsequently added and modified at any time. Each object can have a set of key/value labels defined. Each Key must be unique for a given object. Labels enable users to map their own organizational structures onto system objects in a loosely coupled fashion, without requiring clients to store these mappings. Labels can also be used to apply specific security settings and 'auto configure' objects at creation.",
+  "source": "cis gcp 1.0.0 | benchmark 7.5",
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Select reported Kubernetes clusters for which no labels are set\n3. Click on ADD LABEL button and add a label",
+  "error_message": "Kubernetes cluster was not configured with labels",
+  "category": "AP",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure Kubernetes clusters are configured with labels"
+  ]
+}

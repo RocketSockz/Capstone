@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "systemConfigs": {
+          "contains": {
+            "properties": {
+              "name": {
+                "constIgnoreCase": "default trace enabled"
+              }, 
+              "value_configured": {
+                "const": 1
+              },
+              "value_in_use": {
+                "const": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

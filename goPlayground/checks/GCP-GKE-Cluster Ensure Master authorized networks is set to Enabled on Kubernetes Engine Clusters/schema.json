@@ -1,0 +1,22 @@
+{
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Select reported Kubernetes clusters for which Master authorized networks is\ndisabled\n3. Click on EDIT button and Set 'Master authorized networks (beta)' to Enabled",
+  "rationale": "By Enabling, Master authorized networks blocks untrusted IP addresses from outside Google Cloud Platform and Addresses from inside GCP (such as traffic from Compute Engine VMs) can reach your master through HTTPS provided that they have the necessary Kubernetes credentials.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "masterAuthorizedNetworksConfig": {
+          "properties": {
+            "enabled": {
+              "errorMessage": "Kubernetes cluster has master authorized networks disabled.",
+              "const": true
+            }
+          },
+          "errorMessage": "Kubernetes cluster has master authorized networks disabled.",
+          "required": ["enabled"]
+        }
+      }
+    }
+  },
+  "schemaId": "42d73e77-415d-9692-2325-feb92cc3f80d"
+}

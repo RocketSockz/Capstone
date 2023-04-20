@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "5a7622e7-82fa-4ae1-bdd8-7478b2a28072",
+  "displayName": "Ensure 'CREATE LIBRARY' Is Revoked from Unauthorized 'GRANTEE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "The `CREATE LIBRARY` privilege can allow the creation of numerous library-associated objects and potentially corrupt the libraries' integrity.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n```\nREVOKE CREATE LIBRARY FROM <grantee>;\n```",
+  "error_message": "'CREATE LIBRARY' was found on one or more unauthorized 'GRANTEE'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'CREATE LIBRARY' Is Revoked from Unauthorized 'GRANTEE'"
+  ]
+}

@@ -1,0 +1,16 @@
+
+{
+  "id": "40zzd1d1-220e-fef1-5b5f-4ec39267a369",
+  "displayName": "Ensure document sharing is being controlled by domains with allowlist or blocklist",
+  "resourceType": "microsoft.graph.admin.sharepoint.settings",
+  "severity": "medium",
+  "rationale": "Attackers will often attempt to expose sensitive information to external entities through sharing, and restricting the domains that your users can share documents with will reduce that surface area.",
+  "recommended_action": "**To configure document sharing restrictions, use the Microsoft 365 Admin Center:** \r\n\r\n1. Navigate to Microsoft 365 administration portal (`https://admin.microsoft.com`), Click on `Admin Centers` and then `SharePoint`.\r\n2. Expand `Policies` then click `Sharing`.\r\n3. Expand `More external sharing settings` and check `Limit external sharing by domain`.\r\n4. Select `Add domains` to add a list of approved domains\r\n5. Click `Save` at the bottom of the page.\r\n\r\n**To configure document sharing restrictions, you can also use SharePoint Online PowerShell:**\r\n\r\n1. Connect to SharePoint Online using Connect-SPOService\r\n2. Run the following PowerShell command:\r\n\r\n```\r\nSet-SPOTenant -SharingDomainRestrictionMode AllowList -SharingAllowedDomainList \"domain1.com domain2.com\"\r\n```",
+  "error_message": "SharePoint does not enforce either an allowlist or blocklist for sharing across domains",
+  "category": "AC",
+  "source": "",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure document sharing is being controlled by domains with allowlist or blocklist"
+  ]
+}

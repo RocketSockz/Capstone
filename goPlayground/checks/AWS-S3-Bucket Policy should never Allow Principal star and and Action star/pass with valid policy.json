@@ -1,0 +1,46 @@
+{
+    "accountId": "213916962078",
+    "arn": "arn:aws:s3:::helm-dev-aws-config",
+    "cloudId": "arn:aws:s3:::helm-dev-aws-config",
+    "location": "us-east-1",
+    "name": "helm-dev-aws-config",
+    "type": "AWS::S3::Bucket",
+    "document": {},
+    "BucketPolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "AWSConfigBucketPermissionsCheck",
+                "Effect": "Allow",
+                "Principal": {
+                    "Service": "config.amazonaws.com"
+                },
+                "Action": "s3:GetBucketAcl",
+                "Resource": "arn:aws:s3:::helm-dev-aws-config"
+            },
+            {
+                "Sid": " AWSConfigBucketDelivery",
+                "Effect": "Allow",
+                "Principal": {
+                    "Service": "config.amazonaws.com"
+                },
+                "Action": "*",
+                "Resource": "arn:aws:s3:::helm-dev-aws-config/AWSLogs/*Config/*",
+                "Condition": {
+                    "StringEquals": {
+                        "s3:x-amz-acl": "bucket-owner-full-control"
+                    }
+                }
+            }
+        ]
+    },
+    "PublicAccessBlock": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+    },
+    "BucketPayer": "BucketOwner",
+    "ServerSideEncryptionConfiguration": null,
+    "BucketNotificationConfiguration": []
+}

@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "AccessControlList": {
+            "items": {
+                "properties": {
+                    "Grantee": {
+                        "properties": {
+                            "URI": {
+                                "not": {
+                                    "enumIgnoreCase": [
+                                        "http://acs.amazonaws.com/groups/global/AllUsers",
+                                        "http://acs.amazonaws.com/groups/global/AuthenticatedUsers"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "schemaId": "b25b124e-4870-456f-a471-144c27cac83f"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "43e59f90-8d47-8a77-3c2d-74aa5fadba9c",
+  "displayName": "Ensure mobile device management polices are set to require advanced security configurations to protect from basic internet attacks",
+  "resourceType": "Collection(microsoft.graph.deviceConfiguration)",
+  "severity": "low",
+  "rationale": "Managing mobile devices in your organization, helps provide a basic level of security to protect against attacks from these platforms. For example ensure that the device is up to date on patches or is not rooted. These configurations open those devices to vulnerabilities that are addressed in patched versions of the mobile OS.",
+  "source": "cis o365 1.1.0 | benchmark 7.1",
+  "recommended_action": "To set mobile device management profiles, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile to create a new profile. Select the appropriate Platform and settings from the configuration screens.",
+  "error_message": "Tenant must have general device configurations for all platforms",
+  "category": "SI",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure mobile device management polices are set to require advanced security configurations to protect from basic internet attacks"
+  ]
+}

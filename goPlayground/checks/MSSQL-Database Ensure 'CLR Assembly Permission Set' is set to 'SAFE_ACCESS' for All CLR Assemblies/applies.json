@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "databases": {
+          "contains": {
+            "properties": {
+              "userAssemblies": {
+                "contains": {
+                  "is_user_defined": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }, "required": ["databases"]
+    }
+  }
+}

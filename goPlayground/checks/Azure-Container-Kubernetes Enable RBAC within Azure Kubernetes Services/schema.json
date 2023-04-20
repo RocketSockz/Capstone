@@ -1,0 +1,22 @@
+{
+  "recommended_action": "WARNING: This setting cannot be changed after AKS deployment, cluster will require recreation.",
+  "rationale": "Azure Kubernetes Services has the capability to integrate Azure Active Directory users and groups into Kubernetes RBAC controls within the AKS Kubernetes API Server. This should be utilized to enable granular access to Kubernetes resources within the AKS clusters supporting RBAC controls not just of the overarching AKS instance but also the individual resources managed within Kubernetes.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "enableRBAC": {
+              "errorMessage": "Role-based access control is not enabled for this cluster.",
+              "const": true
+            }
+          },
+          "errorMessage": "Role-based access control is not enabled for this cluster.",
+          "required": ["enableRBAC"]
+        }
+      }
+    }
+  },
+  "schemaId": "855c99b5-c0d9-e392-7cd5-e37f4213ff98"
+}

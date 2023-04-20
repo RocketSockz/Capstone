@@ -1,0 +1,39 @@
+{
+  "accountId": "434855252750",
+  "arn": "",
+  "cloudId": "",
+  "id": "",
+  "location": "",
+  "name": "BesteTrail",
+  "document": {
+    "Name": "BesteTrail",
+    "S3BucketName": "beste-trail-events",
+    "IncludeGlobalServiceEvents": true,
+    "IsMultiRegionTrail": false,
+    "HomeRegion": "us-east-1",
+    "TrailARN": "arn:aws:cloudtrail:us-east-1:434855252750:trail/BesteTrail",
+    "LogFileValidationEnabled": false,
+    "CloudWatchLogsLogGroupArn": "",
+    "CloudWatchLogsRoleArn": "arn:aws:iam::434855252750:role/CloudTrail_CloudWatchLogs_Role",
+    "HasCustomEventSelectors": false,
+    "HasInsightSelectors": false,
+    "IsOrganizationTrail": false
+  },
+  "trailStatus": {
+    "IsLogging": false,
+    "LatestDeliveryAttemptTime": "",
+    "LatestNotificationAttemptTime": "",
+    "LatestNotificationAttemptSucceeded": "",
+    "LatestDeliveryAttemptSucceeded": "",
+    "TimeLoggingStarted": "",
+    "TimeLoggingStopped": ""
+  },
+  "eventSelectors": [
+    {
+      "ReadWriteType": "All",
+      "IncludeManagementEvents": true,
+      "DataResources": [],
+      "ExcludeManagementEventSources": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "PublicAccessBlock": {
+            "type": "object",
+            "required": [
+                "BlockPublicAcls",
+                "IgnorePublicAcls",
+                "BlockPublicPolicy",
+                "RestrictPublicBuckets"
+            ],
+            "properties": {
+                "BlockPublicAcls": {
+                    "const": true
+                },
+                "IgnorePublicAcls": {
+                    "const": true
+                },
+                "BlockPublicPolicy": {
+                    "const": true
+                },
+                "RestrictPublicBuckets": {
+                    "const": true
+                }
+            }
+        }
+    },
+    "schemaId": "90c15b31-3204-4272-8cb3-7d8fa369f130"
+}

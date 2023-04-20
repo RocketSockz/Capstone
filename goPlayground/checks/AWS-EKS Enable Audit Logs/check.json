@@ -1,0 +1,15 @@
+{
+    "id": "c30954d9-3593-4b44-8f67-e44085d59042",
+    "displayName": "Enable logging for AWS EKS Clusters",
+    "resourceType": "AWS::EKS::Cluster",
+    "severity": "medium",
+    "rationale": "Exporting logs and metrics to a dedicated, persistent datastore such as CloudTrail ensures availability of audit data following a cluster security event, and provides a central location for analysis of log and metric data collated from multiple sources.",
+    "source": "CIS AWS EKS Benchmark v1.0.1",
+    "recommended_action": "1.Sign in to the AWS Management Console and open the EKS console at https://console.aws.amazon.com/eks. \n2. Click on Cluster Name of the cluster you are auditing.\n3. Click Logging. You will see Control Plane Logging info. \n4. Ensure all 5 choices are set to Enabled.",
+    "error_message": "Logging disabled for AWS EKS Cluster",
+    "category": "AU",
+    "subcategory": "Logging",
+    "ruleNames": [
+        "Enable logging for AWS EKS Cluster"
+    ]
+}

@@ -1,0 +1,82 @@
+{
+  "recommended_action": "Disable direct SSH access to your Azure Virtual Machines from the Internet. After direct\nSSH access from the Internet is disabled, you have other options you can use to access these\nvirtual machines for remote management:\nPoint-to-site VPN\nSite-to-site VPN\nExpressRoute",
+  "rationale": "The potential security problem with using SSH over the Internet is that attackers can use various brute force techniques to gain access to Azure Virtual Machines. Once the attackers gain access, they can use a virtual machine as a launch point for compromising other machines on the Azure Virtual Network or even attack networked devices outside of Azure.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "required": ["securityRules", "defaultSecurityRules"],
+          "properties": {
+            "securityRules": {
+              "type": "array",
+              "items": {
+                "not": {
+                  "errorMessage": "SSH is open to the internet.",
+                  "properties": {
+                    "properties": {
+                      "properties": {
+                        "sourceAddressPrefix": {
+                          "enumIgnoreCase": [
+                            "0.0.0.0",
+                            "*",
+                            "<nw>/0",
+                            "/0",
+                            "any",
+                            "internet"
+                          ]
+                        },
+                        "sourceAddressPrefixes": {
+                          "if": {
+                            "minItems": 1
+                          },
+                          "then": {
+                            "contains": {
+                              "enumIgnoreCase": [
+                                "0.0.0.0",
+                                "*",
+                                "<nw>/0",
+                                "/0",
+                                "any",
+                                "internet"
+                              ]
+                            },
+                            "errorMessage": "Source Address is set to any and allows SSH."
+                          }
+                        },
+                        "access": {
+                          "enumIgnoreCase": ["allow"]
+                        },
+                        "destinationPortRange": {
+                          "enum": ["22", "*"]
+                        },
+                        "destinationPortRanges": {
+                          "if": {
+                            "minItems": 1
+                          },
+                          "then": {
+                            "contains": {
+                              "enum": ["22", "*"]
+                            }
+                          }
+                        },
+                        "direction": {
+                          "enumIgnoreCase": ["inbound"]
+                        },
+                        "protocol": {
+                          "enumIgnoreCase": ["tcp", "*"]
+                        }
+                      }
+                    }
+                  }
+                },
+                "errorMessage": "SSH is open to the internet."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "97ae47f5-5bb1-bdb3-4fec-f90d2e7c52a5"
+}

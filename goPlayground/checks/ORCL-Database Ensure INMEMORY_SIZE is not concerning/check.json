@@ -1,0 +1,15 @@
+{
+  "id": "65fcde79-192c-63e8-2963-3fe483fba03f",
+  "displayName": "Ensure INMEMORY_SIZE is not concerning",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Setting this parameter to a value greater than zero indicates the size of the In-Memory Column Store for tables that are configured to use the IM Column Store.  A setting of 0 will disable this feature.",
+  "source": "opscompass-defined",
+  "recommended_action": "Alter system set inmemory_size=0 scope=both",
+  "error_message": "INMEMORY_SIZE is concerning and has a value of >0",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure INMEMORY_SIZE is not concerning"
+  ]
+}

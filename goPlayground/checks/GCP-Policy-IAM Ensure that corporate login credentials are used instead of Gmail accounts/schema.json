@@ -1,0 +1,27 @@
+{
+  "recommended_action": "Follow the documentation and setup corporate login accounts.",
+  "rationale": "Gmail accounts are personally created and controllable accounts. Organizations seldom have any control over them. Thus, it is recommended that you use fully managed corporate Google accounts for increased visibility, auditing, and control over access to Cloud Platform resources.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "bindings": {
+          "items": {
+            "properties": {
+              "members": {
+                "items": {
+                  "not": {
+                    "errorMessage": "Gmail accounts are listed as users within the organization.",
+                    "pattern": "gmail.com$"
+                  },
+                  "errorMessage": "Gmail accounts are listed as users within the organization."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "d1a89946-aa1d-80cc-88ad-0f8b9eca0e77"
+}

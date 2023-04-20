@@ -1,0 +1,15 @@
+{
+  "id": "a773461f-fa3c-a901-ba7d-ebc2a55c15f9",
+  "displayName": "Ensure AWS CacheClusters Are Encrypted In-Transit",
+  "resourceType": "AWS::ElastiCache::CacheCluster",
+  "severity": "high",
+  "rationale": "Encryption on a redis cluster is necessary to prevent any unwanted attacks.",
+  "source": "opscompass defined",
+  "recommended_action": "Encryption at Rest & In Transit can only be enabled on Cache Cluster Creation. Please navigate to this cluster, delete it, and recreate a Cluster that follows your buisness needs with the Settings `Encryption In Transit` & 'At Rest Encryption` Enabled.",
+  "error_message": "Cache cluster has In-Transit Encryption disabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure all encryption types are enabled for Redis clusters"
+  ]
+}

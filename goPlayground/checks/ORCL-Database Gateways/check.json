@@ -1,0 +1,15 @@
+{
+  "id": "b81bc914-7867-1ae9-4b5f-3b619c0ae3ff",
+  "displayName": "Gateways",
+  "resourceType": "databases/oracle",
+  "severity": "medium",
+  "rationale": "Gateways requires a license for .Database Gateway to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Check listener.ora to see if PROGRAM=dg4odbc",
+  "error_message": "Gateways is listed as a feature usage concern under .Database Gateway",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Gateways"
+  ]
+}

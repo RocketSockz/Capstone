@@ -1,0 +1,29 @@
+{
+  "recommended_action": "Alter system set heat_map=OFF scope=both",
+  "rationale": "A value of 'ON' for this parameter enables both the Heat Map and Automatic Data Optimization (ADO) features, which requires Oracle Advanced Compression to be licensed.",
+  "source": "opscompass-defined",
+  "properties": {
+    "document": {
+      "properties": {
+        "parameters": {
+          "properties": {
+            "HEAT_MAP": {
+              "not": {
+                "properties": {
+                  "isConcerning": {
+                    "const": true
+                  },
+                  "value": {
+                    "const": "ON"
+                  }
+                }
+              },
+              "errorMessage": "HEAT_MAP is concerning and has a value of ON."
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "0a8fdb66-9096-1b62-865a-1f6db84398e9"
+}

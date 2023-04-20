@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "882bec96-e3f7-421e-bc64-c2e74c33e50d",
+  "displayName": "Ensure the 'ALTER DATABASE LINK' Action Audit Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Logging and monitoring of all attempts to alter database links, whether successful or unsuccessful, may provide forensic evidence about potential suspicious/unauthorized activities. Any such activities may be a cause for further investigation. In addition, organization security policies and industry/government regulations may require logging of all user activities involving alteration of database links.",
+  "recommended_action": "Execute the following SQL statement to remediate this setting.\n```\nALTER AUDIT POLICY CIS_UNIFIED_AUDIT_POLICY\nADD\nACTIONS\nALTER DATABASE LINK;\n```\n**Note:** If you do not have `CIS_UNIFIED_AUDIT_POLICY`, please create one using the `CREATE AUDIT POLICY` statement.",
+  "error_message": "'ALTER DATABASE LINK' audit action is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'ALTER DATABASE LINK' Action Audit Is Enabled"
+  ]
+}

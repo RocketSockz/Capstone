@@ -1,0 +1,15 @@
+{
+  "id": "c1e9e3d8-c802-d3c6-1145-5131ff682ddf",
+  "displayName": "EM Standalone Provisioning and Patch Automation Pack",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "EM Standalone Provisioning and Patch Automation Pack requires a license for Oracle Provisioning and Patch Automation Pack to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable unneeded Packs in Grid Control: https://docs.oracle.com/cd/E63000_01/OEMLI/introduction.htm#OEMLI108\nThis should be checked every time a new target is added to Grid Control since many Packs are defaulted to \"Enabled\"",
+  "error_message": "EM Standalone Provisioning and Patch Automation Pack is listed as a feature usage concern under Oracle Provisioning and Patch Automation Pack",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "EM Standalone Provisioning and Patch Automation Pack"
+  ]
+}

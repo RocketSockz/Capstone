@@ -1,0 +1,32 @@
+{
+  "recommended_action": "1. Login to Azure Portal using https://portal.azure.com\n2. Go to Azure Database for PostgreSQL server\n3. For this database click on Server parameters\n4. Search for log_retention_days\n5. Ensure that it is set to 4 days or greater and save.",
+  "rationale": "Enabling log_retention_days helps PostgreSQLDatabase to Sets number of days a log file is retained which in turn generates query and error logs. Query and error logs can be used to identify, troubleshoot, and repair configuration errors and sub-optimal performance.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "config": {
+      "items": {
+        "if": {
+          "properties": {
+            "name": {
+              "constIgnoreCase": "log_retention_days"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "properties": {
+              "errorMessage": "SQL's logging of retention days is set incorrectly.",
+              "properties": {
+                "value": {
+                  "enum": ["4", "5", "6", "7"]
+                }
+              }
+            }
+          }
+        },
+        "errorMessage": "SQL's logging of retention days is set incorrectly."
+      }
+    }
+  },
+  "schemaId": "f5c87e38-3d29-750b-ab7d-d598bd056576"
+}

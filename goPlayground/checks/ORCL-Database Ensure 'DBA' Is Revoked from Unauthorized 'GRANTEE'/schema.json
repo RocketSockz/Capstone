@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "DBAPrivs": {
+                "items": {
+                  "properties": {
+                    "GrantedRole": {
+                      "not": {
+                        "constIgnoreCase": "DBA"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

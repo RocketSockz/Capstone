@@ -1,0 +1,15 @@
+{
+  "id": "4c033287-4b7d-ac9e-5415-370db6458a22",
+  "displayName": "Ensure that RDP access from Network Security Groups are restricted from the internet",
+  "resourceType": "Microsoft.Network/networkSecurityGroups",
+  "severity": "high",
+  "rationale": "The potential security problem with using RDP over the Internet is that attackers can use various brute force techniques to gain access to Azure Virtual Machines. Once the attackers gain access, they can use a virtual machine as a launch point for compromising other machines on an Azure Virtual Network or even attack networked devices outside of Azure.",
+  "source": "cis azure 1.1.0 | benchmark 6.1",
+  "recommended_action": "Disable direct RDP access to your Azure Virtual Machines from the Internet. After direct\nRDP access from the Internet is disabled, you have other options you can use to access\nthese virtual machines for remote management:\nPoint-to-site VPN\nSite-to-site VPN\nExpressRoute",
+  "error_message": "RDP is open to the internet",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure RDP port (port 3389) is not open"
+  ]
+}

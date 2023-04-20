@@ -1,0 +1,12 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "mostRecentCollection": {
+          "withinDays": 21,
+          "errorMessage": "Most recent collection is not within 21 days."
+        }
+      }
+    }
+  }
+}

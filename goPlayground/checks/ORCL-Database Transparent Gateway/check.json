@@ -1,0 +1,15 @@
+{
+  "id": "28a9b70b-f7fc-3235-7e9a-b8cecaef90cc",
+  "displayName": "Transparent Gateway",
+  "resourceType": "databases/oracle",
+  "severity": "medium",
+  "rationale": "Transparent Gateway requires a license for .Database Gateway to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Check listener.ora to see if PROGRAM=dg4odbc",
+  "error_message": "Transparent Gateway is listed as a feature usage concern under .Database Gateway",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Transparent Gateway"
+  ]
+}

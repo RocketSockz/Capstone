@@ -1,0 +1,15 @@
+{
+  "id": "d232efc4-7182-14f2-1e71-4b3e8829ba80",
+  "displayName": "Ensure mobile devices require the use of a password",
+  "resourceType": "microsoft.graph.deviceConfiguration",
+  "severity": "low",
+  "rationale": "Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.",
+  "source": "cis o365 1.1.0 | benchmark 7.13",
+  "recommended_action": "To set mobile device management profiles, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Device configuration and then select Profiles\n\t3. Select Create profile\n\t4. Set a Name for the policy, choose the appropriate Platform and select Device restrictions\n\t5. In the Password section, ensure that Password is set to Require.",
+  "error_message": "Device configuration does not require a password",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure mobile devices require the use of a password"
+  ]
+}

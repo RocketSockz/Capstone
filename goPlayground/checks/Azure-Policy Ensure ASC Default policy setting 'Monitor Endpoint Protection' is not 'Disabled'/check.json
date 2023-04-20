@@ -1,0 +1,15 @@
+{
+  "id": "3ff676e3-599d-1b63-2d39-be7c4fda58d5",
+  "displayName": "Ensure ASC Default policy setting \"Monitor Endpoint Protection\" is not \"Disabled\"",
+  "resourceType": "Microsoft.Authorization/policyAssignments",
+  "severity": "high",
+  "rationale": "When this setting is enabled, it recommends endpoint protection be provisioned for all Windows virtual machines to help identify and remove viruses, spyware, and other malicious software.",
+  "source": "cis azure 1.1.0 | benchmark 2.5",
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n(Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor Endpoint Protection to AuditIfNotExists or\nany other available value than Disabled\n5. Click Save",
+  "error_message": "System endpoint protections moinitoring for virtual machines is disabled",
+  "category": "PO",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure ASC default policy setting 'Monitor Endpoing Protection' is not disabled"
+  ]
+}

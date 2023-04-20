@@ -1,0 +1,79 @@
+{
+  "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/microsoft.insights/logprofiles/default",
+  "name": "default",
+  "resourceGroup": "",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "type": "microsoft.insights/logProfiles",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/providers/microsoft.insights/logprofiles/default",
+    "type": null,
+    "name": "default",
+    "location": null,
+    "kind": null,
+    "tags": null,
+    "properties": {
+      "storageAccountId": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/sam-test/providers/Microsoft.Storage/storageAccounts/samtestdiag851",
+      "serviceBusRuleId": null,
+      "locations": [
+        "australiaeast"
+      ],
+      "categories": [
+        "Write",
+        "Delete",
+        "Action"
+      ],
+      "retentionPolicy": {
+        "enabled": true,
+        "days": 108
+      }
+    },
+    "identity": null,
+    "storageAccount": {
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "kind": "Storage",
+      "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/sam-test/providers/Microsoft.Storage/storageAccounts/samtestdiag851",
+      "name": "samtestdiag851",
+      "type": "Microsoft.Storage/storageAccounts",
+      "location": "westus",
+      "tags": {},
+      "properties": {
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "networkAcls": {
+          "bypass": "AzureServices",
+          "virtualNetworkRules": [],
+          "ipRules": [],
+          "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": false,
+        "encryption": {
+          "services": {
+            "file": {
+              "enabled": true,
+              "lastEnabledTime": "2019-06-17T18:22:57.4359328Z"
+            },
+            "blob": {
+              "enabled": true,
+              "lastEnabledTime": "2019-06-17T18:22:57.4359328Z"
+            }
+          },
+          "keySource": "Microsoft.Storage"
+        },
+        "provisioningState": "Succeeded",
+        "creationTime": "2019-06-17T18:22:57.3109589Z",
+        "primaryEndpoints": {
+          "blob": "https://samtestdiag851.blob.core.windows.net/",
+          "queue": "https://samtestdiag851.queue.core.windows.net/",
+          "table": "https://samtestdiag851.table.core.windows.net/",
+          "file": "https://samtestdiag851.file.core.windows.net/"
+        },
+        "primaryLocation": "westus",
+        "statusOfPrimary": "available"
+      }
+    }
+  }
+}

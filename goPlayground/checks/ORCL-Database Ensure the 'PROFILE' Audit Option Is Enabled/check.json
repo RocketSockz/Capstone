@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "03eb80af-2ef0-4b6d-83a2-565dbd07201f",
+  "displayName": "Ensure the 'PROFILE' Audit Option Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "As profiles are part of the database security infrastructure, auditing the creation, modification, and deletion of profiles is recommended.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement in either the non multi-tenant or container database, it does NOT need run in the pluggable.\n```\nAUDIT PROFILE;\n```",
+  "error_message": "'PROFILE' audit option is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'PROFILE' Audit Option Is Enabled"
+  ]
+}

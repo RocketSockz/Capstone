@@ -1,0 +1,30 @@
+{
+  "recommended_action": "1. Go to SQL servers\n2. For this server instance\n3. Click on Advanced Data Security\n4. At section Threat Detection Settings, Enable Email service and coadministrators",
+  "rationale": "Providing the email address to receive alerts ensures that any detection of anomalous activities is reported as soon as possible, making it more likely to mitigate any potential risk sooner.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "securityAlertPolicies": {
+      "items": {
+        "properties": {
+          "properties": {
+            "properties": {
+              "state": {
+                "errorMessage": "SQL server does not have email notifications enabled.",
+                "constIgnoreCase": "enabled"
+              },
+              "emailAccountAdmins": {
+                "errorMessage": "SQL server does not email acccount admins.",
+                "const": true
+              },
+              "emailAddresses": {
+                "errorMessage": "SQL server does not have more than 1 email address attached to it.",
+                "minItems": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "dae615e4-ccbc-816c-5445-5e221239f354"
+}

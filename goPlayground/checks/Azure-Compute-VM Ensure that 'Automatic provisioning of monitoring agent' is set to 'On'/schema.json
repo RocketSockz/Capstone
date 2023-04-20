@@ -1,0 +1,24 @@
+{
+  "recommended_action": "1. Go to Security Center\n2. Click on Security Policy\n3. Click On 'Edit Settings' for this subscription\n4. Click on Data Collection\n5. Set Automatic provisioning of monitoring agent to On\n6. Click Save",
+  "rationale": "When Automatic provisioning of monitoring agent is turned on, Azure Security Center provisions the Microsoft Monitoring Agent on all existing supported Azure virtual machines and any new ones that are created. The Microsoft Monitoring Agent scans for various security-related configurations and events such as system updates, OS vulnerabilities, endpoint protection, and provides alerts.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "extensions": {
+      "items": {
+        "properties": {
+          "properties": {
+            "errorMessage": "VM does not have automatic provisioning correctly configured.",
+            "properties": {
+              "provisioningState": {
+                "errorMessage": "VM does not have automatic provisioning correctly configured.",
+                "enumIgnoreCase": ["succeeded"]
+              }
+            },
+            "required": ["provisioningState"]
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "52eee067-1a62-67ff-41a4-00db89326162"
+}

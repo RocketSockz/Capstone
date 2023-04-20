@@ -1,0 +1,15 @@
+{
+  "id": "f08f3aca-9063-4e81-beb8-94a43f613481",
+  "displayName": "Ensure that Network Security Groups MSSQL port 1433 access is restricted from the internet",
+  "resourceType": "Microsoft.Network/networkSecurityGroups",
+  "severity": "high",
+  "rationale": "The potential security problem with using MSSQL port 1433 over the Internet is that attackers can use various brute force techniques to gain access to Azure Virtual Machines. Once the attackers gain access, they can use a virtual machine as a launch point for compromising other machines on the Azure Virtual Network or even attack networked devices outside of Azure.",
+  "source": "cis azure 1.1.0 | benchmark 6.2",
+  "recommended_action": "Disable direct MSSQL port 1433 access to your Azure Virtual Machines from the Internet. After direct\nMSSQL port 1433 access from the Internet is disabled, you have other options you can use to access these\nvirtual machines for remote management:\nPoint-to-site VPN\nSite-to-site VPN\nExpressRoute",
+  "error_message": "Security group allows ingress to MSSQL port 1433",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Security group allows ingress to service management port"
+  ]
+}

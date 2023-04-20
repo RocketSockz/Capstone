@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "9e33f660-5eb5-4353-96de-367101bdc758",
+  "displayName": "Ensure parameter 'SEC_RETURN_SERVER_RELEASE_BANNER' Is Set to 'FALSE'",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Allowing the database to return information about the patch/update release number could facilitate unauthorized users' attempts to gain access based upon known patch weaknesses.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET SEC_RETURN_SERVER_RELEASE_BANNER = FALSE SCOPE = SPFILE;\n```",
+  "error_message": "Unauthorized users' can request current release number",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'SEC_RETURN_SERVER_RELEASE_BANNER' Is Set to 'FALSE'"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "properties": {
+        "BucketLogging": {
+            "properties": {
+                "TargetBucket": {
+                    "not": {
+                        "const": []
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "BucketLogging"
+    ],
+    "schemaId": "f4a53702-ff15-4390-b132-1481528b7e41"
+}

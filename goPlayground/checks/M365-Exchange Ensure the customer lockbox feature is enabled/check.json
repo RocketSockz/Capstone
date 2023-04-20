@@ -1,0 +1,15 @@
+{
+  "id": "bb086c1f-e89b-5b1b-ba91-9208174a109d",
+  "displayName": "Ensure the customer lockbox feature is enabled",
+  "resourceType": "exchange/organizationConfig",
+  "severity": "medium",
+  "rationale": "Enabling this feature protects your data against data spillage and exfiltration.",
+  "source": "cis o365 1.1.0 | benchmark 3.1",
+  "recommended_action": "To enable the Customer Lockbox feature, use the Microsoft 365 Admin Portal:\n1. Browse to the Microsoft 365 admin center.\n2. Under Settings choose Security & privacy.\n3. Click Edit next to Customer Lockbox.\n4. Click the box next to Require approval for all data access requests to enable the feature and then click Save.",
+  "error_message": "Organization does not have customer lockbox enabled",
+  "category": "SI",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the customer lockbox feature is enabled"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "509c9f68-b6c2-69a4-7691-5da0c6b1db7f",
+  "displayName": "XStream Streams",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "XStream Streams requires a license for Oracle GoldenGate to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the XStream Streams APIs in the Capture or Apply settings for Streams",
+  "error_message": "XStream Streams is listed as a feature usage concern under Oracle GoldenGate",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "XStream Streams"
+  ]
+}

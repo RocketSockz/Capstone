@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "name": {
+          "constIgnoreCase": "default"
+        }
+      }
+    }
+  }
+}

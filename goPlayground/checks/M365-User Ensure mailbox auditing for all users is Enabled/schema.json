@@ -1,0 +1,16 @@
+{
+  "recommended_action": "To enable mailbox auditing for all users, use the Exchange Online PowerShell Module:\n\t1. Run Microsoft Exchange Online PowerShell Module.\n\t2. Connect using Connect-EXOPSSession.\n\t3. Run the following PowerShell commands: \n$AuditAdmin = @(\"Copy\", \"Create\", \"FolderBind\",\"HardDelete\", \"MessageBind\", \"Move\", \"MoveToDeletedItems\", \"SendAs\",\"SendOnBehalf\", \"SoftDelete\", \"Update\", \"UpdateCalendarDelegation\", \"UpdateFolderPermissions\", \"UpdateInboxRules\") $AuditDelegate = @(\"Create\", \"FolderBind\", \"HardDelete\", \"Move\", \"MoveToDeletedItems\", \"SendAs \", \"SendOnBehalf\", \"SoftDelete\", \"Update\", \"UpdateFolderPermissions\", \"Update InboxRules\") $AdminOwner = @(\"Create\", \"HardDelete\", \"MailboxLogin\", \"Move\", \"MoveToDeletedItems\", \"Soft Delete\", \"Update\", \"UpdateCalendarDelegation\", \"UpdateFolderPermissions\", \"UpdateInboxRules\") Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -e \"UserMailbox\" -or RecipientTypeDetails -eq \"SharedMailbox\" -or RecipientTypeDetails -eq \"RoomMailbox\" -or RecipientTypeDetails -eq \"DiscoveryMailbox\"} | Set-Mailbox -AuditEnabled $true -AuditLogAgeLimit 180 - AuditAdmin $AuditAdmin -AuditDelegate $AuditDelegate -AuditOwner $AuditOwner",
+  "rationale": "Whether it is for regulatory compliance or for tracking unauthorized configuration changes in Microsoft 365, enabling mailbox auditing allows for Microsoft 365 backoffice teams to run security operations, forensics or general investigations on mailbox activities.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "mailBox": {
+      "properties": {
+        "AuditEnabled": {
+          "errorMessage": "User does not have auditing enabled for their mailbox.",
+          "const": true
+        }
+      }
+    }
+  },
+  "schemaId": "16d24f0c-8046-8146-9162-1b7dcddd315f"
+}

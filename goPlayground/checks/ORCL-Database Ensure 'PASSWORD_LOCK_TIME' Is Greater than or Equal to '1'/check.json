@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "fbacc027-dfee-42af-8a49-e411e32c2aca",
+  "displayName": "Ensure 'PASSWORD_LOCK_TIME' Is Greater than or Equal to '1' in user profile",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Locking the user account after repeated failed login attempts can block further brute-force login attacks, but can create administrative headaches as this account unlocking process always requires DBA intervention.",
+  "recommended_action": "Remediate this setting by executing the following SQL statement for each `PROFILE` returned by the audit procedure.\n```\nALTER PROFILE <profile_name> LIMIT PASSWORD_LOCK_TIME 1;\n```",
+  "error_message": "Password lock time is not set to one day or greater",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'PASSWORD_LOCK_TIME' Is Greater than or Equal to '1' in user profile"
+  ]
+}

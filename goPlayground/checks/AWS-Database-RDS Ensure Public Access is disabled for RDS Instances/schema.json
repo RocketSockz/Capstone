@@ -1,0 +1,15 @@
+{
+    "properties": {
+        "document": {
+            "required": [
+                "PubliclyAccessible"
+            ],
+            "properties": {
+                "PubliclyAccessible": {
+                    "constIgnoreCase": false
+                }
+            }
+        }
+    },
+    "schemaId": "00507c89-b08c-44bb-96e7-74f2b663c0a6"
+}

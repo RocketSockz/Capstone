@@ -1,0 +1,29 @@
+{
+  "recommended_action": "1. Go to Security Center\n2. Click on Security Policy\n3. Click On Edit Settings for the security policy subscription\n4. Click on Email notifications\n5.  Set Send email also to subscription owners to On\n6. Click Save",
+  "rationale": "Microsoft reaches out to the designated security contact in case its security team finds that theorganization's resources are compromised. This ensures that the proper people are aware of any potential compromise in order to mitigate the risk in a timely fashion. Before taking any action, make sure that the information provided is valid, as the communication is not digitally signed.",
+  "source": "cis azure 1.1.0",
+  "errorMessage": "Security Contacts are incorrectly set up.",
+  "properties": {
+    "document": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "properties": {
+              "properties": {
+                "properties": {
+                  "phone": {
+                    "type": "string",
+                    "errorMessage": "Security contact information is missing phone number.",
+                    "minLength": 10
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "schemaId": "38cf50e5-ee3f-211b-c2df-142fd9d38a20"
+}

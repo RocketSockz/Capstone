@@ -1,0 +1,15 @@
+{
+  "id": "73858202-c3e2-b8d0-4a5b-b935dec0830c",
+  "displayName": "SecureFile Compression (user)",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "SecureFile Compression (user) requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the \"STORE AS SECUREFILE\" with the \"COMPRESS\" option when creating a table with a LOB column.  Disable it after the fact with the \"NOCOMPRESS\" option to \"ALTER TABLE ... STORE AS SECUREFILE\"",
+  "error_message": "SecureFile Compression (user) is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "SecureFile Compression (user)"
+  ]
+}

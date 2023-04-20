@@ -1,0 +1,18 @@
+{
+  "accountId": "434855252750",
+  "arn": "",
+  "cloudId": "",
+  "id": "sg-4232781a",
+  "location": "",
+  "name": "",
+  "document": {
+    "Description": "default VPC security group",
+    "GroupName": "default",
+    "IpPermissions": [],
+    "OwnerId": "434855252750",
+    "GroupId": "sg-4232781a",
+    "IpPermissionsEgress": [],
+    "Tags": [],
+    "VpcId": "vpc-6874ef12"
+  }
+}

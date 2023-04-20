@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "servicePrincipals": {
+          "items": {
+            "properties": {
+              "type_desc": {
+                "not": {
+                  "pattern": "WINDOWS_GROUP"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

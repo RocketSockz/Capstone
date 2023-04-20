@@ -1,0 +1,15 @@
+{
+  "id": "0c116829-cea5-4cad-af64-3c57c50f14c4",
+  "displayName": "Ensure 'CHECK_EXPIRATION' Option is set to 'ON' for All SQL Authenticated Logins Within the Sysadmin Role",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "Ensuring SQL logins comply with the secure password policy applied by the Windows Server Benchmark will ensure the passwords for SQL logins with `sysadmin` privileges are changed on a frequent basis to help prevent compromise via a brute force attack. `CONTROL SERVER` is an equivalent permission to `sysadmin` and logins with that permission should also be required to have expiring passwords.",
+  "source": "sql-server benchmark",
+  "recommended_action": "For each _`<login_name>`_ found by the Audit Procedure, execute the following T-SQL statement: \r\n```\r\nALTER LOGIN [<login_name>] WITH CHECK_EXPIRATION = ON;\r\n```",
+  "error_message": "Check Expiration option is not enabled on logins with sysadmin role",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'CHECK_EXPIRATION' Option is set to 'ON' for All SQL Authenticated Logins Within the Sysadmin Role"
+  ]
+}

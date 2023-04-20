@@ -1,0 +1,15 @@
+{
+    "properties": {
+        "document": {
+            "properties": {
+                "properties": {
+                    "properties": {
+                        "osType": {
+                            "minimum": 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

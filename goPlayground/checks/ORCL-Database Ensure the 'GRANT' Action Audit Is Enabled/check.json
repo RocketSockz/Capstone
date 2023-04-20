@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "e766548a-b536-4f20-8bf7-56abb996c194",
+  "displayName": "Ensure the 'GRANT' Action Audit Is Enabled",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "With unauthorized grants and permissions, a malicious user may be able to change the security of the database, access/update confidential data, or compromise the integrity of the database. Logging and monitoring of all attempts to grant system privileges, object privileges or roles, whether successful or unsuccessful, may provide forensic evidence about potential suspicious/unauthorized activities as well as privilege escalation activities. Any such activities may be a cause for further investigation. In addition, organization security policies and industry/government regulations may require logging of all user activities involving `GRANT`.",
+  "recommended_action": "Execute the following SQL statement to remediate this setting.\n```\nALTER AUDIT POLICY CIS_UNIFIED_AUDIT_POLICY\nADD\nACTIONS\nGRANT;\n```\n**Note:** If you do not have `CIS_UNIFIED_AUDIT_POLICY`, please create one using the `CREATE AUDIT POLICY` statement.",
+  "error_message": "'GRANT' audit option is not enabled",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure the 'GRANT' Action Audit Is Enabled"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "recommended_action": "1. Navigate to Azure Policy\n2. On Policy \"Overview\" blade, Click on Policy ASC Default\n(Subscription:Subscription_ID)\n3. On \"ASC Default\" blade, Click on Edit Assignments\n4. In section PARAMETERS, Set Monitor Disk Encryption to AuditIfNotExists or\nany other available value than Disabled\n5. Click Save",
+  "rationale": "When this setting is enabled, it recommends enabling disk encryption in all virtual machines (Windows and Linux as well) to enhance data protection at rest.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "if": {
+        "properties": {
+          "name": {
+            "constIgnoreCase": "securitycenterbuiltin"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "properties": {
+            "errorMessage": "Disk encryption monitoring is disabled.",
+            "properties": {
+              "parameters": {
+                "properties": {
+                  "diskEncryptionMonitoringEffect": {
+                    "properties": {
+                      "value": {
+                        "minLength": 1,
+                        "not": {
+                          "errorMessage": "Disk encryption monitoring is disabled.",
+                          "constIgnoreCase": "disabled"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": ["diskEncryptionMonitoringEffect"]
+              }
+            },
+            "required": ["parameters"]
+          }
+        }
+      },
+      "errorMessage": "Disk encryption monitoring is disabled."
+    }
+  },
+  "schemaId": "89333078-0f27-393b-ffde-951beabb90bd"
+}

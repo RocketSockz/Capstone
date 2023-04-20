@@ -1,0 +1,73 @@
+{
+  "resourceGroup": "sam-test",
+  "resourceId": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/sam-test/providers/Microsoft.KeyVault/vaults/dumbvault",
+  "resourceName": "dumbvault",
+  "resourceType": "Microsoft.KeyVault/vaults",
+  "subscriptionId": "c65c08a7-5cea-4cfc-b326-91579369d912",
+  "document": {
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/sam-test/providers/Microsoft.KeyVault/vaults/dumbvault",
+    "name": "dumbvault",
+    "type": "Microsoft.KeyVault/vaults",
+    "location": "westus",
+    "tags": {},
+    "properties": {
+      "sku": {
+        "family": "A",
+        "name": "Standard"
+      },
+      "tenantId": "d6cfda6e-5f9b-4e1a-94db-7378f2e6eb4c",
+      "accessPolicies": [
+        {
+          "tenantId": "d6cfda6e-5f9b-4e1a-94db-7378f2e6eb4c",
+          "objectId": "188a3249-2d34-44af-873b-4e055f12bb2f",
+          "permissions": {
+            "keys": [
+              "Get",
+              "List",
+              "Update",
+              "Create",
+              "Import",
+              "Delete",
+              "Recover",
+              "Backup",
+              "Restore"
+            ],
+            "secrets": [
+              "Get",
+              "List",
+              "Set",
+              "Delete",
+              "Recover",
+              "Backup",
+              "Restore"
+            ],
+            "certificates": [
+              "Get",
+              "List",
+              "Update",
+              "Create",
+              "Import",
+              "Delete",
+              "Recover",
+              "Backup",
+              "Restore",
+              "ManageContacts",
+              "ManageIssuers",
+              "GetIssuers",
+              "ListIssuers",
+              "SetIssuers",
+              "DeleteIssuers"
+            ]
+          }
+        }
+      ],
+      "enabledForDeployment": true,
+      "enabledForDiskEncryption": true,
+      "enabledForTemplateDeployment": true,
+      "enableSoftDelete": false,
+      "enablePurgeProtection": true,
+      "vaultUri": "https://dumbvault.vault.azure.net/",
+      "provisioningState": "Succeeded"
+    }
+  }
+}

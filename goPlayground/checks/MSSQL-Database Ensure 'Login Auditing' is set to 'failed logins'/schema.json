@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "auditLogging": {
+          "properties": {
+            "settings": {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "constIgnoreCase": "audit level"
+                  },
+                  "config_value": {
+                    "constIgnoreCase": "failure"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

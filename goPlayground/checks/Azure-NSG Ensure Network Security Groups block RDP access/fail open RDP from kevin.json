@@ -1,0 +1,177 @@
+{
+  "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg",
+  "name": "baseline-vm-nsg",
+  "resourceGroup": "baseline-rg",
+  "subscriptionId": "1b877039-42c8-467f-a80b-950b770fa4ff",
+  "type": "Microsoft.Network/networkSecurityGroups",
+  "version": 0,
+  "document": {
+    "name": "baseline-vm-nsg",
+    "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg",
+    "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "location": "centralus",
+    "properties": {
+      "provisioningState": "Succeeded",
+      "resourceGuid": "8ff1ac28-d485-4967-ba74-c46921c61cd1",
+      "securityRules": [{
+        "name": "RDP",
+        "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg/securityRules/RDP",
+        "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+        "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "protocol": "TCP",
+          "sourcePortRange": "*",
+          "destinationPortRange": "3389",
+          "sourceAddressPrefix": "*",
+          "destinationAddressPrefix": "*",
+          "access": "Allow",
+          "priority": 300,
+          "direction": "Inbound",
+          "sourcePortRanges": [],
+          "destinationPortRanges": [],
+          "sourceAddressPrefixes": [],
+          "destinationAddressPrefixes": []
+        }
+      }],
+      "defaultSecurityRules": [{
+          "name": "AllowAzureLoadBalancerInBound",
+          "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+          "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+          "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+          "properties": {
+            "provisioningState": "Succeeded",
+            "description": "Allow inbound traffic from azure load balancer",
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "*",
+            "sourceAddressPrefix": "AzureLoadBalancer",
+            "destinationAddressPrefix": "*",
+            "access": "Allow",
+            "priority": 65001,
+            "direction": "Inbound",
+            "sourcePortRanges": [],
+            "destinationPortRanges": [],
+            "sourceAddressPrefixes": [],
+            "destinationAddressPrefixes": []
+          }
+        },
+        {
+          "name": "AllowInternetOutBound",
+          "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg/defaultSecurityRules/AllowInternetOutBound",
+          "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+          "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+          "properties": {
+            "provisioningState": "Succeeded",
+            "description": "Allow outbound traffic from all VMs to Internet",
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "*",
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "Internet",
+            "access": "Allow",
+            "priority": 65001,
+            "direction": "Outbound",
+            "sourcePortRanges": [],
+            "destinationPortRanges": [],
+            "sourceAddressPrefixes": [],
+            "destinationAddressPrefixes": []
+          }
+        },
+        {
+          "name": "AllowVnetInBound",
+          "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg/defaultSecurityRules/AllowVnetInBound",
+          "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+          "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+          "properties": {
+            "provisioningState": "Succeeded",
+            "description": "Allow inbound traffic from all VMs in VNET",
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "*",
+            "sourceAddressPrefix": "VirtualNetwork",
+            "destinationAddressPrefix": "VirtualNetwork",
+            "access": "Allow",
+            "priority": 65000,
+            "direction": "Inbound",
+            "sourcePortRanges": [],
+            "destinationPortRanges": [],
+            "sourceAddressPrefixes": [],
+            "destinationAddressPrefixes": []
+          }
+        },
+        {
+          "name": "AllowVnetOutBound",
+          "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg/defaultSecurityRules/AllowVnetOutBound",
+          "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+          "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+          "properties": {
+            "provisioningState": "Succeeded",
+            "description": "Allow outbound traffic from all VMs to all VMs in VNET",
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "*",
+            "sourceAddressPrefix": "VirtualNetwork",
+            "destinationAddressPrefix": "VirtualNetwork",
+            "access": "Allow",
+            "priority": 65000,
+            "direction": "Outbound",
+            "sourcePortRanges": [],
+            "destinationPortRanges": [],
+            "sourceAddressPrefixes": [],
+            "destinationAddressPrefixes": []
+          }
+        },
+        {
+          "name": "DenyAllInBound",
+          "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg/defaultSecurityRules/DenyAllInBound",
+          "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+          "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+          "properties": {
+            "provisioningState": "Succeeded",
+            "description": "Deny all inbound traffic",
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "*",
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "*",
+            "access": "Deny",
+            "priority": 65500,
+            "direction": "Inbound",
+            "sourcePortRanges": [],
+            "destinationPortRanges": [],
+            "sourceAddressPrefixes": [],
+            "destinationAddressPrefixes": []
+          }
+        },
+        {
+          "name": "DenyAllOutBound",
+          "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkSecurityGroups/baseline-vm-nsg/defaultSecurityRules/DenyAllOutBound",
+          "etag": "W/\"5cf9b292-9fbc-4699-84fd-3c129b703edb\"",
+          "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+          "properties": {
+            "provisioningState": "Succeeded",
+            "description": "Deny all outbound traffic",
+            "protocol": "*",
+            "sourcePortRange": "*",
+            "destinationPortRange": "*",
+            "sourceAddressPrefix": "*",
+            "destinationAddressPrefix": "*",
+            "access": "Deny",
+            "priority": 65500,
+            "direction": "Outbound",
+            "sourcePortRanges": [],
+            "destinationPortRanges": [],
+            "sourceAddressPrefixes": [],
+            "destinationAddressPrefixes": []
+          }
+        }
+      ],
+      "networkInterfaces": [{
+        "id": "/subscriptions/1b877039-42c8-467f-a80b-950b770fa4ff/resourceGroups/baseline-rg/providers/Microsoft.Network/networkInterfaces/baseline-vm331"
+      }]
+    }
+  },
+  "location": "centralus"
+}

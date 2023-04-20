@@ -1,0 +1,34 @@
+{
+  "document": {
+    "PSComputerName": "outlook.office365.com",
+    "RunspaceId": "7ffbb853-75b6-4b5b-af2b-5ed5a2d44e38",
+    "PSShowComputerName": false,
+    "Domains": [
+      "Anonymous:CalendarSharingFreeBusyReviewer",
+      "*:CalendarSharingFreeBusySimple"
+    ],
+    "Enabled": true,
+    "Default": true,
+    "AdminDisplayName": "",
+    "ExchangeVersion": "0.10 (14.0.100.0)",
+    "Name": "Default Sharing Policy",
+    "DistinguishedName": "CN=Default Sharing Policy,CN=Federation,CN=Configuration,CN=sct-15_20_2686_27-msonline-bpos_s_6bd58,CN=ConfigurationUnits,DC=NAMPR17A004,DC=PROD,DC=OUTLOOK,DC=COM",
+    "Identity": "Default Sharing Policy",
+    "ObjectCategory": "NAMPR17A004.PROD.OUTLOOK.COM/Configuration/Schema/ms-Exch-Sharing-Policy",
+    "ObjectClass": [
+      "top",
+      "msExchSharingPolicy"
+    ],
+    "WhenChanged": "\/Date(1580323086000)\/",
+    "WhenCreated": "\/Date(1580323061000)\/",
+    "WhenChangedUTC": "\/Date(1580323086000)\/",
+    "WhenCreatedUTC": "\/Date(1580323061000)\/",
+    "ExchangeObjectId": "82f2025e-ff4a-498d-be96-a5610c21bddd",
+    "OrganizationId": "NAMPR17A004.PROD.OUTLOOK.COM/Microsoft Exchange Hosted Organizations/sct-15_20_2686_27-msonline-bpos_s_6bd58 - NAMPR17A004.PROD.OUTLOOK.COM/ConfigurationUnits/sct-15_20_2686_27-msonline-bpos_s_6bd58/Configuration",
+    "Id": "Default Sharing Policy",
+    "Guid": "82f2025e-ff4a-498d-be96-a5610c21bddd",
+    "OriginatingServer": "DM5PR17A004DC11.NAMPR17A004.PROD.OUTLOOK.COM",
+    "IsValid": true,
+    "ObjectState": "Changed"
+  }
+}

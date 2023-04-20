@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "de2cac14-0cd2-438a-8c50-a839b89b5079",
+  "displayName": "Ensure parameter 'SQL92_SECURITY' Is Set to 'TRUE'",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "A user without `SELECT` privilege can still infer the value stored in a column by referring to that column in a `DELETE` or `UPDATE` statement. This setting prevents inadvertent information disclosure by ensuring that only users who already have `SELECT` privilege can execute the statements that would allow them to infer the stored values.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET SQL92_SECURITY = TRUE SCOPE = SPFILE;\n```",
+  "error_message": "Users without 'SELECT' privilege are able to execute 'UPDATE' and 'DELETE' statements",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'SQL92_SECURITY' Is Set to 'TRUE'"
+  ]
+}

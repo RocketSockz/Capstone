@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "b44702ac-99b5-45c5-89ca-60dc90d210ac",
+  "displayName": "Ensure 'EXECUTE' is revoked from 'PUBLIC' on \"Encryption\" Packages",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "As described below, Oracle Database PL/SQL Encryption packages - `DBMS_CRYPTO`, `DBMS_OBFUSCATION_TOOLKIT` and `DBMS_RANDOM` – should not be granted to `PUBLIC`.\n- Execution of the `DBMS_CRYPTO` procedures by the `PUBLIC` can potentially endanger portions of or all of the data storage.\n- Allowing the `PUBLIC` privileges to access this capability can be potentially harm data storage.\n- Use of the `DBMS_RANDOM` package can allow the unauthorized application of the random number-generating function.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n```\nREVOKE EXECUTE ON DBMS_CRYPTO FROM PUBLIC;\nREVOKE EXECUTE ON DBMS_OBFUSCATION_TOOLKIT FROM PUBLIC;\nREVOKE EXECUTE ON DBMS_RANDOM FROM PUBLIC;\n```",
+  "error_message": "'EXECUTE' permissions have been found on one or more 'Encryption' package",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'EXECUTE' is revoked from 'PUBLIC' on \"Encryption\" Packages"
+  ]
+}

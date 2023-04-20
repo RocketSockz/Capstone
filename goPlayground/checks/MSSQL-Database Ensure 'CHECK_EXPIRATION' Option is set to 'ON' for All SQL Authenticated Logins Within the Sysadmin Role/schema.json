@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "logins": {
+          "properties": {
+            "expiration": {
+              "items": {
+                "properties": {
+                  "is_expiration_checked": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

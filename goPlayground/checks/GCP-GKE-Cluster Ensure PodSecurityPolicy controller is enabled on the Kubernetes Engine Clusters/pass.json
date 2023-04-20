@@ -1,0 +1,147 @@
+{
+  "accountId": "upbeat-nation-265322",
+  "id": "",
+  "region": "",
+  "name": "test-cluster",
+  "zone": "us-central1-a",
+  "type": "",
+  "document": {
+    "name": "test-cluster",
+    "nodeConfig": {
+      "machineType": "f1-micro",
+      "diskSizeGb": 10,
+      "oauthScopes": ["https://www.googleapis.com/auth/cloud-platform"],
+      "metadata": {
+        "disable-legacy-endpoints": "true"
+      },
+      "imageType": "COS",
+      "serviceAccount": "phil-898@upbeat-nation-265322.iam.gserviceaccount.com",
+      "diskType": "pd-standard",
+      "shieldedInstanceConfig": {
+        "enableIntegrityMonitoring": true
+      }
+    },
+    "masterAuth": {
+      "clusterCaCertificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURDekNDQWZPZ0F3SUJBZ0lRYVlrVVdjclptZitSbGRnS2FaLzltVEFOQmdrcWhraUc5dzBCQVFzRkFEQXYKTVMwd0t3WURWUVFERXlRMk1tSTNNbUU0T0MwMFltWXhMVFF6T0RRdE9UWmxNaTA1WVdFM01XTTNNakF3WlRBdwpIaGNOTWpBd01qSTNNVGN5TlRNNVdoY05NalV3TWpJMU1UZ3lOVE01V2pBdk1TMHdLd1lEVlFRREV5UTJNbUkzCk1tRTRPQzAwWW1ZeExUUXpPRFF0T1RabE1pMDVZV0UzTVdNM01qQXdaVEF3Z2dFaU1BMEdDU3FHU0liM0RRRUIKQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUNQemU2RndjQ2JzT09BK3RwZEtYbXZ1MGQ5b3pFdEx4SnBMdnZ6VnoyTQpXUG44ZjRIYUo2dDAvRUp2ZVp3ZzB0UHZjU0Y4bWFaaHJQSk9LL2RablFGN2ZYOWlQNzBJZjc5TmVjYXVUZHVMCmVkZWdHQWtCZG9icHorVFMwcHBMK29ucHEycWpXdmEvdFIwVUdjRCtWUFFjekdkZEFuLzFUUzNKNnRRaHVPSnUKQWhJUkdweU9LcEU4ZWRsTFZMNEV1WkhLUDRlRzJVZTRUODJybU9MSmZLTmpPZFhaTmlxWmE3Wk0xMGZyWDk1Kwp0cXlGSDFZNmYzY05nYytPZ2tGZXBGUEJUVkc0eUJxZnNVTU12M1FIS1NVdWhoRkZzSDlZSG4wZFVCYWQydmJQCk9vT2FiSWJaUW1IRGZHWGNrNWNjcE9ib2pVUGk5RzNxenkzZWpJMStuS2t6QWdNQkFBR2pJekFoTUE0R0ExVWQKRHdFQi93UUVBd0lDQkRBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFCagpvdXZGT2tKRmx6Mmt0SHltbjJFUkxyWVg3UTlnVlJxN00zSjh4bHhHMmMrRDM2WlRKMHduNVRpRVRnbEJ6clBxClRZcjJpSVhaYnp6RjJEbTJXUkhBWUhTSDJwQlB6Tll2b2M3SlRLTURwTUIzajY1ZERrbDZ6djZiT2hhdmhBZ3AKLzhBcTM0M0thL0grb1hKMk02MG9JTEk3aGdYZlNyTmZycW8rc0hCS3hMeWxlUTl1SFhCRXZiNVBjVXEvellUQwpFcU41QmtwaGdOcFVXdXpncC9ETm1vLzVKY24xV3VCMnV4aFJPcUxLYW5ibmVDZE5nUUdnVkNpYkhBZ09SNlRJCmJKSU94SGY5UVZGUXhwei9BWWFrSEsvOVBPV0xXL0pxK2VKeEtzOWtpcElxRk1WNHJzcWNZUVFsNVlTUUNhamQKekE1clZCTEQ5NXJudDZKSllVemEKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+    },
+    "loggingService": "logging.googleapis.com/kubernetes",
+    "monitoringService": "monitoring.googleapis.com/kubernetes",
+    "network": "default",
+    "clusterIpv4Cidr": "10.8.0.0/14",
+    "addonsConfig": {
+      "httpLoadBalancing": {},
+      "horizontalPodAutoscaling": {},
+      "kubernetesDashboard": {
+        "disabled": true
+      },
+      "networkPolicyConfig": {
+        "disabled": true
+      },
+      "istioConfig": {
+        "disabled": true
+      },
+      "dnsCacheConfig": {}
+    },
+    "subnetwork": "default",
+    "nodePools": [
+      {
+        "name": "default-pool",
+        "config": {
+          "machineType": "f1-micro",
+          "diskSizeGb": 10,
+          "oauthScopes": ["https://www.googleapis.com/auth/cloud-platform"],
+          "metadata": {
+            "disable-legacy-endpoints": "true"
+          },
+          "imageType": "COS",
+          "serviceAccount": "phil-898@upbeat-nation-265322.iam.gserviceaccount.com",
+          "diskType": "pd-standard",
+          "shieldedInstanceConfig": {
+            "enableIntegrityMonitoring": true
+          }
+        },
+        "initialNodeCount": 3,
+        "autoscaling": {},
+        "management": {
+          "autoUpgrade": true,
+          "autoRepair": true
+        },
+        "maxPodsConstraint": {
+          "maxPodsPerNode": "110"
+        },
+        "podIpv4CidrSize": 24,
+        "locations": ["us-central1-a"],
+        "selfLink": "https://container.googleapis.com/v1beta1/projects/upbeat-nation-265322/zones/us-central1-a/clusters/test-cluster/nodePools/default-pool",
+        "version": "1.14.10-gke.17",
+        "instanceGroupUrls": [
+          "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-central1-a/instanceGroupManagers/gke-test-cluster-default-pool-487991cb-grp"
+        ],
+        "status": "RUNNING"
+      }
+    ],
+    "locations": ["us-central1-a"],
+    "labelFingerprint": "a9dc16a7",
+    "legacyAbac": {},
+    "networkPolicy": {},
+    "ipAllocationPolicy": {
+      "useIpAliases": true,
+      "clusterIpv4Cidr": "10.8.0.0/14",
+      "servicesIpv4Cidr": "10.0.0.0/20",
+      "clusterSecondaryRangeName": "gke-test-cluster-pods-e7555ade",
+      "servicesSecondaryRangeName": "gke-test-cluster-services-e7555ade",
+      "clusterIpv4CidrBlock": "10.8.0.0/14",
+      "servicesIpv4CidrBlock": "10.0.0.0/20"
+    },
+    "masterAuthorizedNetworksConfig": {
+      "enabled": true
+    },
+    "maintenancePolicy": {
+      "resourceVersion": "e3b0c442"
+    },
+    "podSecurityPolicyConfig": {
+      "enabled": true
+    },
+    "networkConfig": {
+      "network": "projects/upbeat-nation-265322/global/networks/default",
+      "subnetwork": "projects/upbeat-nation-265322/regions/us-central1/subnetworks/default"
+    },
+    "privateCluster": true,
+    "masterIpv4CidrBlock": "172.16.0.0/28",
+    "defaultMaxPodsConstraint": {
+      "maxPodsPerNode": "110"
+    },
+    "authenticatorGroupsConfig": {},
+    "privateClusterConfig": {
+      "enablePrivateNodes": true,
+      "enablePrivateEndpoint": true,
+      "masterIpv4CidrBlock": "172.16.0.0/28",
+      "privateEndpoint": "172.16.0.2",
+      "publicEndpoint": "146.148.102.161",
+      "peeringName": "gke-n3727b50d55e16dcb476-0491-af67-peer"
+    },
+    "databaseEncryption": {
+      "state": "DECRYPTED"
+    },
+    "shieldedNodes": {},
+    "tierSettings": {
+      "tier": "STANDARD"
+    },
+    "clusterTelemetry": {
+      "type": "ENABLED"
+    },
+    "selfLink": "https://container.googleapis.com/v1beta1/projects/upbeat-nation-265322/zones/us-central1-a/clusters/test-cluster",
+    "zone": "us-central1-a",
+    "endpoint": "172.16.0.2",
+    "initialClusterVersion": "1.14.10-gke.17",
+    "currentMasterVersion": "1.14.10-gke.17",
+    "currentNodeVersion": "1.14.10-gke.17",
+    "createTime": "2020-02-27T18:25:39+00:00",
+    "status": "RUNNING",
+    "servicesIpv4Cidr": "10.0.0.0/20",
+    "instanceGroupUrls": [
+      "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-central1-a/instanceGroupManagers/gke-test-cluster-default-pool-487991cb-grp"
+    ],
+    "currentNodeCount": 3,
+    "location": "us-central1-a"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "login_mode": {
+          "const": 1
+        }
+      }
+    }
+  }
+}

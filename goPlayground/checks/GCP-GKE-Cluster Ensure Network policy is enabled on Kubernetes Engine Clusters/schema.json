@@ -1,0 +1,22 @@
+{
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Select Kubernetes clusters for which Network policy is disabled\n3. Click on EDIT button and Set Network policy for master and Network policy for\nnodes to Enabled under Cluster section",
+  "rationale": "By default, pods are non-isolated; they accept traffic from any source. Pods become isolated by having a NetworkPolicy that selects them. Once there is any NetworkPolicy in a namespace selecting a particular pod, that pod will reject any connections that are not allowed by any NetworkPolicy. (Other pods in the namespace that are not selected by any NetworkPolicy will continue to accept all traffic.)",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "networkPolicy": {
+          "properties": {
+            "enabled": {
+              "errorMessage": "Kubernetes cluster has netwrok policy disabled.",
+              "const": true
+            }
+          },
+          "errorMessage": "Kubernetes cluster has netwrok policy disabled.",
+          "required": ["enabled"]
+        }
+      }
+    }
+  },
+  "schemaId": "9d20ad75-9f3c-b372-7b82-9af3f01a9ef3"
+}

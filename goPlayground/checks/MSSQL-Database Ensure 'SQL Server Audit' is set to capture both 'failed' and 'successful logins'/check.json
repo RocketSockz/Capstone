@@ -1,0 +1,15 @@
+{
+  "id": "4dba48e9-46d7-403b-987a-239ef124b8c4",
+  "displayName": "Ensure 'SQL Server Audit' is set to capture both 'failed' and 'successful logins'",
+  "resourceType": "databases/mssqlserver",
+  "severity": "high",
+  "rationale": "By utilizing Audit instead of the traditional setting under the Security tab to capture successful logins, we reduce the noise in the `ERRORLOG`. This keeps it smaller and easier to read for DBAs who are attempting to troubleshoot issues with the SQL Server. Also, the Audit object can write to the security event log, though this requires operating system configuration. This gives an additional option for where to store login events, especially in conjunction with an SIEM.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Perform either the GUI or T-SQL method shown:\r\n#### GUI Method\r\n1. Expand the **SQL Server** in **Object Explorer**.\r\n2. Expand the **Security Folder**\r\n3. Right-click on the **Audits** folder and choose **New Audit...**\r\n4. Specify a name for the **Server Audit**.\r\n5. Specify the audit destination details and then click **OK** to save the **Server Audit**.\r\n6. Right-click on **Server Audit Specifications** and choose **New Server Audit Specification...**\r\n7. Name the **Server Audit Specification**\r\n8. Select the just created **Server Audit** in the **Audit** drop-down selection.\r\n9. Click the drop-down under **Audit Action Type** and select `AUDIT_CHANGE_GROUP`.\r\n10. Click the new drop-down **Audit Action Type** and select `FAILED_LOGIN_GROUP`.\r\n11. Click the new drop-down under **Audit Action Type** and select `SUCCESSFUL_LOGIN_GROUP`.\r\n12. Click OK to save the **Server Audit Specification**.\r\n13. Right-click on the new **Server Audit Specification** and select **Enable Server Audit Specification**.\r\n14. Right-click on the new **Server Audit** and select **Enable Server Audit**.\r\n#### T-SQL Method\r\nExecute code similar to:\r\n```\r\nCREATE SERVER AUDIT TrackLogins\r\nTO APPLICATION_LOG;\r\nGO\r\nCREATE SERVER AUDIT SPECIFICATION TrackAllLogins\r\nFOR SERVER AUDIT TrackLogins\r\n ADD (FAILED_LOGIN_GROUP),\r\n ADD (SUCCESSFUL_LOGIN_GROUP),\r\n ADD (AUDIT_CHANGE_GROUP)\r\nWITH (STATE = ON);\r\nGO\r\nALTER SERVER AUDIT TrackLogins\r\nWITH (STATE = ON);\r\nGO\r\n```\r\n**Note:** If the write destination for the Audit object is to be the security event log, see the Books Online topic [Write SQL Server Audit Events to the Security Log](https://docs.microsoft.com/en-us/sql/relational-databases/security/auditing/write-sql-server-audit-events-to-the-security-log) and follow the appropriate steps.",
+  "error_message": "Auditing is not enabled for both failed and successful logins",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure 'SQL Server Audit' is set to capture both 'failed' and 'successful logins'"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "6d3099a3-baca-18ae-6d8a-50212684eabf",
+  "displayName": "Ensure that Cloud Storage bucket is not anonymously or publicly accessible",
+  "resourceType": "storage#bucket",
+  "severity": "high",
+  "rationale": "Allowing anonymous and/or public access grants permissions to anyone to access bucket content. Such access might not be desired if you are storing any sensitive data. Hence, ensure that anonymous and/or public access to a bucket is not allowed.",
+  "source": "cis gcp 1.0.0 | benchmark 5.1",
+  "recommended_action": "1. Go to the Google Cloud Portal\n2. Go to Storage Section\n3. In Storage, Click Browser\n4. Select each storage bucket and click on menu in right most column\n5. Select Edit Bucket Permissions\n6. Expand every role displayed.\n7. Click Delete button in front of allUsers and/or allAuthenticatedUsers to remove\nthat particular role assignment",
+  "error_message": "Cloud storage bucket is publicly accessible",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that cloud storage bucket is not anonymously or publicly accessible"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "CatalogRoles": {
+                "items": {
+                  "properties": {
+                    "GrantedRole": {
+                      "not": {
+                        "constIgnoreCase": "SELECT_CATALOG_ROLE"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

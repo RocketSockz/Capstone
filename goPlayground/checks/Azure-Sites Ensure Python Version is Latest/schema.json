@@ -1,0 +1,41 @@
+{
+  "recommended_action": "1. Login to Azure Portal using https://portal.azure.com\n2. Go to App Services\n3. Click on this App\n4. Under Configuration, select General settings\n5. Set Python version to latest version available.",
+  "rationale": "Newer versions may contain security enhancements and additional functionality. Using the latest software version is recommended in order to take advantage of enhancements and new capabilities. With each software installation, organizations need to determine if a given update meets their requirements and also verify the compatibility and support provided for any additional software against the update revision that is selected.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "config": {
+      "items": {
+        "properties": {
+          "properties": {
+            "allOf": [
+              {
+                "properties": {
+                  "pythonVersion": {
+                    "errorMessage": "Web application runs on out-of-date version of Python.",
+                    "enumIgnoreCase": ["3.8", "", null]
+                  }
+                },
+                "required": ["pythonVersion"]
+              },
+              {
+                "properties": {
+                  "linuxFxVersion": {
+                    "if": {
+                      "pattern": "(PYTHON)"
+                    },
+                    "then": {
+                      "errorMessage": "Web application runs on out-of-date version of Python.",
+                      "constIgnoreCase": "python|3.8"
+                    }
+                  }
+                },
+                "required": ["linuxFxVersion"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "0f89a1fe-c2fd-7394-1b24-5c8a8fb9582d"
+}

@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "ExecAnyProc": {
+                "items": {
+
+                  "if": {
+                    "properties": {
+                      "Grantee": {
+                        "constIgnoreCase": "DBSNMP"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "Privilege": {
+                        "not": {
+                          "constIgnoreCase": "EXECUTE ANY PROCEDURE"
+                        }
+                      }
+                    }
+                  },
+                  "else": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

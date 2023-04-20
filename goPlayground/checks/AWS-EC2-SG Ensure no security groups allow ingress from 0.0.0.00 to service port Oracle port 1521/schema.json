@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "IpPermissions": {
+          "type": "array",
+          "if": {
+            "minItems": 1
+          },
+          "then": {
+            "not": {
+              "errorMessage": "Security group allows ingress from port 1521.",
+              "items": {
+                "allOf": [
+                  {
+                    "properties": {
+                      "FromPort": {
+                        "maximum": 1521
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "ToPort": {
+                        "minimum": 1521
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "IpRanges": {
+                        "items": {
+                          "properties": {
+                            "CidrIp": {
+                              "const": "0.0.0.0/0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "else": true
+        }
+      }
+    }
+  },
+  "schemaId": "11db3876-b22c-475a-854a-ccd1706d5721"
+}

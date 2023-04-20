@@ -1,0 +1,26 @@
+{
+  "recommended_action": "1. Go to Kubernetes GCP Console by visiting\nhttps://console.cloud.google.com/kubernetes/list?\n2. Select reported Kubernetes clusters for which Automatic node repair is disabled\n3. Click on EDIT button and Set Automatic node repair to Enabled",
+  "rationale": "Kubernetes Engine uses the node's health status to determine if a node needs to be repaired. A node reporting a Ready status is considered healthy. Kubernetes Engine triggers a repair action if a node reports consecutive unhealthy status reports for a given time threshold.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "nodePools": {
+          "items": {
+            "properties": {
+              "management": {
+                "properties": {
+                  "autoRepair": {
+                    "errorMessage": "Kubernetes cluster does not have automatic node repair enabled.",
+                    "const": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "fb22f0fb-fffc-9757-1650-d95aa8a417d1"
+}

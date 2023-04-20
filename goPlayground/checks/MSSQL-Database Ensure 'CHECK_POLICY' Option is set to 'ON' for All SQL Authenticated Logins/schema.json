@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "logins": {
+          "properties": {
+            "policy": {
+              "items": {
+                "properties": {
+                  "is_policy_checked": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

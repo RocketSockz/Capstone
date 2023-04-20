@@ -1,0 +1,15 @@
+{
+  "id": "1c6a71be-3924-9db9-7ebe-b99a7cad368e",
+  "displayName": "In-Memory Column Store",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "In-Memory Column Store requires a license for Oracle Database In-Memory to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Set INMEMORY_SIZE=0 to disable the In-Memory feature",
+  "error_message": "In-Memory Column Store is listed as a feature usage concern under Oracle Database In-Memory",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "In-Memory Column Store"
+  ]
+}

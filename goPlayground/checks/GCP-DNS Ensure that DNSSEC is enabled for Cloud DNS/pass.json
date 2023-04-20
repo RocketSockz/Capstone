@@ -1,0 +1,17 @@
+{
+  "accountId": "upbeat-nation-265322",
+  "id": "",
+  "region": "",
+  "name": "test-zone",
+  "zone": "",
+  "type": "",
+  "document": {
+    "description": "This is a description",
+    "dnsName": "testzone.com.",
+    "name": "test-zone",
+    "dnssecConfig": {
+      "state": "on"
+    },
+    "visibility": "public"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "recommended_action": "1. Go to this resource in the Azure Portal\n 2. Click on Advanced Settings\n 3. Switch 'Allow Access only via SSL' to On. \n4. Click Save.",
+  "rationale": "SSL connectivity helps to provide a new layer of security, by connecting database server to client applications using Secure Sockets Layer (SSL). Enforcing SSL connections between database server and client applications helps protect against 'man in the middle' attacks by encrypting the data stream between the server and application.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "enableNonSslPort": {
+              "errorMessage": "Redis cache has `SSL port only` disabled.",
+              "const": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "eb32a6b0-c858-7a6a-9f9c-2f188edfda57"
+}

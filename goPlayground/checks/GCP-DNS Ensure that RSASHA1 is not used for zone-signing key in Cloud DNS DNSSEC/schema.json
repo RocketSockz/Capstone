@@ -1,0 +1,33 @@
+{
+  "recommended_action": "Use the below command update Cloud DNS managed zone signing key algorithm to\nrecommended algorithm.\nVia CLI :\ngcloud beta dns managed-zones update EXAMPLE_ZONE --dnssec-state on --\nzsk-algorithm <algorithmName> —zsk-key-length <keyLength>",
+  "rationale": "DNSSEC algorithm numbers in this registrymay be used in CERT RRs. Zonesigning (DNSSEC) and transaction security mechanisms (SIG(0) and TSIG) make use of particular subsets of these algorithms. The algorithm used for key signing should be recommended one and it should not be weak. When enabling DNSSEC for a managed zone, or creating a managed zone with DNSSEC, you can select the DNSSEC signing algorithms and the denial-of-existence type. Changing the DNSSEC settings is only effective for a managed zone if DNSSEC is not already enabled. If you need to change the settings for a managed zone where it has been enabled, you can turn DNSSEC off and then re-enable it with different settings.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "dnssecConfig": {
+          "properties": {
+            "defaultKeySpecs": {
+              "not": {
+                "contains": {
+                  "properties": {
+                    "keyType": {
+                      "errorMessage": "RSAHSA1 is used as zone-signing key in Cloud DNS DNSSEC.",
+                      "constIgnoreCase": "zonesigning"
+                    },
+                    "algorithm": {
+                      "errorMessage": "RSAHSA1 is used as zone-signing key in Cloud DNS DNSSEC.",
+                      "constIgnoreCase": "rsasha1"
+                    }
+                  }
+                }
+              },
+              "errorMessage": "RSAHSA1 is used as zone-signing key in Cloud DNS DNSSEC."
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "0de2d776-5176-a1e1-a8bb-8d87b6ff2d00"
+}

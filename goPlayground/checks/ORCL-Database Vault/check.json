@@ -1,0 +1,15 @@
+{
+  "id": "cc98cb7d-2039-2a33-ae30-aa1bfeeb25ef",
+  "displayName": "Oracle Database Vault",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Oracle Database Vault requires a license for Oracle Database Vault to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable unneeded Packs in Grid Control: https://docs.oracle.com/cd/E63000_01/OEMLI/introduction.htm#OEMLI108\nThis should be checked every time a new target is added to Grid Control since many Packs are defaulted to \"Enabled\"",
+  "error_message": "Oracle Database Vault is listed as a feature usage concern under Oracle Database Vault",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Oracle Database Vault"
+  ]
+}

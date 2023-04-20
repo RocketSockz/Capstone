@@ -1,0 +1,92 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "required": [
+            "securityRules",
+            "defaultSecurityRules"
+          ],
+          "properties": {
+            "securityRules": {
+              "type": "array",
+              "items": {
+                "not": {
+                  "properties": {
+                    "properties": {
+                      "properties": {
+                        "sourceAddressPrefix": {
+                          "enumIgnoreCase": [
+                            "0.0.0.0",
+                            "*",
+                            "<nw>/0",
+                            "/0",
+                            "any",
+                            "internet"
+                          ]
+                        },
+                        "sourceAddressPrefixes": {
+                          "if": {
+                            "minItems": 1
+                          },
+                          "then": {
+                            "contains": {
+                              "enumIgnoreCase": [
+                                "0.0.0.0",
+                                "*",
+                                "<nw>/0",
+                                "/0",
+                                "any",
+                                "internet"
+                              ]
+                            }
+                          }
+                        },
+                        "access": {
+                          "enumIgnoreCase": [
+                            "allow"
+                          ]
+                        },
+                        "destinationPortRange": {
+                          "enum": [
+                            "5432",
+                            "*"
+                          ]
+                        },
+                        "destinationPortRanges": {
+                          "if": {
+                            "minItems": 1
+                          },
+                          "then": {
+                            "contains": {
+                              "enum": [
+                                "5432",
+                                "*"
+                              ]
+                            }
+                          }
+                        },
+                        "direction": {
+                          "enumIgnoreCase": [
+                            "inbound"
+                          ]
+                        },
+                        "protocol": {
+                          "enumIgnoreCase": [
+                            "tcp",
+                            "*"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "223288ab-15c0-4946-83ba-78e764ea603d"
+}

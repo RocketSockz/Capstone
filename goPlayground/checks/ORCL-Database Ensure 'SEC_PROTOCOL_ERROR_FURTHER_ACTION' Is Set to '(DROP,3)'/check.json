@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "e479668e-e7c9-4992-b0de-92acad98b3c6",
+  "displayName": "Ensure parameter 'SEC_PROTOCOL_ERROR_FURTHER_ACTION' Is Set to '(DROP,3)'",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Bad packets received from the client can potentially indicate packet-based attacks on the system, such as \"TCP SYN Flood\" or \"Smurf\" attacks, which could result in a denial-of-service condition, this value should be set according to the needs of the organization.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET SEC_PROTOCOL_ERROR_FURTHER_ACTION = '(DROP,3)' SCOPE = SPFILE;\n```",
+  "error_message": "Server allows greater than 3 malformed packets",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'SEC_PROTOCOL_ERROR_FURTHER_ACTION' Is Set to '(DROP,3)'"
+  ]
+}

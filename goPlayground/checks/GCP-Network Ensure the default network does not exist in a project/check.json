@@ -1,0 +1,15 @@
+{
+  "id": "215501e6-1890-05a7-86b0-02aa95dac313",
+  "displayName": "Ensure the default network does not exist in a project",
+  "resourceType": "compute#network",
+  "severity": "high",
+  "rationale": "The default network has automatically created firewall rules and has pre-fabricated network configuration. Based on your security and networking requirements, you should create your network and delete the default network.",
+  "source": "cis gcp 1.0.0 | benchmark 3.1",
+  "recommended_action": "1. Follow the documentation and create a new network suitable for your requirements.\n2. Follow the documentation and delete the default network",
+  "error_message": "Default GCP network should not be in use",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure default GCP network is not in use"
+  ]
+}

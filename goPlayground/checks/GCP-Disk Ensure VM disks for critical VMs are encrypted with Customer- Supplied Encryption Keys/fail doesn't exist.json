@@ -1,0 +1,36 @@
+{
+  "accountId": "upbeat-nation-265322",
+  "id": "7892141612741423713",
+  "region": "",
+  "name": "",
+  "zone": "us-west1-b",
+  "type": "",
+  "document": {
+    "id": "7892141612741423713",
+    "creationTimestamp": "2020-01-23T17:46:55.383-08:00",
+    "name": "vulcan",
+    "sizeGb": "10",
+    "zone": "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-west1-b",
+    "status": "READY",
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-west1-b/disks/vulcan",
+    "sourceImage": "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-9-stretch-v20191210",
+    "sourceImageId": "4836861303305435824",
+    "type": "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-west1-b/diskTypes/pd-standard",
+    "licenses": [
+      "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-9-stretch"
+    ],
+    "guestOsFeatures": [
+      {
+        "type": "VIRTIO_SCSI_MULTIQUEUE"
+      }
+    ],
+    "lastAttachTimestamp": "2020-01-23T17:46:55.383-08:00",
+    "users": [
+      "https://www.googleapis.com/compute/v1/projects/upbeat-nation-265322/zones/us-west1-b/instances/vulcan"
+    ],
+    "labelFingerprint": "42WmSpB8rSM=",
+    "licenseCodes": ["1000205"],
+    "physicalBlockSizeBytes": "4096",
+    "kind": "compute#disk"
+  }
+}

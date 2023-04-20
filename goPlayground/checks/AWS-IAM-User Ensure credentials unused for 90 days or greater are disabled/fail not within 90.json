@@ -1,0 +1,45 @@
+{
+  "accountId": "213916962078",
+  "arn": "",
+  "cloudId": "",
+  "id": "sam.beste@opscompass.com",
+  "location": "",
+  "name": "",
+  "document": {
+    "Path": "/",
+    "UserName": "sam.beste@opscompass.com",
+    "UserId": "AIDATDTTRZUPEUFENBKRE",
+    "Arn": "arn:aws:iam::213916962078:user/sam.beste@opscompass.com",
+    "CreateDate": "2019-09-10T20:17:34.000Z",
+    "PasswordLastUsed": "2019-04-03T16:23:44.000Z",
+    "Tags": []
+  },
+  "groups": [
+    {
+      "Path": "/",
+      "GroupName": "Opscompass-Admins",
+      "GroupId": "AGPAJWGXBZBOMJ6SWHF74",
+      "Arn": "arn:aws:iam::213916962078:group/Opscompass-Admins",
+      "CreateDate": "2019-03-13T15:21:23.000Z"
+    }
+  ],
+  "mfaDevices": [],
+  "attachedPolicies": [],
+  "accessKeys": [
+    {
+      "UserName": "sam.beste@opscompass.com",
+      "AccessKeyId": "AKIATDTTRZUPIND2YJ4M",
+      "Status": "Active",
+      "CreateDate": "2020-04-31T16:26:50.000Z"
+    },
+    {
+      "UserName": "sam.beste@opscompass.com",
+      "AccessKeyId": "AKIATDTTRZUPIL3PE3VP",
+      "Status": "Active",
+      "CreateDate": "2020-04-10T20:17:35.000Z"
+    }
+  ],
+  "loginProfile": {
+    "exists": true
+  }
+}

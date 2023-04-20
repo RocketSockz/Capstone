@@ -1,0 +1,16 @@
+{
+    "id": "44bee0d0-5d38-4cfa-a970-d325d4a5979d",
+    "displayName": "Ensure AWS S3 Bucket blocks HTTP Traffic",
+    "resourceType": "AWS::S3::Bucket",
+    "severity": "high",
+    "description": "At the Amazon S3 bucket level, you can configure permissions through a bucket policy making the objects accessible only through HTTPS.",
+    "rationale": "By default, Amazon S3 allows both HTTP and HTTPS requests. To achieve only allowing access to Amazon S3 objects through HTTPS you also have to explicitly deny access to HTTP requests. Bucket policies that allow HTTPS requests without explicitly denying HTTP requests will not comply with this recommendation.",
+    "source": "cis aws 1.3.0 | benchmark 2.1.2",
+    "recommended_action": "To allow access to HTTPS you can use a condition that checks for the key `\"aws:SecureTransport: true\"`. This means that the request is sent through HTTPS but that HTTP can still be used. So to make sure you do not allow HTTP access confirm that there is a bucket policy that explicitly denies access for HTTP requests and that it contains the key \"aws:SecureTransport\": \"false\".\r\n\r\n**From Console:**\r\n\r\n1. Login to AWS Management Console and open the Amazon S3 console using https://console.aws.amazon.com/s3/\r\n2. Select the Check box next to the Bucket.\r\n3. Click on 'Permissions', then Click on `Bucket Policy`.\r\n4. Ensure that a policy is listed that matches:\r\n```\r\n'{\r\n \"Sid\": <optional>,\r\n \"Effect\": \"Deny\",\r\n \"Principal\": \"*\",\r\n \"Action\": \"s3:*\",\r\n \"Resource\": \"arn:aws:s3:::<bucket_name>/*\",\r\n \"Condition\": {\r\n \"Bool\": {\r\n \"aws:SecureTransport\": \"false\"\r\n }'\r\n```\r\n`<optional>` and `<bucket_name>` will be specific to your account\r\n\r\n5. Repeat for all the buckets in your AWS account.\r\n\r\n**From Command Line:**\r\n\r\n1. List all of the S3 Buckets \r\n```\r\naws s3 ls\r\n```\r\n2. Using the list of buckets run this command on each of them:\r\n```\r\naws s3api get-bucket-policy --bucket <bucket_name> | grep aws:SecureTransport\r\n```\r\n3. Confirm that `aws:SecureTransport` is set to false `aws:SecureTransport:false`\r\n4. Confirm that the policy line has Effect set to Deny 'Effect:Deny'",
+    "error_message": "AWS S3 Bucket permits HTTP traffic",
+    "category": "SC",
+    "subcategory": "",
+    "ruleNames": [
+        "AWS S3 Bucket allows HTTP Traffic"
+    ]
+}

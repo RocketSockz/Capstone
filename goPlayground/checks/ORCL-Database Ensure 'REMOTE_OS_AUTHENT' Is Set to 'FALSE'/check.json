@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "2f8f3be8-baaf-464c-9b2a-ef73ff061ae2",
+  "displayName": "Ensure parameter 'REMOTE_OS_AUTHENT' Is Set to 'FALSE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Permitting OS roles for database connections can allow the spoofing of connections and permit granting the privileges of an OS role to unauthorized users to make connections, this value should be restricted according to the needs of the organization.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET REMOTE_OS_AUTHENT = FALSE SCOPE = SPFILE;\n```",
+  "error_message": "Remote Operating System authentication is allowed",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'REMOTE_OS_AUTHENT' Is Set to 'FALSE'"
+  ]
+}

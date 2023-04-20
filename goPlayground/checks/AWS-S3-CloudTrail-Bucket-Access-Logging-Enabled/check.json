@@ -1,0 +1,15 @@
+{
+  "id": "f4a53702-ff15-4390-b132-1481528b7e41",
+  "displayName": "Ensure CloudTrail S3 Buckets enable access logging",
+  "resourceType": "AWS::S3::Bucket",
+  "severity": "high",
+  "rationale": "By enabling S3 bucket logging on target S3 buckets, it is possible to capture all events which may affect objects within any target buckets. Configuring logs to be placed in a separate bucket allows access to log information which can be useful in security and incident response workflows.",
+  "source": "cis aws 1.4.0 | benchmark 3.6",
+  "recommended_action": "Perform the following ensure the CloudTrail S3 bucket has access logging is enabled:\r\n\r\n**From Console:**\r\n\r\n1. Go to the Amazon CloudTrail console at [https://console.aws.amazon.com/cloudtrail/home](https://console.aws.amazon.com/cloudtrail/home)\r\n2. In the API activity history pane on the left, click Trails\r\n3. In the Trails pane, note the bucket names in the S3 bucket column\r\n4. Sign in to the AWS Management Console and open the S3 console at [https://console.aws.amazon.com/s3](https://console.aws.amazon.com/s3).\r\n5. Under `All Buckets` click on a target S3 bucket\r\n6. Click on `Properties` in the top right of the console\r\n7. Under `Bucket:` _ `<bucket_name>` _ click on `Logging` \r\n8. Ensure `Enabled` is checked.\r\n\r\n**From Command Line:**\r\n\r\n1. Get the name of the S3 bucket that CloudTrail is logging to:\r\n``` \r\naws cloudtrail describe-trails --query 'trailList[*].S3BucketName' \r\n```\r\n2. Ensure Bucket Logging is enabled:\r\n```\r\naws s3api get-bucket-logging --bucket <s3_bucket_for_cloudtrail>\r\n```\r\nEnsure command does not returns empty output.\r\n\r\nSample Output for a bucket with logging enabled:\r\n\r\n```\r\n{\r\n \"LoggingEnabled\": {\r\n \"TargetPrefix\": \"<Prefix_Test>\",\r\n \"TargetBucket\": \"<Bucket_name_for_Storing_Logs>\"\r\n }\r\n}\r\n```",
+  "error_message": "S3 bucket access logging not enabled",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure AWS S3 buckets enable access logging"
+  ]
+}

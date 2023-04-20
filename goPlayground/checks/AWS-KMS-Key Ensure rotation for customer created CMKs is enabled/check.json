@@ -1,0 +1,15 @@
+{
+  "id": "f7ad0d78-f3a9-7901-7ffe-c308ba2c0384",
+  "displayName": "Ensure rotation for customer created CMKs is enabled",
+  "resourceType": "AWS::KMS::Key",
+  "severity": "medium",
+  "rationale": "Rotating encryption keys helps reduce the potential impact of a compromised key as data encrypted with a new key cannot be accessed with a previous key that may have been exposed.",
+  "source": "cis aws 1.3.0 | benchmark 3.8",
+  "recommended_action": "1. Sign in to the AWS Management Console and open the KMS console at\nhttps://console.aws.amazon.com/kms.\n2. In the left navigation pane, choose Customer Managed Keys .\n3. Select a customer created master key (CMK)\n4. Under the Key Policy section, move down to Key Rotation .\n5. Ensure the Rotate this key every year checkbox is checked.",
+  "error_message": "Key's rotation status is not set to true",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure rotation for customer created CMKs is enabled"
+  ]
+}

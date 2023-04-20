@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "f726c006-6f65-4707-8efe-d77b081aadb5",
+  "displayName": "Ensure parameter 'REMOTE_LOGIN_PASSWORDFILE' Is Set to 'NONE'",
+  "severity": "medium",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "The use of this sort of password login file could permit unsecured, privileged connections to the database.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET REMOTE_LOGIN_PASSWORDFILE = 'NONE' SCOPE = SPFILE;\n```",
+  "error_message": "Remote Login Password Files are allowed",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'REMOTE_LOGIN_PASSWORDFILE' Is Set to 'NONE'"
+  ]
+}

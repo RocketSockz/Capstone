@@ -1,0 +1,69 @@
+{
+  "id": "/subscriptions/12345678-1234-5678-1234-1234567890ab/resourceGroups/data-ops-dev-dev/providers/Microsoft.Sql/servers/sql-data-opsc-cus-dev/databases/Opsdev",
+  "name": "Opsdev",
+  "resourceGroup": "data-ops-dev-dev",
+  "subscriptionId": "12345678-1234-5678-1234-1234567890ab",
+  "type": "Microsoft.Sql/servers/databases",
+  "version": 1,
+  "document": {
+    "id": "/subscriptions/12345678-1234-5678-1234-1234567890ab/resourceGroups/data-ops-dev-dev/providers/Microsoft.Sql/servers/sql-data-opsc-cus-dev/databases/Opsdev",
+    "name": "Opsdev",
+    "type": "Microsoft.Sql/servers/databases",
+    "location": "South Central US",
+    "kind": "v12.0,user",
+    "managedBy": null,
+    "properties": {
+      "databaseId": "3f40758f-3534-4756-bab3-fb2c8d67383d",
+      "edition": "Standard",
+      "status": "Online",
+      "serviceLevelObjective": "S2",
+      "collation": "SQL_Latin1_General_CP1_CI_AS",
+      "maxSizeBytes": "268435456000",
+      "creationDate": "2017-10-02T14:15:28.16Z",
+      "currentServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+      "requestedServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+      "requestedServiceObjectiveName": "S2",
+      "sampleName": null,
+      "defaultSecondaryLocation": "North Central US",
+      "earliestRestoreDate": "2019-06-11T00:00:00Z",
+      "elasticPoolName": null,
+      "containmentState": 2,
+      "readScale": "Disabled",
+      "failoverGroupId": null,
+      "zoneRedundant": false,
+      "isUpgradeRequested": false
+    }
+  },
+  "auditingPolicies": {
+    "id": "/subscriptions/12345678-1234-5678-1234-1234567890ab/resourceGroups/data-ops-dev-dev/providers/Microsoft.Sql/servers/sql-data-opsc-cus-dev/databases/Opsdev/auditingPolicies/default",
+    "name": "default",
+    "type": "Microsoft.Sql/servers/databases/auditingPolicies",
+    "location": "South Central US",
+    "kind": null,
+    "properties": {
+      "auditingState": "Disabled",
+      "eventTypesToAudit": null,
+      "storageAccountName": null,
+      "storageAccountKey": null,
+      "storageAccountSecondaryKey": null,
+      "storageTableEndpoint": null,
+      "storageAccountResourceGroupName": null,
+      "storageAccountSubscriptionId": null,
+      "useServerDefault": null,
+      "fullAuditLogsTableName": null,
+      "auditLogsTableName": null,
+      "retentionDays": null
+    }
+  },
+  "transparentDataEncryption": [
+    {
+      "name": "current",
+      "location": "South Central US",
+      "id": "/subscriptions/12345678-1234-5678-1234-1234567890ab/resourceGroups/data-ops-dev-dev/providers/Microsoft.Sql/servers/sql-data-opsc-cus-dev/databases/Opsdev/transparentDataEncryption/current",
+      "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
+      "properties": {
+        "status": "Enabled"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cf97e2ca-7585-6abf-12f0-3c2c3a160124",
+  "displayName": "Ensure that mobile devices are set to never expire passwords",
+  "resourceType": "microsoft.graph.deviceConfiguration",
+  "severity": "low",
+  "rationale": "While this is not the most intuitive recommendation, research has found that when periodic password resets are enforced, passwords become weaker as users tend to pick something weaker and then use a pattern of it for rotation. If a user creates a strong password: long, complex and without any pragmatic words present, it should remain just as strong is 60 days as it is today. It is Microsoft's official security position to not expire passwords periodically without a specific reason.",
+  "source": "cis o365 1.1.0 | benchmark 7.3",
+  "recommended_action": "To set mobile device management profiles, use the Microsoft 365 Admin Center:\n\t1. Select Device Management under Admin Centers.\n\t2. Select Devices, then Configuration profiles\n\t3. Review the list of profiles.\n\t4. From there, go to the device policies page to remove any device security policies that expire passwords.",
+  "error_message": "General device configurations do not exist for all mobile platforms and don't restrict password reuse for the minimum of 5 passwords",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that mobile devices are set to never expire passwords"
+  ]
+}

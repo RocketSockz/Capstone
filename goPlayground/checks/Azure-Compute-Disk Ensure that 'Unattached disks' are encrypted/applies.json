@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "documents": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "diskState": {
+              "constIgnoreCase": "unattached"
+            }
+          }
+        }
+      }
+    }
+  }
+}

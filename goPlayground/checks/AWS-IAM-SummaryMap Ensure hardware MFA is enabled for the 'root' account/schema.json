@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "document": {
+      "required": [
+        "AllMFADevices"
+      ],
+      "properties": {
+        "AccountSummary": {
+          "properties": {
+            "AccountMFAEnabled": {
+              "errorMessage": "Multi-Factor authentication is incorrectly configured on AWS root account.",
+              "const": 1
+            }
+          }
+        },
+        "AllMFADevices": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "not": {
+              "errorMessage": "Multi-Factor authentication is incorrectly configured on AWS root account.",
+              "properties": {
+                "SerialNumber": {
+                  "pattern": "root-account-mfa-device"
+                }
+              }
+            },
+            "errorMessage": "Multi-Factor Authentication is incorrectly configured on AWS root account."
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "c8f61b1d-5ef4-31e4-9299-a96f4ebc5ca3"
+}

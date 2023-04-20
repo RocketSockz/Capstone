@@ -1,0 +1,27 @@
+{
+    "accountId": "ops-compass-dev",
+    "id": "5066591377275216925",
+    "region": "us-east4",
+    "name": "",
+    "zone": "",
+    "type": "",
+    "document": {
+        "id": "5066591377275216925",
+        "creationTimestamp": "2020-01-20T17:59:14.040-08:00",
+        "name": "gateway",
+        "description": "",
+        "network": "https://www.googleapis.com/compute/v1/projects/ops-compass-dev/global/networks/dev-vpc",
+        "ipCidrRange": "10.10.1.0/24",
+        "gatewayAddress": "10.10.1.1",
+        "region": "https://www.googleapis.com/compute/v1/projects/ops-compass-dev/regions/us-east4",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/ops-compass-dev/regions/us-east4/subnetworks/gateway",
+        "privateIpGoogleAccess": false,
+        "fingerprint": "5g5AX2ESQf8=",
+        "enableFlowLogs": false,
+        "purpose": "PRIVATE",
+        "logConfig": {
+            "enable": false
+        },
+        "kind": "compute#subnetwork"
+    }
+}

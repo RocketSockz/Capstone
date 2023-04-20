@@ -1,0 +1,15 @@
+{
+  "id": "754ec95b-c041-4e8b-9136-a7cb05a03f73",
+  "displayName": "Ensure SQL Server is configured to use non-standard ports",
+  "resourceType": "databases/mssqlserver",
+  "severity": "medium",
+  "rationale": "Using a non-default port helps protect the database from attacks directed to the default port.",
+  "source": "sql-server benchmark",
+  "recommended_action": "1. In **SQL Server Configuration Manager**, in the console pane, expand **SQL Server Network Configuration**, expand Protocols for _`<InstanceName>`_, and then double-click the TCP/IP protocol\r\n2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, several IP addresses appear in the format `IP1`, `IP2`, up to `IPAll`. One of these is for the IP address of the loopback adapter, `127.0.0.1`. Additional IP addresses appear for each IP Address on the computer.\r\n3. Under `IPAll`, change the **TCP Port** field from `1433` to a non-standard port or leave the **TCP Port** field empty and set the **TCP Dynamic Ports** value to `0` to enable dynamic port assignment and then click **OK**.\r\n4. In the console pane, click **SQL Server Services**.\r\n5. In the details pane, right-click **SQL Server (_\\<InstanceName\\>_)** and then click **Restart**, to stop and restart SQL Server.",
+  "error_message": "Server is configured to use standard ports",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure SQL Server is configured to use non-standard ports"
+  ]
+}

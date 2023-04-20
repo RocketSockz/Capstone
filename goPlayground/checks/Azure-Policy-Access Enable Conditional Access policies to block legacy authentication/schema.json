@@ -1,0 +1,54 @@
+{
+  "recommended_action": "1. Log in to https://admin.microsoft.com as a Global Administrator.\n2. Go to Admin centers and click on Azure Active Directory.\n3. Select Conditional Access under Security on the left side navigation.\n4. Create a new policy by selecting New policy.\n5. Set the following conditions within the policy.\n\to Under Client apps (preview) enable the settings for Mobile apps and desktop clients and Other clients\n\to Under Access controls set the Grant section to Block access\n\to Under Assignments enable All users and All cloud apps\n\to Under Assignments and Users and groups set the Exclude to be at least one low risk account or directory role. This is required as a best practice.",
+  "rationale": "Legacy authentication protocols do not support multi-factor authentication. These protocols are often used by attackers because of this deficiency. Blocking legacy authentication makes it harder for attackers to gain access.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "type": "array",
+      "minItems": 1,
+      "errorMessage": "Conditional access policies must exist for a tenant.",
+      "contains": {
+        "errorMessage": "Conditional access policy must exist to block legacy access to systems.",
+        "properties": {
+          "conditions": {
+            "properties": {
+              "clientAppTypes": {
+                "contains": {
+                  "constIgnoreCase": "other"
+                }
+              },
+              "applications": {
+                "properties": {
+                  "includeApplications": {
+                    "contains": {
+                      "constIgnoreCase": "all"
+                    }
+                  }
+                }
+              },
+              "users": {
+                "properties": {
+                  "includeUsers": {
+                    "contains": {
+                      "constIgnoreCase": "all"
+                    }
+                  }
+                }
+              }
+            },
+            "grantControls": {
+              "properties": {
+                "builtInControls": {
+                  "contains": {
+                    "constIgnoreCase": "block"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "8aeaaed5-15cb-cd70-4e4e-b96b6ea8364a"
+}

@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "proxies": {
+          "type": "null"
+        }
+      }
+    }
+  }
+}

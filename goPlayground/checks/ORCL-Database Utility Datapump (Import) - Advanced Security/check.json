@@ -1,0 +1,15 @@
+{
+  "id": "6fac538e-3781-6453-da5f-6733ef431009",
+  "displayName": "Oracle Utility Datapump (Import) - Advanced Security",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Oracle Utility Datapump (Import) - Advanced Security requires a license for Oracle Advanced Security to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the \"ALL\", \"ENCRYPTED_COLUMNS_ONLY\", or \"DATA_ONLY\" option with the \"ENCRYPTION=\" command line option of \"impdp\"",
+  "error_message": "Oracle Utility Datapump (Import) - Advanced Security is listed as a feature usage concern under Oracle Advanced Security",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Oracle Utility Datapump (Import) - Advanced Security"
+  ]
+}

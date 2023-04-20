@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "publicExecPackages": {
+                "items": {
+                  "properties": {
+                    "Package": {
+                      "not": {
+                        "enumIgnoreCase": ["DBMS_SQL", "DBMS_XMLGEN", "DBMS_XMLQUERY","DBMS_XLMSTORE", "DBMS_XLMSAVE", "DBMS_REDACT"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

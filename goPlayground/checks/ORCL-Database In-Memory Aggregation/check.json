@@ -1,0 +1,15 @@
+{
+  "id": "5cd9dd2e-b81d-bdcd-8e92-170728f11cb3",
+  "displayName": "In-Memory Aggregation",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "In-Memory Aggregation requires a license for Oracle Database In-Memory to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Set INMEMORY_SIZE=0 to disable the In-Memory feature",
+  "error_message": "In-Memory Aggregation is listed as a feature usage concern under Oracle Database In-Memory",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "In-Memory Aggregation"
+  ]
+}

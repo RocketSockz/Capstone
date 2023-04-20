@@ -1,0 +1,15 @@
+{
+  "id": "da1b57e1-a3b7-bc3f-5f3e-cf4355a38297",
+  "displayName": "Oracle Utility Datapump (Export) - Advanced Compression",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Oracle Utility Datapump (Export) - Advanced Compression requires a license for Oracle Advanced Compression to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not use the \"ALL\" or \"DATA_ONLY\" option with the \"COMPRESS=\" command line option of \"expdp\"",
+  "error_message": "Oracle Utility Datapump (Export) - Advanced Compression is listed as a feature usage concern under Oracle Advanced Compression",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Oracle Utility Datapump (Export) - Advanced Compression"
+  ]
+}

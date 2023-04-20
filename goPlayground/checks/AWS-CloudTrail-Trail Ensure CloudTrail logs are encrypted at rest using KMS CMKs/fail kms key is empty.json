@@ -1,0 +1,36 @@
+{
+  "accountId": "434855252750",
+  "arn": "arn:aws:cloudtrail:us-east-1:434855252750:trail/cloudTrailLambda",
+  "cloudId": "arn:aws:cloudtrail:us-east-1:434855252750:trail/cloudTrailLambda",
+  "id": "",
+  "location": "",
+  "name": "cloudTrailLambda",
+  "document": {
+    "Name": "cloudTrailLambda",
+    "S3BucketName": "beste-trail-events",
+    "SnsTopicName": "arn:aws:sns:us-east-1:434855252750:Sam",
+    "SnsTopicARN": "arn:aws:sns:us-east-1:434855252750:Sam",
+    "IncludeGlobalServiceEvents": true,
+    "IsMultiRegionTrail": true,
+    "HomeRegion": "us-east-1",
+    "TrailARN": "arn:aws:cloudtrail:us-east-1:434855252750:trail/cloudTrailLambda",
+    "LogFileValidationEnabled": true,
+    "KmsKeyId": "",
+    "HasCustomEventSelectors": true,
+    "HasInsightSelectors": false,
+    "IsOrganizationTrail": false
+  },
+  "trailStatus": {
+    "IsLogging": true,
+    "LatestDeliveryTime": "2019-12-19T18:36:15.890Z",
+    "LatestNotificationTime": "2019-12-19T18:36:15.890Z",
+    "StartLoggingTime": "2019-10-08T18:35:44.173Z",
+    "LatestDigestDeliveryTime": "2019-12-19T18:37:25.802Z",
+    "LatestDeliveryAttemptTime": "2019-12-19T18:36:15Z",
+    "LatestNotificationAttemptTime": "2019-12-19T18:36:15Z",
+    "LatestNotificationAttemptSucceeded": "2019-12-19T18:36:15Z",
+    "LatestDeliveryAttemptSucceeded": "2019-12-19T18:36:15Z",
+    "TimeLoggingStarted": "2019-10-08T18:35:44Z",
+    "TimeLoggingStopped": ""
+  }
+}

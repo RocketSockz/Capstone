@@ -1,0 +1,15 @@
+{
+  "id": "bf3ee771-fda1-740a-227d-ff6432d54892",
+  "displayName": "Ensure that instances are not configured to use the default service account with full access to all Cloud APIs",
+  "resourceType": "compute#instance",
+  "severity": "high",
+  "rationale": "Along with ability to optionally create, manage and use user managed custom service accounts, Google Compute Engine provides default service account Compute Engine default service account for an instances to access necessary cloud services. Project Editor role is assigned to Compute Engine default service account hence, This service account has almost all capabilities over all cloud services except billing. However, when Compute Engine default service account assigned to an instance it can operate in 3 scopes.",
+  "source": "cis gcp 1.0.0 | benchmark 4.1",
+  "recommended_action": "1. Go to the VM instances page in the Compute Engine using\nhttps://console.cloud.google.com/compute/instances\n2. Click on the impacted VM instance\n3. If the instance is not stopped, click the Stop button. Wait for the instance to be\nstopped.\n4. Next, click the Edit button.\n5. Scroll down to the Service Account section.\n6. To change scopes, in the Access scopes section, set the appropriate scopes as per\nbusiness needs.\n7. Click the Save button to save your changes.",
+  "error_message": "Instance has full access to the cloud",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure that instances are not configured to use the default service account with full access to all Cloud APIs"
+  ]
+}

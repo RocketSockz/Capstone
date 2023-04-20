@@ -1,0 +1,29 @@
+{
+  "recommended_action": "Alter system set enable_ddl_logging=FALSE scope=both",
+  "rationale": "A value of 'TRUE' for this parameter will report schema changes in real time to the alert log, which requires a license of Oracle Database Lifecycle Management Pack.",
+  "source": "opscompass-defined",
+  "properties": {
+    "document": {
+      "properties": {
+        "parameters": {
+          "properties": {
+            "ENABLE_DDL_LOGGING": {
+              "not": {
+                "properties": {
+                  "isConcerning": {
+                    "const": true
+                  },
+                  "value": {
+                    "const": "TRUE"
+                  }
+                }
+              },
+              "errorMessage": "ENABLE_DDL_LOGGING is concerning and has a value of TRUE."
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "a49d7fa1-a109-25a9-d460-8b6c620a5f0a"
+}

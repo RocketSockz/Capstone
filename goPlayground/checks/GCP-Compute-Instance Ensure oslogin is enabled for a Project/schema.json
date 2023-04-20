@@ -1,0 +1,29 @@
+{
+  "recommended_action": "1. Go to the VM compute metadata page using\nhttps://console.cloud.google.com/compute/metadata?.\n2. Click Edit.\n3. Add a metadata entry where the key is enable-oslogin and the value is TRUE.\n4. Click Save to apply the changes.",
+  "rationale": "Enabling osLogin ensures that SSH keys used to connect to instances are mapped with IAM users. Revoking access to IAM user will revoke all the SSH keys associated with that particular user. It facilitates centralized and automated SSH key pair management which is useful in handling cases like response to compromised SSH key pairs and/or revocation of external/third-party/Vendor users.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "metadata": {
+          "properties": {
+            "items": {
+              "contains": {
+                "properties": {
+                  "key": {
+                    "constIgnoreCase": "enable-oslogin"
+                  },
+                  "value": {
+                    "constIgnoreCase": "true"
+                  }
+                }
+              },
+              "errorMessage": "Instance's OSLogin settings is disabled."
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "2aa09fed-ffbe-0b89-e3ae-5bf8dc9f08e8"
+}

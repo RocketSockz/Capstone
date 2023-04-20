@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "publicExecPackages": {
+                "items": {
+                  "properties": {
+                    "Package": {
+                      "not": {
+                        "enumIgnoreCase": ["DBMS_LDAP", "UTL_INADDR", "UTL_TCP", "UTL_MAIL", "UTL_SMTP", "UTL_DBWS", "UTL_ORAMTS", "UTL_HTTP", "HTTPURITYPE"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

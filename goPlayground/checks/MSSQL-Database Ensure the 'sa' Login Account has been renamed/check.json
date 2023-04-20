@@ -1,0 +1,15 @@
+{
+  "id": "6a8356b6-be7b-4d94-b938-dd2a346d916d",
+  "displayName": "Ensure the 'sa' Login Account has been renamed",
+  "resourceType": "databases/mssqlserver",
+  "severity": "high",
+  "rationale": "It is more difficult to launch password-guessing and brute-force attacks against the `sa` login if the name is not known.",
+  "source": "sql-server benchmark",
+  "recommended_action": "Replace the _`<different_user>`_ value within the below syntax and execute to rename the `sa` login.\r\n```\r\nALTER LOGIN sa WITH NAME = <different_user>;\r\n```",
+  "error_message": "Login Account 'sa' has not been renamed",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "Ensure the 'sa' Login Account has been renamed"
+  ]
+}

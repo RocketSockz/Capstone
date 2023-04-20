@@ -1,0 +1,15 @@
+{
+  "id": "afb261b6-3f46-0cf0-2dcc-fcfa7bd08ad0",
+  "displayName": "AWR Baseline",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "AWR Baseline requires a license for Oracle Diagnostics Pack to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable Diagnostic & Tuning Packs:\nalter system set control_management_pack_access = NONE scope=both",
+  "error_message": "AWR Baseline is listed as a feature usage concern under Oracle Diagnostics Pack",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "AWR Baseline"
+  ]
+}

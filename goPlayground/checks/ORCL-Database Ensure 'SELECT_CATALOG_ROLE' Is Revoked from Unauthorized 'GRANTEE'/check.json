@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "ddbc0b13-0c6a-4bb7-bab3-ead21db768cd",
+  "displayName": "Ensure 'SELECT_CATALOG_ROLE' Is Revoked from Unauthorized 'GRANTEE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Permitting unauthorized access to the `SELECT_CATALOG_ROLE` can allow the disclosure of all dictionary data.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement, keeping in mind if this is granted in both container and pluggable database, you must connect to both places to revoke.\n```\nREVOKE SELECT_CATALOG_ROLE FROM <grantee>;\n```",
+  "error_message": "'SELECT_CATALOG_ROLE' was found on one or more unauthorized 'GRANTEE'",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure 'SELECT_CATALOG_ROLE' Is Revoked from Unauthorized 'GRANTEE'"
+  ]
+}

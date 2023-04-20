@@ -1,0 +1,29 @@
+{
+  "recommended_action": "1. Go to Activity log\n2. Select Export\n3. Set Retention (days) is set to 365 or 0\n4. Select Save",
+  "rationale": "A log profile controls how the activity log is exported and retained. Since the average time to detect a breach is 210 days, the activity log should be retained for 365 days or more in order to have time to respond to any incidents.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "properties": {
+          "properties": {
+            "retentionPolicy": {
+              "properties": {
+                "enabled": {
+                  "errorMessage": "Retention policy is not enabled for this log profile.",
+                  "const": true
+                },
+                "days": {
+                  "errorMessage": "Retention days is less than 365 days.",
+                  "minimum": 365
+                }
+              }
+            }
+          },
+          "required": ["retentionPolicy"]
+        }
+      }
+    }
+  },
+  "schemaId": "bcb53c9f-aa58-a4b4-26c0-ffe4c5850895"
+}

@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "instanceCisData": {
+          "items": {
+            "properties": {
+              "instanceParametersPDB": {
+                "contains": {
+                  "properties": {
+                    "Name": {
+                      "constIgnoreCase": "REMOTE_LISTENER"
+                    },
+                    "Value": {
+                      "constIgnoreCase": "NULL"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

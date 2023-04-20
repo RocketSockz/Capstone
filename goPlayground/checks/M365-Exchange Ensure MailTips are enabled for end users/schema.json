@@ -1,0 +1,32 @@
+{
+  "recommended_action": "To enable MailTips, use the Exchange Online PowerShell Module:\n1. Run Microsoft Exchange Online PowerShell Module\n2. Connect using Connect-MSOnline\n3. Run the following PowerShell command: Set-OrganizationConfig -MailTipsAllTipsEnabled $true -MailTipsExternalRecipientsTipsEnabled $true -MailTipsGroupMetricsEnabled $true -MailTipsLargeAudienceThreshold '25'",
+  "rationale": "Setting up MailTips gives a visual aid to users when they send emails to large groups of recipients or send emails to recipients not within the tenant.",
+  "source": "cis o365 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "MailTipsAllTipsEnabled": {
+          "errorMessage": "MailTips are not enabled.",
+          "const": true
+        },
+        "MailTipsExternalRecipientsTipsEnabled": {
+          "errorMessage": "Recipient MailTips are not enabled.",
+          "const": true
+        },
+        "MailTipsGroupMetricsEnabled": {
+          "errorMessage": "MailTips for group metrics are not enabled.",
+          "const": true
+        },
+        "MailTipsLargeAudienceThreshold": {
+          "errorMessage": "MailTips for large audiences do not have a threshold of 25.",
+          "minimum": 25
+        },
+        "MailTipsMailboxSourcedTipsEnabled": {
+          "errorMessage": "MailTips for sourced mailboxes are not enabled.",
+          "const": true
+        }
+      }
+    }
+  },
+  "schemaId": "22501216-597b-77ce-b752-807fb90cde40"
+}

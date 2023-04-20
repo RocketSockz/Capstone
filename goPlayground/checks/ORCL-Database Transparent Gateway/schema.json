@@ -1,0 +1,30 @@
+{
+  "recommended_action": "Check listener.ora to see if PROGRAM=dg4odbc",
+  "rationale": "Transparent Gateway requires a license for .Database Gateway to use.",
+  "source": "opscompass-defined",
+  "properties": {
+    "document": {
+      "properties": {
+        "productUsageConcerns": {
+          "additionalProperties": {
+            "properties": {
+              "featureUsageConcerns": {
+                "additionalProperties": {
+                  "properties": {
+                    "ruleId": {
+                      "not": {
+                        "const": 1001
+                      }
+                    }
+                  },
+                  "errorMessage": "Transparent Gateway is listed as a feature usage concern under .Database Gateway."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemaId": "28a9b70b-f7fc-3235-7e9a-b8cecaef90cc"
+}

@@ -1,0 +1,18 @@
+{
+  "recommended_action": "1. Go to Kubernetes GCP Console visiting\nhttps://console.cloud.google.com/kubernetes/list\n2. From the list of clusters, for each clusters note the Subnet name\n3. Go to VPC network GCP Console visiting\nhttps://console.cloud.google.com/networking/networks/list\n4. Click noted subnet, The Subnet details page is displayed\n5. Click on Edit button\n6. Set Private Google access to On\n7. Click on Save",
+  "rationale": "VPC networks and subnetworks provide logically isolated and secure network partitions where you can launch GCP resources. When Private Google Access is enabled, VM instances in a subnet can reach the Google Cloud and Developer APIs and services without needing an external IP address. Instead, VMs can use their internal IP addresses to access Google managed services. Instances with external IP addresses are not affected when you enable the ability to access Google services from internal IP addresses. These instances can still connect to Google APIs and managed services.",
+  "source": "cis gcp 1.0.0",
+  "properties": {
+    "clusterSubnetwork": {
+      "properties": {
+        "privateIpGoogleAccess": {
+          "errorMessage": "Cluster's subnet do not have private Google access enabled.",
+          "const": true
+        }
+      },
+      "errorMessage": "Cluster's subnet do not have private Google access enabled.",
+      "required": ["privateIpGoogleAccess"]
+    }
+  },
+  "schemaId": "6b690996-b02f-9e78-b2fa-e07473457ebc"
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "databases/oracle",
+  "id": "c4e15f01-d183-46b3-98bd-3d4289f2c4d4",
+  "displayName": "Ensure parameter 'SEC_CASE_SENSITIVE_LOGON' Is Set to 'TRUE'",
+  "severity": "high",
+  "source": "oracle-benchmark",
+  "category": "DB",
+  "rationale": "Oracle database password case-sensitivity increases the pool of characters that can be chosen for the passwords, making brute-force password attacks quite difficult.",
+  "recommended_action": "To remediate this setting, execute the following SQL statement.\n```\nALTER SYSTEM SET SEC_CASE_SENSITIVE_LOGON = TRUE SCOPE = SPFILE;\n```",
+  "error_message": "Password logins are not case sensitive",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure parameter 'SEC_CASE_SENSITIVE_LOGON' Is Set to 'TRUE'"
+  ]
+}

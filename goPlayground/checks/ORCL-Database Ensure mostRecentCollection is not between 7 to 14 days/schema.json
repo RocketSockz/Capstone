@@ -1,0 +1,21 @@
+{
+  "recommended_action": "Review the connection settings in the MLSS configuration for this database and ensure the database is available during the scheduled execution of the scripts.",
+  "rationale": "The MLSS data collection scripts have not gathered information about this database for an extended period of time.",
+  "source": "opscompass-defined",
+  "properties": {
+    "document": {
+      "not": {
+        "properties": {
+          "mostRecentCollection": {
+            "withinDays": 14,
+            "not": {
+              "withinDays": 7
+            }
+          }
+        }
+      },
+      "errorMessage": "Most recent collection is between 7 and 14 days."
+    }
+  },
+  "schemaId": "50649e9f-e1d9-88d0-310f-20b6da3b5188"
+}

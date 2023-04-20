@@ -1,0 +1,15 @@
+{
+  "id": "04ac4dfb-b27f-2c98-3bc0-34ca6daff6f8",
+  "displayName": "Active Data Guard - Real-Time Query on Physical Standby",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Active Data Guard - Real-Time Query on Physical Standby requires a license for Oracle Active Data Guard to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Do not open standby DB Read-Only when Real Time Apply is active,and do not activate Real Time Apply when standby DB us opened Read-Only.  To check mode and disable Active Dataguard:\nSQL> select open_mode from v$database;\n\nOPEN_MODE\n--------------------\nREAD ONLY WITH APPLY\nIf mode is \"read only with apply\" then perform these steps to get the standby DB back to a \"mount\" state:\nSQL> shutdown immediate;\nSQL> startup mount;\nSQL> alter database recover managed standby database disconnect;",
+  "error_message": "Active Data Guard - Real-Time Query on Physical Standby is listed as a feature usage concern under Oracle Active Data Guard",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Active Data Guard - Real-Time Query on Physical Standby"
+  ]
+}

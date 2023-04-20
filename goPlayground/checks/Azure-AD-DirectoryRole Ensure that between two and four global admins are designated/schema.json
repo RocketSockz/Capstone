@@ -1,0 +1,15 @@
+{
+  "errorMessage": "Tenant either has too few, or too many administrators",
+  "recommended_action": "1. Select Users > Active Users.\n2. Set Views to Global Admins.\n3. To create a new Global Admin:\n\t1. Select Add Users.\n\t2. Enter User Information.\n\t3. Select Roles.\n\t4. Select Global Administrator.\n\t5. Click Add.\n4. To remove Global Admins: \n\t1. Select User.\n\t2. Select Edit under Roles.\n\t3. Select Customized administrator and chose appropriate role.\n\t4. Click Save.",
+  "rationale": "If there is only one global tenant administrator, he or she can perform malicious activity without the possibility of being discovered by another admin. If there are numerous global tenant administrators, the more likely it is that one of their accounts will be successfully breached by an external attacker.",
+  "source": "cis 1.1.0",
+  "properties": {
+    "Members": {
+      "errorMessage": "Tenant either has too few or too many administrators.",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4
+    }
+  },
+  "schemaId": "046256dd-e421-6ef7-a515-39ac168a9845"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "36bbd9c4-201f-c5de-c47b-e9c5cbfa563e",
+  "displayName": "Ensure the storage account containing the container with activity logs is encrypted with BYOK",
+  "resourceType": "microsoft.insights/logProfiles",
+  "severity": "medium",
+  "rationale": "Configuring the storage account with the activity log export container to use BYOK (Use Your Own Key) provides additional confidentiality controls on log data as a given user must have read permission on the corresponding storage account and must be granted decrypt permission by the CMK.",
+  "source": "cis azure 1.1.0 | benchmark 5.1.6",
+  "recommended_action": "1. On this Storage Account navigate to Encryption in the settings. It will show Storage service encryption\nconfiguration pane.\n4. Check Use your own key which will expand Encryption Key Settings\n5. Use option Enter key URI or Select from Key Vault to set up encryption with\nyour own key",
+  "error_message": "Storage Accounts must be encrypted with 'BYOK'",
+  "category": "SC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensure Storage Accounts are encrypted with BYOK"
+  ]
+}

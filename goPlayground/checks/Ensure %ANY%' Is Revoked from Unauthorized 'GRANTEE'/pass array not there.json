@@ -1,0 +1,25 @@
+{
+  "client_token": "BHS4d65VeSw7ZiyC",
+  "client_name": "Nienow-Brekke",
+  "hostname": "mlsstoolsdev.houseofbrick.local",
+  "instance": "MLSSDB",
+  "version": "19.0.0.0.0",
+  "edition": "SE2",
+  "dbid": 1566684450,
+  "document": {
+    "fullyQualifiedHostName": "mlsstoolsdev.houseofbrick.local",
+    "client_token": "BHS4d65VeSw7ZiyC",
+    "client_name": "Nienow-Brekke",
+    "instance": "MLSSDB",
+    "version": "19.0.0.0.0",
+    "edition": "SE2",
+    "dbid": 1566684450,
+    "instanceCisData": [{
+    }]
+  },
+  "accountId": "BHS4d65VeSw7ZiyC",
+  "name": "MLSSDB (mlsstoolsdev)",
+  "type": "databases/oracle",
+  "location": "global",
+  "id": "0094c5376d39396f157fd0fd44c697c6928ce5ef"
+}

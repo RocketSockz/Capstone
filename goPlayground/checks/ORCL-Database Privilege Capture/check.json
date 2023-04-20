@@ -1,0 +1,15 @@
+{
+  "id": "4f41997b-8af2-ba65-ceb5-7555e7316ce3",
+  "displayName": "Privilege Capture",
+  "resourceType": "databases/oracle",
+  "severity": "high",
+  "rationale": "Privilege Capture requires a license for Oracle Database Vault to use.",
+  "source": "opscompass-defined",
+  "recommended_action": "Disable Database Vault: https://docs.oracle.com/en/database/oracle/oracle-database/18/dvadm/disabling-and-enabling-oracle-database-vault.html#GUID-6D80B63C-6A29-47A9-8733-1070199CDF06",
+  "error_message": "Privilege Capture is listed as a feature usage concern under Oracle Database Vault",
+  "category": "DB",
+  "subcategory": "",
+  "ruleNames": [
+    "Privilege Capture"
+  ]
+}

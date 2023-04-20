@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "RequireLowercaseCharacters": {
+          "const": true
+        }
+      },
+      "required": [
+        "RequireLowercaseCharacters"
+      ]
+    }
+  },
+  "schemaId": "9c2fdef4-4598-6d5e-8b57-db0e9182afa8"
+}

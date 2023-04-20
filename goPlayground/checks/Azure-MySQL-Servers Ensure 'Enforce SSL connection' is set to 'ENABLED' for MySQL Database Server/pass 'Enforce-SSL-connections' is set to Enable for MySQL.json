@@ -1,0 +1,32 @@
+{
+  "document": {
+    "sku": {
+      "name": "B_Gen5_1",
+      "tier": "Basic",
+      "family": "Gen5",
+      "capacity": 1
+    },
+    "properties": {
+      "administratorLogin": "harwinder",
+      "storageProfile": {
+        "storageMB": 5120,
+        "backupRetentionDays": 7,
+        "geoRedundantBackup": "Disabled",
+        "storageAutoGrow": "Disabled"
+      },
+      "version": "5.6",
+      "sslEnforcement": "Enabled",
+      "userVisibleState": "Ready",
+      "fullyQualifiedDomainName": "harwindermysql1.mysql.database.azure.com",
+      "earliestRestoreDate": "2019-07-03T20:07:32.18+00:00",
+      "replicationRole": "None",
+      "masterServerId": "",
+      "replicaCapacity": 5
+    },
+    "location": "centralus",
+    "tags": {},
+    "id": "/subscriptions/c65c08a7-5cea-4cfc-b326-91579369d912/resourceGroups/harwinder-test/providers/Microsoft.DBforMySQL/servers/harwindermysql1",
+    "name": "harwindermysql1",
+    "type": "Microsoft.DBforMySQL/servers"
+  }
+}

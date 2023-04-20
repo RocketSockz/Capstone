@@ -1,0 +1,30 @@
+{
+  "recommended_action": "Azure Console\nFirst, follow Microsoft documentation and created shared access signature tokens for your\nblob containers. Then,\n1. Go to Storage Accounts\n2. For this storage account, go to Containers under BLOB SERVICE\n3. For each container, click Access policy\n4. Set Public access level to Private (no anonymous access)",
+  "rationale": "Anonymous, public read access to a container and its blobs can be enabled in Azure Blob storage. It grants read-only access to these resources without sharing the account key, and without requiring a shared access signature. It is recommended not to provide anonymous access to blob containers until, and unless, it is strongly desired. A shared access signature token should be used for providing controlled and timed access to blob containers.",
+  "source": "cis azure 1.1.0",
+  "properties": {
+    "document": {
+      "properties": {
+        "containers": {
+          "allOf": [
+            {
+              "items": {
+                "properties": {
+                  "properties": {
+                    "properties": {
+                      "publicAccess": {
+                        "constIgnoreCase": "none",
+                        "errorMessage": "Blob containers have public access."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "schemaId": "d3d65eaa-a081-5be5-62d9-e001d9defce6"
+}

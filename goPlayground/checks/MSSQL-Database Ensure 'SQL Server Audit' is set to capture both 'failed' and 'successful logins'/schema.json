@@ -1,0 +1,17 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "auditLogging": {
+          "properties": {
+            "audits": {
+              "not": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

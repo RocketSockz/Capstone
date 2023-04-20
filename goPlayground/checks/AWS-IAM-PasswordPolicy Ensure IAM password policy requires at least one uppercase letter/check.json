@@ -1,0 +1,15 @@
+{
+  "id": "18d7237c-cb8d-ec6f-372d-8c2bf2302615",
+  "displayName": "Ensure IAM password policy requires at least one uppercase letter",
+  "resourceType": "AWS::IAM::PasswordPolicy",
+  "severity": "high",
+  "rationale": "Setting a password complexity policy increases account resiliency against brute force login attempts.",
+  "source": "cis aws 1.2.0 | benchmark 1.5",
+  "recommended_action": "Perform the following to set the password policy as prescribed: Via AWS Console\n1. Login to AWS Console (with appropriate permissions to View Identity Access\nManagement Account Settings)\n2. Go to IAM Service on the AWS Console\n3. Click on Account Settings on the Left Pane\n4. Check 'Requires at least one uppercase letter'\n5. Click 'Apply password policy'",
+  "error_message": "IAM password policy does not require an uppercase character",
+  "category": "AC",
+  "subcategory": "",
+  "ruleNames": [
+    "Ensures IAM password policy requires uppercase letter"
+  ]
+}
