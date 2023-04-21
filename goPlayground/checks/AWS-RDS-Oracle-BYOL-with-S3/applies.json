@@ -1,9 +1,0 @@
-{
-  "properties": {
-    "document": {
-      "Engine": {
-        "pattern": "oracle"
-      }
-    }
-  }
-}

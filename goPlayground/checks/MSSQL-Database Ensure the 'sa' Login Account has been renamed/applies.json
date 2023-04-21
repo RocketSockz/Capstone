@@ -1,9 +1,0 @@
-{
-  "properties": {
-    "document": {
-      "properties": {
-        
-      },"required": ["serverPrincipals"]
-    }
-  }
-}

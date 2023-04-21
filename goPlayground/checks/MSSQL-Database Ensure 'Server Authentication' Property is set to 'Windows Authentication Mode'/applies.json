@@ -1,7 +1,0 @@
-{
-  "properties": {
-    "document": {
-      "properties":{},"required": ["login_mode"]
-    }
-  }
-}
