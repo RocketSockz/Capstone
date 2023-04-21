@@ -1,4 +1,4 @@
-package cache_cluster_checks
+package opscompass_checks
 import future.keywords
 
 flow_logs := input.document.FlowLogs

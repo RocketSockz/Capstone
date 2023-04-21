@@ -1,4 +1,4 @@
-package cache_cluster_checks
+package opscompass_checks
 import future.keywords
 
 transit_encryption_enabled := input.document.TransitEncryptionEnabled

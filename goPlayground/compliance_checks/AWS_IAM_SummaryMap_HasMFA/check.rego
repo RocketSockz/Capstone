@@ -1,4 +1,4 @@
-package iam_summary_map_checks
+package opscompass_checks
 import future.keywords
 
 account_mfa_enabled := input.document.AccountMFAEnabled

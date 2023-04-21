@@ -1,4 +1,4 @@
-package graph_m365
+package opscompass_checks
 import future.keywords
 
 is_enabled := input.credentialReport.isEnabled

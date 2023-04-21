@@ -1,4 +1,4 @@
-package cloudtrail_checks
+package opscompass_checks
 
 import future.keywords
 

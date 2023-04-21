@@ -1,4 +1,4 @@
-package s3_bucket_checks
+package opscompass_checks
 import future.keywords
 
 server_side_encryption := input.ServerSideEncryptionConfiguration

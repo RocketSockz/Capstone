@@ -1,4 +1,4 @@
-package keyvault_checks
+package opscompass_checks
 import future.keywords
 
 purge_protection := input.document.properties.enablePurgeProtection
