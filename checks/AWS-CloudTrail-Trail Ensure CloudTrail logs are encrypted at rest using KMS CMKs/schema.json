@@ -1,0 +1,16 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "KmsKeyId": {
+          "minLength": 1
+        }
+      },
+      "errorMessage": "CloudTrail does not have KMS key correctly attached.",
+      "required": [
+        "KmsKeyId"
+      ]
+    }
+  },
+  "schemaId": "a5141482-6c8c-e18a-8053-b0d214c4c716"
+}

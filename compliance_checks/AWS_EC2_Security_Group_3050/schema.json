@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "document": {
+      "properties": {
+        "IpPermissions": {
+          "type": "array",
+          "if": {
+            "minItems": 1
+          },
+          "then": {
+            "not": {
+              "errorMessage": "Security group allows ingress from port 3050.",
+              "items": {
+                "allOf": [
+                  {
+                    "properties": {
+                      "FromPort": {
+                        "maximum": 3050
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "ToPort": {
+                        "minimum": 3050
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "IpRanges": {
+                        "items": {
+                          "properties": {
+                            "CidrIp": {
+                              "const": "0.0.0.0/0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "else": true
+        }
+      }
+    }
+  },
+  "schemaId": "15abc867-4a97-413e-9b04-da32bf9576b0"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "e299fd58-928d-48d7-b3fe-1c5fec1974ff",
+  "displayName": "RDS Oracle-SE2 Bring Your Own License - Maximum vCPU",
+  "resourceType": "AWS::RDS::DBInstance",
+  "severity": "high",
+  "rationale": "Oracle's Cloud Licensing Policy allows for a maximum of 8 vCPU's for Oracle Standard Edition Two with a Bring Your Own Licensing Model.",
+  "source": "opscompass",
+  "recommended_action": "Review and Update the instance configuration to fit within the 8 vCPU maximum allowed.",
+  "error_message": "Invalid RDS Instance size for Licensing Model",
+  "subcategory": "",
+  "category": "",
+  "ruleNames": [
+    "RDS Oracle-SE2 Bring Your Own License - Maximum vCPU"
+  ]
+}

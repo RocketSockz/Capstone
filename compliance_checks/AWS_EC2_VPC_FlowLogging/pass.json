@@ -1,0 +1,149 @@
+{
+    "document": {
+      "SecurityGroups": [
+        {
+          "Description": "default VPC security group",
+          "GroupName": "default",
+          "IpPermissions": [
+            {
+              "IpProtocol": "-1",
+              "IpRanges": [],
+              "Ipv6Ranges": [],
+              "PrefixListIds": [],
+              "UserIdGroupPairs": [
+                {
+                  "GroupId": "sg-070167d56448cff5e",
+                  "UserId": "434855252750"
+                }
+              ]
+            }
+          ],
+          "OwnerId": "434855252750",
+          "GroupId": "sg-070167d56448cff5e",
+          "IpPermissionsEgress": [
+            {
+              "IpProtocol": "-1",
+              "IpRanges": [
+                {
+                  "CidrIp": "0.0.0.0/0"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": [],
+              "UserIdGroupPairs": []
+            }
+          ],
+          "Tags": [],
+          "VpcId": "vpc-0fad2f49584248a81"
+        },
+        {
+          "Description": "launch-wizard-1 created 2019-05-29T11:36:40.048-05:00",
+          "GroupName": "launch-wizard-1",
+          "IpPermissions": [
+            {
+              "FromPort": 22,
+              "IpProtocol": "tcp",
+              "IpRanges": [
+                {
+                  "CidrIp": "0.0.0.0/0"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": [],
+              "ToPort": 22,
+              "UserIdGroupPairs": []
+            }
+          ],
+          "OwnerId": "434855252750",
+          "GroupId": "sg-0b941f8364e215f16",
+          "IpPermissionsEgress": [
+            {
+              "IpProtocol": "-1",
+              "IpRanges": [
+                {
+                  "CidrIp": "0.0.0.0/0"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": [],
+              "UserIdGroupPairs": []
+            }
+          ],
+          "Tags": [],
+          "VpcId": "vpc-6874ef12"
+        },
+        {
+          "Description": "launch-wizard-2 created 2019-05-29T12:16:31.385-05:00",
+          "GroupName": "launch-wizard-2",
+          "IpPermissions": [
+            {
+              "FromPort": 22,
+              "IpProtocol": "tcp",
+              "IpRanges": [
+                {
+                  "CidrIp": "0.0.0.0/0"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": [],
+              "ToPort": 22,
+              "UserIdGroupPairs": []
+            }
+          ],
+          "OwnerId": "434855252750",
+          "GroupId": "sg-0d883f828f1a4a060",
+          "IpPermissionsEgress": [
+            {
+              "IpProtocol": "-1",
+              "IpRanges": [
+                {
+                  "CidrIp": "0.0.0.0/0"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": [],
+              "UserIdGroupPairs": []
+            }
+          ],
+          "Tags": [],
+          "VpcId": "vpc-6874ef12"
+        },
+        {
+          "Description": "default VPC security group",
+          "GroupName": "default",
+          "IpPermissions": [],
+          "OwnerId": "434855252750",
+          "GroupId": "sg-4232781a",
+          "IpPermissionsEgress": [],
+          "Tags": [],
+          "VpcId": "vpc-6874ef12"
+        }
+      ],
+      "FlowLogs": [
+        {
+          "CreationTime": "2019-06-11T18:07:46.582Z",
+          "DeliverLogsPermissionArn": "arn:aws:iam::434855252750:role/testEC2Role",
+          "DeliverLogsStatus": "SUCCESS",
+          "FlowLogId": "fl-0496e266b216961e5",
+          "FlowLogStatus": "ACTIVE",
+          "LogGroupName": "test",
+          "ResourceId": "vpc-6874ef12",
+          "TrafficType": "ACCEPT",
+          "LogDestinationType": "cloud-watch-logs",
+          "LogDestination": "arn:aws:logs:us-east-1:434855252750:log-group:test"
+        },
+        {
+          "CreationTime": "2019-07-08T21:21:17.569Z",
+          "DeliverLogsPermissionArn": "arn:aws:iam::434855252750:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+          "DeliverLogsStatus": "SUCCESS",
+          "FlowLogId": "fl-0eb027183eb61c432",
+          "FlowLogStatus": "ACTIVE",
+          "LogGroupName": "test",
+          "ResourceId": "vpc-6874ef12",
+          "TrafficType": "ACCEPT",
+          "LogDestinationType": "cloud-watch-logs",
+          "LogDestination": "arn:aws:logs:us-east-1:434855252750:log-group:test"
+        }
+      ]
+    }
+  }

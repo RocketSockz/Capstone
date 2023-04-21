@@ -1,0 +1,15 @@
+{
+    "id": "8074302b-d72e-4760-9d25-3c38b6a3dabf",
+    "displayName": "Ensure S3 buckets are encrypted at rest",
+    "resourceType": "AWS::S3::Bucket",
+    "severity": "high",
+    "rationale": "Amazon S3 Buckets should be configured with encryption at rest. This helps avoid risk caused by other misconfiguration which may enable inapproprite access to the bucket.",
+    "source": "cis aws 1.3.0 | benchmark 2.1.1",
+    "recommended_action": "1. Login to AWS Management Console and open the Amazon S3 console using https://console.aws.amazon.com/s3/ \n2. Select the appropriate bucket. \n3. Click on 'Edit' in the Default Encryption area.\n4. Select 'Enable', and choose the appropriate encryption strategy. ''. \n5.After configuring SSE-S3 or SSE-KMS encryption, click save changes'.\nFor more information, visit https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html",
+    "error_message": "AWS S3 Bucket not encrypted at rest",
+    "category": "SC",
+    "subcategory": "",
+    "ruleNames": [
+        "Ensure AWS S3 buckets are encrypted at rest"
+    ]
+}
