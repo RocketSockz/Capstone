@@ -1,0 +1,12 @@
+{
+    "properties": {
+        "document": {
+            "properties": {
+                "AccountAccessKeysPresent": {
+                    "const": 0
+                }
+            }
+        }
+    },
+    "schemaId": "f5db9cbe4-9730-4485-9bca-936aa64fe2c"
+}
