@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/fs"
 	"os"
+	"time"
 
 	"github.com/open-policy-agent/opa/rego"
 )
@@ -13,8 +14,6 @@ import (
 func main() {
 	go_check_dir := "./compliance_checks"
 	go_checks := listDirsInDir(go_check_dir)
-	ctx := context.Background()
-
 	// query := rego.New(
 	// 	rego.Query(`passes = data.opscompass_checks.check_passes
 	// 							applies = data.opscompass_checks.check_applies`),
@@ -38,24 +37,36 @@ func main() {
 		// Get Check Pass
 		pass_case_path := dir_path + "/pass.json"
 		pass_case := readFile(pass_case_path)
+		// Get Checks for Fails
+		fail_case_path := dir_path + "/fail.json"
+		fail_case := readFile(fail_case_path)
 
-		query := rego.New(
-			rego.Query(`passes = data.opscompass_checks.check_passes
-									applies = data.opscompass_checks.check_applies`),
-			rego.Module("opscompass_checks.rego", rego_file_as_string),
-			rego.Input(pass_case),
-		)
+		fmt.Print(`Check `, dir_path, "\n")
+		start_pass := time.Now()
+		pass_result := evaluate_policy_on_resource(rego_file_as_string, pass_case)
+		end_pass := time.Since(start_pass)
+		start_fail := time.Now()
+		fail_result := evaluate_policy_on_resource(rego_file_as_string, fail_case)
+		end_fail := time.Since(start_fail)
 
-		eval_result, _ := query.Eval(ctx)
-
-		fmt.Print(eval_result)
+		total_time := end_fail + end_pass
+		fmt.Print(`Pass Result: `, pass_result, ` Runtime`, end_pass, "\n")
+		fmt.Print(`Fail Result: `, fail_result, ` Runtime`, end_fail, "\n")
+		fmt.Print("Total Time elapsed: ", total_time, "\n")
 	}
-	// 	if err != nil {
-	// 		fmt.Print(eval_result)
-	// 	}
+}
 
-	// }
-	// readFile("./compliance_checks/AWS_RDS_Oracle_BYOL/fail_example.json")
+func evaluate_policy_on_resource(policy string, resource map[string]interface{}) rego.ResultSet {
+	ctx := context.Background()
+	query := rego.New(
+		rego.Query(`passes = data.opscompass_checks.check_passes
+								applies = data.opscompass_checks.check_applies`),
+		rego.Module("opscompass_checks.rego", policy),
+		rego.Input(resource),
+	)
+
+	eval_result, _ := query.Eval(ctx)
+	return eval_result
 }
 
 func listFilesInDir(path string) []fs.DirEntry {
