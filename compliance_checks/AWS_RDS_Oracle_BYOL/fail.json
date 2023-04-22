@@ -8,8 +8,8 @@
   "type": "AWS::RDS::DBInstance",
   "document": {
     "DBInstanceIdentifier": "oracledb",
-    "DBInstanceClass": "db.t3.small",
-    "Engine": "oracle-ee",
+    "DBInstanceClass": "4xlarge",
+    "Engine": "oracle-se2",
     "DBInstanceStatus": "stopped",
     "AutomaticRestartTime": "2022-08-10T21:15:22.595Z",
     "MasterUsername": "admin",

@@ -6,6 +6,7 @@ db_engine := input.document.Engine
 db_licensing := input.document.LicenseModel
 
 default check_applies := false 
+default check_passes := false 
 
 verify_check_applies(engineType, instanceSize) {
 	se2_engine = regex.match("oracle-se2", engineType) 
@@ -19,6 +20,10 @@ verify_check_applies(engineType, instanceSize) {
 
 check_applies = verify_check_applies(db_engine, db_instance_class)
 
-check_passes if check_applies {
-	db_licensing != "bring-your-own-license"
+verify_check_passess(db_licensing, check_applies) {
+	valid_licensing := db_licensing != "bring-your-own-license"
+	
+    check_applies ; valid_licensing
 }
+
+check_passes = verify_check_passess(db_licensing, check_applies)
